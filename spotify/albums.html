@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 Spotify Albums</title>
+  <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('../GothamBold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    body {
+      font-family: Spotify;
+      background: linear-gradient(to top, #663399, #333333);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #F2EDEB;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+    }
+
+    .table-wrapper {
+      float: left;
+      width: 50%;
+    }
+    .circle-image {
+      width: 198px;
+      height: 198px;
+      margin-top: 118px;
+      left: 620px;
+      position: absolute;
+      z-index: 1;
+      border-radius: 100%;
+      object-fit: cover;
+      border: 1px solid #DBCADC;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+      transition: transform 0.3s ease-in-out;
+    }
+    .circle-image:hover {
+      transform: scale(1.1);
+    }
+    .table-title {
+      font-size: 80px;
+      letter-spacing: -5px;
+      color: #69358C;
+      margin-bottom: 10px;
+      text-align: left;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+    }
+    .table-title script {
+      display: block;
+      font-size: 40px;
+      letter-spacing: -2px;
+      color: #946AA6;
+      border-bottom: 1px solid #DBCADC;
+      padding-bottom: 20px;
+      margin-top: 0px;
+      margin-bottom: -90px;
+    }
+    .table-title span {
+      display: block;
+      font-size: 80px;
+      color: #946AA6;
+      letter-spacing: -5px;
+      border-top: 1px solid #DBCADC;
+      padding-top: 5px;
+      margin-top: 5px;
+    }
+    .table-divider {
+      border-top: 1px solid #DBCADC;
+      margin-bottom: 0px;
+      clear: both;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border-bottom: 1px solid #DBCADC;
+      text-align: left;
+      padding: 10px 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    tr:hover {
+      transform: scale(1.1);
+      background-color: #CEB9CC;
+      transition-duration: 1s;
+      z-index: 10;
+    }
+    td {
+      color: #333;
+    }
+    .position {
+      font-size: 20px;
+      width: 20px;
+      color: #946AA6;
+      padding-left: 30px;
+      padding-right: -50px;
+      font-weight: bold;
+    }
+    .song-title {
+      font-size: 20px;
+      color: #69358C;
+      line-height: 1px;
+      letter-spacing: -1px;
+    }
+    .artist {
+      font-size: 17px;
+      line-height: 1px;
+      color: #946AA6;
+      letter-spacing: -1px;
+    }
+    .cover {
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      margin-right: 10px;
+      padding-right: 10px;
+    }
+    .cover img {
+      width: 100%;
+      height: auto;
+    }
+    .first-row {
+      background-color: #DBCADC; /* Define a cor de fundo para a primeira linha */
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s forwards 0.5s;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #CEB9CC;
+      color: #69358C;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      border-radius: 20px 20px 20px 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      background-color: #946AA6;
+      transform: scale(1.1);
+    }
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img class="circle-image" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/miley-cyrus-grammy-2024.jpg?w=1220&h=674&crop=1" alt="Circle Image">
+  <h1 class="table-title"><script>March 26-03</script><br>Top Albums<br><span>Global</span></h1>
+  <div class="table-divider"></div>
+  <div class="table-wrapper">
+    <table>
+      <!-- MUSICA 1 LUGAR -->
+      <tr>
+        <td class="position" id="pos1"></td>
+        <td class="cover" id="img1">
+          <img id="imagem1" alt="Imagem 1" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song1"></p>
+          <p class="artist" id="artist1"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 2 LUGAR -->
+      <tr>
+        <td class="position" id="pos2"></td>
+        <td class="cover" id="img2">
+          <img id="imagem2" alt="Imagem 2" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song2"></p>
+          <p class="artist" id="artist2"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 3 LUGAR -->
+      <tr>
+        <td class="position" id="pos3"></td>
+        <td class="cover" id="img3">
+          <img id="imagem3" alt="Imagem 3" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song3"></p>
+          <p class="artist" id="artist3"></p>
+        </td>
+      </tr>
+
+
+      <!-- MUSICA 4 LUGAR -->
+      <tr>
+        <td class="position" id="pos4"></td>
+        <td class="cover" id="img4">
+          <img id="imagem4" alt="Imagem 4" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song4"></p>
+          <p class="artist" id="artist4"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 5 LUGAR -->
+      <tr>
+        <td class="position" id="pos5"></td>
+        <td class="cover" id="img5">
+          <img id="imagem5" alt="Imagem 5" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song5"></p>
+          <p class="artist" id="artist5"></p>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+  <div class="table-wrapper">
+    <table>
+
+      <!-- MUSICA 6 LUGAR -->
+      <tr>
+        <td class="position" id="pos6"></td>
+        <td class="cover" id="img6">
+          <img id="imagem6" alt="Imagem 6" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song6"></p>
+          <p class="artist" id="artist6"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 7 LUGAR -->
+      <tr>
+        <td class="position" id="pos7"></td>
+        <td class="cover" id="img7">
+          <img id="imagem7" alt="Imagem 7" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song7"></p>
+          <p class="artist" id="artist7"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 8 LUGAR -->
+      <tr>
+        <td class="position" id="pos8"></td>
+        <td class="cover" id="img8">
+          <img id="imagem8" alt="Imagem 8" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song8"></p>
+          <p class="artist" id="artist8"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 9 LUGAR -->
+      <tr>
+        <td class="position" id="pos9"></td>
+        <td class="cover" id="img9">
+          <img id="imagem9" alt="Imagem 9" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song9"></p>
+          <p class="artist" id="artist9"></p>
+        </td>
+      </tr>
+
+      <!-- MUSICA 10 LUGAR -->
+      <tr>
+        <td class="position" id="pos10"></td>
+        <td class="cover" id="img10">
+          <img id="imagem10" alt="Imagem 10" class="tabela-imagem">
+        </td>
+        <td>
+          <p class="song-title" id="song10"></p>
+          <p class="artist" id="artist10"></p>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<script src="script-spotify-albums.js"></script>
+
+<div class="button-container">
+  <a href="home.html" class="button">Home</a>
+  <a href="singles.html" class="button">Top 10 Global Singles</a>
+  <a href="hot100.html" class="button">Billboard Hot 100</a>
+  <a href="billboard200.html" class="button">Billboard 200</a>
+</div>
+
+</body>
+</html>

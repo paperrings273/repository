@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('../GothamBold.ttf') format('truetype');
+    }
+
+    header {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      text-align: center;
+      background: linear-gradient(to top, #4e5e8a, #946AA6);
+      position: relative;
+    }
+
+    header .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #fff;
+      font-family: 'Spotify', Arial, sans-serif;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    header .social-icons {
+      margin-bottom: 20px;
+    }
+
+    header .social-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    header .social-icons a:hover {
+      color: #F2EDEB;
+    }
+
+    header .menu-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #191414;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-color: #CEB9CC;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 50px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .section {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: black;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      height: 100%;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-10px);
+    }
+
+    .logo {
+      width: 200px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      width: 70%;
+      font-family: Spotify;
+      font-size: 20px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      width: 70%;
+      font-size: 20px;
+      font-family: Spotify;
+      font-weight: bold;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 15px 40px;
+      background-color: #69358C;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #946AA6;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .number-one {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: black;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      height: 100%;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .feature img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .feature-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .number-one img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .number-one-content {
+      margin-top: 20px;
+    }
+
+    .number-one-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .number-one-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <i class="fas fa-bars menu-icon"></i>
+  <div class="header-content">
+    <h1>Seja bem-vindo à página oficial da Star World Community!</h1>
+    <img src="https://media.discordapp.net/attachments/852940143412772864/1205238380544401508/estrelarosasemsombra.png" alt="Logo">
+    <div class="social-icons">
+      <a href="https://discord.gg/86nWtefP"><i class="fab fa-discord"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="section">
+    <img src="https://media.discordapp.net/attachments/1083441761743020082/1205252270912966657/image.png" alt="Spotify Logo" class="logo">
+    <div class="button-container">
+      <a href="singles.html" class="button">Top Songs Global</a>
+      <a href="albums.html" class="button">Top Albums Global</a>
+    </div>
+    <div class="number-one">
+      <img id="imagem1" alt="Imagem 1" class="tabela-imagem">
+      <div class="number-one-content">
+        <h2 style="display: inline;">#</h2>
+        <h2 id="pos1" style="display: inline;"></h2>
+        <h2 style="display: inline;">this week</h2>
+        <p id="song1"></p>
+        <p id="artist1"></p>
+        <script src="script-spotify-singles.js"></script>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <img src="https://cdn.discordapp.com/attachments/1083441761743020082/1205212511817961532/Billboard-charts-logo-2018-billboard-1548-1024x677.png" alt="Billboard Logo" class="logo">
+    <div class="button-container">
+      <a href="hot100.html" class="button">Billboard Hot 100</a>
+      <a href="billboard200.html" class="button">Billboard 200</a>
+    </div>
+    <div class="number-one">
+      <img id="imagemhot1" alt="Imagem 1" class="tabela-imagem">
+      <div class="number-one-content">
+        <h2 style="display: inline;">#</h2>
+        <h2 id="poshot1" style="display: inline;"></h2>
+        <h2 style="display: inline;">this week</h2>
+        <p id="songhot1"></p>
+        <p id="artisthot1"></p>
+        <script src="script-hot100.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
+</body>
+</html>

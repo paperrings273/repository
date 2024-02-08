@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billboard Hot 100 Top 10</title>
+  <style>
+    @font-face {
+      font-family: Billboard-Bold;
+      src: url('Walfork-Demi.otf') format('opentype'), url('Walfork-Demi.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: Billboard-Regular;
+      src: url('Walfork-Regular.otf') format('opentype'), url('Walfork-Regular.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    p{
+      position: absolute;
+      bottom: -90px;
+      right: 360px;
+      font-family: Billboard-Regular;
+      text-align: right;
+      color: #F2EDEB;
+    }
+    body {
+      font-family: Billboard-Regular;
+      background: linear-gradient(to top, #395BBF, #F2F2F2);
+      margin: 0;
+      padding: 0;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      position: relative;
+      width: 650px;
+      margin-top: 50px;
+      background-color: #F2EDEB;
+      border-radius: 10px;
+      transition: 1s;
+      animation: fadeIn 2s ease forwards;
+      margin-left: 30px;
+      border-bottom: solid black 50px;
+      border-left: solid black 10px;
+      border-right: solid black 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .table-header {
+      background-color: #000;
+      text-align: center;
+      height: 180px;
+      margin-bottom: -40px;
+      padding-top: 10px;
+    }
+
+    .logo {
+      max-width: 500px;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      font-size: 20px;
+      transition-duration: 1s;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves de cor de fundo e cor do texto */
+    }
+
+
+    td:hover {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    td.position {
+      width: 20px;
+      padding: 8px;
+      text-align: right;
+      font-size: 20px;
+    }
+
+    th:not(:first-child),
+    td:not(:first-child) {
+      border-left: 2px dashed #666666;
+    }
+
+    td.song-title{
+      font-family: Billboard-Bold;
+    }
+
+
+    th.song-title-column {
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    thead th {
+      background-color: #000;
+      color: #fff;
+      border: solid black 2px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: fade-in 1s forwards 0.5s;
+      border-radius: 100px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #F2EDEB;
+      color: black;
+      text-decoration: none;
+      border-radius: 100px;
+      font-family: Billboard-Bold;
+      font-size: 17px;
+      margin-right: 10px;
+      border-radius: 20px 20px 20px 20px;
+      transition: transform 0.3s ease-in-out;
+      margin-top: 40px;
+    }
+
+    .button:hover {
+      background-color: #946AA6;
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="table-header">
+    <img src="https://cdn.discordapp.com/attachments/1083441761743020082/1205207123802460270/image.png" alt="Billboard Hot 100 Logo" class="logo">
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th class="song-title-column">ALBUM</th>
+      <th class="song-title-column">ARTIST</th>
+    </tr>
+    </thead>
+    <tr>
+      <td class="position" id="pos1"></td>
+      <td class="song-title" id="album1"></td>
+      <td id="artist1"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos2"></td>
+      <td class="song-title" id="album2"></td>
+      <td id="artist2"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos3"></td>
+      <td class="song-title" id="album3"></td>
+      <td id="artist3"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos4"></td>
+      <td class="song-title" id="album4"></td>
+      <td id="artist4"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos5"></td>
+      <td class="song-title" id="album5"></td>
+      <td id="artist5"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos6"></td>
+      <td class="song-title" id="album6"></td>
+      <td id="artist6"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos7"></td>
+      <td class="song-title" id="album7"></td>
+      <td id="artist7"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos8"></td>
+      <td class="song-title" id="album8"></td>
+      <td id="artist8"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos9"></td>
+      <td class="song-title" id="album9"></td>
+      <td id="artist9"></td>
+    </tr>
+    <tr>
+      <td class="position" id="pos10"></td>
+      <td class="song-title" id="album10"></td>
+      <td id="artist10"></td>
+    </tr>
+  </table>
+</div>
+</body>
+
+<script src="script-billboard200.js"></script>
+
+<div class="button-container">
+  <a href="home.html" class="button">Home</a>
+  <a href="hot100.html" class="button">Billboard Hot 100</a>
+  <a href="singles.html" class="button">Top 10 Global Singles</a>
+  <a href="albums.html" class="button">Top 10 Global Albums</a>
+</div>
+
+<p>chart dated Month Day, 2023</p>
+</html>
