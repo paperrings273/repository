@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
   <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('GothamBold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: Spotify;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, #1ed760, #191414);
@@ -29,11 +35,18 @@
     }
 
     .logo {
-      width: 120px;
+      width: 170px;
+      margin-top: 20px;
       height: auto;
+      transition: transform 0.3s ease;
     }
 
-    .discord-button {
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    .discord-button,
+    .top-button {
       background-color: #7289da;
       color: #fff;
       padding: 15px 30px;
@@ -42,13 +55,22 @@
       font-size: 18px;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-right: 20px;
     }
 
-    .discord-button:hover {
+    .discord-button:last-child,
+    .top-button:last-child {
+      margin-right: 0;
+    }
+
+    .discord-button:hover,
+    .top-button:hover {
       background-color: #5f73a8;
     }
 
-    .discord-button:active {
+    .discord-button:active,
+    .top-button:active {
       background-color: #4e5e8a;
     }
 
@@ -64,7 +86,7 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     .release img {
@@ -72,6 +94,7 @@
       height: auto;
       border-radius: 5px;
       margin-bottom: 10px;
+      transition: transform 0.3s ease;
     }
 
     .release h3 {
@@ -87,6 +110,7 @@
 
     .release:hover {
       transform: translateY(-5px);
+      background-color: #444;
     }
 
     .top-buttons {
@@ -109,14 +133,17 @@
 
     .top-button:last-child {
       margin-right: 0;
+      opacity: 0.8;
     }
 
     .top-button:hover {
       background-color: #15a547;
+      opacity: 0.5;
     }
 
     .top-button:active {
       background-color: #0f7337;
+      opacity: 0.8;
     }
 
     .footer {
@@ -138,6 +165,7 @@
 
     .discord-button-footer:hover {
       background-color: #5f73a8;
+      opacity: 0.5;
     }
 
     .discord-button-footer:active {
@@ -148,12 +176,14 @@
 <body>
 <header>
   <div class="container">
-    <img src="https://imagensfree.com.br/wp-content/uploads/2021/11/Spotify_Logo_RGB_White.png" alt="Logo do Spotify" class="logo">
+    <a href="#" class="logo">
+      <img src="https://imagensfree.com.br/wp-content/uploads/2021/11/Spotify_Logo_RGB_White.png" alt="Logo do Spotify" class="logo">
+    </a>
   </div>
 </header>
 
 <div class="container">
-  <h2 style="text-align: center;">Ava Thompson escoriagi da humanidade</h2>
+  <h2 style="text-align: center;">Confira os últimos lançamentos da comunidade:</h2>
   <div class="latest-releases">
     <div class="release">
       <img src="https://cdn.discordapp.com/attachments/1200968267850846278/1204806619192361060/image.png?ex=65d6129a&is=65c39d9a&hm=4bd44be2b9612e1f0e135e477b6339c24a214c6f13ff336d689480083f636303&" alt="Último Lançamento 1">
@@ -180,8 +210,14 @@
 
 <footer class="footer">
   <div class="container">
-    <a href="https://endearing-quokka-a30414.netlify.app/" class="discord-button-footer">Entrar no Discord</a>
+    <a href="https://discord.gg/86nWtefP" class="discord-button-footer">Entrar no Discord</a>
   </div>
 </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.opacity = '2';
+  });
+</script>
 </body>
 </html>

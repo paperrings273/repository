@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 10 Spotify Albums</title>
   <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('GothamBold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to top, #663399, #333333);            margin: 0;
+      font-family: Spotify;
+      background: linear-gradient(to top, #663399, #333333);
+      margin: 0;
       padding: 0;
     }
     .container {
@@ -20,6 +27,8 @@
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       overflow: hidden;
+      opacity: 0;
+      animation: fade-in 1s forwards;
     }
 
     .table-wrapper {
@@ -27,25 +36,35 @@
       width: 50%;
     }
     .circle-image {
-      width: 209px;
-      height: 209px;
+      width: 198px;
+      height: 198px;
       margin-top: 118px;
-      left: 610px;
+      left: 620px;
       z-index: 1;
       position: absolute;
       border-radius: 100%;
       object-fit: cover;
       border: 1px solid #DBCADC;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+      transition: transform 0.3s ease-in-out;
+    }
+    .circle-image:hover {
+      transform: scale(1.1);
     }
     .table-title {
       font-size: 80px;
+      letter-spacing: -5px;
       color: #69358C;
       margin-bottom: 10px;
       text-align: left;
+      opacity: 0;
+      animation: fade-in 1s forwards;
     }
     .table-title script {
       display: block;
       font-size: 40px;
+      letter-spacing: -2px;
       color: #946AA6;
       border-bottom: 1px solid #DBCADC;
       padding-bottom: 20px;
@@ -56,6 +75,7 @@
       display: block;
       font-size: 80px;
       color: #946AA6;
+      letter-spacing: -5px;
       border-top: 1px solid #DBCADC;
       padding-top: 5px;
       margin-top: 5px;
@@ -72,13 +92,20 @@
     th, td {
       border-bottom: 1px solid #DBCADC;
       text-align: left;
-      padding: 15px 10px;
+      padding: 10px 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    tr:hover {
+      transform: scale(1.1);
+      background-color: #CEB9CC;
+      transition-duration: 1s;
     }
     td {
       color: #333;
     }
     .position {
       font-size: 20px;
+      width: 20px;
       color: #946AA6;
       padding-left: 30px;
       padding-right: -50px;
@@ -87,12 +114,14 @@
     .song-title {
       font-size: 20px;
       color: #69358C;
-      line-height: 0px;
+      line-height: 1px;
+      letter-spacing: -1px;
     }
     .artist {
       font-size: 17px;
-      line-height: 0px;
+      line-height: 1px;
       color: #946AA6;
+      letter-spacing: -1px;
     }
     .cover {
       width: 70px;
@@ -107,6 +136,36 @@
     }
     .first-row {
       background-color: #DBCADC; /* Define a cor de fundo para a primeira linha */
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s forwards 0.5s;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #CEB9CC;
+      color: #69358C;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      border-radius: 20px 20px 20px 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      background-color: #946AA6;
+      transform: scale(1.1);
+    }
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -155,6 +214,11 @@
       </tr>
     </table>
   </div>
+</div>
+
+<div class="button-container">
+  <a href="index.html" class="button">Home</a>
+  <a href="singles.html" class="button">Top 10 Global Songs</a>
 </div>
 
 </body>

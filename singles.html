@@ -1,15 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174872.png" type="image/x-icon">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 10 Spotify Singles</title>
+  <title>Top 10 Spotify Albums</title>
   <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('GothamBold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to top, #663399, #333333);            margin: 0;
+      font-family: Spotify;
+      background: linear-gradient(to top, #663399, #333333);
+      margin: 0;
       padding: 0;
     }
     .container {
@@ -17,37 +23,50 @@
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #773797;
+      background-color: #69358C;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       overflow: hidden;
+      opacity: 0;
+      animation: fade-in 1s forwards;
     }
+
     .table-wrapper {
       float: left;
       width: 50%;
     }
     .circle-image {
-      width: 209px;
-      height: 209px;
+      width: 198px;
+      height: 198px;
       margin-top: 118px;
-      left: 610px;
+      left: 620px;
       z-index: 1;
       position: absolute;
       border-radius: 100%;
       object-fit: cover;
-      border: 1px solid #905CA7;
+      border: 1px solid #CEB9CC;
+      opacity: 0;
+      animation: fade-in 1s forwards;
+      transition: transform 0.3s ease-in-out;
+    }
+    .circle-image:hover {
+      transform: scale(1.1);
     }
     .table-title {
       font-size: 80px;
-      color: #F7EFEF;
+      letter-spacing: -5px;
+      color: #F2EDEB;
       margin-bottom: 10px;
       text-align: left;
+      opacity: 0;
+      animation: fade-in 1s forwards;
     }
     .table-title script {
       display: block;
       font-size: 40px;
+      letter-spacing: -2px;
       color: #CEB9CC;
-      border-bottom: 1px solid #905CA7;
+      border-bottom: 1px solid #946AA6;
       padding-bottom: 20px;
       margin-top: 0px;
       margin-bottom: -90px;
@@ -56,12 +75,13 @@
       display: block;
       font-size: 80px;
       color: #CEB9CC;
-      border-top: 1px solid #905CA7;
+      letter-spacing: -5px;
+      border-top: 1px solid #946AA6;
       padding-top: 5px;
       margin-top: 5px;
     }
     .table-divider {
-      border-top: 1px solid #905CA7;
+      border-top: 1px solid #946AA6;
       margin-bottom: 0px;
       clear: both;
     }
@@ -70,30 +90,38 @@
       border-collapse: collapse;
     }
     th, td {
-      border-bottom: 1px solid #905CA7;
+      border-bottom: 1px solid #946AA6;
       text-align: left;
-      padding: 15px 10px;
+      padding: 10px 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    tr:hover {
+      transform: scale(1.1);
+      background-color: #7E528B;
+      transition-duration: 1s;
     }
     td {
       color: #333;
     }
     .position {
       font-size: 20px;
-      color: #CEB9CC;
+      width: 20px;
+      color: #F2EDEB;
       padding-left: 30px;
       padding-right: -50px;
       font-weight: bold;
-      width:20px;
     }
     .song-title {
       font-size: 20px;
-      color: #F7EFEF;
-      line-height: 0px;
+      color: #F2EDEB;
+      line-height: 1px;
+      letter-spacing: -1px;
     }
     .artist {
       font-size: 17px;
-      line-height: 0px;
+      line-height: 1px;
       color: #CEB9CC;
+      letter-spacing: -1px;
     }
     .cover {
       width: 70px;
@@ -107,14 +135,43 @@
       height: auto;
     }
     .first-row {
-      background-color: #905CA7; /* Define a cor de fundo para a primeira linha */
+      background-color: #946AA6; /* Define a cor de fundo para a primeira linha */
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 1s forwards 0.5s;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #CEB9CC;
+      color: #69358C;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 20px 20px 20px 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .button:hover {
+      background-color: #946AA6;
+      transform: scale(1.1);
+    }
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
 <div class="container">
   <img class="circle-image" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/miley-cyrus-grammy-2024.jpg?w=1220&h=674&crop=1" alt="Circle Image">
-  <h1 class="table-title"><script>March</script><br>Top Songs<br><span>Global</span></h1>
+  <h1 class="table-title"><script>March</script><br>Top Albums<br><span>Global</span></h1>
   <div class="table-divider"></div>
   <div class="table-wrapper">
     <table>
@@ -156,6 +213,11 @@
       </tr>
     </table>
   </div>
+</div>
+
+<div class="button-container">
+  <a href="index.html" class="button">Home</a>
+  <a href="albums.html" class="button">Top 10 Global Albums</a>
 </div>
 
 </body>
