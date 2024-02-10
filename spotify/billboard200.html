@@ -17,17 +17,22 @@
       font-weight: bold;
       font-style: normal;
     }
-    p{
+    .texto-sobreposto {
       position: absolute;
-      bottom: -110px;
-      right: 360px;
+      bottom: -57px;
+      right: calc(6% - 30px);
       font-family: Billboard-Regular;
       text-align: right;
       color: #F2EDEB;
     }
+
+    html {
+      background: linear-gradient(to top, #395BBF, #F2F2F2);
+      background-attachment: fixed;
+    }
+
     body {
       font-family: Billboard-Regular;
-      background: linear-gradient(to top, #395BBF, #F2F2F2);
       margin: 0;
       padding: 0;
       display: grid;
@@ -153,8 +158,9 @@
 
 <body>
 <div class="container">
+  <p class="texto-sobreposto">chart dated Month Day, 2024</p>
   <div class="table-header">
-    <img src="https://cdn.discordapp.com/attachments/1083441761743020082/1205207123802460270/image.png" alt="Billboard Hot 100 Logo" class="logo">
+    <img src="https://i.imgur.com/qAGSQ3B.png" alt="Billboard Hot 100 Logo" class="logo">
   </div>
   <table>
     <thead>
@@ -227,5 +233,4 @@
   <a href="albums.html" class="button">Top 10 Global Albums</a>
 </div>
 
-<p>chart dated Month Day, 2023</p>
 </html>
