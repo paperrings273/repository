@@ -19,22 +19,27 @@
     }
     .texto-sobreposto {
       position: absolute;
-      bottom: -14%;
-      right: calc(28% - 30px);
+      bottom: -57px;
+      right: calc(6% - 30px);
       font-family: Billboard-Regular;
       text-align: right;
       color: #F2EDEB;
     }
 
+    html {
+      background: linear-gradient(to top, #8C3575, #F2F2F2);
+      background-attachment: fixed; /* Fixa o background */
+    }
+
     body {
       font-family: Billboard-Regular;
-      background: linear-gradient(to top, #8C3575, #F2F2F2);
       margin: 0;
       padding: 0;
       display: grid;
       justify-content: center;
       align-items: center;
     }
+
     .container {
       position: relative;
       width: 650px;
@@ -148,33 +153,12 @@
       transform: scale(1.1);
     }
 
-    @media screen and (max-width: 768px) {
-      .container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .texto-sobreposto {
-        bottom: -10%;
-        right: calc(5% - 15px);
-      }
-
-      .button-container {
-        margin-top: 20px;
-      }
-
-      .button {
-        font-size: 14px;
-        padding: 8px 16px;
-      }
-    }
-
   </style>
 </head>
 
 <body>
 <div class="container">
+  <p class="texto-sobreposto">chart dated Month Day, 2024</p>
   <div class="table-header">
     <img src="https://i.imgur.com/CXzkiic.png" alt="Billboard Hot 100 Logo" class="logo">
   </div>
@@ -261,7 +245,4 @@
   <a href="singles.html" class="button">Top 10 Global Singles</a>
   <a href="albums.html" class="button">Top 10 Global Albums</a>
 </div>
-
-<p class="texto-sobreposto">chart dated Month Day, 2024</p>
-
 </html>
