@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbuns e Avaliações</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      animation: fadeIn 1s forwards;
+    }
+
+    header {
+      background-color: black;
+      padding: 10px 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      position: static;
+      animation: fadeIn 1s forwards;
+    }
+
+    .logo {
+      width: 8%;
+      height: 8%;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    .albums-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1070px;
+      margin: 20px auto;
+      animation: fadeIn 1s forwards;
+    }
+    .album {
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition-duration: 1s;
+      animation: fadeIn 1s forwards;
+    }
+
+    .album:hover{
+      scale: 1.05;
+      transition-duration: 1s;
+    }
+    .album img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .album-title {
+      font-size: 22px;
+      margin-top: -5px;
+      margin-bottom: 5px;
+    }
+    .artist-info {
+      font-size: 14px;
+      color: #666;
+      margin-top: -3px;
+      margin-bottom: 10px;
+    }
+    .average-rating {
+      font-size: 0px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .rating-square {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 34px;
+      font-weight: bold;
+      position: relative;
+      margin-right: 5px;
+    }
+    .excellent {
+      background-color: #5cb85c;
+      color: #fff;
+    }
+    .good {
+      background-color: #f0ad4e;
+      color: #fff;
+    }
+    .average {
+      background-color: #d9534f;
+      color: #fff;
+    }
+    .reviews {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .review-scores {
+      margin-top: 10px;
+    }
+
+    .review-score {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      position: relative;
+      opacity: 0.6;
+      transition-duration: 1s;
+    }
+
+    .review-score:hover{
+      opacity: 1;
+      transition-duration: 1s;
+    }
+
+    .review-score span {
+      vertical-align: middle;
+    }
+    .review-source {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    .back-to-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      margin-right: 10px;
+      border-radius: 50px 50px 50px 50px;
+      transition-duration: 1s;
+    }
+
+    .back-to-home:hover {
+      opacity: 0.8;
+      transition-duration: 1s;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="https://i.imgur.com/aJm25j3.png" alt="Logo">
+  <h1></h1>
+</header>
+
+<div class="albums-container" id="albums-container"></div>
+
+<button class="back-to-home" onclick="window.location.href = 'index.html'">Home</button>
+
+<script>
+  fetch('albums.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Falha ao carregar os dados');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const albumsContainer = document.getElementById('albums-container');
+
+      data.forEach(album => {
+        const albumDiv = document.createElement('div');
+        albumDiv.classList.add('album');
+
+        const coverElement = document.createElement('img');
+        coverElement.src = album.cover;
+        coverElement.alt = `Capa do ${album.title}`;
+        albumDiv.appendChild(coverElement);
+
+        const albumInfoDiv = document.createElement('div');
+        albumInfoDiv.classList.add('album-info');
+
+        const titleElement = document.createElement('h2');
+        titleElement.classList.add('album-title');
+        titleElement.textContent = album.title;
+        albumInfoDiv.appendChild(titleElement);
+
+        const artistInfoElement = document.createElement('p');
+        artistInfoElement.classList.add('artist-info');
+        artistInfoElement.textContent = `${album.artist} | ${album.genre} | ${album.label}`;
+        albumInfoDiv.appendChild(artistInfoElement);
+
+        const averageRatingElement = document.createElement('div');
+        averageRatingElement.classList.add('average-rating');
+        const ratingSquareElement = document.createElement('span');
+        ratingSquareElement.classList.add('rating-square');
+        if (album.rating >= 70) {
+          ratingSquareElement.classList.add('excellent');
+        } else if (album.rating >= 60) {
+          ratingSquareElement.classList.add('good');
+        } else {
+          ratingSquareElement.classList.add('average');
+        }
+        ratingSquareElement.textContent = album.rating;
+        averageRatingElement.appendChild(ratingSquareElement);
+        averageRatingElement.innerHTML += ` / 100`;
+        albumInfoDiv.appendChild(averageRatingElement);
+
+        const reviewsElement = document.createElement('div');
+        reviewsElement.classList.add('reviews');
+        reviewsElement.textContent = `Baseado em ${album.reviews} avaliações`;
+        albumInfoDiv.appendChild(reviewsElement);
+
+        const reviewScoresElement = document.createElement('div');
+        reviewScoresElement.classList.add('review-scores');
+        album.reviewScores.forEach(score => {
+          const scoreElement = document.createElement('span');
+          scoreElement.classList.add('review-score');
+          if (score.score >= 70) {
+            scoreElement.classList.add('excellent');
+          } else if (score.score >= 60) {
+            scoreElement.classList.add('good');
+          } else {
+            scoreElement.classList.add('average');
+          }
+          const scoreValueElement = document.createElement('span');
+          scoreValueElement.textContent = score.score;
+          scoreElement.appendChild(scoreValueElement);
+
+          const sourceElement = document.createElement('div');
+          sourceElement.classList.add('review-source');
+          sourceElement.textContent = score.source;
+          scoreElement.appendChild(sourceElement);
+
+          reviewScoresElement.appendChild(scoreElement);
+        });
+        albumInfoDiv.appendChild(reviewScoresElement);
+
+        albumDiv.appendChild(albumInfoDiv);
+        albumsContainer.appendChild(albumDiv);
+      });
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+      const albumsContainer = document.getElementById('albums-container');
+      albumsContainer.innerHTML = '<p>Ocorreu um erro ao carregar os dados.</p>';
+    });
+</script>
+
+</body>
+</html>
