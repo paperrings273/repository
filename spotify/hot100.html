@@ -17,14 +17,15 @@
       font-weight: bold;
       font-style: normal;
     }
-    p{
+    .texto-sobreposto {
       position: absolute;
-      bottom: -110px;
-      right: 340px;
+      bottom: -14%;
+      right: calc(28% - 30px);
       font-family: Billboard-Regular;
       text-align: right;
       color: #F2EDEB;
     }
+
     body {
       font-family: Billboard-Regular;
       background: linear-gradient(to top, #8C3575, #F2F2F2);
@@ -147,13 +148,35 @@
       transform: scale(1.1);
     }
 
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .texto-sobreposto {
+        bottom: -10%;
+        right: calc(5% - 15px);
+      }
+
+      .button-container {
+        margin-top: 20px;
+      }
+
+      .button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 <div class="container">
   <div class="table-header">
-    <img src="https://cdn.discordapp.com/attachments/852940143412772864/1205019411807731742/image.png" alt="Billboard Hot 100 Logo" class="logo">
+    <img src="https://i.imgur.com/CXzkiic.png" alt="Billboard Hot 100 Logo" class="logo">
   </div>
   <table id="billboard-table">
     <thead>
@@ -239,6 +262,6 @@
   <a href="albums.html" class="button">Top 10 Global Albums</a>
 </div>
 
-<p>chart dated Month Day, 2023</p>
+<p class="texto-sobreposto">chart dated Month Day, 2024</p>
 
 </html>
