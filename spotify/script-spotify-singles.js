@@ -15,7 +15,7 @@ var tabelaDados = [
   },
 
   { posicao: 3,
-    musica: "Blame It On",
+    musica: "Blame It On Me",
     artista: "Trevor",
     imagem:
     "https://i.imgur.com/uWggx9r.png"
