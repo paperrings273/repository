@@ -1,66 +1,78 @@
 // Variáveis para armazenar os dados da tabela
 var tabelaDados = [
   { posicao: 1,
-    musica: "Juju do pix",
-    artista: "me dá pix",
+    musica: "Inner Self",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg"
+    "https://i.imgur.com/uWggx9r.png"
   },
 
   { posicao: 2,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+    musica: "Party Favors",
+    artista: "Zara",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg"
+      "https://i.imgur.com/FgZ69Ya.jpeg"
   },
 
   { posicao: 3,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+    musica: "Blame It On",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+    "https://i.imgur.com/uWggx9r.png"
+  },
 
   { posicao: 4,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+    musica: "EARTHQUAKE",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+    "https://i.imgur.com/WPYcao8.png"
+  },
 
-  { posicao: 5,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 5,
+    musica: "ALRIGHT",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/3RlKr4c.jpg"
+  },
 
-  { posicao: 6,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 6,
+    musica: "I HAVE A DREAM",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/3RlKr4c.jpg"
+  },
 
-  { posicao: 7,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 7,
+    musica: "CAN WE BE FRIENDS?",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/WPYcao8.png"
+  },
 
-  { posicao: 8,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 8,
+    musica: "feel like sheet",
+    artista: "Ivy Sinclair",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/SlcGzdw.png"
+  },
 
-  { posicao: 9,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 9,
+    musica: "Beetlebum",
+    artista: "Even Grace",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/eTjuhMK.png"
+  },
 
   { posicao: 10,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+    musica: "Fantasmagoric Feelings",
+    artista: "Liza",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg"
+    "https://i.imgur.com/jXLvpzn.jpg"
   },
 
   { posicao: 11,

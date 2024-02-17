@@ -1,69 +1,85 @@
-// Variáveis para armazenar os dados da tabela
 var tabelaDados = [
-  { posicao: 1,
-    musica: "Nome do Álbum",
-    artista: "Nome do Artista",
+  {
+    posicao: 1,
+    musica: "KIDS SEE GHOSTS",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/uWggx9r.png"
+  },
 
-  { posicao: 2,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 2,
+    musica: "Everything Is Freedom",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/3RlKr4c.jpg"
+  },
 
-  { posicao: 3,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 3,
+    musica: "The Life Of Greg",
+    artista: "Trevor",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/WPYcao8.png"
+  },
 
-  { posicao: 4,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 4,
+    musica: "Pure Feeling",
+    artista: "Liza",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/jXLvpzn.jpg"
+  },
 
-  { posicao: 5,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 5,
+    musica: "I owe it to myself",
+    artista: "Owen Graham",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/VSfImF5.png"
+  },
 
-  { posicao: 6,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 6,
+    musica: "Love Signal",
+    artista: "Zion",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/cYWu7Yx.jpg"
+  },
 
-  { posicao: 7,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 7,
+    musica: "When I Get Lost",
+    artista: "Conan Woolridge",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/J9FPzWb.png"
+  },
 
-  { posicao: 8,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 8,
+    musica: "Lockdown",
+    artista: "Liz",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/pEys1o7.png"
+  },
 
   { posicao: 9,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+    musica: "VANGUARD",
+    artista: "Hannah",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+    "https://i.imgur.com/kh25Tn7.png"
+  },
 
-  { posicao: 10,
-    musica: "Nome da Música",
-    artista: "Nome do Artista",
+  {
+    posicao: 10,
+    musica: "Purple Dream",
+    artista: "Even Grace",
     imagem:
-      "https://s2-techtudo.glbimg.com/DltGJnURD11lOxdsACc34epHtn0=/400x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/r/i/lPgLATQ7iBy4bu9wX5VQ/lanaexplicit-gretchen-meme-eu-teria-vergonha-disso-.jpg" },
+      "https://i.imgur.com/pXBYVJp.png"
+  },
 ];
 
-// Função para atualizar a tabela com os dados armazenados
 function atualizarTabela() {
-  // Loop através dos dados e atualiza as células da tabela com os dados correspondentes
   tabelaDados.forEach(function(dado) {
     var posicaoCell = document.getElementById("pos" + dado.posicao);
     var imagemCell = document.getElementById("imagem" + dado.posicao);
@@ -71,11 +87,10 @@ function atualizarTabela() {
     var artistaCell = document.getElementById("artist" + dado.posicao);
 
     posicaoCell.textContent = dado.posicao;
-    imagemCell.src = dado.imagem; // Atualiza a origem da imagem
+    imagemCell.src = dado.imagem;
     musicaCell.textContent = dado.musica;
     artistaCell.textContent = dado.artista;
   });
 }
 
-// Chama a função para atualizar a tabela
 atualizarTabela();

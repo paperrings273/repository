@@ -1,15 +1,27 @@
 [
   {
-    "cover": "https://i.imgur.com/4l097rA.png",
-    "title": "Everlasting",
-    "artist": "Liz",
-    "genre": "Pop",
-    "label": "Spotlight Records",
-    "rating": 81,
+    "cover": "https://i.imgur.com/VSfImF5.png",
+    "title": "I owe it to myself",
+    "artist": "Owen Graham",
+    "genre": "Country/Folk",
+    "label": "Dawn Records",
+    "rating": 80,
     "reviews": 2,
     "reviewScores": [
-      {"source": "NME", "score": 82},
+      {"source": "Pitchfork", "score": 80},
       {"source": "RollingStone", "score": 80}]
+  },
+  {
+    "cover": "https://i.imgur.com/j6v7gMU.png",
+    "title": "Soundscape",
+    "artist": "Mayleen",
+    "genre": "Pop",
+    "label": "Spotlight Records",
+    "rating": 77,
+    "reviews": 2,
+    "reviewScores": [
+      {"source": "Pitchfork", "score": 75},
+      {"source": "RollingStone", "score": 78}]
   },
   {
     "cover": "https://i.imgur.com/cYWu7Yx.jpeg",
@@ -24,28 +36,16 @@
       {"source": "RollingStone", "score": 78}]
   },
   {
-    "cover": "https://i.imgur.com/pXBYVJp.png",
-    "title": "Purple Dream",
-    "artist": "Even Grace",
-    "genre": "Rock",
-    "label": "Dawn Records",
-    "rating": 82,
-    "reviews": 3,
-    "reviewScores": [
-      {"source": "Pitchfork", "score": 81},
-      {"source": "NME", "score": 82}]
-  },
-  {
-    "cover": "https://i.imgur.com/VSfImF5.png",
-    "title": "I owe it to myself",
-    "artist": "Owen Graham",
-    "genre": "Country/Folk",
-    "label": "Dawn Records",
-    "rating": 80,
+    "cover": "https://i.imgur.com/3RlKr4c.jpeg",
+    "title": "EVERYTHING IS FREEDOM",
+    "artist": "Trevor",
+    "genre": "Rap",
+    "label": "Spotlight Records",
+    "rating": 73,
     "reviews": 2,
     "reviewScores": [
-      {"source": "Pitchfork", "score": 80},
-      {"source": "RollingStone", "score": 80}]
+      {"source": "Pitchfork", "score": 76},
+      {"source": "RollingStone", "score": 70}]
   },
   {
     "cover": "https://i.imgur.com/jXLvpzn.jpeg",
@@ -61,5 +61,17 @@
       {"source": "Fader", "score": 83},
       {"source": "RollingStone", "score": 80}
     ]
+  },
+  {
+    "cover": "https://i.imgur.com/pXBYVJp.png",
+    "title": "Purple Dream",
+    "artist": "Even Grace",
+    "genre": "Rock",
+    "label": "Dawn Records",
+    "rating": 82,
+    "reviews": 3,
+    "reviewScores": [
+      {"source": "Pitchfork", "score": 81},
+      {"source": "NME", "score": 82}]
   }
 ]
