@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 2, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 3, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 4, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 5, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 6, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 7, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 8, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 9, album: "Nome do álbum", artista: "Nome do artista" },
-  { posicao: 10, album: "Nome do álbum", artista: "Nome do artista" },
+  { posicao: 1, album: "KIDS SEE GHOSTS", artista: "Trevor" },
+  { posicao: 2, album: "Everything Is Freedom", artista: "Trevor" },
+  { posicao: 3, album: "The Life Of Greg", artista: "Trevor" },
+  { posicao: 4, album: "I owe it to myself", artista: "Owen Graham" },
+  { posicao: 5, album: "Purple Dream", artista: "Even Grace" },
+  { posicao: 6, album: "Pure Feeling", artista: "Liza" },
+  { posicao: 7, album: "Love Signal", artista: "Zion" },
+  { posicao: 8, album: "When I Get Lost", artista: "Conan Woolridge" },
+  { posicao: 9, album: "Lockdown", artista: "Liz" },
+  { posicao: 10, album: "VANGUARD", artista: "Hannah" },
 ];
 
 function atualizarTabela() {

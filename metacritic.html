@@ -154,6 +154,20 @@
       transition-duration: 1s;
     }
 
+    .pagination-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .pagination-label {
+      margin-right: 10px;
+    }
+
+    .pagination-select {
+      padding: 5px 10px;
+    }
   </style>
 </head>
 <body>
@@ -162,6 +176,15 @@
   <img class="logo" src="https://i.imgur.com/aJm25j3.png" alt="Logo">
   <h1></h1>
 </header>
+
+<nav>
+  <ul class="pagination"></ul>
+</nav>
+
+<div class="pagination-container">
+  <span class="pagination-label">Selecione a página:</span>
+  <select class="pagination-select"></select>
+</div>
 
 <div class="albums-container" id="albums-container"></div>
 
@@ -177,78 +200,106 @@
     })
     .then(data => {
       const albumsContainer = document.getElementById('albums-container');
+      const paginationContainer = document.querySelector('.pagination');
+      const paginationSelect = document.querySelector('.pagination-select');
 
-      data.forEach(album => {
-        const albumDiv = document.createElement('div');
-        albumDiv.classList.add('album');
+      const albumsPerPage = 6;
+      const totalPages = Math.ceil(data.length / albumsPerPage);
 
-        const coverElement = document.createElement('img');
-        coverElement.src = album.cover;
-        coverElement.alt = `Capa do ${album.title}`;
-        albumDiv.appendChild(coverElement);
+      for (let i = 1; i <= totalPages; i++) {
+        const pageOption = document.createElement('option');
+        pageOption.value = i;
+        pageOption.textContent = `Página ${i}`;
+        paginationSelect.appendChild(pageOption);
+      }
 
-        const albumInfoDiv = document.createElement('div');
-        albumInfoDiv.classList.add('album-info');
-
-        const titleElement = document.createElement('h2');
-        titleElement.classList.add('album-title');
-        titleElement.textContent = album.title;
-        albumInfoDiv.appendChild(titleElement);
-
-        const artistInfoElement = document.createElement('p');
-        artistInfoElement.classList.add('artist-info');
-        artistInfoElement.textContent = `${album.artist} | ${album.genre} | ${album.label}`;
-        albumInfoDiv.appendChild(artistInfoElement);
-
-        const averageRatingElement = document.createElement('div');
-        averageRatingElement.classList.add('average-rating');
-        const ratingSquareElement = document.createElement('span');
-        ratingSquareElement.classList.add('rating-square');
-        if (album.rating >= 70) {
-          ratingSquareElement.classList.add('excellent');
-        } else if (album.rating >= 60) {
-          ratingSquareElement.classList.add('good');
-        } else {
-          ratingSquareElement.classList.add('average');
-        }
-        ratingSquareElement.textContent = album.rating;
-        averageRatingElement.appendChild(ratingSquareElement);
-        averageRatingElement.innerHTML += ` / 100`;
-        albumInfoDiv.appendChild(averageRatingElement);
-
-        const reviewsElement = document.createElement('div');
-        reviewsElement.classList.add('reviews');
-        reviewsElement.textContent = `Baseado em ${album.reviews} avaliações`;
-        albumInfoDiv.appendChild(reviewsElement);
-
-        const reviewScoresElement = document.createElement('div');
-        reviewScoresElement.classList.add('review-scores');
-        album.reviewScores.forEach(score => {
-          const scoreElement = document.createElement('span');
-          scoreElement.classList.add('review-score');
-          if (score.score >= 70) {
-            scoreElement.classList.add('excellent');
-          } else if (score.score >= 60) {
-            scoreElement.classList.add('good');
-          } else {
-            scoreElement.classList.add('average');
-          }
-          const scoreValueElement = document.createElement('span');
-          scoreValueElement.textContent = score.score;
-          scoreElement.appendChild(scoreValueElement);
-
-          const sourceElement = document.createElement('div');
-          sourceElement.classList.add('review-source');
-          sourceElement.textContent = score.source;
-          scoreElement.appendChild(sourceElement);
-
-          reviewScoresElement.appendChild(scoreElement);
-        });
-        albumInfoDiv.appendChild(reviewScoresElement);
-
-        albumDiv.appendChild(albumInfoDiv);
-        albumsContainer.appendChild(albumDiv);
+      paginationSelect.addEventListener('change', function () {
+        const selectedPage = parseInt(paginationSelect.value);
+        showPage(selectedPage);
       });
+
+      function showPage(pageNumber) {
+        albumsContainer.innerHTML = '';
+
+        const startIndex = (pageNumber - 1) * albumsPerPage;
+        const endIndex = startIndex + albumsPerPage;
+
+        const currentPageAlbums = data.slice(startIndex, endIndex);
+
+        currentPageAlbums.forEach(album => {
+          const albumDiv = document.createElement('div');
+          albumDiv.classList.add('album');
+
+          const coverElement = document.createElement('img');
+          coverElement.src = album.cover;
+          coverElement.alt = `Capa do ${album.title}`;
+          albumDiv.appendChild(coverElement);
+
+          const albumInfoDiv = document.createElement('div');
+          albumInfoDiv.classList.add('album-info');
+
+          const titleElement = document.createElement('h2');
+          titleElement.classList.add('album-title');
+          titleElement.textContent = album.title;
+          albumInfoDiv.appendChild(titleElement);
+
+          const artistInfoElement = document.createElement('p');
+          artistInfoElement.classList.add('artist-info');
+          artistInfoElement.textContent = `${album.artist} | ${album.genre} | ${album.label}`;
+          albumInfoDiv.appendChild(artistInfoElement);
+
+          const averageRatingElement = document.createElement('div');
+          averageRatingElement.classList.add('average-rating');
+          const ratingSquareElement = document.createElement('span');
+          ratingSquareElement.classList.add('rating-square');
+          if (album.rating >= 70) {
+            ratingSquareElement.classList.add('excellent');
+          } else if (album.rating >= 60) {
+            ratingSquareElement.classList.add('good');
+          } else {
+            ratingSquareElement.classList.add('average');
+          }
+          ratingSquareElement.textContent = album.rating;
+          averageRatingElement.appendChild(ratingSquareElement);
+          averageRatingElement.innerHTML += ` / 100`;
+          albumInfoDiv.appendChild(averageRatingElement);
+
+          const reviewsElement = document.createElement('div');
+          reviewsElement.classList.add('reviews');
+          reviewsElement.textContent = `Baseado em ${album.reviews} avaliações`;
+          albumInfoDiv.appendChild(reviewsElement);
+
+          const reviewScoresElement = document.createElement('div');
+          reviewScoresElement.classList.add('review-scores');
+          album.reviewScores.forEach(score => {
+            const scoreElement = document.createElement('span');
+            scoreElement.classList.add('review-score');
+            if (score.score >= 70) {
+              scoreElement.classList.add('excellent');
+            } else if (score.score >= 60) {
+              scoreElement.classList.add('good');
+            } else {
+              scoreElement.classList.add('average');
+            }
+            const scoreValueElement = document.createElement('span');
+            scoreValueElement.textContent = score.score;
+            scoreElement.appendChild(scoreValueElement);
+
+            const sourceElement = document.createElement('div');
+            sourceElement.classList.add('review-source');
+            sourceElement.textContent = score.source;
+            scoreElement.appendChild(sourceElement);
+
+            reviewScoresElement.appendChild(scoreElement);
+          });
+          albumInfoDiv.appendChild(reviewScoresElement);
+
+          albumDiv.appendChild(albumInfoDiv);
+          albumsContainer.appendChild(albumDiv);
+        });
+      }
+
+      showPage(1);
     })
     .catch(error => {
       console.error('Erro:', error);

@@ -1,5 +1,17 @@
 [
   {
+    "cover": "https://i.imgur.com/49TR7PM.jpeg",
+    "title": "Confessions Of A Broken Heart",
+    "artist": "Fiona",
+    "genre": "Pop/Rock",
+    "label": "Dawn Records",
+    "rating": 76,
+    "reviews": 2,
+    "reviewScores": [
+      {"source": "Pitchfork", "score": 74},
+      {"source": "NME", "score": 78}]
+  },
+  {
     "cover": "https://i.imgur.com/VSfImF5.png",
     "title": "I owe it to myself",
     "artist": "Owen Graham",
