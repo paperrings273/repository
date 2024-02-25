@@ -107,13 +107,13 @@
       margin: 0;
       padding: 0;
       color: #fff;
-      background-image: linear-gradient(to top, #191414 80%, #FFC0CB);
+      background-image: linear-gradient(to top, #191414 60%, #FFC0CB);
       overflow-x: hidden;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .container {
-      margin-top: 60px;
+      margin-top: 100px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -346,8 +346,8 @@
     }
 
     .menu-link {
-      color: inherit; /* Herda a cor do texto do pai */
-      text-decoration: none; /* Remove o sublinhado */
+      color: inherit;
+      text-decoration: none;
     }
 
   </style>
@@ -374,7 +374,6 @@
 <div class="container">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <!-- Slides serão adicionados aqui dinamicamente -->
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -388,13 +387,11 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   window.addEventListener('scroll', function() {
-    // Lógica de rolagem do cabeçalho
   });
 
   function populateAlbums(data) {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-    // Adiciona os slides dinamicamente
     data.forEach((album) => {
       const slide = document.createElement('div');
       slide.classList.add('swiper-slide');
@@ -431,10 +428,9 @@
       swiperWrapper.appendChild(slide);
     });
 
-    // Inicializa o Swiper
     const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3, // Mostrar 3 álbuns por página
-      spaceBetween: 30, // Espaço entre os slides
+      slidesPerView: 3,
+      spaceBetween: 30,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -446,7 +442,6 @@
     });
   }
 
-  // Fazer uma solicitação HTTP para o arquivo JSON
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {

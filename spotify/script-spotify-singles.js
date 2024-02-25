@@ -63,7 +63,7 @@ var tabelaDados = [
 
   {
     posicao: 9,
-    musica: "In The Garden",
+    musica: "The Garden",
     artista: "Owen Graham",
     imagem:
       "https://cdn.discordapp.com/attachments/1200979746297749656/1204441086244691968/owen-capa-1.png?ex=65e7332c&is=65d4be2c&hm=f3b3266f900b3bba9c365aa0b62d3b9ac78938e0d076c041dd52e2d0f9c357a0&"
