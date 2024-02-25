@@ -6,21 +6,158 @@
   <title>Álbuns e Avaliações</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      animation: fadeIn 1s forwards;
+
+    footer {
+      background-color: #333;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+
+    footer:hover{
+      color: #f0ad4e;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      z-index: 1;
+      margin-left: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a {
+      color: white;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 8px 8px;
+      text-decoration: none;
+      display: block;
+      border-radius: 15px;
+      background-color: #f0ad4e;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #77eeaa;
+      transition-duration: 1s;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transition-duration: 1s;
+    }
+
+    .dropbtn {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: white;
+      background-color: #77eeaa;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropbtn:hover {
+      background-color: #7ea;
+      transition-duration: 1s;
     }
 
     header {
-      background-color: black;
-      padding: 10px 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+      border-top: 5px solid;
+      border-image: linear-gradient(to right, #f0ad4e, #F2EDEB);
+      border-image-slice: 1;
       color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .header-content {
       display: flex;
       align-items: center;
-      position: static;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu-buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .menu-buttons button {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      background-color: #f0ad4e;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .menu-buttons button:hover {
+      background-color: #7ea;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .menu-link {
+      color: inherit; /* Herda a cor do texto do pai */
+      text-decoration: none; /* Remove o sublinhado */
+    }
+
+    body {
+      font-family: "Nunito Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(to top, #f8f8f8 70%, #f0ad4e);
       animation: fadeIn 1s forwards;
     }
 
@@ -32,17 +169,18 @@
     }
 
     .albums-container {
+      font-family: "Nunito Sans", sans-serif;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
       max-width: 1070px;
-      margin: 20px auto;
+      margin: 50px auto;
       animation: fadeIn 1s forwards;
     }
     .album {
       background-color: #fff;
       overflow: hidden;
-      border-radius: 5px;
+      border-radius: 15px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       padding: 20px;
       transition-duration: 1s;
@@ -57,25 +195,29 @@
       max-width: 300px;
       height: auto;
       margin-bottom: 10px;
-      border-radius: 5px;
+      border-radius: 15px;
     }
     .album-title {
+      font-family: "Nunito Sans", sans-serif;
       font-size: 22px;
       margin-top: -5px;
       margin-bottom: 5px;
     }
     .artist-info {
+      font-family: "Nunito Sans", sans-serif;
       font-size: 14px;
       color: #666;
       margin-top: -3px;
       margin-bottom: 10px;
     }
     .average-rating {
+      font-family: "Nunito Sans", sans-serif;
       font-size: 0px;
       margin-bottom: 10px;
       color: #333;
     }
     .rating-square {
+      font-family: "Nunito Sans", sans-serif;
       display: inline-block;
       width: 70px;
       height: 70px;
@@ -100,15 +242,18 @@
       color: #fff;
     }
     .reviews {
+      font-family: "Nunito Sans", sans-serif;
       font-size: 14px;
       color: #666;
       margin-bottom: 10px;
     }
     .review-scores {
+      font-family: "Nunito Sans", sans-serif;
       margin-top: 10px;
     }
 
     .review-score {
+      font-family: "Nunito Sans", sans-serif;
       display: inline-block;
       margin-right: 10px;
       padding: 5px 10px;
@@ -155,6 +300,9 @@
     }
 
     .pagination-container {
+      color: white;
+      font-family: "Nunito Sans", sans-serif;
+      margin-top: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -162,19 +310,40 @@
     }
 
     .pagination-label {
+      font-family: "Nunito Sans", sans-serif;
       margin-right: 10px;
     }
 
     .pagination-select {
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #333;
       padding: 5px 10px;
+      border-radius: 15px;
+      color: white;
+      border: none;
     }
+
   </style>
 </head>
 <body>
 
-<header>
-  <img class="logo" src="https://i.imgur.com/aJm25j3.png" alt="Logo">
-  <h1></h1>
+<header id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <button><a href="index.html" class="menu-link">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="spotify/hot100.html">Billboard Hot 100</a>
+          <a href="spotify/billboard200.html">Billboard 200</a>
+          <a href="spotify/singles.html">Spotify Global Singles</a>
+          <a href="spotify/albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+    </div>
+  </div>
 </header>
 
 <nav>
@@ -187,8 +356,6 @@
 </div>
 
 <div class="albums-container" id="albums-container"></div>
-
-<div class="back-to-home" onclick="window.location.href = 'index.html'">Home</div>
 
 <script>
   fetch('albums.json')

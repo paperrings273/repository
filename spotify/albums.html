@@ -13,8 +13,154 @@
     }
 
     html {
-      background: linear-gradient(to top, #69358C, #333333);
+      background-image: linear-gradient(to top, #191414 50%, #946AA6);
       background-attachment: fixed;
+    }
+
+    footer {
+      background-color: #333;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+
+    footer:hover{
+      color: #FFC0CB;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      z-index: 1;
+      margin-left: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a {
+      color: white;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 8px 8px;
+      text-decoration: none;
+      display: block;
+      border-radius: 15px;
+      background-color: #946AA6;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #77eeaa;
+      transition-duration: 1s;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transition-duration: 1s;
+    }
+
+    .dropbtn {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: white;
+      background-color: #77eeaa;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropbtn:hover {
+      background-color: #7ea;
+      transition-duration: 1s;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+      border-top: 5px solid;
+      border-image: linear-gradient(to right, #946AA6, #F2EDEB);
+      border-image-slice: 1;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu-buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .menu-buttons button {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      background-color: #946AA6;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .menu-buttons button:hover {
+      background-color: #7ea;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .menu-link {
+      color: inherit; /* Herda a cor do texto do pai */
+      text-decoration: none; /* Remove o sublinhado */
     }
 
     body {
@@ -25,7 +171,7 @@
     .container {
       position: relative;
       max-width: 800px;
-      margin: 20px auto;
+      margin: 150px auto;
       padding: 20px;
       background-color: #F2EDEB;
       border-radius: 5px;
@@ -175,6 +321,26 @@
   </style>
 </head>
 <body>
+
+<header id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <button><a href="../index.html" class="menu-link">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="hot100.html">Billboard Hot 100</a>
+          <a href="billboard200.html">Billboard 200</a>
+          <a href="singles.html">Spotify Global Songs</a>
+          <a href="albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="../metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+    </div>
+  </div>
+</header>
+
 <div class="container">
   <img class="circle-image" src="https://i.imgur.com/uWggx9r.png" alt="Circle Image">
   <h1 class="table-title"><script>February 11-16</script><br>Top Albums<br><span>Global</span></h1>
@@ -313,12 +479,11 @@
   </div>
 </div>
 
-<script src="script-spotify-albums.js"></script>
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
 
-<div class="button-container">
-  <a href="../index.html" class="button">Home</a>
-  <a href="singles.html" class="button">Top 10 Global Singles</a>
-</div>
+<script src="script-spotify-albums.js"></script>
 
 </body>
 </html>
