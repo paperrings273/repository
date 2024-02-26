@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    @font-face {
+      font-family: Spotify;
+      src: url('GothamBold.ttf') format('truetype');
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+      border-top: 5px solid;
+      border-image: linear-gradient(to right, #FFC0CB, #7ea);
+      border-image-slice: 1;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu-buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .menu-buttons button {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      background-color: #f1a5c0;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .menu-buttons button:hover{
+      background-color: #7ea;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    footer {
+      background-color: #333;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+
+    footer:hover{
+      color: #FFC0CB;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .album-cover:hover{
+      -webkit-filter: grayscale(100%);
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-image: linear-gradient(to top, #191414 60%, #FFC0CB);
+      overflow-x: hidden;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .container {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 50px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .section {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      background-color: #212121;
+      border-bottom: solid 5px #FFC0CB;
+      -moz-border-bottom-colors: #77eeaa;
+      border-radius: 15px;
+      max-width: 300px;
+      height: 100%;
+      transition: transform 0.3s ease, opacity 2s ease;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .section:hover{
+      transform: translateY(-10px);
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .swiper-slide {
+      width: 100%;
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-family: 'Nunito Sans', sans-serif;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    h2 {
+      margin-top: -10px;
+      color: #999999;
+      font-weight: lighter;
+      font-size: 16px;
+      font-family: 'Nunito Sans', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    h1:hover, h2:hover{
+      color: #FFC0CB;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .album-cover {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      transition-duration: 1s;
+    }
+
+    .feature-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feature-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .number-one img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .number-one-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .number-one-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      margin-top: -20px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #FFC0CB;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .section button {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      background-color: #f1a5c0;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    .section button:hover {
+      background-color: #7ea;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      z-index: 1;
+      margin-left: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a {
+      color: white;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 8px 8px;
+      text-decoration: none;
+      display: block;
+      border-radius: 15px;
+      background-color: #FFC0CB;
+      transition-duration: 1s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #77eeaa;
+      transition-duration: 1s;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transition-duration: 1s;
+    }
+
+    .dropbtn {
+      text-transform: uppercase;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: white;
+      background-color: #77eeaa;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transition-duration: 1s;
+    }
+
+    .dropbtn:hover {
+      background-color: #7ea;
+      transition-duration: 1s;
+    }
+
+    .menu-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      justify-content: center;
+    }
+
+    .artist-card {
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .artist-card img {
+      object-fit: cover;
+      width: 300px;
+      height: 500px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .artist-card:hover img {
+      transform: scale(1.1);
+      border-radius: 15px;
+    }
+
+    .artist-card h2 {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 25px;
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+  </style>
+</head>
+<body>
+<header id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="spotify/hot100.html">Billboard Hot 100</a>
+          <a href="spotify/billboard200.html">Billboard 200</a>
+          <a href="spotify/singles.html">Spotify Global Singles</a>
+          <a href="spotify/albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="artist-grid">
+    <div class="artist-card" onclick="window.location.href='linha_do_tempo_artista1.html'">
+      <img src="https://cdn.discordapp.com/attachments/852940143412772864/1211533075524362331/ENFNTS-TERRIBLES-dua-lipa-puma-shoot-palermo-2023-6.png?ex=65ee8b1a&is=65dc161a&hm=d4abd439084e9fdff1a0f1a4b72ad3738e80222052ab35a5b8ac2e6ee0ee3e3d&" alt="Artista 1">
+      <h2>Ava Thompson</h2>
+    </div>
+    <!-- Adicione mais cards de artistas conforme necessário -->
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
+
+</body>
+</html>

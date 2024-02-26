@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ava Thompson</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Adicione a biblioteca do Font Awesome -->
+  <link rel="stylesheet" href="ldt-avathompson.css">
+</head>
+<body>
+<header2 id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <button><a href="../../index.html" class="menu-link">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="hot100.html">Billboard Hot 100</a>
+          <a href="billboard200.html">Billboard 200</a>
+          <a href="singles.html">Spotify Global Songs</a>
+          <a href="albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="../../metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+    </div>
+  </div>
+</header2>
+<header class="artist-header">
+  <div class="artist-header-content">
+    <div class="artist-info">
+      <h1 id="artistName" class="artist-name">Ava Thompson</h1>
+      <p id="artistAge" class="artist-details">21 anos</p>
+      <p id="artistLocation" class="artist-details">Londres, Reino Unido</p>
+      <p id="artistRecordLabel" class="artist-details">Dawn Records</p>
+    </div>
+  </div>
+</header>
+<div class="timeline" id="timeline">
+</div>
+
+<script>
+  function displayTimelineEvents() {
+    const timeline = document.getElementById("timeline");
+    const eventsData = [
+      { year: 1, description: "Lançou seu primeiro álbum: House Of The Rising Sun.", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1210048161218039818/image.png?ex=65e9242b&is=65d6af2b&hm=983d20efc5332a9b8319550d5630851253d8eb4a622fe9487f72397354bf3d0e&"},
+      { year: 0, description: "Foi contratada pela gravadora Dawn Records.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1211532980322041887/2018-Dua-Lipa-Hot-for-GQ-HD-scaled.png?ex=65ee8b03&is=65dc1603&hm=99556621e0afd77fa0bbbf87ba536f79e828ca4e1cf0f8b0544bd51abc11f97f&"}
+    ];
+
+    eventsData.forEach(event => {
+      const eventDiv = document.createElement("div");
+      eventDiv.classList.add("timeline-event");
+
+      const eventDate = document.createElement("div");
+      eventDate.classList.add("event-date");
+      eventDate.textContent = event.year;
+      eventDiv.appendChild(eventDate);
+
+      const eventDetails = document.createElement("div");
+      eventDetails.classList.add("event-details");
+
+      const eventImage = document.createElement("div");
+      eventImage.classList.add("event-image");
+      const image = document.createElement("img");
+      image.src = event.image;
+      image.alt = "Event Image";
+      eventImage.appendChild(image);
+      eventDetails.appendChild(eventImage);
+
+      if (event.grammy) {
+        const grammyIcon = document.createElement("div");
+        grammyIcon.classList.add("grammy-icon");
+        eventDetails.appendChild(grammyIcon);
+      }
+
+      const eventDescription = document.createElement("div");
+      eventDescription.classList.add("event-description");
+      eventDescription.textContent = event.description;
+      eventDetails.appendChild(eventDescription);
+
+      eventDiv.appendChild(eventDetails);
+      timeline.appendChild(eventDiv);
+    });
+  }
+
+  displayTimelineEvents();
+</script>
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
+</body>
+</html>
