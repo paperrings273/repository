@@ -11,7 +11,7 @@
 <header2 id="header">
   <div class="header-content">
     <div class="menu-buttons">
-      <button><a href="../../index.html" class="menu-link">Home</a></button>
+      <button><a href="../../../index.html" class="menu-link">Home</a></button>
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
@@ -21,8 +21,9 @@
           <a href="albums.html">Spotify Global Albums</a>
         </div>
       </div>
-      <button><a href="../../metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="../../../metacritic.html" class="menu-link">Metacritic</a></button>
       <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+      <button><a href="../linhadotempo.html" class="menu-link">Artistas</a></button>
     </div>
   </div>
 </header2>
@@ -43,8 +44,8 @@
   function displayTimelineEvents() {
     const timeline = document.getElementById("timeline");
     const eventsData = [
-      { year: 1, description: "Lançou seu primeiro álbum: House Of The Rising Sun.", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1210048161218039818/image.png?ex=65e9242b&is=65d6af2b&hm=983d20efc5332a9b8319550d5630851253d8eb4a622fe9487f72397354bf3d0e&"},
-      { year: 0, description: "Foi contratada pela gravadora Dawn Records.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1211532980322041887/2018-Dua-Lipa-Hot-for-GQ-HD-scaled.png?ex=65ee8b03&is=65dc1603&hm=99556621e0afd77fa0bbbf87ba536f79e828ca4e1cf0f8b0544bd51abc11f97f&"}
+      { year: 1, description: "Lançou seu primeiro álbum: <strong>House Of The Rising Sun.</strong>", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1210048161218039818/image.png?ex=65e9242b&is=65d6af2b&hm=983d20efc5332a9b8319550d5630851253d8eb4a622fe9487f72397354bf3d0e&"},
+      { year: 0, description: "Foi contratada pela gravadora Dawn Records.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1211533075524362331/ENFNTS-TERRIBLES-dua-lipa-puma-shoot-palermo-2023-6.png?ex=65ee8b1a&is=65dc161a&hm=d4abd439084e9fdff1a0f1a4b72ad3738e80222052ab35a5b8ac2e6ee0ee3e3d&"}
     ];
 
     eventsData.forEach(event => {
@@ -69,13 +70,14 @@
 
       if (event.grammy) {
         const grammyIcon = document.createElement("div");
-        grammyIcon.classList.add("grammy-icon");
+        grammyIcon.classList.add("grammy-icon"); // Adiciona a classe .grammy-icon
         eventDetails.appendChild(grammyIcon);
       }
 
       const eventDescription = document.createElement("div");
       eventDescription.classList.add("event-description");
-      eventDescription.textContent = event.description;
+      // Configurar o innerHTML para permitir formatação HTML
+      eventDescription.innerHTML = event.description;
       eventDetails.appendChild(eventDescription);
 
       eventDiv.appendChild(eventDetails);

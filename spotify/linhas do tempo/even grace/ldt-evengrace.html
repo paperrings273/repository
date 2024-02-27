@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Even Grace</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="ldt-evengrace.css">
+</head>
+<body>
+<header2 id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <button><a href="../../../index.html" class="menu-link">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="hot100.html">Billboard Hot 100</a>
+          <a href="billboard200.html">Billboard 200</a>
+          <a href="singles.html">Spotify Global Songs</a>
+          <a href="albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="../../../metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+      <button><a href="../linhadotempo.html" class="menu-link">Artistas</a></button>
+    </div>
+  </div>
+</header2>
+<header class="artist-header">
+  <div class="artist-header-content">
+    <div class="artist-info">
+      <h1 id="artistName" class="artist-name">Even Grace</h1>
+      <p id="artistAge" class="artist-details">28 anos</p>
+      <p id="artistLocation" class="artist-details">Londres, Reino Unido</p>
+      <p id="artistRecordLabel" class="artist-details">Dawn Records</p>
+    </div>
+  </div>
+</header>
+<div class="timeline" id="timeline">
+</div>
+
+<script>
+  function displayTimelineEvents() {
+    const timeline = document.getElementById("timeline");
+    const eventsData = [
+      { year: 5, description: "Lançamento do single: <strong>Beetlbum</strong>.", image: "https://cdn.discordapp.com/attachments/1131406821253464146/1207460628059390034/single1.png?ex=65e8f4d7&is=65d67fd7&hm=8f0431eb2cbe0b00c84565ce316bdbf7bb99e6f853d94601c8333833f5c92e1f&"},
+      { year: 4.2, description: "Venceu a categoria de <strong>Producer of the Year, Non-Classical</strong> na edição do Grammy Awards daquele ano.", image: "https://i8.amplience.net/i/naras/JackAntonoff-2023-grammys-acceptance-speech-GettyImages-1463248107.jpg?w=821&sm=c", grammy: true},
+      { year: 4.2, description: "Colaborou como produtor e compositor do álbum <strong>I owe it to myself</strong> do cantor <strong>Owen Graham</strong> que venceu a categoria de Album of the Year na edição do Grammy Awards daquele ano.", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1204441086244691968/owen-capa-1.png?ex=65e7332c&is=65d4be2c&hm=f3b3266f900b3bba9c365aa0b62d3b9ac78938e0d076c041dd52e2d0f9c357a0&"},
+      { year: 4.1, description: "Colaborou como produtor de algumas faixas do álbum <strong>When I Get Lost</strong> de <strong>Coonan Woolridge</strong>.", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1208454061439844352/whenigetlost.png?ex=65ec920c&is=65da1d0c&hm=be9c64a73febcb0634ef6704b172b488fcb4b0db4a32011aab112666673f8db1&"},
+      { year: 4, description: "Colaborou como produtor e compositor no álbum <strong>Becoming</strong> da banda <strong>Starlights</strong>S, que venceu a categoria de Album of the Year na edição do Grammy Awards daquele ano.", image: "https://cdn.discordapp.com/attachments/855246987255611405/1211806526759501854/sister-sister-sister-tour4.png?ex=65ef89c6&is=65dd14c6&hm=b0f0af38c4a3ba5b2224441f81fc966d196c8e89524aabec32ffcca2da0e6707&"},
+      { year: 3.1, description: "Realizou sua segunda turnê mundial intitulada <strong>We Are Who We Are Tour</strong> em suporte aos álbuns <strong>Purple Dream</strong> e <strong>A Brief Inquiry Into Online Relationships</strong>.", image: "https://media.discordapp.net/attachments/1200979746297749656/1208523242478903296/capa1-1.png?ex=65ecd27a&is=65da5d7a&hm=55bfaa29c47ce69d91274079a5776a408638a37cf0e445a6165be03902c6a631&=&format=webp&quality=lossless&width=468&height=468"},
+      { year: 3, description: "Lançamento do terceiro ábum do cantor: <strong>Purple Dream</strong>.", image: "https://media.discordapp.net/attachments/1200979746297749656/1208523242478903296/capa1-1.png?ex=65ecd27a&is=65da5d7a&hm=55bfaa29c47ce69d91274079a5776a408638a37cf0e445a6165be03902c6a631&=&format=webp&quality=lossless&width=468&height=468"},
+      { year: 2.1, description: "Vitória no Grammy Awards: <br><strong>A Brief Inquiry Into Online Relationships </strong> - Album of the Year", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1208523042888753245/29.png?ex=65ecd24a&is=65da5d4a&hm=e60e9d73ad32cf1b3f9b5a6b40f8bebcf2791e35fe9e411124d3cd2660d4f6c1&", grammy: true },
+      { year: 2, description: "Lançamento do segundo álbum do cantor: <strong>A Brief Inquiry Into Online Relationships.</strong>", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1208523042888753245/29.png?ex=65ecd24a&is=65da5d4a&hm=e60e9d73ad32cf1b3f9b5a6b40f8bebcf2791e35fe9e411124d3cd2660d4f6c1&" },
+      { year: 1.1, description: "Realizou sua primeira turnê mundial intitulada <strong>Gone Now Tour</strong>, em apoio ao seu álbum de estréia.", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1208522605364117515/8.png?ex=65ecd1e2&is=65da5ce2&hm=8a8b738e32d5442d58de4526157480e5fa097685f78c64c854b7d4101b5d2914&"},
+      { year: 1, description: "Lançamento do álbum de estréia do cantor: <strong>Gone Now.</strong>", image: "https://cdn.discordapp.com/attachments/1200979746297749656/1208522605364117515/8.png?ex=65ecd1e2&is=65da5ce2&hm=8a8b738e32d5442d58de4526157480e5fa097685f78c64c854b7d4101b5d2914&"},
+      { year: 0, description: "Fundou a Dawn Records.", image: "https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2021/007/TCF-016.jpg"}
+    ];
+
+    eventsData.forEach(event => {
+      const eventDiv = document.createElement("div");
+      eventDiv.classList.add("timeline-event");
+
+      const eventDate = document.createElement("div");
+      eventDate.classList.add("event-date");
+      eventDate.textContent = event.year;
+      eventDiv.appendChild(eventDate);
+
+      const eventDetails = document.createElement("div");
+      eventDetails.classList.add("event-details");
+
+      const eventImage = document.createElement("div");
+      eventImage.classList.add("event-image");
+      const image = document.createElement("img");
+      image.src = event.image;
+      image.alt = "Event Image";
+      eventImage.appendChild(image);
+      eventDetails.appendChild(eventImage);
+
+      if (event.grammy) {
+        const grammyIcon = document.createElement("div");
+        grammyIcon.classList.add("grammy-icon"); // Adiciona a classe .grammy-icon
+        eventDetails.appendChild(grammyIcon);
+      }
+
+      const eventDescription = document.createElement("div");
+      eventDescription.classList.add("event-description");
+      // Configurar o innerHTML para permitir formatação HTML
+      eventDescription.innerHTML = event.description;
+      eventDetails.appendChild(eventDescription);
+
+      eventDiv.appendChild(eventDetails);
+      timeline.appendChild(eventDiv);
+    });
+  }
+
+  // Chamar a função para exibir os eventos
+  displayTimelineEvents();
+</script>
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
+</body>
+</html>

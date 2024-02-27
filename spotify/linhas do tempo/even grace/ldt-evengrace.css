@@ -1,5 +1,13 @@
+:root {
+  --color1eg: #946AA6;
+  --color2eg: #4b427d;
+  --color3eg: #8759a5;
+  --color4eg: #dc76d5;
+  --color5eg: #ff9bff;
+}
+
 body{
-  background-image: linear-gradient(to top, #191414 40%, #732D33);
+  background-image: linear-gradient(to top, #191414 40%, var(--color3eg));
   width: 100%;
   margin: 0;
   padding: 0;
@@ -19,7 +27,7 @@ footer {
 }
 
 footer:hover{
-  color: #FFC0CB;
+  color: var(--color1eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -54,12 +62,12 @@ footer:hover{
   text-decoration: none;
   display: block;
   border-radius: 15px;
-  background-color: #732D33;
+  background-color: var(--color1eg);
   transition-duration: 1s;
 }
 
 .dropdown-content a:hover {
-  background-color: #77eeaa;
+  background-color: var(--color2eg);
   transition-duration: 1s;
 }
 
@@ -74,7 +82,7 @@ footer:hover{
   font-size: 14px;
   letter-spacing: 1px;
   color: white;
-  background-color: #77eeaa;
+  background-color: var(--color2eg);
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -85,7 +93,7 @@ footer:hover{
 }
 
 .dropbtn:hover {
-  background-color: #7ea;
+  background-color: var(--color2eg);
   transition-duration: 1s;
 }
 
@@ -94,7 +102,7 @@ header2 {
   text-align: center;
   background-color: #333;
   border-top: 5px solid;
-  border-image: linear-gradient(to right, #732D33, #F2EDEB);
+  border-image: linear-gradient(to right, var(--color1eg), var(--color2eg));
   border-image-slice: 1;
   color: #fff;
   position: fixed;
@@ -126,7 +134,7 @@ header2 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  background-color: #732D33;
+  background-color: var(--color1eg);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -137,7 +145,7 @@ header2 {
 }
 
 .menu-buttons button:hover {
-  background-color: #7ea;
+  background-color: var(--color2eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -152,9 +160,9 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(148, 106, 166, 0.4)), url("https://cdn.discordapp.com/attachments/852940143412772864/1211533075524362331/ENFNTS-TERRIBLES-dua-lipa-puma-shoot-palermo-2023-6.png?ex=65ee8b1a&is=65dc161a&hm=d4abd439084e9fdff1a0f1a4b72ad3738e80222052ab35a5b8ac2e6ee0ee3e3d&");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2021/007/TCF-016.jpg");
   background-size: cover;
-  background-position: top left;
+  background-position: center left;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -226,7 +234,7 @@ header2 {
 }
 
 .artist-details:hover, .artist-name:hover{
-  color: #732D33;
+  color: var(--color1eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -251,15 +259,15 @@ header2 {
   position: absolute;
   left: -100px;
   top: 0;
-  width: 60px; /* Largura fixa para o círculo */
-  height: 60px; /* Altura fixa para o círculo */
-  background-color: #732D33;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color1eg);
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
-  padding: 0; /* Remova o preenchimento para que o texto fique exatamente no centro */
-  border-radius: 50%; /* Isso garante que o elemento seja um círculo perfeito */
-  text-align: center; /* Alinha o texto horizontalmente */
-  line-height: 60px; /* Alinha o texto verticalmente */
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
   z-index: 1;
   margin-top: 50px;
   font-weight: bold;
@@ -275,8 +283,13 @@ header2 {
   padding-left: 50px;
 }
 
+.event-description:hover{
+  background-color:var(--color2eg);
+  cursor: pointer;
+}
+
 .event-image {
-  flex-shrink: 0; /* Evite que a imagem se expanda além do seu tamanho original */
+  flex-shrink: 0;
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -284,12 +297,14 @@ header2 {
   margin-right: 20px;
   z-index: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .event-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .event-description {
@@ -297,8 +312,8 @@ header2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
-  color: #cccccc;
-  background-color: #732D33;
+  color: white;
+  background-color: var(--color1eg);
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -314,7 +329,7 @@ header2 {
   bottom: 0;
   left: 0;
   width: 7px;
-  background: #732D33;
+  background: var(--color1eg);
   margin-left: -2px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -325,6 +340,7 @@ header2 {
 
 .event-date {
   z-index: 1;
+  cursor: pointer;
 }
 
 .timeline-event:hover .event-description {
@@ -343,24 +359,32 @@ header2 {
   left: 50%;
   width: 40px;
   height: 8px;
-  background: #732D33;
+  background: var(--color1eg);
   border-radius: 100px;
   z-index: 0;
   transition: background-color 0.3s ease;
 }
 
 .timeline-event:hover:before {
-  background-color: #732D33;
+  background-color: var(--color1eg);
 }
 
 .timeline-event:hover .event-image img {
   transform: scale(105%);
   transition: transform 0.3s ease;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 
 .event-image img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 
 .event-date {
@@ -380,5 +404,5 @@ header2 {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Grammy_Award_icon.svg/1200px-Grammy_Award_icon.svg.png'); /* Adicione o caminho para a imagem do ícone do Grammy */
   background-size: contain;
   background-position: center;
-  z-index: 3; /* Garanta que o ícone fique acima do conteúdo do evento */
+  z-index: 3;
 }
