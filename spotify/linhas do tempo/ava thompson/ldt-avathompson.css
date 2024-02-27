@@ -394,10 +394,11 @@ header2 {
 .grammy-icon {
   position: absolute;
   transform: translateX(-50%);
-  width: 60px;
+  width: 76px;
+  margin-left: 10px;
   margin-top: 10px;
   height: 90px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Grammy_Award_icon.svg/1200px-Grammy_Award_icon.svg.png'); /* Adicione o caminho para a imagem do ícone do Grammy */
+  background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&'); /* Adicione o caminho para a imagem do ícone do Grammy */
   background-size: contain;
   background-position: center;
   z-index: 3;

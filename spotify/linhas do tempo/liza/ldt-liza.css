@@ -1,12 +1,12 @@
 :root {
-  --color1liza: #0091ff;
-  --color2liza: #00c0ff;
-  --color3liza: #00c0ff;
-  --color4liza: #7affff;
+  --color1liza: #00a88f;
+  --color2liza: #00c34f;
+  --color3liza: #c5e44b;
+  --color4liza: #ffffe0;
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 40%, var(--color1liza));
+  background-image: linear-gradient(to top, #ffffe0 40%, var(--color1liza));
   width: 100%;
   margin: 0;
   padding: 0;
@@ -160,7 +160,7 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://www.officialcharts.com/sites/default/files/styles/content_column_tablet/public/legacy_images/media/657298/katy-perry-harleys-in-hawaii-1100.jpg?itok=gdnF8vOC");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://www.zint.online/wp-content/uploads/2020/08/KATY_000-1536x864.jpg");
   background-size: cover;
   background-position: top left;
   color: #fff;
@@ -394,10 +394,11 @@ header2 {
 .grammy-icon {
   position: absolute;
   transform: translateX(-50%);
-  width: 60px;
+  width: 76px;
+  margin-left: 10px;
   margin-top: 10px;
   height: 90px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Grammy_Award_icon.svg/1200px-Grammy_Award_icon.svg.png'); /* Adicione o caminho para a imagem do ícone do Grammy */
+  background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&'); /* Adicione o caminho para a imagem do ícone do Grammy */
   background-size: contain;
   background-position: center;
   z-index: 3;
