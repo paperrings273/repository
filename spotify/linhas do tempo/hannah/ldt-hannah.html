@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="ldt-hannah.css">
+</head>
+<body>
+<header2 id="header">
+  <div class="header-content">
+    <div class="menu-buttons">
+      <button><a href="../../../index.html" class="menu-link">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="../../hot100.html">Billboard Hot 100</a>
+          <a href="../../billboard200.html">Billboard 200</a>
+          <a href="../../singles.html">Spotify Global Songs</a>
+          <a href="../../albums.html">Spotify Global Albums</a>
+        </div>
+      </div>
+      <button><a href="../../../metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
+      <button><a href="../linhadotempo.html" class="menu-link">Artistas</a></button>
+    </div>
+  </div>
+</header2>
+<header class="artist-header">
+  <div class="artist-header-content">
+    <div class="artist-info">
+      <h1 id="artistName" class="artist-name">Hannah</h1>
+      <p id="artistAge" class="artist-details">27 anos</p>
+      <p id="artistLocation" class="artist-details">Houston, Estados Unidos</p>
+      <p id="artistRecordLabel" class="artist-details">Dawn Records</p>
+    </div>
+  </div>
+</header>
+<div class="timeline" id="timeline">
+</div>
+
+<script>
+  function displayTimelineEvents() {
+    const timeline = document.getElementById("timeline");
+    const eventsData = [
+      { year: 2.2, description: "Venceu os primeiros prêmios de sua carreira com o álbum <strong>VANGUARD</strong> e o single <strong>HYPERSONIC</strong>, incluindo no Grammy Awards.", image: "https://cdn.discordapp.com/attachments/855246987255611405/1211854445613293658/beyonce-grammys-record-win-020523-643a564f3a1d41d8a222df995b14bd19.jpg?ex=65efb667&is=65dd4167&hm=24d99b285d2d5b587022069840734cef9a8ed1148ee7ae7303c6f4c2ba565b00&", grammy: true},
+      { year: 2.1, description: "Lançou seu segundo álbum de estúdio: <strong>VANGUARD</strong>.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1208521413871403078/capa1.png?ex=65ecd0c6&is=65da5bc6&hm=34697068aba8de7654138f3e06bac50bc15ea7583f756e608d6e094b939205c6&"},
+      { year: 2, description: "Lançou o lead single <strong>HYPERSONIC</strong> dando início a sua nova era.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1208521415700250664/capa7.png?ex=65ecd0c6&is=65da5bc6&hm=54ceb81c9605a8757cfb5ab210bf8e478be3bc0718c9a68f66c958e25cb15077&"},
+      { year: 1.1, description: "Lançou seu álbum de estréia: <strong>The Lights Out</strong>.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1208521416232804352/hannah2.png?ex=65ecd0c6&is=65da5bc6&hm=09df2d8c1b214bf8a250bf04ce59afc605f9cc1446d08089edafe367ff48df54&"},
+      { year: 1, description: "Lançou seu single de estréia: <strong>Masquerade</strong>.", image: "https://cdn.discordapp.com/attachments/852940143412772864/1208521417163800628/hannah2-singlecapa1.png?ex=65ecd0c7&is=65da5bc7&hm=c82c7b8dbfcdb635e6dd4b73e834cbf37581d49719ee694d1be965be49eb51b1&"},
+      { year: 0, description: "Assinou contrato com a gravadora Dawn Records.", image: "https://cdn.discordapp.com/attachments/855246987255611405/1211854758055251988/06-beyonce-cr-Mason-Poole-billboard-1548.png?ex=65efb6b1&is=65dd41b1&hm=02e281d9ffc18624f2dc148793c6d028914117f998104acf1cc9e13a5045aeb5&"}
+    ];
+
+    eventsData.forEach(event => {
+      const eventDiv = document.createElement("div");
+      eventDiv.classList.add("timeline-event");
+
+      const eventDate = document.createElement("div");
+      eventDate.classList.add("event-date");
+      eventDate.textContent = event.year;
+      eventDiv.appendChild(eventDate);
+
+      const eventDetails = document.createElement("div");
+      eventDetails.classList.add("event-details");
+
+      const eventImage = document.createElement("div");
+      eventImage.classList.add("event-image");
+      const image = document.createElement("img");
+      image.src = event.image;
+      image.alt = "Event Image";
+      eventImage.appendChild(image);
+      eventDetails.appendChild(eventImage);
+
+      if (event.grammy) {
+        const grammyIcon = document.createElement("div");
+        grammyIcon.classList.add("grammy-icon"); // Adiciona a classe .grammy-icon
+        eventDetails.appendChild(grammyIcon);
+      }
+
+      const eventDescription = document.createElement("div");
+      eventDescription.classList.add("event-description");
+      // Configurar o innerHTML para permitir formatação HTML
+      eventDescription.innerHTML = event.description;
+      eventDetails.appendChild(eventDescription);
+
+      eventDiv.appendChild(eventDetails);
+      timeline.appendChild(eventDiv);
+    });
+  }
+
+  displayTimelineEvents();
+</script>
+<footer>
+  <p>© 2024 Star World Community - Beta</p>
+</footer>
+</body>
+</html>
