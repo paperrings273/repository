@@ -41,7 +41,7 @@ var tabelaDados = [
 
   {
     posicao: 6,
-    musica: "Here's To The Nights",
+    musica: "Here's For The Nights",
     artista: "Liz",
     imagem:
       "https://cdn.discordapp.com/attachments/1200979746297749656/1208443813907927070/CAPA.png?ex=65ec8881&is=65da1381&hm=6259940612eaf70c7ea83b0cee9394dd8b48861a0befb41bff2184249bf97186&"
