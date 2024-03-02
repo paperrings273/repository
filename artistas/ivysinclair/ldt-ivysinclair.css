@@ -1,11 +1,11 @@
 :root {
-  --color1h: #c50000;
-  --color2h: #fffdef;
-  --color3h: #e70000;
+  --color1ivy: #8983f3;
+  --color4ivy: #83cee0;
+  --color2ivy: #f6eedf;
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 40%,var(--color1h));
+  background-image: linear-gradient(to top, var(--color2ivy) 5%,var(--color1ivy) 70%);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ footer {
 }
 
 footer:hover{
-  color: var(--color1h);
+  color: var(--color1ivy);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -60,12 +60,12 @@ footer:hover{
   text-decoration: none;
   display: block;
   border-radius: 15px;
-  background-color: var(--color1h);
+  background-color: var(--color1ivy);
   transition-duration: 1s;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
   transition-duration: 1s;
 }
 
@@ -80,7 +80,7 @@ footer:hover{
   font-size: 14px;
   letter-spacing: 1px;
   color: white;
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -91,7 +91,7 @@ footer:hover{
 }
 
 .dropbtn:hover {
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
   transition-duration: 1s;
 }
 
@@ -100,7 +100,7 @@ header2 {
   text-align: center;
   background-color: #333;
   border-top: 5px solid;
-  border-image: linear-gradient(to right, var(--color1h), var(--color2h));
+  border-image: linear-gradient(to right, var(--color1ivy), var(--color4ivy));
   border-image-slice: 1;
   color: #fff;
   position: fixed;
@@ -133,7 +133,7 @@ header2 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  background-color: var(--color1h);
+  background-color: var(--color1ivy);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -144,7 +144,7 @@ header2 {
 }
 
 .menu-buttons button:hover {
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -159,9 +159,9 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/attachments/855246987255611405/1211854758055251988/06-beyonce-cr-Mason-Poole-billboard-1548.png?ex=65efb6b1&is=65dd41b1&hm=02e281d9ffc18624f2dc148793c6d028914117f998104acf1cc9e13a5045aeb5&");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/attachments/854830589375283270/1212520448344985610/cover-tate-mcrae-billboard-2023-bb15-michelle-genevieve-gonzales-1-1548.png?ex=65f222aa&is=65dfadaa&hm=e15d0dbaa64ba92ec7b6c115c364c1aff5a9ab76af320a5331c77b5c8bb8cbdc&");
   background-size: cover;
-  background-position: 10% 20%;
+  background-position: 10% 10%;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -233,7 +233,7 @@ header2 {
 }
 
 .artist-details:hover, .artist-name:hover{
-  color: var(--color1h);
+  color: var(--color1ivy);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -260,7 +260,7 @@ header2 {
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: var(--color1h);
+  background-color: var(--color1ivy);
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
   padding: 0;
@@ -311,7 +311,7 @@ header2 {
   letter-spacing: 1px;
   font-size: 14px;
   color: white;
-  background-color: var(--color1h);
+  background-color: var(--color1ivy);
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -322,7 +322,7 @@ header2 {
 }
 
 .event-description:hover{
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
 }
 
 .timeline:before {
@@ -333,7 +333,7 @@ header2 {
   bottom: 0;
   left: 0;
   width: 7px;
-  background-color: var(--color3h);
+  background-color: var(--color1ivy);
   margin-left: -2px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -362,14 +362,14 @@ header2 {
   left: 50%;
   width: 40px;
   height: 8px;
-  background: var(--color1h);
+  background: var(--color4ivy);
   border-radius: 100px;
   z-index: 0;
   transition: background-color 0.3s ease;
 }
 
 .timeline-event:hover:before {
-  background-color: var(--color3h);
+  background-color: var(--color4ivy);
 }
 
 .timeline-event:hover .event-image img {
@@ -404,8 +404,8 @@ header2 {
   width: 76px;
   margin-left: 10px;
   margin-top: 10px;
-  height: 78px;
-  background-image: url('https://www.purchase.edu/live/image/gid/22/width/300/height/300/crop/1/25380_Gramophone_Icon_Only_Full_Color-01.rev.1700328115.png'); /* Adicione o caminho para a imagem do ícone do Grammy */
+  height: 90px;
+  background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&'); /* Adicione o caminho para a imagem do ícone do Grammy */
   background-size: contain;
   background-position: center;
   z-index: 3;

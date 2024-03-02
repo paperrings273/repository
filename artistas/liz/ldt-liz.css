@@ -1,13 +1,11 @@
 :root {
-  --color1eg: #946AA6;
-  --color2eg: #4b427d;
-  --color3eg: #8759a5;
-  --color4eg: #dc76d5;
-  --color5eg: #ff9bff;
+  --color1liz: #5e585d;
+  --color4liz: #dbc2ca;
+  --color2liz: #dbc2ca;
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 40%, var(--color3eg));
+  background-image: linear-gradient(to top, #ffffe0 5%,var(--color1liz) 95%);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -27,7 +25,7 @@ footer {
 }
 
 footer:hover{
-  color: var(--color1eg);
+  color: var(--color1liz);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -62,12 +60,12 @@ footer:hover{
   text-decoration: none;
   display: block;
   border-radius: 15px;
-  background-color: var(--color1eg);
+  background-color: var(--color1liz);
   transition-duration: 1s;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--color2eg);
+  background-color: var(--color4liz);
   transition-duration: 1s;
 }
 
@@ -82,7 +80,7 @@ footer:hover{
   font-size: 14px;
   letter-spacing: 1px;
   color: white;
-  background-color: var(--color2eg);
+  background-color: var(--color4liz);
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -93,7 +91,7 @@ footer:hover{
 }
 
 .dropbtn:hover {
-  background-color: var(--color2eg);
+  background-color: var(--color2liz);
   transition-duration: 1s;
 }
 
@@ -102,7 +100,7 @@ header2 {
   text-align: center;
   background-color: #333;
   border-top: 5px solid;
-  border-image: linear-gradient(to right, var(--color1eg), var(--color2eg));
+  border-image: linear-gradient(to right, var(--color1liz), var(--color4liz));
   border-image-slice: 1;
   color: #fff;
   position: fixed;
@@ -135,7 +133,7 @@ header2 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  background-color: var(--color1eg);
+  background-color: var(--color1liz);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -146,7 +144,7 @@ header2 {
 }
 
 .menu-buttons button:hover {
-  background-color: var(--color2eg);
+  background-color: var(--color4liz);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -161,9 +159,9 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2021/007/TCF-016.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/ZmsLcF6.jpeg");
   background-size: cover;
-  background-position: center left;
+  background-position: 10% 10%;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -235,7 +233,7 @@ header2 {
 }
 
 .artist-details:hover, .artist-name:hover{
-  color: var(--color1eg);
+  color: var(--color1liz);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -262,7 +260,7 @@ header2 {
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: var(--color1eg);
+  background-color: var(--color1liz);
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
   padding: 0;
@@ -273,6 +271,7 @@ header2 {
   margin-top: 50px;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -282,11 +281,6 @@ header2 {
   align-items: center;
   position: relative;
   padding-left: 50px;
-}
-
-.event-description:hover{
-  background-color:var(--color2eg);
-  cursor: pointer;
 }
 
 .event-image {
@@ -305,7 +299,10 @@ header2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 
 .event-description {
@@ -314,23 +311,29 @@ header2 {
   letter-spacing: 1px;
   font-size: 14px;
   color: white;
-  background-color: var(--color1eg);
+  background-color: var(--color1liz);
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.5;
   position: relative;
   z-index: 1;
+  cursor: pointer;
+}
+
+.event-description:hover{
+  background-color: #3a363a;
 }
 
 .timeline:before {
+  transition: 1s;
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 7px;
-  background: var(--color1eg);
+  background-color: var(--color1liz);
   margin-left: -2px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -341,7 +344,6 @@ header2 {
 
 .event-date {
   z-index: 1;
-  cursor: pointer;
 }
 
 .timeline-event:hover .event-description {
@@ -360,14 +362,14 @@ header2 {
   left: 50%;
   width: 40px;
   height: 8px;
-  background: var(--color1eg);
+  background: var(--color4liz);
   border-radius: 100px;
   z-index: 0;
   transition: background-color 0.3s ease;
 }
 
 .timeline-event:hover:before {
-  background-color: var(--color1eg);
+  background-color: var(--color4liz);
 }
 
 .timeline-event:hover .event-image img {
@@ -404,6 +406,19 @@ header2 {
   margin-top: 10px;
   height: 90px;
   background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&'); /* Adicione o caminho para a imagem do ícone do Grammy */
+  background-size: contain;
+  background-position: center;
+  z-index: 3;
+}
+
+.vma-icon {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 73px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 90px;
+  background-image: url('https://i.pinimg.com/originals/d0/da/c2/d0dac2ec35e174e719027dc0dbdb018b.png'); /* Adicione o caminho para a imagem do ícone do Grammy */
   background-size: contain;
   background-position: center;
   z-index: 3;

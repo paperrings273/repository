@@ -1,11 +1,13 @@
 :root {
-  --color1h: #c50000;
-  --color2h: #fffdef;
-  --color3h: #e70000;
+  --color1eg: #946AA6;
+  --color2eg: #a5bdfd;
+  --color3eg: #77529e;
+  --color4eg: #dc76d5;
+  --color5eg: #ff9bff;
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 40%,var(--color1h));
+  background-image: linear-gradient(to top, #191414 60%, var(--color3eg));
   width: 100%;
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ footer {
 }
 
 footer:hover{
-  color: var(--color1h);
+  color: var(--color1eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -60,12 +62,12 @@ footer:hover{
   text-decoration: none;
   display: block;
   border-radius: 15px;
-  background-color: var(--color1h);
+  background-color: var(--color1eg);
   transition-duration: 1s;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--color3h);
+  background-color: var(--color2eg);
   transition-duration: 1s;
 }
 
@@ -80,7 +82,7 @@ footer:hover{
   font-size: 14px;
   letter-spacing: 1px;
   color: white;
-  background-color: var(--color3h);
+  background-color: var(--color2eg);
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -91,7 +93,7 @@ footer:hover{
 }
 
 .dropbtn:hover {
-  background-color: var(--color3h);
+  background-color: var(--color2eg);
   transition-duration: 1s;
 }
 
@@ -100,7 +102,7 @@ header2 {
   text-align: center;
   background-color: #333;
   border-top: 5px solid;
-  border-image: linear-gradient(to right, var(--color1h), var(--color2h));
+  border-image: linear-gradient(to right, var(--color1eg), var(--color2eg));
   border-image-slice: 1;
   color: #fff;
   position: fixed;
@@ -133,7 +135,7 @@ header2 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
-  background-color: var(--color1h);
+  background-color: var(--color1eg);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -144,7 +146,7 @@ header2 {
 }
 
 .menu-buttons button:hover {
-  background-color: var(--color3h);
+  background-color: var(--color2eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -159,9 +161,9 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/attachments/855246987255611405/1211854758055251988/06-beyonce-cr-Mason-Poole-billboard-1548.png?ex=65efb6b1&is=65dd41b1&hm=02e281d9ffc18624f2dc148793c6d028914117f998104acf1cc9e13a5045aeb5&");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2021/007/TCF-016.jpg");
   background-size: cover;
-  background-position: 10% 20%;
+  background-position: center left;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -233,7 +235,7 @@ header2 {
 }
 
 .artist-details:hover, .artist-name:hover{
-  color: var(--color1h);
+  color: var(--color1eg);
   cursor: pointer;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -260,7 +262,7 @@ header2 {
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: var(--color1h);
+  background-color: var(--color1eg);
   font-family: "Nunito Sans", sans-serif;
   color: #fff;
   padding: 0;
@@ -271,7 +273,6 @@ header2 {
   margin-top: 50px;
   font-weight: bold;
   font-size: 20px;
-  cursor: pointer;
 }
 
 
@@ -281,6 +282,11 @@ header2 {
   align-items: center;
   position: relative;
   padding-left: 50px;
+}
+
+.event-description:hover{
+  background-color:var(--color2eg);
+  cursor: pointer;
 }
 
 .event-image {
@@ -299,10 +305,7 @@ header2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .event-description {
@@ -311,29 +314,23 @@ header2 {
   letter-spacing: 1px;
   font-size: 14px;
   color: white;
-  background-color: var(--color1h);
+  background-color: var(--color1eg);
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.5;
   position: relative;
   z-index: 1;
-  cursor: pointer;
-}
-
-.event-description:hover{
-  background-color: var(--color3h);
 }
 
 .timeline:before {
-  transition: 1s;
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 7px;
-  background-color: var(--color3h);
+  background: var(--color1eg);
   margin-left: -2px;
   border-radius: 10px 10px 10px 10px;
 }
@@ -344,6 +341,7 @@ header2 {
 
 .event-date {
   z-index: 1;
+  cursor: pointer;
 }
 
 .timeline-event:hover .event-description {
@@ -362,14 +360,14 @@ header2 {
   left: 50%;
   width: 40px;
   height: 8px;
-  background: var(--color1h);
+  background: var(--color1eg);
   border-radius: 100px;
   z-index: 0;
   transition: background-color 0.3s ease;
 }
 
 .timeline-event:hover:before {
-  background-color: var(--color3h);
+  background-color: var(--color1eg);
 }
 
 .timeline-event:hover .event-image img {
