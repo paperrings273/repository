@@ -49,8 +49,8 @@ var tabelaDados = [
 
   {
     posicao: 7,
-    musica: "Trevor",
-    artista: "Inner Self",
+    musica: "Inner Self",
+    artista: "Trevor",
     imagem:
       "https://cdn.discordapp.com/attachments/1200979746297749656/1208475894344060928/coverksg.png?ex=65eca661&is=65da3161&hm=8634d26183136228e3b4f1f8f17ef566d53d992ad284182e0e76c73d64ae33b5&"
   },
