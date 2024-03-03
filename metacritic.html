@@ -198,6 +198,10 @@
       margin-bottom: 10px;
       border-radius: 15px;
     }
+
+    .album img:hover {
+      cursor: pointer;
+    }
     .album-title {
       font-family: "Nunito Sans", sans-serif;
       font-size: 22px;
@@ -216,7 +220,9 @@
       font-size: 0px;
       margin-bottom: 10px;
       color: #333;
+      cursor: pointer;
     }
+
     .rating-square {
       font-family: "Nunito Sans", sans-serif;
       display: inline-block;
@@ -269,6 +275,7 @@
     .review-score:hover{
       opacity: 1;
       transition-duration: 1s;
+      cursor: pointer;
     }
 
     .review-score span {
@@ -298,6 +305,7 @@
     .back-to-home:hover {
       opacity: 0.8;
       transition-duration: 1s;
+      cursor: pointer;
     }
 
     .pagination-container {
@@ -347,12 +355,48 @@
       }
     }
 
+    .album-title{
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+
+    .artist-info{
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-top: 7px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
     .album,
     .footer,
     .header {
       opacity: 0;
       animation: fadeIn 2s ease forwards;
     }
+
+    .black-box {
+      background-color: #D3D3D3;
+      border-radius: 3px 3px 3px 3px;
+      color: white;
+      padding: 2px 5px;
+      transition-duration: 1s;
+    }
+
+    .black-box:hover {
+      background-color: grey;
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+
+    .reviews{
+      font-family: "Nunito Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
 
   </style>
 </head>
@@ -437,15 +481,34 @@
           const albumInfoDiv = document.createElement('div');
           albumInfoDiv.classList.add('album-info');
 
-          const titleElement = document.createElement('h2');
+          const titleElement = document.createElement('album-title');
           titleElement.classList.add('album-title');
           titleElement.textContent = album.title;
           albumInfoDiv.appendChild(titleElement);
 
           const artistInfoElement = document.createElement('p');
           artistInfoElement.classList.add('artist-info');
-          artistInfoElement.textContent = `${album.artist} | ${album.genre} | ${album.label}`;
+
+          const artistSpan = document.createElement('span');
+          artistSpan.classList.add('black-box');
+          artistSpan.textContent = album.artist;
+
+          const genreSpan = document.createElement('span');
+          genreSpan.classList.add('black-box');
+          genreSpan.textContent = album.genre;
+
+          const labelSpan = document.createElement('span');
+          labelSpan.classList.add('black-box');
+          labelSpan.textContent = album.label;
+
+          artistInfoElement.appendChild(artistSpan);
+          artistInfoElement.appendChild(document.createTextNode('   '));
+          artistInfoElement.appendChild(genreSpan);
+          artistInfoElement.appendChild(document.createTextNode('   '));
+          artistInfoElement.appendChild(labelSpan);
+
           albumInfoDiv.appendChild(artistInfoElement);
+
 
           const averageRatingElement = document.createElement('div');
           averageRatingElement.classList.add('average-rating');
@@ -465,7 +528,7 @@
 
           const reviewsElement = document.createElement('div');
           reviewsElement.classList.add('reviews');
-          reviewsElement.textContent = `Baseado em ${album.reviews} avaliações`;
+          reviewsElement.textContent = `Baseado em ${album.reviews} avaliações:`;
           albumInfoDiv.appendChild(reviewsElement);
 
           const reviewScoresElement = document.createElement('div');
