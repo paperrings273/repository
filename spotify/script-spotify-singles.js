@@ -41,7 +41,7 @@ var tabelaDados = [
 
   {
     posicao: 6,
-    musica: "Here's For The Nights",
+    musica: "here's to the nights",
     artista: "Liz",
     imagem:
       "https://cdn.discordapp.com/attachments/1200979746297749656/1208443813907927070/CAPA.png?ex=65ec8881&is=65da1381&hm=6259940612eaf70c7ea83b0cee9394dd8b48861a0befb41bff2184249bf97186&"
@@ -65,14 +65,14 @@ var tabelaDados = [
 
   {
     posicao: 9,
-    musica: "You Broke Me First",
+    musica: "you broke me first",
     artista: "Ivy Sinclair",
     imagem:
       "https://cdn.discordapp.com/attachments/1200979781286625300/1205274467492696114/Purple_And_Red_Minimalist_CD_Cover.png?ex=65f375d1&is=65e100d1&hm=993ee7a31eb30e29e290cf1a9eab7e95e68f644d5ff098af21a14ede15b3b7ef&"
   },
 
   { posicao: 10,
-    musica: "Lunatic",
+    musica: "lunatic",
     artista: "Anthony",
     imagem:
       "https://cdn.discordapp.com/attachments/982022570469646366/1213518840009334885/like_a_killer.png?ex=65f5c47d&is=65e34f7d&hm=20b4e04a73c1be3ae276f5a2920cfdc4e1c87e63088b474c6b685bf604f47823&"
