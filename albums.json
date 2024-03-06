@@ -9,7 +9,8 @@
     "reviews": 1,
     "reviewScores": [
       {"source": "RollingStone", "score": 76}
-    ]
+    ],
+    "universalAcclaim": false
   },
 
   {
@@ -23,7 +24,8 @@
     "reviewScores": [
       {"source": "NME", "score": 78},
       {"source": "RollingStone", "score": 73}
-    ]
+    ],
+    "universalAcclaim": false
   },
 
   {
@@ -32,11 +34,14 @@
     "artist": "Liz",
     "genre": "Pop",
     "label": "Dawn Records",
-    "rating": 81,
-    "reviews": 2,
+    "rating": 76,
+    "reviews": 3,
     "reviewScores": [
       {"source": "NME", "score": 83},
-      {"source": "RollingStone", "score": 80}]
+      {"source": "Rolling Stone", "score": 80},
+      {"source": "The Guardian", "score": 65}
+    ],
+    "universalAcclaim": false
   },
 
   {
@@ -49,7 +54,9 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 74},
-      {"source": "NME", "score": 78}]
+      {"source": "NME", "score": 78}
+    ],
+    "universalAcclaim": false
   },
   {
     "cover": "https://i.imgur.com/VSfImF5.png",
@@ -61,7 +68,7 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 80},
-      {"source": "RollingStone", "score": 80}]
+      {"source": "Rolling Stone", "score": 80}]
   },
   {
     "cover": "https://i.imgur.com/j6v7gMU.png",
@@ -73,7 +80,9 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 75},
-      {"source": "RollingStone", "score": 78}]
+      {"source": "Rolling Stone", "score": 78}
+    ],
+    "universalAcclaim": false
   },
   {
     "cover": "https://i.imgur.com/cYWu7Yx.jpeg",
@@ -85,7 +94,9 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 75},
-      {"source": "RollingStone", "score": 78}]
+      {"source": "Rolling Stone", "score": 78}
+    ],
+    "universalAcclaim": false
   },
   {
     "cover": "https://i.imgur.com/3RlKr4c.jpeg",
@@ -97,7 +108,9 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 76},
-      {"source": "RollingStone", "score": 70}]
+      {"source": "Rolling Stone", "score": 70}
+    ],
+    "universalAcclaim": false
   },
   {
     "cover": "https://i.imgur.com/jXLvpzn.jpeg",
@@ -111,8 +124,9 @@
       {"source": "Pitchfork", "score": 86},
       {"source": "NME", "score": 85},
       {"source": "Fader", "score": 83},
-      {"source": "RollingStone", "score": 80}
-    ]
+      {"source": "Rolling Stone", "score": 80}
+    ],
+    "universalAcclaim": true
   },
   {
     "cover": "https://i.imgur.com/pXBYVJp.png",
@@ -124,6 +138,8 @@
     "reviews": 3,
     "reviewScores": [
       {"source": "Pitchfork", "score": 81},
-      {"source": "NME", "score": 82}]
+      {"source": "NME", "score": 82}
+    ],
+    "universalAcclaim": true
   }
 ]

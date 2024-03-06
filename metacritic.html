@@ -361,13 +361,18 @@
       color: black;
     }
 
-    .artist-info{
+    .artist-info > span,
+    .artist-info > p {
+      white-space: nowrap;
+      display: inline-block;
+      align-items: center;
+      margin-bottom: -10px;
       font-family: "Nunito Sans", sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
       margin-top: 7px;
       text-transform: uppercase;
-      margin-bottom: 13px;
+      flex-wrap: wrap;
     }
 
     .album,
@@ -383,10 +388,32 @@
       color: white;
       padding: 2px 5px;
       transition-duration: 1s;
+      margin-right: 5px;
     }
 
     .black-box:hover {
       background-color: grey;
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+
+    .green-box {
+      opacity: 0.6;
+      margin-right: 5px;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background-color: #5cb85c;
+      border-radius: 3px 3px 3px 3px;
+      color: white;
+      padding: 2px 5px;
+      transition-duration: 1s;
+    }
+
+    .green-box:hover {
+      opacity: 1;
+      background-color: #5cb85c;
       cursor: pointer;
       transition-duration: 1s;
     }
@@ -509,6 +536,15 @@
 
           albumInfoDiv.appendChild(artistInfoElement);
 
+          if (album.universalAcclaim) {
+            const universalAcclaimElement = document.createElement('span');
+            universalAcclaimElement.textContent = 'Universal Acclaim';
+            universalAcclaimElement.classList.add('green-box');
+
+            artistInfoElement.appendChild(document.createTextNode('   '));
+            artistInfoElement.appendChild(universalAcclaimElement);
+          }
+
 
           const averageRatingElement = document.createElement('div');
           averageRatingElement.classList.add('average-rating');
@@ -531,6 +567,7 @@
           reviewsElement.textContent = `Baseado em ${album.reviews} avaliações:`;
           albumInfoDiv.appendChild(reviewsElement);
 
+
           const reviewScoresElement = document.createElement('div');
           reviewScoresElement.classList.add('review-scores');
           album.reviewScores.forEach(score => {
@@ -543,6 +580,7 @@
             } else {
               scoreElement.classList.add('average');
             }
+
             const scoreValueElement = document.createElement('span');
             scoreValueElement.textContent = score.score;
             scoreElement.appendChild(scoreValueElement);
@@ -554,11 +592,13 @@
 
             reviewScoresElement.appendChild(scoreElement);
           });
+
           albumInfoDiv.appendChild(reviewScoresElement);
 
           albumDiv.appendChild(albumInfoDiv);
           albumsContainer.appendChild(albumDiv);
         });
+
       }
 
       showPage(1);
