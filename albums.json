@@ -18,9 +18,10 @@
     "artist": "Trevor",
     "genre": "Rap",
     "label": "Dawn Records",
-    "rating": 76,
-    "reviews": 2,
+    "rating": 78,
+    "reviews": 3,
     "reviewScores": [
+      {"source": "The Guardian", "score": 83},
       {"source": "Pitchfork", "score": 77},
       {"source": "Rolling Stone", "score": 76}
     ],
@@ -33,9 +34,10 @@
     "artist": "Ava Thompson",
     "genre": "Pop",
     "label": "Dawn Records",
-    "rating": 73,
-    "reviews": 3,
+    "rating": 75,
+    "reviews": 4,
     "reviewScores": [
+      {"source": "The Guardian", "score": 79},
       {"source": "NME", "score": 78},
       {"source": "Rolling Stone", "score": 73},
       {"source": "Pitchfork", "score": 70}
