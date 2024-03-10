@@ -545,6 +545,15 @@
             artistInfoElement.appendChild(universalAcclaimElement);
           }
 
+          if (album.generallyFavorableReviews) {
+            const generallyFavorableReviewsElement = document.createElement('span');
+            generallyFavorableReviewsElement.textContent = 'Generally Favorable Reviews';
+            generallyFavorableReviewsElement.classList.add('black-box');
+
+            artistInfoElement.appendChild(document.createTextNode('   '));
+            artistInfoElement.appendChild(generallyFavorableReviewsElement);
+          }
+
 
           const averageRatingElement = document.createElement('div');
           averageRatingElement.classList.add('average-rating');

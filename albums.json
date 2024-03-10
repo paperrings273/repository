@@ -10,6 +10,7 @@
     "reviewScores": [
       {"source": "Pitchfork", "score": 60}
     ],
+    "generallyFavorableReviews": false,
     "universalAcclaim": false
   },
   {
@@ -25,6 +26,7 @@
       {"source": "Pitchfork", "score": 77},
       {"source": "Rolling Stone", "score": 76}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
 
@@ -42,6 +44,7 @@
       {"source": "Rolling Stone", "score": 73},
       {"source": "Pitchfork", "score": 70}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
 
@@ -59,6 +62,7 @@
       {"source": "Rolling Stone", "score": 80},
       {"source": "The Guardian", "score": 65}
     ],
+    "generallyFavorableReviews": false,
     "universalAcclaim": false
   },
 
@@ -74,6 +78,7 @@
       {"source": "NME", "score": 78},
       {"source": "Pitchfork", "score": 74}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
   {
@@ -86,8 +91,12 @@
     "reviews": 2,
     "reviewScores": [
       {"source": "Pitchfork", "score": 80},
-      {"source": "Rolling Stone", "score": 80}]
+      {"source": "Rolling Stone", "score": 80}
+    ],
+    "generallyFavorableReviews": true,
+    "universalAcclaim": false
   },
+
   {
     "cover": "https://i.imgur.com/j6v7gMU.png",
     "title": "Soundscape",
@@ -100,8 +109,10 @@
       {"source": "Rolling Stone", "score": 78},
       {"source": "Pitchfork", "score": 75}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
+
   {
     "cover": "https://i.imgur.com/cYWu7Yx.jpeg",
     "title": "Love Signal",
@@ -114,6 +125,7 @@
       {"source": "Rolling Stone", "score": 78},
       {"source": "Pitchfork", "score": 75}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
   {
@@ -128,6 +140,7 @@
       {"source": "Pitchfork", "score": 76},
       {"source": "Rolling Stone", "score": 70}
     ],
+    "generallyFavorableReviews": true,
     "universalAcclaim": false
   },
   {
@@ -144,6 +157,7 @@
       {"source": "Fader", "score": 83},
       {"source": "Rolling Stone", "score": 80}
     ],
+    "generallyFavorableReviews": false,
     "universalAcclaim": true
   },
   {
@@ -158,6 +172,7 @@
       {"source": "NME", "score": 82},
       {"source": "Pitchfork", "score": 81}
     ],
-    "universalAcclaim": false
+    "generallyFavorableReviews": false,
+    "universalAcclaim": true
   }
 ]
