@@ -10,8 +10,7 @@
     "reviewScores": [
       {"source": "Pitchfork", "score": 60}
     ],
-    "generallyFavorableReviews": false,
-    "universalAcclaim": false
+    "mixedOrAverageReviews": true
   },
   {
     "cover": "https://cdn.discordapp.com/attachments/1200979746297749656/1208475894344060928/coverksg.png?ex=65f5e0e1&is=65e36be1&hm=2d35c9f74da700290d5f7ef9910627089894a6b641e6df9c8f0e128e634573c3&",
@@ -26,8 +25,7 @@
       {"source": "Pitchfork", "score": 77},
       {"source": "Rolling Stone", "score": 76}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
 
   {
@@ -44,8 +42,7 @@
       {"source": "Rolling Stone", "score": 73},
       {"source": "Pitchfork", "score": 70}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
 
   {
@@ -54,16 +51,16 @@
     "artist": "Liz",
     "genre": "Pop",
     "label": "Dawn Records",
-    "rating": 77,
-    "reviews": 4,
+    "rating": 79,
+    "reviews": 5,
     "reviewScores": [
+      {"source": "Variety", "score": 85},
       {"source": "NME", "score": 83},
       {"source": "Pitchfork", "score": 81},
       {"source": "Rolling Stone", "score": 80},
       {"source": "The Guardian", "score": 65}
     ],
-    "generallyFavorableReviews": false,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
 
   {
@@ -78,9 +75,9 @@
       {"source": "NME", "score": 78},
       {"source": "Pitchfork", "score": 74}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
+
   {
     "cover": "https://i.imgur.com/VSfImF5.png",
     "title": "I owe it to myself",
@@ -93,8 +90,7 @@
       {"source": "Pitchfork", "score": 80},
       {"source": "Rolling Stone", "score": 80}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
 
   {
@@ -109,8 +105,7 @@
       {"source": "Rolling Stone", "score": 78},
       {"source": "Pitchfork", "score": 75}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
 
   {
@@ -125,9 +120,9 @@
       {"source": "Rolling Stone", "score": 78},
       {"source": "Pitchfork", "score": 75}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
+
   {
     "cover": "https://i.imgur.com/3RlKr4c.jpeg",
     "title": "EVERYTHING IS FREEDOM",
@@ -140,9 +135,9 @@
       {"source": "Pitchfork", "score": 76},
       {"source": "Rolling Stone", "score": 70}
     ],
-    "generallyFavorableReviews": true,
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
+
   {
     "cover": "https://i.imgur.com/jXLvpzn.jpeg",
     "title": "Pure Feeling",
@@ -157,9 +152,9 @@
       {"source": "Fader", "score": 83},
       {"source": "Rolling Stone", "score": 80}
     ],
-    "generallyFavorableReviews": false,
     "universalAcclaim": true
   },
+
   {
     "cover": "https://i.imgur.com/pXBYVJp.png",
     "title": "Purple Dream",
@@ -172,7 +167,6 @@
       {"source": "NME", "score": 82},
       {"source": "Pitchfork", "score": 81}
     ],
-    "generallyFavorableReviews": false,
     "universalAcclaim": true
   }
 ]

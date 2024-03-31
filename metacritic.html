@@ -554,6 +554,15 @@
             artistInfoElement.appendChild(generallyFavorableReviewsElement);
           }
 
+          if (album.mixedOrAverageReviews) {
+            const mixedOrAverageReviewsElement = document.createElement('span');
+            mixedOrAverageReviewsElement.textContent = 'Mixed Or Average Reviews';
+            mixedOrAverageReviewsElement.classList.add('black-box');
+
+            artistInfoElement.appendChild(document.createTextNode('   '));
+            artistInfoElement.appendChild(mixedOrAverageReviewsElement);
+          }
+
 
           const averageRatingElement = document.createElement('div');
           averageRatingElement.classList.add('average-rating');
