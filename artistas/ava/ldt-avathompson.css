@@ -160,7 +160,7 @@ header2 {
 }
 
 .artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://cdn.discordapp.com/attachments/852940143412772864/1211533075524362331/ENFNTS-TERRIBLES-dua-lipa-puma-shoot-palermo-2023-6.png?ex=65ee8b1a&is=65dc161a&hm=d4abd439084e9fdff1a0f1a4b72ad3738e80222052ab35a5b8ac2e6ee0ee3e3d&");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/hNguQKS.png");
   background-size: cover;
   background-position: top left;
   color: #fff;
@@ -398,7 +398,7 @@ header2 {
   margin-left: 10px;
   margin-top: 10px;
   height: 90px;
-  background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&'); /* Adicione o caminho para a imagem do ícone do Grammy */
+  background-image: url('https://cdn.discordapp.com/attachments/855246987255611405/1211883647662301255/pngegg.png?ex=65efd199&is=65dd5c99&hm=7479359ce5a5791f4130956d98389ad3b29a07894abdd50c14d405154780a223&');
   background-size: contain;
   background-position: center;
   z-index: 3;
