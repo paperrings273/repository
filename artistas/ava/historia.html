@@ -70,13 +70,12 @@
 
       if (event.grammy) {
         const grammyIcon = document.createElement("div");
-        grammyIcon.classList.add("grammy-icon"); // Adiciona a classe .grammy-icon
+        grammyIcon.classList.add("grammy-icon");
         eventDetails.appendChild(grammyIcon);
       }
 
       const eventDescription = document.createElement("div");
       eventDescription.classList.add("event-description");
-      // Configurar o innerHTML para permitir formatação HTML
       eventDescription.innerHTML = event.description;
       eventDetails.appendChild(eventDescription);
 
