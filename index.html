@@ -420,12 +420,12 @@
       albumTitle.textContent = album.title;
 
       const playlistButton = document.createElement('button');
-      playlistButton.classList.add('menu-buttons'); // Adiciona a classe menu-buttons
+      playlistButton.classList.add('menu-buttons');
       playlistButton.textContent = 'LISTEN TO';
       playlistButton.addEventListener('click', () => window.open(album.playlistLink));
 
       const trackButton = document.createElement('button');
-      trackButton.classList.add('menu-buttons'); // Adiciona a classe menu-buttons
+      trackButton.classList.add('menu-buttons');
       trackButton.textContent = 'Track by Track';
       trackButton.addEventListener('click', () => window.open(album.trackLink));
 
