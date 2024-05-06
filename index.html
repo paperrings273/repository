@@ -141,16 +141,16 @@
     .section {
       flex: 1;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       background-color: #212121;
       border-bottom: solid 0px #FFC0CB;
       -moz-border-bottom-colors: #77eeaa;
       border-radius: 15px;
-      max-width: 300px;
+      width: 230px;
       height: 100%;
       transition: transform 0.3s ease, opacity 2s ease;
       position: relative;
-      margin-left: 30px;
+      margin-left: 0px;
       backdrop-filter: blur(10px);
     }
 
@@ -208,7 +208,7 @@
       width: 100%;
       max-width: 300px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+     /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);*/
       transition-duration: 1s;
     }
 
@@ -242,19 +242,21 @@
     .swiper-button-prev, .swiper-button-next {
       position: absolute;
       top: 50%;
-      width: auto;
-      height: auto;
-      padding: 10px;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
       margin-top: -20px;
-      border-radius: 10px;
+      border-radius: 100%;
       background-color: rgba(255, 255, 255, 0.5);
       color: #FFC0CB;
       z-index: 10;
       cursor: pointer;
+      transition-duration: 1s;
     }
 
     .swiper-button-prev:hover, .swiper-button-next:hover {
       background-color: rgba(255, 255, 255, 0.8);
+      transition-duration: 1s;
     }
 
     .swiper-button-prev {
@@ -370,6 +372,14 @@
       }
     }
 
+    .page-title {
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Commons Bold', sans-serif;
+      margin-top: 50px; /* Ajuste conforme necessário */
+      z-index: 999;
+    }
+
   </style>
 </head>
 <body>
@@ -391,7 +401,6 @@
     </div>
   </div>
 </header>
-
 <div class="container">
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -400,6 +409,44 @@
     <div class="swiper-button-prev"></div>
   </div>
 </div>
+
+<div style="display: flex; justify-content: center;">
+  <div style="width: 75%;"> <!-- Contêiner para controlar a largura -->
+    <div style="display: flex; justify-content: space-between;">
+
+      <div class="section" style="width: 45%; margin-left: 20px;">
+        <img src="https://11bitstudios.com/wp-content/uploads/2021/03/1280px-Metacritic_logo.svg-1.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 120px; transform: translateX(-50%);">
+        <h1>HIGHEST RATED ALBUM</h1>
+        <img class="album-cover" src="https://i.imgur.com/ic20ODJ.jpg" style="margin-left: -100px; width: 45%;" alt="Capa do Álbum">
+        <h1>Pure Feeling</h1>
+        <h2>Liza</h2>
+        <h1 style="font-size: 20px; font-family: 'Commons Regular', sans-serif; position: absolute; margin-top: -180px; margin-left: 150px;">Rating:</h1>
+        <h1 style="font-size: 70px; font-family: 'Commons Bold', sans-serif; position: absolute; margin-top: -170px; margin-left: 150px;">84</h1>
+      </div>
+
+      <div class="section" style="width: 45%; margin-left: 20px;">
+        <img src="https://11bitstudios.com/wp-content/uploads/2021/03/1280px-Metacritic_logo.svg-1.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 120px; transform: translateX(-50%);">
+        <h1>#1 IN THIS WEEK</h1>
+        <img class="album-cover" src="https://i.imgur.com/ELHgJyO.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
+        <h1>Eyes On Me</h1>
+        <h2>Aria</h2>
+        <h1 style="font-size: 100px; font-family: 'Commons Bold', sans-serif; -webkit-text-stroke: 3px #212121; position: absolute; margin-top: -175px; margin-left: 120px;">#1</h1>
+      </div>
+
+      <div class="section" style="width: 45%; margin-left: 20px;">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 100px; transform: translateX(-50%);">
+        <h1>#1 IN THIS WEEK</h1>
+        <img class="album-cover" src="https://i.imgur.com/ELHgJyO.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
+        <h1>Eyes On Me</h1>
+        <h2>Aria</h2>
+        <h1 style="font-size: 100px; font-family: 'Commons Bold', sans-serif; -webkit-text-stroke: 3px #212121; position: absolute; margin-top: -175px; margin-left: 120px;">#1</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <footer>
   <p>© 2024 Star World Community - Beta</p>
@@ -450,7 +497,7 @@
     });
 
     const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30,
       navigation: {
         nextEl: '.swiper-button-next',

@@ -715,9 +715,9 @@
           album.reviewScores.forEach(score => {
             const scoreElement = document.createElement('span');
             scoreElement.classList.add('review-score');
-            if (score.score >= 61) {
+            if (score.score >= 70) {
               scoreElement.classList.add('good');
-            } else if (score.score >= 40) {
+            } else if (score.score >= 50) {
               scoreElement.classList.add('average');
             } else {
               scoreElement.classList.add('bad');
@@ -736,30 +736,25 @@
 
             const totalReviews = album.reviews;
 
-            // Cálculo do número de avaliações boas, médias e ruins
             let goodReviews = 0;
             let averageReviews = 0;
             let badReviews = 0;
 
-            // Contagem das avaliações em cada categoria
             album.reviewScores.forEach(score => {
-              score.score >= 61 ? goodReviews++ : (score.score >= 60 ? averageReviews++ : badReviews++);
+              score.score >= 70 ? goodReviews++ : (score.score >= 50 ? averageReviews++ : badReviews++);
             });
 
-            // Criando elemento HTML para a barra
             const barContainer = document.createElement('div');
             barContainer.classList.add('review-bar-container');
 
-            // Criando um segmento para cada categoria de avaliação
-            // Criando um segmento para cada categoria de avaliação
             const goodSegment = document.createElement('div');
             goodSegment.classList.add('review-segment', 'good');
             goodSegment.style.width = `${(goodReviews / totalReviews) * 100}%`;
-            goodSegment.style.backgroundColor = '#5cb85c'; // Cor para avaliações boas
+            goodSegment.style.backgroundColor = '#5cb85c';
 
             const goodLabel = document.createElement('span');
             goodLabel.textContent = `${goodReviews} (${Math.round((goodReviews / totalReviews) * 100)}%)`;
-            goodLabel.style.color = '#ffffff'; // Cor do texto para avaliações boas
+            goodLabel.style.color = '#ffffff';
             goodSegment.appendChild(goodLabel);
 
             const averageSegment = document.createElement('div');
@@ -775,11 +770,11 @@
             const badSegment = document.createElement('div');
             badSegment.classList.add('review-segment', 'bad');
             badSegment.style.width = `${(badReviews / totalReviews) * 100}%`;
-            badSegment.style.backgroundColor = '#d9534f'; // Cor para avaliações ruins
+            badSegment.style.backgroundColor = '#d9534f';
 
             const badLabel = document.createElement('span');
             badLabel.textContent = `${badReviews} (${Math.round((badReviews / totalReviews) * 100)}%)`;
-            badLabel.style.color = '#ffffff'; // Cor do texto para avaliações ruins
+            badLabel.style.color = '#ffffff';
             badSegment.appendChild(badLabel);
 
             barContainer.appendChild(goodSegment);
