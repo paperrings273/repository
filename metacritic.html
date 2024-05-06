@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">]
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Álbuns e Avaliações</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
+
+    @font-face {
+      font-family: 'Commons Regular';
+      src: url('TT Commons Regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Commons Bold';
+      src: url('TT Commons Bold.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Commons DemiBold';
+      src: url('TT Commons DemiBold.otf') format('opentype');
+    }
 
     footer {
       background-color: #333;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
       color: #fff;
-      font-family: "Nunito Sans", sans-serif;
       text-transform: uppercase;
-      font-weight: lighter;
       letter-spacing: 1px;
       text-align: center;
       padding: 20px;
       margin-top: 70px;
+      font-family: 'Commons Regular', sans-serif;
     }
 
     footer:hover{
+      font-family: 'Commons Regular', sans-serif;
       color: #f0ad4e;
       cursor: pointer;
       -webkit-transition: all 1s;
@@ -47,7 +61,6 @@
 
     .dropdown-content a {
       color: white;
-      font-family: "Nunito Sans", sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 12px;
@@ -72,7 +85,6 @@
 
     .dropbtn {
       text-transform: uppercase;
-      font-family: "Nunito Sans", sans-serif;
       font-size: 14px;
       letter-spacing: 1px;
       color: white;
@@ -119,6 +131,7 @@
 
     .menu-buttons {
       margin-left: -15px;
+      font-family: 'TT Commons Regular', sans-serif;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -126,7 +139,7 @@
 
     .menu-buttons button {
       text-transform: uppercase;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'TT Commons Regular', sans-serif;
       font-size: 14px;
       letter-spacing: 2px;
       background-color: #f0ad4e;
@@ -155,23 +168,14 @@
     }
 
     body {
-      font-family: "Nunito Sans", sans-serif;
       margin: 0;
       padding: 0;
       background-image: linear-gradient(to top, #f8f8f8 70%, #f0ad4e);
       animation: fadeIn 1s forwards;
     }
 
-    .logo {
-      width: 8%;
-      height: 8%;
-      margin: 0 auto 10px;
-      display: block;
-    }
-
     .albums-container {
       transition: transform 0.3s ease, opacity 2s ease;
-      font-family: "Nunito Sans", sans-serif;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
       max-width: 1070px;
@@ -179,6 +183,7 @@
       display: grid;
       justify-content: center;
     }
+
     .album {
       background-color: #fff;
       overflow: hidden;
@@ -192,6 +197,7 @@
       transform: translateY(-10px);
       transition-duration: 1s;
     }
+
     .album img {
       max-width: 300px;
       height: auto;
@@ -202,21 +208,24 @@
     .album img:hover {
       cursor: pointer;
     }
+
     .album-title {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons Bold', sans-serif;
       font-size: 22px;
       margin-top: -5px;
       margin-bottom: 5px;
     }
+
     .artist-info {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons Bold', sans-serif;
       font-size: 14px;
       color: #666;
       margin-top: -3px;
       margin-bottom: 10px;
     }
+
     .average-rating {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons Bold', sans-serif;
       font-size: 0px;
       margin-bottom: 10px;
       color: #333;
@@ -224,43 +233,69 @@
     }
 
     .rating-square {
-      font-family: "Nunito Sans", sans-serif;
       display: inline-block;
       width: 70px;
       height: 70px;
-      line-height: 70px;
+      margin-top: 0px;
+      line-height: 65px;
       text-align: center;
       border-radius: 10px;
-      font-size: 34px;
-      font-weight: bold;
+      font-size: 40px;
       position: relative;
       margin-right: 5px;
     }
+
     .excellent {
       background-color: #5cb85c;
       color: #fff;
     }
+
     .good {
       background-color: #f0ad4e;
       color: #fff;
     }
+
     .average {
       background-color: #d9534f;
       color: #fff;
     }
+
     .reviews {
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 14px;
+      font-family: 'Commons Regular', sans-serif;
+      font-size: 17px;
+      position: absolute;
+      margin-top: -50px;
+      margin-left: 90px;
       color: #666;
       margin-bottom: 10px;
     }
+
+    .reviews0 {
+      position: relative;
+      font-family: 'Commons Regular', sans-serif;
+      font-size: 20px;
+      position: absolute;
+      margin-top: -70px;
+      margin-left: 90px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .album-info hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 10px 0;
+    }
+
+
     .review-scores {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons Regular', sans-serif;
       margin-top: 10px;
     }
 
     .review-score {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons Regular', sans-serif;
       display: inline-block;
       margin-right: 10px;
       padding: 5px 10px;
@@ -283,7 +318,6 @@
     }
     .review-source {
       font-size: 12px;
-      font-weight: bold;
       margin-bottom: 5px;
       text-align: center;
     }
@@ -318,7 +352,7 @@
       padding: 12px;
       border-radius: 15px;
       color: white;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'TT Commons Regular', sans-serif;
       margin-top: 150px;
       display: flex;
       align-items: center;
@@ -327,7 +361,7 @@
     }
 
     .pagination-label {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'TT Commons Regular', sans-serif;
       font-size: 12px;
       margin-right: 10px;
       text-transform: uppercase;
@@ -335,7 +369,7 @@
     }
 
     .pagination-select {
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'TT Commons Regular', sans-serif;
       font-size: 12px;
       background-color: #333;
       padding: 5px 10px;
@@ -356,9 +390,9 @@
     }
 
     .album-title{
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 20px;
-      color: black;
+      font-family: 'Commons DemiBold', sans-serif;
+      font-size: 22px;
+      color: #333333;
     }
 
     .artist-info > span,
@@ -367,7 +401,7 @@
       display: inline-block;
       align-items: center;
       margin-bottom: -10px;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'Commons DemiBold', sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
       margin-top: 7px;
@@ -380,6 +414,60 @@
     .header {
       opacity: 0;
       animation: fadeIn 2s ease forwards;
+    }
+
+    .review-bar-container {
+      position: absolute;
+      width: 200px;
+      display: flex;
+      height: 6px;
+      margin-top: 135px;
+      margin-left: 90px;
+      border-radius: 100px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .review-segment {
+      height: 100%;
+      width: 200px;
+    }
+
+    .good {
+      background-color: #5cb85c;
+    }
+
+    .average {
+      background-color: #f0ad4e;
+    }
+
+    .bad {
+      background-color: #d9534f;
+    }
+
+    .good {
+      background-color: #5cb85c;
+    }
+
+    .average {
+      background-color: #f0ad4e;
+    }
+
+    .bad {
+      background-color: #d9534f;
+    }
+
+    .review-segment span {
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+      background-color: ;
+      padding: 2px 5px;
+      opacity: 100%;
+      border-radius: 5px;
+      font-size: 10px;
+      white-space: nowrap;
+      z-index: 0;
     }
 
     .black-box {
@@ -400,7 +488,7 @@
     .green-box {
       opacity: 0.6;
       margin-right: 5px;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: 'TT Commons Regular', sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -416,12 +504,6 @@
       background-color: #5cb85c;
       cursor: pointer;
       transition-duration: 1s;
-    }
-
-    .reviews{
-      font-family: "Nunito Sans", sans-serif;
-      text-transform: uppercase;
-      font-size: 10px;
     }
 
 
@@ -497,6 +579,7 @@
         const currentPageAlbums = data.slice(startIndex, endIndex);
 
         currentPageAlbums.forEach(album => {
+
           const albumDiv = document.createElement('div');
           albumDiv.classList.add('album');
 
@@ -563,40 +646,46 @@
             artistInfoElement.appendChild(mixedOrAverageReviewsElement);
           }
 
-
           const averageRatingElement = document.createElement('div');
           averageRatingElement.classList.add('average-rating');
           const ratingSquareElement = document.createElement('span');
           ratingSquareElement.classList.add('rating-square');
-          if (album.rating >= 70) {
-            ratingSquareElement.classList.add('excellent');
-          } else if (album.rating >= 60) {
+          if (album.rating >= 61) {
             ratingSquareElement.classList.add('good');
-          } else {
+          } else if (album.rating >= 40) {
             ratingSquareElement.classList.add('average');
+          } else {
+            ratingSquareElement.classList.add('bad');
           }
           ratingSquareElement.textContent = album.rating;
           averageRatingElement.appendChild(ratingSquareElement);
           averageRatingElement.innerHTML += ` / 100`;
           albumInfoDiv.appendChild(averageRatingElement);
 
+          const reviewsElement0 = document.createElement('div');
+          reviewsElement0.classList.add('reviews0');
+          reviewsElement0.textContent = `Metascore`;
+          albumInfoDiv.appendChild(reviewsElement0);
+
           const reviewsElement = document.createElement('div');
           reviewsElement.classList.add('reviews');
-          reviewsElement.textContent = `Baseado em ${album.reviews} avaliações:`;
+          reviewsElement.textContent = `${album.reviews} reviews`;
           albumInfoDiv.appendChild(reviewsElement);
 
+          const separatorLine = document.createElement('hr');
+          albumInfoDiv.appendChild(separatorLine);
 
           const reviewScoresElement = document.createElement('div');
           reviewScoresElement.classList.add('review-scores');
           album.reviewScores.forEach(score => {
             const scoreElement = document.createElement('span');
             scoreElement.classList.add('review-score');
-            if (score.score >= 70) {
-              scoreElement.classList.add('excellent');
-            } else if (score.score >= 60) {
+            if (score.score >= 61) {
               scoreElement.classList.add('good');
-            } else {
+            } else if (score.score >= 40) {
               scoreElement.classList.add('average');
+            } else {
+              scoreElement.classList.add('bad');
             }
 
             const scoreValueElement = document.createElement('span');
@@ -609,10 +698,69 @@
             scoreElement.appendChild(sourceElement);
 
             reviewScoresElement.appendChild(scoreElement);
+
+            const totalReviews = album.reviews;
+
+            // Cálculo do número de avaliações boas, médias e ruins
+            let goodReviews = 0;
+            let averageReviews = 0;
+            let badReviews = 0;
+
+            // Contagem das avaliações em cada categoria
+            album.reviewScores.forEach(score => {
+              score.score >= 61 ? goodReviews++ : (score.score >= 60 ? averageReviews++ : badReviews++);
+            });
+
+            // Criando elemento HTML para a barra
+            const barContainer = document.createElement('div');
+            barContainer.classList.add('review-bar-container');
+
+            // Criando um segmento para cada categoria de avaliação
+            // Criando um segmento para cada categoria de avaliação
+            const goodSegment = document.createElement('div');
+            goodSegment.classList.add('review-segment', 'good');
+            goodSegment.style.width = `${(goodReviews / totalReviews) * 100}%`;
+            goodSegment.style.backgroundColor = '#5cb85c'; // Cor para avaliações boas
+
+            const goodLabel = document.createElement('span');
+            goodLabel.textContent = `${goodReviews} (${Math.round((goodReviews / totalReviews) * 100)}%)`;
+            goodLabel.style.color = '#ffffff'; // Cor do texto para avaliações boas
+            goodSegment.appendChild(goodLabel);
+
+            const averageSegment = document.createElement('div');
+            averageSegment.classList.add('review-segment', 'average');
+            averageSegment.style.width = `${(averageReviews / totalReviews) * 100}%`;
+            averageSegment.style.backgroundColor = '#f0ad4e'; // Cor para avaliações médias
+
+            const averageLabel = document.createElement('span');
+            averageLabel.textContent = `${averageReviews} (${Math.round((averageReviews / totalReviews) * 100)}%)`;
+            averageLabel.style.color = '#000000'; // Cor do texto para avaliações médias
+            averageSegment.appendChild(averageLabel);
+
+            const badSegment = document.createElement('div');
+            badSegment.classList.add('review-segment', 'bad');
+            badSegment.style.width = `${(badReviews / totalReviews) * 100}%`;
+            badSegment.style.backgroundColor = '#d9534f'; // Cor para avaliações ruins
+
+            const badLabel = document.createElement('span');
+            badLabel.textContent = `${badReviews} (${Math.round((badReviews / totalReviews) * 100)}%)`;
+            badLabel.style.color = '#ffffff'; // Cor do texto para avaliações ruins
+            badSegment.appendChild(badLabel);
+
+            barContainer.appendChild(goodSegment);
+            barContainer.appendChild(averageSegment);
+            barContainer.appendChild(badSegment);
+
+            const existingBar = albumDiv.querySelector('.review-bar-container');
+            if (existingBar) {
+              albumDiv.replaceChild(barContainer, existingBar);
+            } else {
+              albumDiv.appendChild(barContainer);
+            }
           });
 
-          albumInfoDiv.appendChild(reviewScoresElement);
 
+          albumInfoDiv.appendChild(reviewScoresElement);
           albumDiv.appendChild(albumInfoDiv);
           albumsContainer.appendChild(albumDiv);
         });
