@@ -143,7 +143,7 @@
       text-align: center;
       padding: 20px;
       background-color: #212121;
-      border-bottom: solid 5px #FFC0CB;
+      border-bottom: solid 0px #FFC0CB;
       -moz-border-bottom-colors: #77eeaa;
       border-radius: 15px;
       max-width: 300px;
@@ -151,6 +151,7 @@
       transition: transform 0.3s ease, opacity 2s ease;
       position: relative;
       margin-left: 30px;
+      backdrop-filter: blur(10px);
     }
 
     .section:hover{
@@ -278,23 +279,20 @@
       font-family: 'Commons Regular', sans-serif;
       font-size: 14px;
       letter-spacing: 2px;
-      background-color: #f1a5c0;
+      background: linear-gradient(to right, #f1a5c0, #7ea);
       border: none;
       color: #fff;
       cursor: pointer;
       padding: 10px 20px;
       border-radius: 20px;
       margin-top: 10px;
+      transition: background 1s;
     }
 
     .section button:hover {
-      background-color: #7ea;
+      background: #f1a5c0;
       cursor: pointer;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s;
+      transition: background 1s;
     }
 
     .dropdown {
