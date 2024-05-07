@@ -144,18 +144,18 @@
       padding: 30px;
       background-color: #212121;
       border-bottom: solid 0px #FFC0CB;
-      -moz-border-bottom-colors: #77eeaa;
       border-radius: 15px;
       width: 230px;
       height: 100%;
-      transition: transform 0.3s ease, opacity 2s ease;
       position: relative;
       margin-left: 0px;
-      backdrop-filter: blur(10px);
+      transition-duration: 2s;
     }
 
     .section:hover{
       transform: translateY(-10px);
+      transition-duration: 2s;
+      cursor: pointer;
     }
 
     .swiper-container {
@@ -183,7 +183,17 @@
       letter-spacing: 1px;
     }
 
-    h1:hover, h2:hover{
+    h3 {
+      margin-top: 15px;
+      border-top: 1px solid #333333;
+      padding-top: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: 'Commons Regular', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    h1:hover, h2:hover, h3:hover{
       color: #FFC0CB;
       cursor: pointer;
       -webkit-transition: all 1s;
@@ -276,25 +286,86 @@
       }
     }
 
-    .section button {
-      text-transform: uppercase;
-      font-family: 'Commons Regular', sans-serif;
-      font-size: 14px;
-      letter-spacing: 2px;
-      background: linear-gradient(to right, #f1a5c0, #7ea);
+    .section-button-spot {
+      position: absolute;
+      display: none;
+      justify-content: center;
+      top: 120px;
+      left: 90px;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background: #f1a5c0;
       border: none;
-      color: #fff;
+      border-radius: 50%;
       cursor: pointer;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-top: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, opacity 2s ease, background 2s ease;
+    }
+
+    .section-button-spot::before {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      background-image: url('https://static-00.iconduck.com/assets.00/spotify-icon-1024x1024-f6cjkgb7.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .section-button-spot:hover {
+      background: #7ea;
+      cursor: pointer;
       transition: background 1s;
     }
 
-    .section button:hover {
+    .section:hover .section-button-spot {
+      display: flex;
+      transition: transform 0.3s ease, opacity 2s ease, background 2s ease; /* Adicione a mesma transição aqui */
+    }
+
+    .section-button-dc {
+      position: absolute;
+      display: none;
+      justify-content: center;
+      top: 120px;
+      left: 150px;
+      align-items: center;
+      width: 50px;
+      height: 50px;
       background: #f1a5c0;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .section-button-dc::before {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .section-button-dc:hover {
+      background: #7ea;
       cursor: pointer;
       transition: background 1s;
+    }
+
+    .section:hover .section-button-dc {
+      display: flex;
+      transition-duration: 2s;
+      opacity: 1;
+    }
+
+    .section:hover .album-cover {
+      filter: grayscale(100%);
     }
 
     .dropdown {
@@ -376,7 +447,7 @@
       text-align: center;
       font-size: 24px;
       font-family: 'Commons Bold', sans-serif;
-      margin-top: 50px; /* Ajuste conforme necessário */
+      margin-top: 50px;
       z-index: 999;
     }
 
@@ -411,7 +482,7 @@
 </div>
 
 <div style="display: flex; justify-content: center;">
-  <div style="width: 75%;"> <!-- Contêiner para controlar a largura -->
+  <div style="width: 75%;">
     <div style="display: flex; justify-content: space-between;">
 
       <div class="section" style="width: 45%; margin-left: 20px;">
@@ -425,7 +496,7 @@
       </div>
 
       <div class="section" style="width: 45%; margin-left: 20px;">
-        <img src="https://11bitstudios.com/wp-content/uploads/2021/03/1280px-Metacritic_logo.svg-1.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 120px; transform: translateX(-50%);">
+        <img src="https://i.imgur.com/I5Tjuqg.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 120px; transform: translateX(-50%);">
         <h1>#1 IN THIS WEEK</h1>
         <img class="album-cover" src="https://i.imgur.com/ELHgJyO.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
         <h1>Eyes On Me</h1>
@@ -477,21 +548,24 @@
       const albumTitle = document.createElement('h2');
       albumTitle.textContent = album.title;
 
+      const labelName = document.createElement('h3');
+      labelName.textContent = album.label;
+
       const playlistButton = document.createElement('button');
-      playlistButton.classList.add('menu-buttons');
-      playlistButton.textContent = 'LISTEN TO';
+      playlistButton.classList.add('section-button-spot');
       playlistButton.addEventListener('click', () => window.open(album.playlistLink));
 
       const trackButton = document.createElement('button');
-      trackButton.classList.add('menu-buttons');
-      trackButton.textContent = 'Track by Track';
+      trackButton.classList.add('section-button-dc');
       trackButton.addEventListener('click', () => window.open(album.trackLink));
 
       albumInfo.appendChild(albumCover);
       albumInfo.appendChild(artistName);
       albumInfo.appendChild(albumTitle);
+      albumInfo.appendChild(labelName);
       albumInfo.appendChild(playlistButton);
       albumInfo.appendChild(trackButton);
+      /*albumInfo.appendChild(trackButton);*/
       slide.appendChild(albumInfo);
       swiperWrapper.appendChild(slide);
     });

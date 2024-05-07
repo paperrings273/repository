@@ -1,10 +1,22 @@
 [
   {
+    "cover": "https://i.imgur.com/dcXh0vd.png",
+    "title": "Forbidden Whispers",
+    "artist": "Conan Woolridge",
+    "genre": "Rock",
+    "label": "Sarlight®",
+    "rating": "tbd",
+    "reviews": 0,
+    "reviewScores": [
+    ],
+    "mixedOrAverageReviews": false
+  },
+  {
     "cover": "https://i.imgur.com/H2zKlDG.png",
     "title": "meaningless",
     "artist": "Anthony",
     "genre": "Rock",
-    "label": "Illuminati Records",
+    "label": "Illuminati®",
     "rating": 60,
     "reviews": 1,
     "reviewScores": [
@@ -17,7 +29,7 @@
     "title": "KIDS SEE GHOSTS",
     "artist": "Trevor",
     "genre": "Rap",
-    "label": "Dawn Records",
+    "label": "Starlight®",
     "rating": 78,
     "reviews": 3,
     "reviewScores": [
@@ -33,7 +45,7 @@
     "title": "House Of The Rising Sun",
     "artist": "Ava Thompson",
     "genre": "Pop",
-    "label": "Dawn Records",
+    "label": "Dawn®",
     "rating": 75,
     "reviews": 4,
     "reviewScores": [
@@ -49,8 +61,8 @@
     "cover": "https://i.imgur.com/4HlsfSc.png",
     "title": "everlasting",
     "artist": "Liz",
-    "genre": "Pop",
-    "label": "Dawn Records",
+    "genre": "Pop®",
+    "label": "Dawn",
     "rating": 79,
     "reviews": 5,
     "reviewScores": [
@@ -68,7 +80,7 @@
     "title": "Confessions Of A Broken Heart",
     "artist": "Fiona",
     "genre": "Pop/Rock",
-    "label": "Dawn Records",
+    "label": "Dawn®",
     "rating": 76,
     "reviews": 2,
     "reviewScores": [
@@ -83,7 +95,7 @@
     "title": "I owe it to myself",
     "artist": "Owen Graham",
     "genre": "Country",
-    "label": "Dawn Records",
+    "label": "Dawn®",
     "rating": 80,
     "reviews": 2,
     "reviewScores": [
@@ -98,7 +110,7 @@
     "title": "Soundscape",
     "artist": "Mayleen",
     "genre": "Pop",
-    "label": "Spotlight Records",
+    "label": "Spotlight®",
     "rating": 77,
     "reviews": 2,
     "reviewScores": [
@@ -113,7 +125,7 @@
     "title": "Love Signal",
     "artist": "Zion",
     "genre": "R&B",
-    "label": "Spotlight Records",
+    "label": "Spotlight®",
     "rating": 77,
     "reviews": 2,
     "reviewScores": [
@@ -128,7 +140,7 @@
     "title": "EVERYTHING IS FREEDOM",
     "artist": "Trevor",
     "genre": "Rap",
-    "label": "Spotlight Records",
+    "label": "Spotlight®",
     "rating": 73,
     "reviews": 2,
     "reviewScores": [
@@ -142,8 +154,8 @@
     "cover": "https://i.imgur.com/jXLvpzn.jpeg",
     "title": "Pure Feeling",
     "artist": "Liza",
-    "genre": "Pop",
-    "label": "Spotlight Records",
+    "genre": "Pop/Country",
+    "label": "Spotlight®",
     "rating": 84,
     "reviews": 4,
     "reviewScores": [
@@ -160,7 +172,7 @@
     "title": "Purple Dream",
     "artist": "Even Grace",
     "genre": "Rock",
-    "label": "Dawn Records",
+    "label": "Dawn®",
     "rating": 81,
     "reviews": 2,
     "reviewScores": [

@@ -197,6 +197,7 @@
       background: #333333;
       transform: translateY(-10px);
       transition-duration: 1s;
+      cursor: pointer;
     }
 
     .album img {
@@ -482,6 +483,17 @@
       background-color: #d9534f;
     }
 
+    .none {
+      background-color: #cccccc;
+      color: white;
+      transition-duration: 1s;
+    }
+
+    .album:hover .none{
+      background-color: #444444;
+      transition-duration: 1s;
+    }
+
     .review-segment span {
       left: 50%;
       top: 10px;
@@ -689,8 +701,10 @@
             ratingSquareElement.classList.add('good');
           } else if (album.rating >= 40) {
             ratingSquareElement.classList.add('average');
-          } else {
+          } else if (album.rating >= 0) {
             ratingSquareElement.classList.add('bad');
+          } else{
+            ratingSquareElement.classList.add('none');
           }
           ratingSquareElement.textContent = album.rating;
           averageRatingElement.appendChild(ratingSquareElement);
