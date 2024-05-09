@@ -57,67 +57,83 @@
     <p>SPOTIFY INFOS</p>
   </div>
   <div class="scroll-button up-button">&uarr;</div>
-  <table>
-    <br>
-    <h3>Álbuns</h3>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/MRg6Qhw.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Purple Dream</h1></td>
-      <td><h1 class="discography-album-info">814.478.017 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/eMFHf9b.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">A Brief Inquiry Into Online Relationships</h1></td>
-      <td><h1 class="discography-album-info">1.965.274.926 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/40ePcbw.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Gone Now</h1></td>
-      <td><h1 class="discography-album-info">565.693.181 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-
-    <tr>
-      <td><br></td>
-      <td><h3>Singles e EPs</h3></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/0ZbcWX7.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Alone In Kyoto</h1></td>
-      <td><h1 class="discography-album-info">77.630.489 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/eTjuhMK.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Beetlebum</h1></td>
-      <td><h1 class="discography-album-info">126.560.669 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/vaOJSMP.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Jesus Christ 2005 God Bless America</h1></td>
-      <td><h1 class="discography-album-info">383.736.843 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/eAH1XDf.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Love It If We Made It</h1></td>
-      <td><h1 class="discography-album-info">740.085.665 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-    <tr>
-      <td><img class="discography-album-img" src="https://i.imgur.com/ccO8i1u.png" alt="Capa do Álbum 1"></td>
-      <td><h1 class="discography-album-title">Give Yourself A Try</h1></td>
-      <td><h1 class="discography-album-info">595.634.359 streams</h1></td>
-      <td><h1 class="discography-album-info">℗ © Dawn Records</h1></td>
-    </tr>
-  </table>
+  <h3>Álbuns</h3>
+  <table id="albums-table"></table>
+  <h3><br>Singles e EPs</h3>
+  <table id="singles-table"></table>
   <div class="scroll-button down-button">&darr;</div>
 </div>
 
 <script src="header-script.js"></script>
+
+<script>
+  function displayAlbums() {
+    const albumsTable = document.getElementById("albums-table");
+    const albumsData = [
+      { title: "Purple Dream", streams: "814.478.017 streams", image: "https://i.imgur.com/MRg6Qhw.png" },
+      { title: "A Brief Inquiry Into Online Relationships", streams: "1.965.274.926 streams", image: "https://i.imgur.com/eMFHf9b.png" },
+      { title: "Gone Now", streams: "565.693.181 streams", image: "https://i.imgur.com/40ePcbw.png" }
+    ];
+
+    albumsData.forEach(album => {
+      const albumRow = createDiscographyRow(album.title, album.streams, album.image);
+      albumsTable.appendChild(albumRow);
+    });
+  }
+
+  function displaySingles() {
+    const singlesTable = document.getElementById("singles-table");
+    const singlesData = [
+      { title: "Alone In Kyoto", streams: "77.630.489 streams", image: "https://i.imgur.com/0ZbcWX7.png" },
+      { title: "Beetlebum", streams: "126.560.669 streams", image: "https://i.imgur.com/eTjuhMK.png" },
+      { title: "Jesus Christ 2005 God Bless America", streams: "383.736.843 streams", image: "https://i.imgur.com/vaOJSMP.png" },
+      { title: "Love It If We Made It", streams: "740.085.665 streams", image: "https://i.imgur.com/eAH1XDf.png" },
+      { title: "Give Yourself A Try", streams: "595.634.359 streams", image: "https://i.imgur.com/ccO8i1u.png" }
+    ];
+
+    singlesData.forEach(single => {
+      const singleRow = createDiscographyRow(single.title, single.streams, single.image);
+      singlesTable.appendChild(singleRow);
+    });
+  }
+  function createDiscographyRow(title, streams, image) {
+    const row = document.createElement("tr");
+
+    const albumImageCell = document.createElement("td");
+    const albumImage = document.createElement("img");
+    albumImage.src = image;
+    albumImage.alt = "Capa do Álbum";
+    albumImage.classList.add("discography-album-img");
+    albumImageCell.appendChild(albumImage);
+    row.appendChild(albumImageCell);
+
+    const titleCell = document.createElement("td");
+    const titleHeading = document.createElement("h1");
+    titleHeading.textContent = title;
+    titleHeading.classList.add("discography-album-title");
+    titleCell.appendChild(titleHeading);
+    row.appendChild(titleCell);
+
+    const streamsCell = document.createElement("td");
+    const streamsInfo = document.createElement("h1");
+    streamsInfo.textContent = streams;
+    streamsInfo.classList.add("discography-album-info");
+    streamsCell.appendChild(streamsInfo);
+    row.appendChild(streamsCell);
+
+    const recordLabelCell = document.createElement("td");
+    const recordLabelInfo = document.createElement("h1");
+    recordLabelInfo.textContent = "℗ © Dawn Records";
+    recordLabelInfo.classList.add("discography-album-info");
+    recordLabelCell.appendChild(recordLabelInfo);
+    row.appendChild(recordLabelCell);
+
+    return row;
+  }
+
+  displayAlbums();
+  displaySingles();
+</script>
 
 <script>
   function displayTimelineEvents() {
@@ -188,22 +204,21 @@
     const discographyDownButton = discographyContainer.querySelector(".down-button");
 
     timelineUpButton.addEventListener("click", function() {
-      timelineContainer.scrollTop -= 50; // Ajuste o valor conforme necessário
+      timelineContainer.scrollTop -= 200;
     });
 
     timelineDownButton.addEventListener("click", function() {
-      timelineContainer.scrollTop += 50; // Ajuste o valor conforme necessário
+      timelineContainer.scrollTop += 200;
     });
 
     discographyUpButton.addEventListener("click", function() {
-      discographyContainer.scrollTop -= 50; // Ajuste o valor conforme necessário
+      discographyContainer.scrollTop -= 200;
     });
 
     discographyDownButton.addEventListener("click", function() {
-      discographyContainer.scrollTop += 50; // Ajuste o valor conforme necessário
+      discographyContainer.scrollTop += 200;
     });
 
-    // Verifique se há rolagem para desativar os botões quando apropriado
     timelineContainer.addEventListener("scroll", function() {
       if (timelineContainer.scrollTop === 0) {
         timelineUpButton.classList.add("disabled");
