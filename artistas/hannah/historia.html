@@ -28,17 +28,108 @@
   </div>
 </header2>
 <header class="artist-header">
-  <div class="artist-header-content">
-    <div class="artist-info">
-      <h1 id="artistName" class="artist-name">Hannah</h1>
-      <p id="artistAge" class="artist-details">27 anos</p>
-      <p id="artistLocation" class="artist-details">Houston, Estados Unidos</p>
-      <p id="artistRecordLabel" class="artist-details">Dawn Records</p>
-    </div>
-  </div>
 </header>
-<div class="timeline" id="timeline">
+
+<div class="artist-info-box">
+  <h1 class="artist-title">Hannah</h1>
 </div>
+<div class="artist-photo-box">
+  <div class="artist-photo">
+  </div>
+  <div class="artist-details">
+    <h1 class="artist-details-cels">29 anos</h1>
+    <h1 class="artist-details-cels">Estados Unidos, Houston</h1>
+    <h1 class="artist-details-cels">℗ © Dawn Records</h1>
+  </div>
+</div>
+
+<div class="timeline-container">
+  <div class="border-top">
+    <p>LINHA DO TEMPO</p>
+  </div>
+  <div class="scroll-button up-button">&uarr;</div>
+  <div class="timeline" id="timeline"></div>
+  <div class="scroll-button down-button">&darr;</div>
+</div>
+
+<div class="discography-container">
+  <div class="border-top">
+    <p>SPOTIFY INFOS</p>
+  </div>
+  <div class="scroll-button up-button">&uarr;</div>
+  <h3>Álbuns</h3>
+  <table id="albums-table"></table>
+  <h3><br>Singles e EPs</h3>
+  <table id="singles-table"></table>
+  <div class="scroll-button down-button">&darr;</div>
+</div>
+
+<script src="header-script.js"></script>
+
+<script>
+  function displayAlbums() {
+    const albumsTable = document.getElementById("albums-table");
+    const albumsData = [
+      { title: "VANGUARD", streams: "3.248.672.983 streams", image: "https://i.imgur.com/fSJ9aJD.png" },
+      { title: "The Lights Out", streams: "2.271.709.637 streams", image: "https://i.imgur.com/HmUiXD0.png" }
+    ];
+
+    albumsData.forEach(album => {
+      const albumRow = createDiscographyRow(album.title, album.streams, album.image);
+      albumsTable.appendChild(albumRow);
+    });
+  }
+
+  function displaySingles() {
+    const singlesTable = document.getElementById("singles-table");
+    const singlesData = [
+      { title: "HYPERSONIC", streams: "782.980.792 streams", image: "https://i.imgur.com/Vv6glzz.png" },
+      { title: "Masquerade", streams: "601.473087 streams", image: "https://i.imgur.com/kQJJiZY.png" }
+    ];
+
+    singlesData.forEach(single => {
+      const singleRow = createDiscographyRow(single.title, single.streams, single.image);
+      singlesTable.appendChild(singleRow);
+    });
+  }
+  function createDiscographyRow(title, streams, image) {
+    const row = document.createElement("tr");
+
+    const albumImageCell = document.createElement("td");
+    const albumImage = document.createElement("img");
+    albumImage.src = image;
+    albumImage.alt = "Capa do Álbum";
+    albumImage.classList.add("discography-album-img");
+    albumImageCell.appendChild(albumImage);
+    row.appendChild(albumImageCell);
+
+    const titleCell = document.createElement("td");
+    const titleHeading = document.createElement("h1");
+    titleHeading.textContent = title;
+    titleHeading.classList.add("discography-album-title");
+    titleCell.appendChild(titleHeading);
+    row.appendChild(titleCell);
+
+    const streamsCell = document.createElement("td");
+    const streamsInfo = document.createElement("h1");
+    streamsInfo.textContent = streams;
+    streamsInfo.classList.add("discography-album-info");
+    streamsCell.appendChild(streamsInfo);
+    row.appendChild(streamsCell);
+
+    const recordLabelCell = document.createElement("td");
+    const recordLabelInfo = document.createElement("h1");
+    recordLabelInfo.textContent = "℗ © Dawn Records";
+    recordLabelInfo.classList.add("discography-album-info");
+    recordLabelCell.appendChild(recordLabelInfo);
+    row.appendChild(recordLabelCell);
+
+    return row;
+  }
+
+  displayAlbums();
+  displaySingles();
+</script>
 
 <script>
   function displayTimelineEvents() {
@@ -73,13 +164,12 @@
 
       if (event.grammy) {
         const grammyIcon = document.createElement("div");
-        grammyIcon.classList.add("grammy-icon"); // Adiciona a classe .grammy-icon
+        grammyIcon.classList.add("grammy-icon");
         eventDetails.appendChild(grammyIcon);
       }
 
       const eventDescription = document.createElement("div");
       eventDescription.classList.add("event-description");
-      // Configurar o innerHTML para permitir formatação HTML
       eventDescription.innerHTML = event.description;
       eventDetails.appendChild(eventDescription);
 
@@ -90,6 +180,65 @@
 
   displayTimelineEvents();
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const timelineContainer = document.querySelector(".timeline-container");
+    const timelineContent = timelineContainer.querySelector(".content");
+    const discographyContainer = document.querySelector(".discography-container");
+    const discographyContent = discographyContainer.querySelector(".content");
+
+    const timelineUpButton = timelineContainer.querySelector(".up-button");
+    const timelineDownButton = timelineContainer.querySelector(".down-button");
+    const discographyUpButton = discographyContainer.querySelector(".up-button");
+    const discographyDownButton = discographyContainer.querySelector(".down-button");
+
+    timelineUpButton.addEventListener("click", function() {
+      timelineContainer.scrollTop -= 200;
+    });
+
+    timelineDownButton.addEventListener("click", function() {
+      timelineContainer.scrollTop += 200;
+    });
+
+    discographyUpButton.addEventListener("click", function() {
+      discographyContainer.scrollTop -= 200;
+    });
+
+    discographyDownButton.addEventListener("click", function() {
+      discographyContainer.scrollTop += 200;
+    });
+
+    timelineContainer.addEventListener("scroll", function() {
+      if (timelineContainer.scrollTop === 0) {
+        timelineUpButton.classList.add("disabled");
+      } else {
+        timelineUpButton.classList.remove("disabled");
+      }
+
+      if (timelineContainer.scrollHeight - timelineContainer.clientHeight === timelineContainer.scrollTop) {
+        timelineDownButton.classList.add("disabled");
+      } else {
+        timelineDownButton.classList.remove("disabled");
+      }
+    });
+
+    discographyContainer.addEventListener("scroll", function() {
+      if (discographyContainer.scrollTop === 0) {
+        discographyUpButton.classList.add("disabled");
+      } else {
+        discographyUpButton.classList.remove("disabled");
+      }
+
+      if (discographyContainer.scrollHeight - discographyContainer.clientHeight === discographyContainer.scrollTop) {
+        discographyDownButton.classList.add("disabled");
+      } else {
+        discographyDownButton.classList.remove("disabled");
+      }
+    });
+  });
+</script>
+
 <footer>
   <p>© 2024 Star World Community - Beta</p>
 </footer>

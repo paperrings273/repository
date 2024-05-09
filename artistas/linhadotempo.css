@@ -15,15 +15,16 @@ h1 {
   justify-content: center;
 }
 
-.artist-card:hover {
-  transform: translateY(-5px);
-}
-
 .artist-card {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+}
+
+.artist-card:hover {
+  transform: rotate(10deg);
+  transition-duration: 1s;
 }
 
 .artist-card img {
@@ -32,6 +33,7 @@ h1 {
   height: 250px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition-duration: 1s;
 }
 
 .artist-card h2 {
