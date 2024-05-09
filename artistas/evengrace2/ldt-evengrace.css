@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 30%, var(--color1eg));
+  background-image: linear-gradient(to top, #191414 40%, var(--color1eg));
   width: 100%;
   margin: 0;
   padding: 0;
@@ -281,7 +281,7 @@ header2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 71.1%;
+  height: 450px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
@@ -295,14 +295,15 @@ header2 {
   position: fixed;
 }
 
-.artist-photo img {
+.artist-photo{
   background-size: cover;
+  background-image: url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2023/005/TCF-018.jpg");
   background-position: center;
   position:relative;
   z-index: 2;
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -478,10 +479,11 @@ header2 {
 }
 
 .timeline-container {
+  scroll-behavior: smooth;
   position: relative;
   max-width: 700px;
   margin-top: 50px;
-  margin-left: 20%;
+  margin-left: 21%;
   padding: 20px;
   background-color: #212121;
   border-radius: 10px;
@@ -510,6 +512,7 @@ header2 {
 }
 
 .discography-container {
+  scroll-behavior: smooth;
   position: relative;
   margin-top: -540px;
   margin-left: 1050px;
@@ -600,7 +603,6 @@ td {
 .scroll-button:hover {
   background-color: var(--color1eg);
   color: white;
-  transition-duration: 1s;
 }
 
 .scroll-button.disabled {
