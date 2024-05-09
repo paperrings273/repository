@@ -510,7 +510,7 @@ header2 {
 }
 
 .discography-container {
-  position: absolute;
+  position: relative;
   margin-top: -540px;
   margin-left: 76%;
   padding: 20px;
@@ -521,6 +521,7 @@ header2 {
   height: 300px;
   overflow-y: hidden;
   cursor: pointer;
+  margin-bottom: 250px;
 }
 
 .discography-album-img{
