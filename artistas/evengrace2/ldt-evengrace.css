@@ -1,13 +1,10 @@
 :root {
-  --color1eg: #946AA6;
-  --color2eg: #a5bdfd;
-  --color3eg: #77529e;
-  --color4eg: #dc76d5;
-  --color5eg: #ff9bff;
+  --color1eg: #f4a942;
+  --color2eg: #ffdc73;
 }
 
 body{
-  background-image: linear-gradient(to top, #191414 60%, var(--color3eg));
+  background-image: linear-gradient(to top, #191414 30%, var(--color1eg));
   width: 100%;
   margin: 0;
   padding: 0;
@@ -174,22 +171,108 @@ header2 {
   text-decoration: none;
 }
 
-.artist-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2021/007/TCF-016.jpg");
+.artist-info-box {
+  position: fixed;
+  top: 100px;
+  width: 200px;
+  transform: translateX(-50%);
+  background-color: var(--color1eg);
+  line-height: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  z-index: 100;
+  transition: 1s linear;
+  left: 10%;
+  box-shadow: 2px 2px 3px 0px #2b2b2b;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.artist-info-box:hover{
+  background-color: var(--color2eg);
+  transition-duration: 1s;
+}
+
+.artist-photo-box {
+  background-color: var(--color1eg);
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  top: 170px;
+  left: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 2px 2px 3px 0px #2b2b2b;
+  transition-duration: 1s;
+  position: fixed;
+  cursor: pointer;
+}
+
+.artist-photo-box:hover{
+  background-color: var(--color2eg);;
+}
+
+.artist-photo-box:hover .artist-photo{
+  transition-duration: 1s;
+  transform: rotate(45deg);
+}
+
+.artist-photo {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 0px #2b2b2b;
+  transition-duration: 1s;
+}
+
+.artist-details-cels{
+  background-color: black;
+  width: 200px;
+  margin-top: -5px;
+  font-size: 12px;
+  border-radius: 3px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  opacity: 0.35;
+}
+
+.artist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-details {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Commons Regular', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.artist-title{
+  font-family: 'Commons Regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.artist-header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2023/005/TCF-017.jpg");
   background-size: cover;
   background-position: center left;
   color: #fff;
   padding: 50px 0;
   text-align: center;
   width: 100%;
-  position: fixed;
   height: 350px;
-  z-index: 100;
-  transition: top 0.3s ease-in-out;
-}
-
-.artist-header.hidden {
-  top: -500px;
 }
 
 .artist-header::after {
@@ -198,7 +281,7 @@ header2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 71.1%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
@@ -209,12 +292,14 @@ header2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 .artist-photo img {
+  background-size: cover;
+  background-position: center;
   position:relative;
   z-index: 2;
-  object-fit: cover;
   width: 300px;
   height: 300px;
   border-radius: 15px;
@@ -226,6 +311,7 @@ header2 {
   z-index: 2;
   margin-left: 10px;
   margin-top: -20px;
+  position: fixed;
 }
 
 .artist-name {
@@ -235,33 +321,15 @@ header2 {
   margin-bottom: 10px;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.artist-details {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  font-size: 15px;
-  margin-bottom: -10px;
-  font-family: 'Commons Regular', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.artist-details:hover, .artist-name:hover{
-  color: var(--color1eg);
-  cursor: pointer;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  position: fixed;
 }
 
 .timeline {
   width: 100%;
-  max-width: 800px;
-  margin: 100px auto;
+  max-width: 600px;
   position: relative;
+  left: 115px;
+  margin-top: 50px;
 }
 
 .timeline-event {
@@ -326,6 +394,7 @@ header2 {
   letter-spacing: 1px;
   font-size: 14px;
   color: white;
+  max-width: 300px;
   background-color: var(--color1eg);
   padding: 15px;
   border-radius: 5px;
@@ -369,7 +438,7 @@ header2 {
   content: '';
   position: absolute;
   top: calc(50% - 4px);
-  left: 50%;
+  left: 10%;
   width: 40px;
   height: 8px;
   background: var(--color1eg);
@@ -408,6 +477,89 @@ header2 {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
+.timeline-container {
+  position: relative;
+  max-width: 700px;
+  margin-top: 50px;
+  margin-left: 20%;
+  padding: 20px;
+  background-color: #212121;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.border-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 30px solid var(--color1eg);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.border-top p {
+  position: absolute;
+  font-family: 'Commons Regular', sans-serif;
+  top: -40px;
+  left: 10px;
+  font-size: 15px;
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+.discography-container {
+  position: absolute;
+  margin-top: -540px;
+  margin-left: 76%;
+  padding: 20px;
+  width: 250px;
+  max-height: 500px;
+  background-color: #212121;
+  border-radius: 10px;
+  height: 300px;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.discography-album-img{
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.discography-album-title{
+  font-family: 'Commons Regular', sans-serif;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+h3{
+  font-family: 'Commons Regular', sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+  color: white;
+  margin-bottom: -5px;
+}
+
+td {
+  display: block;
+  text-align: left;
+}
+
+.discography-album-info{
+  font-family: 'Commons Regular', sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 5px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
 .grammy-icon {
   position: absolute;
   transform: translateX(-50%);
@@ -419,4 +571,39 @@ header2 {
   background-size: contain;
   background-position: center;
   z-index: 3;
+}
+
+.scroll-button {
+  position: sticky;
+  z-index: 5;
+  background-color: #333333;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #555555;
+  cursor: pointer;
+  border-radius: 100%;
+  font-weight: bold;
+  left: 100%;
+  transition-duration: 1s;
+}
+
+.up-button {
+  top: 25px;
+}
+
+.down-button {
+  bottom: 0;
+}
+
+.scroll-button:hover {
+  background-color: var(--color1eg);
+  color: white;
+  transition-duration: 1s;
+}
+
+.scroll-button.disabled {
+  pointer-events: none;
+  color: var(--color2eg);
 }
