@@ -452,7 +452,7 @@ header2 {
 }
 
 .timeline-event:hover .event-image img {
-  transform: scale(105%);
+  transform: rotate(10deg);
   transition: transform 0.3s ease;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -514,7 +514,7 @@ header2 {
   margin-top: -540px;
   margin-left: 76%;
   padding: 20px;
-  width: 250px;
+  width: 200px;
   max-height: 500px;
   background-color: #212121;
   border-radius: 10px;
