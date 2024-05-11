@@ -1,38 +1,14 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "House Of The Rising Sun",
-    artista: "Ava",
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge",
     imagem:
-    "https://i.imgur.com/GSbs5fC.png"
+    "https://i.imgur.com/dcXh0vd.png"
   },
 
   {
     posicao: 2,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor",
-    imagem:
-    "https://i.imgur.com/uWggx9r.png"
-  },
-
-  {
-    posicao: 3,
-    musica: "meaningless",
-    artista: "Anthony",
-    imagem:
-    "https://i.imgur.com/YPbjHzk.png"
-  },
-
-  {
-    posicao: 4,
-    musica: "EVERYTHING IS FREEDOM",
-    artista: "Trevor",
-    imagem:
-    "https://i.imgur.com/jfBRSg3.png"
-  },
-
-  {
-    posicao: 5,
     musica: "Confessions Of A Broken Heart (Deluxe)",
     artista: "Fiona",
     imagem:
@@ -40,23 +16,55 @@ var tabelaDados = [
   },
 
   {
-    posicao: 6,
-    musica: "The Life Of Greg",
+    posicao: 3,
+    musica: "The Little Mermaid (Original Motion Picture Soundtrack)",
+    artista: "Various Artists",
+    imagem:
+      "https://i.imgur.com/NwcVtDV.png"
+  },
+
+  {
+    posicao: 4,
+    musica: "House Of The Rising Sun",
+    artista: "Ava",
+    imagem:
+      "https://i.imgur.com/GSbs5fC.png"
+  },
+
+  {
+    posicao: 5,
+    musica: "KIDS SEE GHOSTS",
     artista: "Trevor",
     imagem:
-    "https://i.imgur.com/WPYcao8.png"
+    "https://i.imgur.com/uWggx9r.png"
+  },
+
+  {
+    posicao: 6,
+    musica: "meaningless",
+    artista: "Anthony",
+    imagem:
+    "https://i.imgur.com/YPbjHzk.png"
   },
 
   {
     posicao: 7,
-    musica: "HEARTACHE",
+    musica: "EVERYTHING IS FREEDOM",
     artista: "Trevor",
     imagem:
-    "https://i.imgur.com/cYZkT3T.jpeg"
+    "https://i.imgur.com/jfBRSg3.png"
   },
 
   {
     posicao: 8,
+    musica: "everlasting",
+    artista: "Liz",
+    imagem:
+    "https://i.imgur.com/4HlsfSc.png"
+  },
+
+  {
+    posicao: 9,
     musica: "i owe it to myself",
     artista: "Owen Graham",
     imagem:
@@ -64,18 +72,11 @@ var tabelaDados = [
   },
 
   {
-    posicao: 9,
-    musica: "When I Get Lost",
-    artista: "Conan Woolridge",
+    posicao: 10,
+    musica: "VANGUARD",
+    artista: "Hannah",
     imagem:
-    "https://i.imgur.com/8qWDiO7.png"
-  },
-
-  { posicao: 10,
-    musica: "everlasting",
-    artista: "Liz",
-    imagem:
-    "https://i.imgur.com/4HlsfSc.png"
+    "https://i.imgur.com/fSJ9aJD.png"
   },
 ];
 

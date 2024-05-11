@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Eyes On Me", artista: "Aria", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
-  { posicao: 2, musica: "Forbidden", artista: "Aroon", imagem: "" },
-  { posicao: 3, musica: "Soul For My Love", artista: "Ava", imagem: "" },
-  { posicao: 4, musica: "20", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 5, musica: "Inner Self", artista: "Trevor", imagem: "" },
-  { posicao: 6, musica: "feel like sheet", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 7, musica: "Feeling", artista: "Ava", imagem: "" },
-  { posicao: 8, musica: "Pleasure Addiction", artista: "Aroon", imagem: "" },
-  { posicao: 9, musica: "Beetlebum", artista: "Even Grace", imagem: "" },
-  { posicao: 10, musica: "soul", artista: "Anthony", imagem: "" },
+  { posicao: 1, musica: "My Game", artista: "Fiona", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
+  { posicao: 2, musica: "Boom Boom", artista: "Aria ft. Hannah & Liza", imagem: "" },
+  { posicao: 3, musica: "Memories From Home", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 4, musica: "Nasty", artista: "Zara", imagem: "" },
+  { posicao: 5, musica: "Part of Your World", artista: "Hannah", imagem: "" },
+  { posicao: 6, musica: "Alone In Kyoto", artista: "Even Grace", imagem: "" },
+  { posicao: 7, musica: "20", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 8, musica: "Eyes On Me", artista: "Aria", imagem: "" },
+  { posicao: 9, musica: "Heart's Odyssey", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 10, musica: "Between Two Worlds", artista: "Conan Woolridge", imagem: "" },
 ];
 
 function atualizarTabela() {
