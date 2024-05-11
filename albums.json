@@ -17,9 +17,10 @@
     "artist": "Anthony",
     "genre": "Rock",
     "label": "Illuminati®",
-    "rating": 60,
-    "reviews": 1,
+    "rating": 63,
+    "reviews": 2,
     "reviewScores": [
+      {"source": "NME", "score": 67},
       {"source": "Pitchfork", "score": 60}
     ],
     "mixedOrAverageReviews": true
