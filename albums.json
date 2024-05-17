@@ -1,5 +1,30 @@
 [
   {
+    "cover": "https://i.imgur.com/YOeKr4e.png",
+    "title": "Dreamscape",
+    "artist": "Aria",
+    "genre": "Pop",
+    "label": "Illuminati®",
+    "rating": "tbd",
+    "reviews": 0,
+    "reviewScores": [
+    ],
+    "universalAcclaim": false
+  },
+  {
+    "cover": "https://i.imgur.com/8QfuQKE.png",
+    "title": "What Ever Happened?",
+    "artist": "Even Grace",
+    "genre": "Rock",
+    "label": "Dawn®",
+    "rating": 83,
+    "reviews": 1,
+    "reviewScores": [
+      {"source": "NME", "score": 83}
+    ],
+    "universalAcclaim": true
+  },
+  {
     "cover": "https://i.imgur.com/dcXh0vd.png",
     "title": "Forbidden Whispers",
     "artist": "Conan Woolridge",
