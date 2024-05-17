@@ -4,12 +4,14 @@
     "title": "Forbidden Whispers",
     "artist": "Conan Woolridge",
     "genre": "Rock",
-    "label": "Sarlight®",
-    "rating": "tbd",
-    "reviews": 0,
+    "label": "Starlight®",
+    "rating": 86,
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Variety", "score": 90},
+      {"source": "Pitchfork", "score": 83}
     ],
-    "mixedOrAverageReviews": false
+    "universalAcclaim": true
   },
   {
     "cover": "https://i.imgur.com/H2zKlDG.png",
@@ -17,9 +19,10 @@
     "artist": "Anthony",
     "genre": "Rock",
     "label": "Illuminati®",
-    "rating": 63,
-    "reviews": 2,
+    "rating": 65,
+    "reviews": 3,
     "reviewScores": [
+      {"source": "Variety", "score": 70},
       {"source": "NME", "score": 67},
       {"source": "Pitchfork", "score": 60}
     ],
@@ -32,9 +35,10 @@
     "genre": "Rap",
     "label": "Starlight®",
     "rating": 78,
-    "reviews": 3,
+    "reviews": 4,
     "reviewScores": [
       {"source": "The Guardian", "score": 83},
+      {"source": "Variety", "score": 78},
       {"source": "Pitchfork", "score": 77},
       {"source": "Rolling Stone", "score": 76}
     ],
