@@ -9,22 +9,14 @@ var tabelaDados = [
 
   {
     posicao: 2,
-    musica: "Confessions Of A Broken Heart (Deluxe)",
+    musica: "KIDS SEE GHOSTS",
     artista: "Fiona",
     imagem:
-    "https://i.imgur.com/BbAnTz7.jpeg"
+    "https://i.imgur.com/uWggx9r.png"
   },
 
   {
     posicao: 3,
-    musica: "The Little Mermaid (Original Motion Picture Soundtrack)",
-    artista: "Various Artists",
-    imagem:
-      "https://i.imgur.com/NwcVtDV.png"
-  },
-
-  {
-    posicao: 4,
     musica: "House Of The Rising Sun",
     artista: "Ava",
     imagem:
@@ -32,19 +24,27 @@ var tabelaDados = [
   },
 
   {
-    posicao: 5,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor",
+    posicao: 4,
+    musica: "meaningless",
+    artista: "Anthony",
     imagem:
-    "https://i.imgur.com/uWggx9r.png"
+      "https://i.imgur.com/YPbjHzk.png"
+  },
+
+  {
+    posicao: 5,
+    musica: "i owe it to myself",
+    artista: "Owen Graham",
+    imagem:
+    "https://i.imgur.com/j6oMvSf.png"
   },
 
   {
     posicao: 6,
-    musica: "meaningless",
-    artista: "Anthony",
+    musica: "The Life Of Greg",
+    artista: "Trevor",
     imagem:
-    "https://i.imgur.com/YPbjHzk.png"
+    "https://i.imgur.com/WPYcao8.png"
   },
 
   {
@@ -57,26 +57,26 @@ var tabelaDados = [
 
   {
     posicao: 8,
-    musica: "everlasting",
-    artista: "Liz",
+    musica: "When I Get Lost",
+    artista: "Conan Woolridge",
     imagem:
-    "https://i.imgur.com/4HlsfSc.png"
+    "https://i.imgur.com/8qWDiO7.png"
   },
 
   {
     posicao: 9,
-    musica: "i owe it to myself",
-    artista: "Owen Graham",
+    musica: "Confessions Of A Broken Heart (Deluxe)\t",
+    artista: "Fiona",
     imagem:
-    "https://i.imgur.com/j6oMvSf.png"
+    "https://i.imgur.com/BbAnTz7.jpg"
   },
 
   {
     posicao: 10,
-    musica: "VANGUARD",
-    artista: "Hannah",
+    musica: "everlasting",
+    artista: "Liz",
     imagem:
-    "https://i.imgur.com/fSJ9aJD.png"
+    "https://i.imgur.com/4HlsfSc.png"
   },
 ];
 

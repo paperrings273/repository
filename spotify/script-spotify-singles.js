@@ -1,11 +1,10 @@
-// Variáveis para armazenar os dados da tabela
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "My Game",
-    artista: "Fiona",
+    musica: "Rumors",
+    artista: "Owen Graham",
     imagem:
-    "https://i.imgur.com/BybroZc.jpeg"
+    "https://i.imgur.com/dhc5YTC.jpeg"
   },
 
   {
@@ -18,55 +17,55 @@ var tabelaDados = [
 
   {
     posicao: 3,
-    musica: "Nasty",
-    artista: "Zara",
+    musica: "Memories From Home",
+    artista: "Conan Woolridge",
     imagem:
-      "https://i.imgur.com/OZA0Dl2.jpeg"
+      "https://i.imgur.com/dcXh0vd.png"
   },
 
   {
     posicao: 4,
-    musica: "Memories From Home",
-    artista: "Conan Woolridge",
+    musica: "Blind",
+    artista: "Anthony",
     imagem:
-      "https://i.imgur.com/65gXFm7.png"
+      "https://i.imgur.com/kmlHHte.png"
   },
 
   {
    posicao: 5,
-   musica: "Part of Your World (From \"The Little Mermaid\")",
-   artista: "Hannah",
+   musica: "Trevor",
+   artista: "Inner Self",
    imagem:
-     "https://i.imgur.com/xFVtiLZ.png"
+     "https://i.imgur.com/5kfkjb9.png"
 },
 
   {
     posicao: 6,
-    musica: "Alone In Kyoto",
-    artista: "Even Grace",
+    musica: "20",
+    artista: "Conan Woolridge",
     imagem:
-      "https://i.imgur.com/sNHOrPg.png"
+      "https://i.imgur.com/dcXh0vd.png"
   },
 
   {
     posicao: 7,
-    musica: "Eyes On Me",
-    artista: "Aria",
+    musica: "Alone in Kyoto",
+    artista: "Even Grace",
     imagem:
-    "https://i.imgur.com/DZh9I3s.png"
+    "https://i.imgur.com/sNHOrPg.png"
   },
 
   {
     posicao: 8,
-    musica: "20",
-    artista: "Conan Woolridge",
+    musica: "Eyes On Me",
+    artista: "Aria",
     imagem:
-      "https://i.imgur.com/fGm30Zb.png"
+      "https://i.imgur.com/DZh9I3s.png"
   },
 
   {
     posicao: 9,
-    musica: "Inner Self",
+    musica: "I May Destroy You",
     artista: "Trevor",
     imagem:
     "https://i.imgur.com/5kfkjb9.png"
@@ -74,10 +73,10 @@ var tabelaDados = [
 
   {
     posicao: 10,
-    musica: "Forbidden",
-    artista: "Aroon",
+    musica: "Chameleon's Serenade",
+    artista: "Conan Woolridge",
     imagem:
-    "https://i.imgur.com/710YKcD.png"
+    "https://i.imgur.com/dcXh0vd.png"
   },
 ];
 

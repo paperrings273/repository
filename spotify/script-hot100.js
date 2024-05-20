@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "My Game", artista: "Fiona", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
-  { posicao: 2, musica: "Boom Boom", artista: "Aria ft. Hannah & Liza", imagem: "" },
+  { posicao: 1, musica: "Rumors", artista: "Owen Graham", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
+  { posicao: 2, musica: "Boom Boom", artista: "Aria ft. Liza & Hannah", imagem: "" },
   { posicao: 3, musica: "Memories From Home", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 4, musica: "Nasty", artista: "Zara", imagem: "" },
-  { posicao: 5, musica: "Part of Your World", artista: "Hannah", imagem: "" },
-  { posicao: 6, musica: "Alone In Kyoto", artista: "Even Grace", imagem: "" },
-  { posicao: 7, musica: "20", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 8, musica: "Eyes On Me", artista: "Aria", imagem: "" },
-  { posicao: 9, musica: "Heart's Odyssey", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 10, musica: "Between Two Worlds", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 4, musica: "Blind", artista: "Anthony", imagem: "" },
+  { posicao: 5, musica: "20", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 6, musica: "Nasty", artista: "Zara", imagem: "" },
+  { posicao: 7, musica: "Alone in Kyoto", artista: "Even Grace", imagem: "" },
+  { posicao: 8, musica: "Chameleon's Serenade", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 9, musica: "I May Destroy You", artista: "Trevor", imagem: "" },
+  { posicao: 10, musica: "Inner Self", artista: "Trevor", imagem: "" },
 ];
 
 function atualizarTabela() {

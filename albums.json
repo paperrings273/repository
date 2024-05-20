@@ -5,11 +5,12 @@
     "artist": "Aria",
     "genre": "Pop",
     "label": "Illuminati®",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": 76,
+    "reviews": 1,
     "reviewScores": [
+      {"source": "NME", "score": 76}
     ],
-    "universalAcclaim": false
+    "generallyFavorableReviews": true
   },
   {
     "cover": "https://i.imgur.com/8QfuQKE.png",
@@ -17,10 +18,12 @@
     "artist": "Even Grace",
     "genre": "Rock",
     "label": "Dawn®",
-    "rating": 83,
-    "reviews": 1,
+    "rating": 84,
+    "reviews": 3,
     "reviewScores": [
-      {"source": "NME", "score": 83}
+      {"source": "Variety", "score": 88},
+      {"source": "NME", "score": 83},
+      {"source": "Pitchfork", "score": 82}
     ],
     "universalAcclaim": true
   },
