@@ -5,9 +5,10 @@
     "artist": "Aria",
     "genre": "Pop",
     "label": "Illuminati®",
-    "rating": 76,
-    "reviews": 1,
+    "rating": 77,
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 79},
       {"source": "NME", "score": 76}
     ],
     "generallyFavorableReviews": true

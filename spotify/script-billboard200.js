@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, album: "Forbidden Whispers", artista: "Conan Woolridge" },
-  { posicao: 2, album: "KIDS SEE GHOSTS", artista: "Trevor"},
-  { posicao: 3, album: "House Of The Rising Sun", artista: "Ava" },
-  { posicao: 4, album: "When I Get Lost", artista: "Conan Woolridge" },
-  { posicao: 5, album: "meaningless", artista: "Anthony" },
-  { posicao: 6, album: "i owe it to myself", artista: "Owen Graham" },
-  { posicao: 7, album: "EVERYTHING IS FREEDOM", artista: "Trevor" },
-  { posicao: 8, album: "The Life Of Greg", artista: "Trevor" },
-  { posicao: 9, album: "Confessions Of A Broken Heart (Deluxe)", artista: "Fiona" },
-  { posicao: 10, album: "The Little Mermaid (Original Motion Picture Soundtrack)", artista: "Various Artists" },
+  { posicao: 1, album: "What Ever Happened?", artista: "Even Grace" },
+  { posicao: 2, album: "Dreamscape", artista: "Aria"},
+  { posicao: 3, album: "Forbidden Whispers", artista: "Conan Woolridge" },
+  { posicao: 4, album: "House Of The Rising Sun", artista: "Ava" },
+  { posicao: 5, album: "side-eyed means", artista: "Logan" },
+  { posicao: 6, album: "KIDS SEE GHOSTS", artista: "Trevor" },
+  { posicao: 7, album: "Purple Dream", artista: "Even Grace" },
+  { posicao: 8, album: "A Brief Inquiry Into Online Relationships", artista: "Even Grace" },
+  { posicao: 9, album: "Gone Now", artista: "Even Grace" },
+  { posicao: 10, album: "FLOURISH", artista: "Aroon" },
 ];
 
 function atualizarTabela() {

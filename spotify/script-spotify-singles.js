@@ -1,22 +1,46 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Rumors",
-    artista: "Owen Graham",
+    musica: "Alone in Kyoto",
+    artista: "Even Grace",
     imagem:
-    "https://i.imgur.com/dhc5YTC.jpeg"
+    "https://i.imgur.com/8QfuQKE.png"
   },
 
   {
     posicao: 2,
-    musica: "Boom Boom (feat. Hannah & Liza)",
-    artista: "Aria, Hannah, Liza",
+    musica: "Dilemma",
+    artista: "Aria, Zara",
     imagem:
-      "https://i.imgur.com/8yrpSbT.png"
+      "https://i.imgur.com/YOeKr4e.png"
   },
 
   {
     posicao: 3,
+    musica: "The Suburbs",
+    artista: "Even Grace",
+    imagem:
+      "https://i.imgur.com/8QfuQKE.png"
+  },
+
+  {
+    posicao: 4,
+    musica: "LA LA LA",
+    artista: "B2b",
+    imagem:
+      "https://i.imgur.com/Jf9SRVH.jpeg"
+  },
+
+  {
+   posicao: 5,
+   musica: "Stronger Than Love",
+   artista: "Aria, Trevor",
+   imagem:
+     "https://i.imgur.com/YOeKr4e.png"
+},
+
+  {
+    posicao: 6,
     musica: "Memories From Home",
     artista: "Conan Woolridge",
     imagem:
@@ -24,48 +48,24 @@ var tabelaDados = [
   },
 
   {
-    posicao: 4,
-    musica: "Blind",
-    artista: "Anthony",
-    imagem:
-      "https://i.imgur.com/kmlHHte.png"
-  },
-
-  {
-   posicao: 5,
-   musica: "Trevor",
-   artista: "Inner Self",
-   imagem:
-     "https://i.imgur.com/5kfkjb9.png"
-},
-
-  {
-    posicao: 6,
-    musica: "20",
-    artista: "Conan Woolridge",
-    imagem:
-      "https://i.imgur.com/dcXh0vd.png"
-  },
-
-  {
     posicao: 7,
-    musica: "Alone in Kyoto",
-    artista: "Even Grace",
+    musica: "Boom Boom",
+    artista: "Aria, Liza, Hannah",
     imagem:
-    "https://i.imgur.com/sNHOrPg.png"
+    "https://i.imgur.com/YOeKr4e.png"
   },
 
   {
     posicao: 8,
-    musica: "Eyes On Me",
-    artista: "Aria",
+    musica: "Rumors",
+    artista: "Owen Graham",
     imagem:
-      "https://i.imgur.com/DZh9I3s.png"
+      "https://i.imgur.com/dhc5YTC.jpeg"
   },
 
   {
     posicao: 9,
-    musica: "I May Destroy You",
+    musica: "Inner Self",
     artista: "Trevor",
     imagem:
     "https://i.imgur.com/5kfkjb9.png"
@@ -73,10 +73,10 @@ var tabelaDados = [
 
   {
     posicao: 10,
-    musica: "Chameleon's Serenade",
-    artista: "Conan Woolridge",
+    musica: "Ava",
+    artista: "Soul For My Love",
     imagem:
-    "https://i.imgur.com/dcXh0vd.png"
+    "https://i.imgur.com/GSbs5fC.png"
   },
 ];
 
