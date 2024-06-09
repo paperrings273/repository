@@ -1,82 +1,82 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Alone in Kyoto",
-    artista: "Even Grace",
+    musica: "Dilemma",
+    artista: "Aria, Zara",
     imagem:
-    "https://i.imgur.com/8QfuQKE.png"
+    "https://i.imgur.com/aM2OuX9.png"
   },
 
   {
     posicao: 2,
-    musica: "Dilemma",
-    artista: "Aria, Zara",
+    musica: "Boom",
+    artista: "Aria, Liza, Hannah",
     imagem:
-      "https://i.imgur.com/YOeKr4e.png"
+      "https://i.imgur.com/aM2OuX9.png"
   },
 
   {
     posicao: 3,
-    musica: "The Suburbs",
-    artista: "Even Grace",
+    musica: "Memories From Home",
+    artista: "Conan Woolridge",
     imagem:
-      "https://i.imgur.com/8QfuQKE.png"
+      "https://i.imgur.com/WGgEXJ4.png"
   },
 
   {
     posicao: 4,
-    musica: "LA LA LA",
-    artista: "B2b",
+    musica: "The Suburbs",
+    artista: "Even Grace",
     imagem:
-      "https://i.imgur.com/Jf9SRVH.jpeg"
+      "https://i.imgur.com/4UxqnEn.png"
   },
 
   {
    posicao: 5,
-   musica: "Stronger Than Love",
-   artista: "Aria, Trevor",
+   musica: "When The Party's Over",
+   artista: "Fiona",
    imagem:
-     "https://i.imgur.com/YOeKr4e.png"
+     "https://i.imgur.com/CG7Am2k.png"
 },
 
   {
     posicao: 6,
-    musica: "Memories From Home",
+    musica: "Chamaleon's Serenade",
     artista: "Conan Woolridge",
     imagem:
-      "https://i.imgur.com/dcXh0vd.png"
+      "https://i.imgur.com/WGgEXJ4.png"
   },
 
   {
     posicao: 7,
-    musica: "Boom Boom",
-    artista: "Aria, Liza, Hannah",
+    musica: "Journey To You",
+    artista: "Aria, Nate",
     imagem:
     "https://i.imgur.com/YOeKr4e.png"
   },
 
   {
     posicao: 8,
-    musica: "Rumors",
-    artista: "Owen Graham",
+    musica: "here's to the nights",
+    artista: "Liz",
     imagem:
-      "https://i.imgur.com/dhc5YTC.jpeg"
+      "https://i.imgur.com/UP6Su3j.png"
   },
 
   {
     posicao: 9,
-    musica: "Inner Self",
-    artista: "Trevor",
+    musica: "Rumors",
+    artista: "Owen Graham",
     imagem:
-    "https://i.imgur.com/5kfkjb9.png"
+    "https://i.imgur.com/G1dG97H.png"
   },
 
   {
     posicao: 10,
-    musica: "Ava",
-    artista: "Soul For My Love",
+    musica: "Stained",
+    artista: "Glenda",
     imagem:
-    "https://i.imgur.com/GSbs5fC.png"
+    "https://i.imgur.com/KVrGgpt.png"
   },
 ];
 

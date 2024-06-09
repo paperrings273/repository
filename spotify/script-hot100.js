@@ -1,14 +1,14 @@
 var tabelaDados = [
   { posicao: 1, musica: "Dilemma", artista: "Aria ft. Zara", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
-  { posicao: 2, musica: "Alone in Kyoto", artista: "Even Grace", imagem: "" },
-  { posicao: 3, musica: "The Suburbs", artista: "Even Grace", imagem: "" },
-  { posicao: 4, musica: "Boom Boom", artista: "Aria ft. Liza & Hannah", imagem: "" },
-  { posicao: 5, musica: "Memories From Home", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 6, musica: "20", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 7, musica: "Chameleon Serenade", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 8, musica: "When I Was Younger", artista: "Conan Woolridge", imagem: "" },
-  { posicao: 9, musica: "Don't Play Me", artista: "Aria ft. Even Grace", imagem: "" },
-  { posicao: 10, musica: "LA LA LA", artista: "B2b", imagem: "" },
+  { posicao: 2, musica: "Boom Boom", artista: "Aria ft. Liza & Hannah", imagem: "" },
+  { posicao: 3, musica: "Memories From Home", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 4, musica: "When The Party's Over", artista: "Fiona", imagem: "" },
+  { posicao: 5, musica: "Chamaleon's Serenade", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 6, musica: "Journey To You", artista: "Aria ft. Nate", imagem: "" },
+  { posicao: 7, musica: "The Suburbs", artista: "Even Grace", imagem: "" },
+  { posicao: 8, musica: "Rumors", artista: "Owen Graham", imagem: "" },
+  { posicao: 9, musica: "here's to the nights", artista: "Liz", imagem: "" },
+  { posicao: 10, musica: "Stained", artista: "Glenda", imagem: "" },
 ];
 
 function atualizarTabela() {

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vencedores do Grammy</title>
+  <style>
+    @font-face {
+      font-family: 'Commons Regular';
+      src: url('TT Commons Regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Commons Bold';
+      src: url('TT Commons Bold.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Commons DemiBold';
+      src: url('TT Commons DemiBold.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Commons Regular', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px 20px 20px;
+    }
+
+    .year-navigation {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .year-button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .year-button:hover {
+      background-color: #555;
+    }
+
+    .winners-container {
+      display: none;
+    }
+
+    .winners-container.active {
+      display: block;
+    }
+
+    .winner {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .winner:hover {
+      transform: translateY(-10px);
+    }
+
+    .winner img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .winner-title {
+      font-family: 'Commons Bold', sans-serif;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .winner-artist {
+      font-family: 'Commons DemiBold', sans-serif;
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Vencedores do Grammy</h1>
+</header>
+
+<div class="container">
+  <div class="year-navigation" id="year-navigation">
+    <!-- Botões de navegação por ano serão gerados dinamicamente -->
+  </div>
+
+  <!-- Containers de vencedores para cada ano serão gerados dinamicamente -->
+  <div id="winners-2023" class="winners-container">
+    <div class="winner">
+      <img src="path_to_image1.jpg" alt="Album of the Year - Artist 1">
+      <div class="winner-title">Album of the Year</div>
+      <div class="winner-artist">Artist 1</div>
+    </div>
+    <div class="winner">
+      <img src="path_to_image2.jpg" alt="Song of the Year - Artist 2">
+      <div class="winner-title">Song of the Year</div>
+      <div class="winner-artist">Artist 2</div>
+    </div>
+  </div>
+
+  <div id="winners-2022" class="winners-container">
+    <div class="winner">
+      <img src="path_to_image3.jpg" alt="Album of the Year - Artist 3">
+      <div class="winner-title">Album of the Year</div>
+      <div class="winner-artist">Artist 3</div>
+    </div>
+    <div class="winner">
+      <img src="path_to_image4.jpg" alt="Song of the Year - Artist 4">
+      <div class="winner-title">Song of the Year</div>
+      <div class="winner-artist">Artist 4</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const years = [2023, 2022]; // Adicione mais anos conforme necessário
+    const yearNavigation = document.getElementById('year-navigation');
+
+    // Função para criar botões de navegação
+    years.forEach(year => {
+      const button = document.createElement('button');
+      button.textContent = year;
+      button.classList.add('year-button');
+      button.dataset.year = year;
+      yearNavigation.appendChild(button);
+    });
+
+    // Função para mostrar vencedores do ano selecionado
+    function showWinners(year) {
+      const allContainers = document.querySelectorAll('.winners-container');
+      allContainers.forEach(container => container.classList.remove('active'));
+      const activeContainer = document.getElementById(`winners-${year}`);
+      if (activeContainer) {
+        activeContainer.classList.add('active');
+      }
+    }
+
+    // Adicionar evento de clique aos botões de navegação
+    document.querySelectorAll('.year-button').forEach(button => {
+      button.addEventListener('click', function () {
+        const selectedYear = this.dataset.year;
+        showWinners(selectedYear);
+      });
+    });
+
+    // Mostrar os vencedores do primeiro ano por padrão
+    showWinners(years[0]);
+  });
+</script>
+</body>
+</html>

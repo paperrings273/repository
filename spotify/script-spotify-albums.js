@@ -9,34 +9,34 @@ var tabelaDados = [
 
   {
     posicao: 2,
-    musica: "What Ever Happened?",
-    artista: "Even Grace",
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge",
     imagem:
-    "https://i.imgur.com/8QfuQKE.png"
+    "https://i.imgur.com/dcXh0vd.png"
   },
 
   {
     posicao: 3,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge",
+    musica: "What Ever Happened?",
+    artista: "Even Grace",
     imagem:
-      "https://i.imgur.com/dcXh0vd.png"
+      "https://i.imgur.com/4UxqnEn.png"
   },
 
   {
     posicao: 4,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor",
+    musica: "everlasting",
+    artista: "Liz",
     imagem:
-      "https://i.imgur.com/5kfkjb9.png"
+      "https://i.imgur.com/UP6Su3j.png"
   },
 
   {
     posicao: 5,
-    musica: "House Of The Rising Sun",
+    musica: "i owe it to myself",
     artista: "Owen Graham",
     imagem:
-    "https://i.imgur.com/GSbs5fC.png"
+    "https://i.imgur.com/QeOU7TT.png"
   },
 
   {
@@ -49,34 +49,34 @@ var tabelaDados = [
 
   {
     posicao: 7,
-    musica: "A Brief Inquiry Into Online Relationships",
-    artista: "Even Grace",
+    musica: "KIDS SEE GHOSTS",
+    artista: "Trevor",
     imagem:
-    "https://i.imgur.com/eMFHf9b.png"
+    "https://i.imgur.com/HaozlBp.png"
   },
 
   {
     posicao: 8,
-    musica: "Purple Dream",
-    artista: "Even Grace",
+    musica: "House Of The Rising Sun",
+    artista: "Ava",
     imagem:
-    "https://i.imgur.com/MRg6Qhw.png"
+    "https://i.imgur.com/sifpteD.png"
   },
 
   {
     posicao: 9,
-    musica: "Gone Now",
+    musica: "A Brief Inquiry Into Online Relationships",
     artista: "Even Grace",
     imagem:
-    "https://i.imgur.com/40ePcbw.png"
+    "https://i.imgur.com/ZyaFSC1.png"
   },
 
   {
     posicao: 10,
-    musica: "The Little Mermaid (Original Motion Picture Soundtrack)",
-    artista: "Various Artists",
+    musica: "Purple Dream",
+    artista: "Even Grace",
     imagem:
-    "https://i.imgur.com/NwcVtDV.png"
+    "https://i.imgur.com/gssMuy8.png"
   },
 ];
 

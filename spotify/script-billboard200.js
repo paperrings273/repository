@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, album: "What Ever Happened?", artista: "Even Grace" },
-  { posicao: 2, album: "Dreamscape", artista: "Aria"},
-  { posicao: 3, album: "Forbidden Whispers", artista: "Conan Woolridge" },
-  { posicao: 4, album: "House Of The Rising Sun", artista: "Ava" },
-  { posicao: 5, album: "side-eyed means", artista: "Logan" },
-  { posicao: 6, album: "KIDS SEE GHOSTS", artista: "Trevor" },
-  { posicao: 7, album: "Purple Dream", artista: "Even Grace" },
-  { posicao: 8, album: "A Brief Inquiry Into Online Relationships", artista: "Even Grace" },
-  { posicao: 9, album: "Gone Now", artista: "Even Grace" },
-  { posicao: 10, album: "FLOURISH", artista: "Aroon" },
+  { posicao: 1, album: "Dreamscape", artista: "Aria" },
+  { posicao: 2, album: "Forbidden Whispers", artista: "Conan Woolridge"},
+  { posicao: 3, album: "What Ever Happened?", artista: "Even Grace" },
+  { posicao: 4, album: "KIDS SEE GHOSTS", artista: "Trevor" },
+  { posicao: 5, album: "House Of The Rising Sun", artista: "Ava" },
+  { posicao: 6, album: "everlasting", artista: "Liz" },
+  { posicao: 7, album: "side-eyed means", artista: "Logan" },
+  { posicao: 8, album: "i owe it to myself", artista: "Owen Graham" },
+  { posicao: 9, album: "Purple Dream", artista: "Even Grace" },
+  { posicao: 10, album: "Confessions Of A Broken Heart (Deluxe)", artista: "Fiona" },
 ];
 
 function atualizarTabela() {
