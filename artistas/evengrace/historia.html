@@ -15,10 +15,10 @@
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
-          <a href="../../spotify/hot100.html">Billboard Hot 100</a>
-          <a href="../../spotify/billboard200.html">Billboard 200</a>
-          <a href="../../spotify/singles.html">Spotify Global Songs</a>
-          <a href="../../spotify/albums.html">Spotify Global Albums</a>
+          <a href="../../charts/billboard/hot100.html">Billboard Hot 100</a>
+          <a href="../../charts/billboard/billboard200.html">Billboard 200</a>
+          <a href="../../charts/spotify/spotify-singles.html">Spotify Global Songs</a>
+          <a href="../../charts/spotify/spotify-albums.html">Spotify Global Albums</a>
         </div>
       </div>
       <button><a href="../../metacritic.html" class="menu-link">Metacritic</a></button>
@@ -54,7 +54,7 @@
 
 <div class="discography-container">
   <div class="border-top">
-    <p>SPOTIFY INFOS</p>
+    <p>DISCOGRAFIA</p>
   </div>
   <div class="scroll-button up-button">&uarr;</div>
   <h3>Álbuns</h3>
@@ -70,9 +70,10 @@
   function displayAlbums() {
     const albumsTable = document.getElementById("albums-table");
     const albumsData = [
-      { title: "Purple Dream", streams: "1.214.478.017 streams", image: "https://i.imgur.com/MRg6Qhw.png" },
-      { title: "A Brief Inquiry Into Online Relationships", streams: "2.965.274.926 streams", image: "https://i.imgur.com/eMFHf9b.png" },
-      { title: "Gone Now", streams: "865.693.181 streams", image: "https://i.imgur.com/40ePcbw.png" }
+      { title: "What Ever Happened?", streams: "Year 01", image: "https://i.imgur.com/4UxqnEn.png" },
+      { title: "Purple Dream", streams: "-", image: "https://i.imgur.com/MRg6Qhw.png" },
+      { title: "A Brief Inquiry Into Online Relationships", streams: "-", image: "https://i.imgur.com/eMFHf9b.png" },
+      { title: "Gone Now", streams: "-", image: "https://i.imgur.com/40ePcbw.png" }
     ];
 
     albumsData.forEach(album => {
@@ -84,11 +85,11 @@
   function displaySingles() {
     const singlesTable = document.getElementById("singles-table");
     const singlesData = [
-      { title: "Alone In Kyoto", streams: "77.630.489 streams", image: "https://i.imgur.com/0ZbcWX7.png" },
-      { title: "Beetlebum", streams: "126.560.669 streams", image: "https://i.imgur.com/eTjuhMK.png" },
-      { title: "Jesus Christ 2005 God Bless America", streams: "883.736.843 streams", image: "https://i.imgur.com/vaOJSMP.png" },
-      { title: "Love It If We Made It", streams: "900.085.665 streams", image: "https://i.imgur.com/eAH1XDf.png" },
-      { title: "Give Yourself A Try", streams: "495.634.359 streams", image: "https://i.imgur.com/ccO8i1u.png" }
+      { title: "Alone In Kyoto", streams: "Year 01", image: "https://i.imgur.com/0ZbcWX7.png" },
+      { title: "Beetlebum", streams: "Year 01", image: "https://i.imgur.com/eTjuhMK.png" },
+      { title: "Jesus Christ 2005 God Bless America", streams: "-", image: "https://i.imgur.com/vaOJSMP.png" },
+      { title: "Love It If We Made It", streams: "-", image: "https://i.imgur.com/eAH1XDf.png" },
+      { title: "Give Yourself A Try", streams: "-", image: "https://i.imgur.com/ccO8i1u.png" }
     ];
 
     singlesData.forEach(single => {
@@ -139,8 +140,10 @@
   function displayTimelineEvents() {
     const timeline = document.getElementById("timeline");
     const eventsData = [
+      { year: 5.3, description: "Venceu a categoria de <strong>Producer of the Year, Non-Classical</strong> na primeira edição do Grammy Awards.", image: "https://i8.amplience.net/i/naras/JackAntonoff-2023-grammys-acceptance-speech-GettyImages-1463248107.jpg?w=821&sm=c", grammy: true},
+      { year: 5.2, description: "Lançou seu quarto álbum: <strong>What Ever Happened?</strong>.", image: "https://i.imgur.com/4UxqnEn.png"},
+      { year: 5.1, description: "Lançou o single: <strong>Alone in Kyoto</strong>.", image: "https://i.imgur.com/0ZbcWX7.png"},
       { year: 5, description: "Lançou o single: <strong>Beetlbum</strong>.", image: "https://i.imgur.com/JLpdpYv.png"},
-      { year: 4.3, description: "Venceu a categoria de <strong>Producer of the Year, Non-Classical</strong> na edição do Grammy Awards daquele ano.", image: "https://i8.amplience.net/i/naras/JackAntonoff-2023-grammys-acceptance-speech-GettyImages-1463248107.jpg?w=821&sm=c", grammy: true},
       { year: 4.2, description: "Colaborou como produtor e compositor do álbum <strong>I owe it to myself</strong> do cantor <strong>Owen Graham</strong>.", image: "https://i.imgur.com/j6oMvSf.png"},
       { year: 4.1, description: "Colaborou como produtor de algumas faixas do álbum <strong>When I Get Lost</strong> de <strong>Coonan Woolridge</strong>.", image: "https://i.imgur.com/8qWDiO7.png"},
       { year: 4, description: "Colaborou como produtor e compositor no álbum <strong>Becoming</strong> da banda <strong>Starlights</strong>.", image: "https://i.imgur.com/c1Olvvt.png"},

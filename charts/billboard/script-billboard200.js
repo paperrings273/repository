@@ -4,11 +4,11 @@ var tabelaDados = [
   { posicao: 3, album: "What Ever Happened?", artista: "Even Grace" },
   { posicao: 4, album: "KIDS SEE GHOSTS", artista: "Trevor" },
   { posicao: 5, album: "House Of The Rising Sun", artista: "Ava" },
-  { posicao: 6, album: "everlasting", artista: "Liz" },
+  { posicao: 6, album: "i owe it to myself", artista: "Owen Graham" },
   { posicao: 7, album: "side-eyed means", artista: "Logan" },
-  { posicao: 8, album: "i owe it to myself", artista: "Owen Graham" },
-  { posicao: 9, album: "Purple Dream", artista: "Even Grace" },
-  { posicao: 10, album: "Confessions Of A Broken Heart (Deluxe)", artista: "Fiona" },
+  { posicao: 8, album: "Purple Dream", artista: "Even Grace" },
+  { posicao: 9, album: "Confessions Of A Broken Heart (Deluxe)", artista: "Fiona" },
+  { posicao: 10, album: "Gone Now", artista: "Even Grace" },
 ];
 
 function atualizarTabela() {
