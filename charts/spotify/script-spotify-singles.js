@@ -1,82 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Bloodsucker",
-    artista: "Ava",
-    imagem:
-    "https://i.imgur.com/n3DwAZF.png"
+    musica: "Family Ties",
+    artista: "Miles Carson, Trevor"
   },
 
   {
     posicao: 2,
-    musica: "Rumors",
-    artista: "Owen Graham",
-    imagem:
-      "https://i.imgur.com/dhc5YTC.jpg"
+    musica: "Sweetheart",
+    artista: "Holligan"
   },
 
   {
     posicao: 3,
-    musica: "Salute",
-    artista: "4Music",
-    imagem:
-      "https://i.imgur.com/oxCDtRj.jpeg"
+    musica: "Bloodsucker",
+    artista: "Ava",
   },
 
   {
     posicao: 4,
-    musica: "Dilemma",
-    artista: "Aria, Zara",
-    imagem:
-      "https://i.imgur.com/YOeKr4e.png"
+    musica: "Rumors",
+    artista: "Owen Graham"
   },
 
   {
    posicao: 5,
-   musica: "Memories From Home",
-   artista: "Conan Woolridge",
-   imagem:
-     "https://i.imgur.com/CG7Am2k.png"
+   musica: "Boom Boom",
+   artista: "Aria, Liza, Hannah"
 },
 
   {
     posicao: 6,
-    musica: "Eyes On Me",
-    artista: "Aria",
-    imagem:
-      "https://i.imgur.com/WGgEXJ4.png"
+    musica: "Salute",
+    artista: "4Music"
   },
 
   {
     posicao: 7,
-    musica: "The Suburbs",
-    artista: "Even Grace",
-    imagem:
-    "https://i.imgur.com/YOeKr4e.png"
+    musica: "Dilemma",
+    artista: "Aria, Zara"
   },
 
   {
     posicao: 8,
-    musica: "Stronger Than Love",
-    artista: "Aria, Trevor",
-    imagem:
-      "https://i.imgur.com/UP6Su3j.png"
+    musica: "Memories From Home",
+    artista: "Conan Woolridge"
   },
 
   {
     posicao: 9,
-    musica: "Father Sins",
-    artista: "Trevor",
-    imagem:
-    "https://i.imgur.com/G1dG97H.png"
+    musica: "Eyes On Me",
+    artista: "Aria"
   },
 
   {
     posicao: 10,
-    musica: "20",
-    artista: "Conan Woolridge",
-    imagem:
-    "https://i.imgur.com/KVrGgpt.png"
+    musica: "The Suburbs",
+    artista: "Even Grace"
   },
 ];
 

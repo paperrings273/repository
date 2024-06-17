@@ -8,5 +8,8 @@ var linksImagens = {
   "The Suburbs - Even Grace": "https://i.imgur.com/8QfuQKE.png",
   "Stronger Than Love - Aria, Trevor": "https://i.imgur.com/YOeKr4e.png",
   "Father Sins - Trevor": "https://i.imgur.com/5kfkjb9.pngimagens-singles.js",
-  "20 - Conan Woolridge": "https://i.imgur.com/fGm30Zb.png"
+  "20 - Conan Woolridge": "https://i.imgur.com/fGm30Zb.png",
+  "Family Ties - Miles Carson, Trevor": "https://i.imgur.com/hRC7dD8.jpeg",
+  "Sweetheart - Holligan": "https://i.imgur.com/gTCOEAJ.png",
+  "Boom Boom - Aria, Liza, Hannah": "https://i.imgur.com/8yrpSbT.png"
 };

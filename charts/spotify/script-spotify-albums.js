@@ -2,23 +2,23 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Dreamscape",
-    artista: "Aria"
-  },
-  {
-    posicao: 2,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 3,
     musica: "Forbidden Whispers",
     artista: "Conan Woolridge"
   },
   {
-    posicao: 4,
+    posicao: 2,
+    musica: "Dreamscape",
+    artista: "Aria"
+  },
+  {
+    posicao: 3,
     musica: "KIDS SEE GHOSTS",
     artista: "Trevor"
+  },
+  {
+    posicao: 4,
+    musica: "What Ever Happened?",
+    artista: "Even Grace"
   },
   {
     posicao: 5,
