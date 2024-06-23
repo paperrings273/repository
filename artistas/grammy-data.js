@@ -10,10 +10,10 @@ const grammyData = [
           { artist: "Even Grace", song: "What Ever Happened?" },
           { artist: "Liz", song: "everlasting" },
           { artist: "Conan Woolridge", song: "Forbidden Whispers" },
-          { artist: "Aroon", song: "Flourish" },
+          { artist: "Anthony", song: "meaningless" },
           { artist: "Trevor", song: "KIDS SEE GHOSTS" },
         ],
-        winner: { artist: "Aroon", song: "Forbidden" }
+        winner: { artist: "Liz", song: "everlasting" }
       },
       {
         category: "Record of the Year",
