@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ava</title>
+  <title>Even Grace</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="ldt-avathompson.css">
+  <link rel="stylesheet" href="ldt-evengrace.css">
 </head>
 <body>
 <header2 id="header">
@@ -31,13 +31,13 @@
 </header>
 
 <div class="artist-info-box">
-  <h1 class="artist-title">Ava</h1>
+  <h1 class="artist-title">Even Grace</h1>
 </div>
 <div class="artist-photo-box">
   <div class="artist-photo">
   </div>
   <div class="artist-details">
-    <h1 class="artist-details-cels">21 anos</h1>
+    <h1 class="artist-details-cels">30 anos</h1>
     <h1 class="artist-details-cels">Reino Unido, Londres</h1>
     <h1 class="artist-details-cels">℗ © Dawn Records</h1>
   </div>
@@ -70,11 +70,14 @@
   function displayAlbums() {
     const albumsTable = document.getElementById("albums-table");
     const albumsData = [
-      { title: "House Of The Rising Sun", year: "Year 01", image: "https://i.imgur.com/GSbs5fC.png" },
+      { title: "What Ever Happened?", streams: "Year 01", image: "https://i.imgur.com/4UxqnEn.png" },
+      { title: "Purple Dream", streams: "-", image: "https://i.imgur.com/MRg6Qhw.png" },
+      { title: "A Brief Inquiry Into Online Relationships", streams: "-", image: "https://i.imgur.com/eMFHf9b.png" },
+      { title: "Gone Now", streams: "-", image: "https://i.imgur.com/40ePcbw.png" }
     ];
 
     albumsData.forEach(album => {
-      const albumRow = createDiscographyRow(album.title, album.year, album.image);
+      const albumRow = createDiscographyRow(album.title, album.streams, album.image);
       albumsTable.appendChild(albumRow);
     });
   }
@@ -82,12 +85,15 @@
   function displaySingles() {
     const singlesTable = document.getElementById("singles-table");
     const singlesData = [
-      { title: "Soul For My Love", year: "Year 01", image: "https://i.imgur.com/jLupsIR.png" },
-      { title: "Feeling", year: "Year 01", image: "https://i.imgur.com/Lwde55l.png" },
+      { title: "Alone In Kyoto", streams: "Year 01", image: "https://i.imgur.com/0ZbcWX7.png" },
+      { title: "Beetlebum", streams: "Year 01", image: "https://i.imgur.com/eTjuhMK.png" },
+      { title: "Jesus Christ 2005 God Bless America", streams: "-", image: "https://i.imgur.com/vaOJSMP.png" },
+      { title: "Love It If We Made It", streams: "-", image: "https://i.imgur.com/eAH1XDf.png" },
+      { title: "Give Yourself A Try", streams: "-", image: "https://i.imgur.com/ccO8i1u.png" }
     ];
 
     singlesData.forEach(single => {
-      const singleRow = createDiscographyRow(single.title, single.year, single.image);
+      const singleRow = createDiscographyRow(single.title, single.streams, single.image);
       singlesTable.appendChild(singleRow);
     });
   }
@@ -134,9 +140,19 @@
   function displayTimelineEvents() {
     const timeline = document.getElementById("timeline");
     const eventsData = [
-      { year: 1.1, description: "Realizou sua primeira turnê nacional intitulada <strong>The House Club</strong>, em apoio ao seu álbum de estréia.", image: "https://i.imgur.com/GSbs5fC.png"},
-      { year: 1, description: "Lançou seu primeiro álbum: <strong>House Of The Rising Sun.</strong>", image: "https://i.imgur.com/GSbs5fC.png"},
-      { year: 0, description: "Foi contratada pela gravadora Dawn Records.", image: "https://i.imgur.com/hNguQKS.png"}
+      { year: 5.3, description: "Venceu a categoria de <strong>Producer of the Year, Non-Classical</strong> na primeira edição do Grammy Awards.", image: "https://i8.amplience.net/i/naras/JackAntonoff-2023-grammys-acceptance-speech-GettyImages-1463248107.jpg?w=821&sm=c", grammy: true},
+      { year: 5.2, description: "Lançou seu quarto álbum: <strong>What Ever Happened?</strong>.", image: "https://i.imgur.com/4UxqnEn.png"},
+      { year: 5.1, description: "Lançou o single: <strong>Alone in Kyoto</strong>.", image: "https://i.imgur.com/0ZbcWX7.png"},
+      { year: 5, description: "Lançou o single: <strong>Beetlbum</strong>.", image: "https://i.imgur.com/JLpdpYv.png"},
+      { year: 4.2, description: "Colaborou como produtor e compositor do álbum <strong>I owe it to myself</strong> do cantor <strong>Owen Graham</strong>.", image: "https://i.imgur.com/j6oMvSf.png"},
+      { year: 4.1, description: "Colaborou como produtor de algumas faixas do álbum <strong>When I Get Lost</strong> de <strong>Coonan Woolridge</strong>.", image: "https://i.imgur.com/8qWDiO7.png"},
+      { year: 4, description: "Colaborou como produtor e compositor no álbum <strong>Becoming</strong> da banda <strong>Starlights</strong>.", image: "https://i.imgur.com/c1Olvvt.png"},
+      { year: 3.1, description: "Realizou sua segunda turnê mundial intitulada <strong>We Are Who We Are Tour</strong> em suporte aos álbuns <strong>Purple Dream</strong> e <strong>A Brief Inquiry Into Online Relationships</strong>.", image: "https://i.imgur.com/MRg6Qhw.png"},
+      { year: 3, description: "Lançou seu terceiro álbum: <strong>Purple Dream</strong>.", image: "https://i.imgur.com/MRg6Qhw.png"},
+      { year: 2.1, description: "Venceu a categoria de <strong>Album of the Year</strong> pelo álbum <strong>A Brief Inquiry Into Online Relationships</strong> na edição do <strong>Grammy Awards</strong> daquele ano.", image: "https://i.imgur.com/eMFHf9b.png", grammy: true },
+      { year: 2, description: "Lançou seu segundo álbum: <strong>A Brief Inquiry Into Online Relationships.</strong>", image: "https://i.imgur.com/eMFHf9b.png" },
+      { year: 1.1, description: "Realizou sua primeira turnê mundial intitulada <strong>Gone Now Tour</strong>, em apoio ao seu álbum de estréia.", image: "https://i.imgur.com/40ePcbw.png"},
+      { year: 1, description: "Lançou seu álbum de estréia: <strong>Gone Now.</strong>", image: "https://i.imgur.com/40ePcbw.png"},
     ];
 
     eventsData.forEach(event => {

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Even Grace</title>
+  <title>Ava</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../style-artists.css">
-  <link rel="stylesheet" href="../evengrace/style-evengrace.css">
+  <link rel="stylesheet" href="../ava2/style-ava.css">
 </head>
 <body>
 <header2 id="header">
@@ -32,13 +32,13 @@
 </header>
 
 <div class="artist-info-box">
-  <h1 class="artist-title">Even Grace</h1>
+  <h1 class="artist-title">Ava</h1>
 </div>
 <div class="artist-photo-box">
   <div class="artist-photo">
   </div>
   <div class="artist-details">
-    <h1 class="artist-details-cels">28 anos</h1>
+    <h1 class="artist-details-cels">21 anos</h1>
     <h1 class="artist-details-cels">Reino Unido, Londres</h1>
     <h1 class="artist-details-cels">℗ © Dawn Records</h1>
   </div>
@@ -48,7 +48,7 @@
   <div class="border-top">
     <p>TURNÊS, CONCERTOS E EVENTOS</p>
   </div>
-  <h3><br><br>Turnês</h3>
+  <h3><br>Turnês</h3>
   <div id="tours-grid" class="events-grid"></div>
   <h3><br>Concertos e Eventos</h3>
   <div id="events-grid" class="events-grid"></div>
@@ -59,7 +59,7 @@
   <div class="border-top">
     <p>DISCOGRAFIA</p>
   </div>
-  <h3><br><br>Álbuns</h3>
+  <h3><br>Álbuns</h3>
   <table id="albums-table"></table>
   <h3><br>Singles e EPs</h3>
   <table id="singles-table"></table>
@@ -78,22 +78,24 @@
   <div class="border-top">
     <p>FILMES</p>
   </div>
-  <h3><br><br>Filmes</h3>
+  <h3><br>Filmes</h3>
   <div id="films-grid" class="events-grid"></div>
   <div class="gradient-overlay"></div>
 </div>
 
 <script src="header-script.js"></script>
 
-<script src="../grammy-data.js"></script>
+<script src="grammy-data.js"></script>
 <script>
   function displayGrammyAwards() {
     const grammyCategoriesDiv = document.getElementById('grammy-categories');
     grammyCategoriesDiv.innerHTML = '';
 
+    // Contadores gerais de nomeações e vitórias
     let totalNominees = 0;
     let totalWins = 0;
 
+    // Itera sobre cada edição no objeto grammyData
     grammyData.forEach((edition, index) => {
       if (index > 0) {
         const divider = document.createElement('hr');
@@ -104,25 +106,31 @@
       const editionDiv = document.createElement('div');
       editionDiv.classList.add('edition-item');
 
+      // Cria título da edição
       const editionTitle = document.createElement('h3');
       editionTitle.textContent = edition.edition;
       editionTitle.classList.add('edition-title');
       editionDiv.appendChild(editionTitle);
 
+      // Contadores por edição
       let editionNominees = 0;
       let editionWins = 0;
 
+      // Itera sobre as categorias da edição
       edition.categories.forEach(category => {
         const nominees = category.nominees;
         const winner = category.winner;
 
-        const artistName = "Even Grace";
+        const artistName = "Ava"; // Nome do artista que você está procurando
 
+        // Verifica se o artista está na lista de indicados
         const isNominee = nominees.some(nominee => {
+          // Divide o nome do artista por " & " ou " feat " para verificar cada parte
           const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
           return artists.some(name => name.trim() === artistName);
         });
 
+        // Se o artista está na lista de indicados
         if (isNominee) {
           editionNominees += nominees.filter(nominee => {
             const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
@@ -134,6 +142,7 @@
           }).length;
         }
 
+        // Verifica se o artista ganhou a categoria
         const winnerArtists = winner.artist.split(/\s+&\s+|\s+feat\s+/i);
         if (winnerArtists.some(name => name.trim() === artistName) && winner.song === category.nominees.find(nominee => {
           const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
@@ -143,12 +152,14 @@
           totalWins++;
         }
 
+        // Cria elemento HTML para cada indicado da categoria
         nominees.forEach(nominee => {
           const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
           if (artists.some(name => name.trim() === artistName)) {
             const categoryDiv = document.createElement('div');
             categoryDiv.classList.add('category-item');
 
+            // Adiciona a imagem da categoria
             const categoryImage = document.createElement('img');
             categoryImage.src = 'https://naras.a.bigcontent.io/v1/static/artist_default_200x200'; // Substitua pelo caminho da sua imagem
             categoryImage.alt = 'Categoria Image';
@@ -163,6 +174,7 @@
             categoryTitle.classList.add('category-title');
             categoryContent.appendChild(categoryTitle);
 
+            // Adiciona nome da música se disponível
             if (nominee.song) {
               const songInfo = document.createElement('p');
               songInfo.textContent = nominee.song;
@@ -170,6 +182,7 @@
               categoryContent.appendChild(songInfo);
             }
 
+            // Adiciona rótulo de indicado se aplicável
             if ((isNominee && !winnerArtists.some(name => name.trim() === artistName))||(isNominee && !(winner.song === nominee.song))) {
               const nomineeLabel = document.createElement('p');
               nomineeLabel.textContent = "NOMINEE";
@@ -177,6 +190,7 @@
               categoryContent.appendChild(nomineeLabel);
             }
 
+            // Adiciona rótulo de vencedor se aplicável
             if (winnerArtists.some(name => name.trim() === artistName) && winner.song === nominee.song) {
               const winnerLabel = document.createElement('p');
               winnerLabel.textContent = "WINNER";
@@ -190,12 +204,14 @@
         });
       });
 
+      // Adiciona a edição à lista de edições, apenas se houver indicações ou vitórias para o artista
       if (editionNominees > 0 || editionWins > 0) {
         grammyCategoriesDiv.appendChild(editionDiv);
       }
     });
 
-    const artistName = "Even Grace"; // Nome do artista
+    // Adiciona o total de nomeações e vitórias gerais antes de listar as edições
+    const artistName = "Ava"; // Nome do artista
     const totalStats = document.createElement('div');
     totalStats.classList.add('total-stats');
     totalStats.innerHTML = `
@@ -214,14 +230,15 @@
 
     grammyCategoriesDiv.insertBefore(totalStats, grammyCategoriesDiv.firstChild);
 
+    // Se o artista não foi indicado para nenhuma categoria em nenhuma edição
     if (grammyCategoriesDiv.children.length === 0) {
       const noInfoLabel = document.createElement('p');
-      songInfo.classList.add('empty-info');
       noInfoLabel.textContent = "Nenhuma informação disponível para este artista.";
       grammyCategoriesDiv.appendChild(noInfoLabel);
     }
   }
 
+  // Chama a função para exibir os prêmios Grammy
   displayGrammyAwards();
 
 </script>
@@ -230,88 +247,59 @@
 <script>
   function displayFilms() {
     const filmsGrid = document.getElementById("films-grid");
-    filmsGrid.innerHTML = '';
-
-    if (filmsData.length === 0) {
-      const noDataMessage = document.createElement('p');
-      noDataMessage.classList.add('empty-info');
-      noDataMessage.textContent = "Nenhuma informação disponível para este artista.";
-      filmsGrid.appendChild(noDataMessage);
-      return;
-    }
-
-    filmsData.forEach(film => {
-      const filmCard = createConcertosCard(film.title, film.year, film.image, film.label);
-      filmsGrid.appendChild(filmCard);
+    filmsData.forEach(films => {
+      const filmsCard = createConcertosCard(films.title, films.year, films.image, films.label);
+      filmsGrid.appendChild(filmsCard);
     });
   }
 
   function createConcertosCard(title, year, image, label) {
-    const filmCard = document.createElement("div");
+    const films = document.createElement("div");
 
     if (image) {
-      const filmImage = document.createElement("img");
-      filmImage.src = image;
-      filmImage.alt = "Poster do Filme";
-      filmImage.classList.add("events-img");
-      filmCard.appendChild(filmImage);
+      const filmsImage = document.createElement("img");
+      filmsImage.src = image;
+      filmsImage.alt = "Poster do Filme";
+      filmsImage.classList.add("events-img");
+      films.appendChild(filmsImage);
     }
 
     const titleHeading = document.createElement("h1");
     titleHeading.textContent = title;
     titleHeading.classList.add("events-title");
-    filmCard.appendChild(titleHeading);
+    films.appendChild(titleHeading);
 
     const yearInfo = document.createElement("h1");
     yearInfo.textContent = year;
     yearInfo.classList.add("events-info");
-    filmCard.appendChild(yearInfo);
+    films.appendChild(yearInfo);
 
     const labelInfo = document.createElement("h1");
     labelInfo.textContent = label;
     labelInfo.classList.add("events-info");
-    filmCard.appendChild(labelInfo);
+    films.appendChild(labelInfo);
 
-    return filmCard;
+    return films;
   }
 
   displayFilms();
 </script>
 
 
-<script src="events.js"></script>
+<script src="tours-and-events.js"></script>
 <script>
   function displayData() {
     const toursGrid = document.getElementById("tours-grid");
+    toursData.forEach(tour => {
+      const tourCard = createConcertosCard(tour.title, tour.year, tour.image, tour.label);
+      toursGrid.appendChild(tourCard);
+    });
+
     const eventsGrid = document.getElementById("events-grid");
-
-    toursGrid.innerHTML = '';
-    eventsGrid.innerHTML = '';
-
-    if (toursData.length === 0) {
-      const noToursMessage = document.createElement('p');
-      noToursMessage.classList.add('empty-info');
-      noToursMessage.textContent = "Nenhuma informação disponível para este artista.";
-      toursGrid.appendChild(noToursMessage);
-    } else {
-      toursData.forEach(tour => {
-        const tourCard = createConcertosCard(tour.title, tour.year, tour.image, tour.label);
-        toursGrid.appendChild(tourCard);
-      });
-    }
-
-    if (eventsData.length === 0) {
-      const noEventsMessage = document.createElement('p');
-      noEventsMessage.classList.add('empty-info');
-      noEventsMessage.textContent = "Nenhuma informação disponível para este artista.";
-      eventsGrid.appendChild(noEventsMessage);
-    } else {
-      // Itera sobre os dados de events e cria os cartões
-      eventsData.forEach(event => {
-        const eventCard = createConcertosCard(event.title, event.year, event.image, event.label);
-        eventsGrid.appendChild(eventCard);
-      });
-    }
+    eventsData.forEach(event => {
+      const eventCard = createConcertosCard(event.title, event.year, event.image, event.label);
+      eventsGrid.appendChild(eventCard);
+    });
   }
 
   function createConcertosCard(title, year, image, label) {
@@ -351,7 +339,7 @@
   function displayAlbums() {
     const albumsTable = document.getElementById("albums-table");
     albumsData.forEach(album => {
-      const albumRow = createDiscographyRow(album.title, album.year, album.image, album.label);
+      const albumRow = createDiscographyRow(album.title, album.year, album.image);
       albumsTable.appendChild(albumRow);
     });
   }
@@ -359,12 +347,12 @@
   function displaySingles() {
     const singlesTable = document.getElementById("singles-table");
     singlesData.forEach(single => {
-      const singleRow = createDiscographyRow(single.title, single.year, single.image, single.label);
+      const singleRow = createDiscographyRow(single.title, single.year, single.image);
       singlesTable.appendChild(singleRow);
     });
   }
 
-  function createDiscographyRow(title, year, image, label) {
+  function createDiscographyRow(title, year, image) {
     const row = document.createElement("tr");
 
     const albumImageCell = document.createElement("td");
@@ -391,7 +379,7 @@
 
     const recordLabelCell = document.createElement("td");
     const recordLabelInfo = document.createElement("h1");
-    recordLabelInfo.textContent = label;
+    recordLabelInfo.textContent = "℗ © Dawn Records";
     recordLabelInfo.classList.add("discography-album-info");
     recordLabelCell.appendChild(recordLabelInfo);
     row.appendChild(recordLabelCell);
