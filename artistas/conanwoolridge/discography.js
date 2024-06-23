@@ -2,7 +2,7 @@ const albumsData = [
   { title: "Forbidden Whispers",
     year: "Year 01",
     image: "https://i.imgur.com/n15i4Z3.png",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   },
   { title: "When I Get Lost",
     year: "-",
@@ -15,11 +15,11 @@ const singlesData = [
   { title: "Memories From Home",
     year: "Year 01",
     image: "https://i.imgur.com/65gXFm7.png",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   },
   { title: "20",
     year: "Year 01",
     image: "https://i.imgur.com/YOVEmFd.jpeg",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   }
 ];

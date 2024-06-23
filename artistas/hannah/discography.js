@@ -2,7 +2,7 @@ const albumsData = [
   { title: "Little Mermaid (Original Soundtrack)",
     year: "Year 01",
     image: "https://i.imgur.com/f4LQkr1.jpeg",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   },
   { title: "VANGUARD",
     year: "-",
@@ -25,7 +25,7 @@ const singlesData = [
   { title: "Part Of The World (From Little Mermaid)",
     year: "Year 01",
     image: "https://i.imgur.com/a7m7cFN.png",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   },
   { title: "HYPERSONIC",
     year: "-",

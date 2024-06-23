@@ -10,7 +10,7 @@ const singlesData = [
   { title: "Rumors",
     year: "Year 01",
     image: "https://i.imgur.com/dhc5YTC.jpg",
-    label: "℗ © Starlight Records"
+    label: "℗ © Starlight Studios"
   },
   { title: "i didn't know any better",
     year: "-",
