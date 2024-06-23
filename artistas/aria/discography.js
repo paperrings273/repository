@@ -7,7 +7,7 @@ const albumsData = [
 ];
 
 const singlesData = [
-  { title: "Dillema (feat. Zara)",
+  { title: "Dilemma (feat. Zara)",
     year: "Year 01",
     image: "https://i.imgur.com/1BYSxa1.png",
     label: "℗ © Illuminati Records"
