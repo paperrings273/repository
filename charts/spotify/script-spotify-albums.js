@@ -2,38 +2,38 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
-  },
-  {
-    posicao: 2,
     musica: "Dreamscape",
     artista: "Aria"
   },
   {
+    posicao: 2,
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge"
+  },
+  {
     posicao: 3,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor"
-  },
-  {
-    posicao: 4,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 5,
     musica: "i owe it to myself",
     artista: "Owen Graham"
   },
   {
+    posicao: 4,
+    musica: "meaningless",
+    artista: "Anthony"
+  },
+  {
+    posicao: 5,
+    musica: "What Ever Happened?",
+    artista: "Even Grace"
+  },
+  {
     posicao: 6,
-    musica: "House Of The Rising Sun",
-    artista: "Ava"
+    musica: "I Really Don't Wanna Hear It Anymore",
+    artista: "Holligan"
   },
   {
     posicao: 7,
-    musica: "Purple Dream",
-    artista: "Even Grace"
+    musica: "House Of The Rising Sun",
+    artista: "Ava"
   },
   {
     posicao: 8,
@@ -42,12 +42,12 @@ var tabelaDados = [
   },
   {
     posicao: 9,
-    musica: "Confessions Of A Broken Heart (Deluxe)",
-    artista: "Fiona"
+    musica: "KIDS SEE GHOSTS",
+    artista: "Trevor"
   },
   {
     posicao: 10,
-    musica: "Gone Now",
+    musica: "Purple Dream",
     artista: "Even Grace"
   }
 ];

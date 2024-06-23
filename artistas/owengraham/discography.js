@@ -8,7 +8,7 @@ const albumsData = [
 
 const singlesData = [
   { title: "Rumors",
-    year: "-",
+    year: "Year 01",
     image: "https://i.imgur.com/dhc5YTC.jpg",
     label: "℗ © Starlight Records"
   },

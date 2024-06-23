@@ -11,5 +11,7 @@ var linksImagens = {
   "20 - Conan Woolridge": "https://i.imgur.com/fGm30Zb.png",
   "Family Ties - Miles Carson, Trevor": "https://i.imgur.com/hRC7dD8.jpeg",
   "Sweetheart - Holligan": "https://i.imgur.com/gTCOEAJ.png",
-  "Boom Boom - Aria, Liza, Hannah": "https://i.imgur.com/8yrpSbT.png"
+  "Boom Boom - Aria, Liza, Hannah": "https://i.imgur.com/8yrpSbT.png",
+  "Wings - 4Music": "https://i.imgur.com/FFwDAJ2.png",
+  "Inner Self - Trevor": "https://i.imgur.com/HaozlBp.png",
 };

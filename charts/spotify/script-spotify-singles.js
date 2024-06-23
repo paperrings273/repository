@@ -1,20 +1,20 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Family Ties",
-    artista: "Miles Carson, Trevor"
+    musica: "Wings",
+    artista: "4Music"
   },
 
   {
     posicao: 2,
-    musica: "Sweetheart",
-    artista: "Holligan"
+    musica: "Bloodsucker",
+    artista: "Ava"
   },
 
   {
     posicao: 3,
-    musica: "Bloodsucker",
-    artista: "Ava",
+    musica: "Family Ties",
+    artista: "Miles Carson, Trevor",
   },
 
   {
@@ -31,20 +31,20 @@ var tabelaDados = [
 
   {
     posicao: 6,
+    musica: "Sweetheart",
+    artista: "Holligan"
+  },
+
+  {
+    posicao: 7,
     musica: "Salute",
     artista: "4Music"
   },
 
   {
-    posicao: 7,
-    musica: "Dilemma",
-    artista: "Aria, Zara"
-  },
-
-  {
     posicao: 8,
-    musica: "Memories From Home",
-    artista: "Conan Woolridge"
+    musica: "Inner Self",
+    artista: "Trevor"
   },
 
   {

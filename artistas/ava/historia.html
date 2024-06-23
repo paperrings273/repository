@@ -31,56 +31,59 @@
 <header class="artist-header">
 </header>
 
+
 <div class="artist-info-box">
-  <h1 class="artist-title">Ava</h1>
+  <h1 class="artist-title">Aria Fisher</h1>
 </div>
 <div class="artist-photo-box">
   <div class="artist-photo">
   </div>
   <div class="artist-details">
     <h1 class="artist-details-cels">21 anos</h1>
-    <h1 class="artist-details-cels">Reino Unido, Londres</h1>
+    <h1 class="artist-details-cels">Inglaterra, Londres</h1>
     <h1 class="artist-details-cels">℗ © Dawn Records</h1>
   </div>
 </div>
 
-<div class="events-container">
-  <div class="border-top">
-    <p>TURNÊS, CONCERTOS E EVENTOS</p>
+<div class="container">
+  <div class="discography-container">
+    <div class="border-top">
+      <p>DISCOGRAFIA</p>
+    </div>
+    <h3><br><br>Álbuns</h3>
+    <table id="albums-table"></table>
+    <h3><br>Singles e EPs</h3>
+    <table id="singles-table"></table>
+    <div class="gradient-overlay"></div>
   </div>
-  <h3><br><br>Turnês</h3>
-  <div id="tours-grid" class="events-grid"></div>
-  <h3><br>Concertos e Eventos</h3>
-  <div id="events-grid" class="events-grid"></div>
-  <div class="gradient-overlay"></div>
-</div>
 
-<div class="discography-container">
-  <div class="border-top">
-    <p>DISCOGRAFIA</p>
+  <div class="events-container">
+    <div class="border-top">
+      <p>TURNÊS, CONCERTOS E EVENTOS</p>
+    </div>
+    <h3><br><br>Turnês</h3>
+    <div id="tours-grid" class="events-grid"></div>
+    <h3><br>Concertos e Eventos</h3>
+    <div id="events-grid" class="events-grid"></div>
+    <div class="gradient-overlay"></div>
   </div>
-  <h3><br><br>Álbuns</h3>
-  <table id="albums-table"></table>
-  <h3><br>Singles e EPs</h3>
-  <table id="singles-table"></table>
-  <div class="gradient-overlay"></div>
-</div>
 
-<div class="grammy-container">
-  <div class="border-top">
-    <p>GRAMMY AWARDS</p>
+  <div class="grammy-container">
+    <div class="border-top">
+      <p>GRAMMY AWARDS</p>
+    </div>
+    <div id="grammy-categories"></div>
+    <div class="gradient-overlay"></div>
   </div>
-  <div id="grammy-categories"></div>
-  <div class="gradient-overlay"></div>
-</div>
 
-<div class="films-container">
-  <div class="border-top">
-    <p>FILMES</p>
+  <div class="films-container">
+    <div class="border-top">
+      <p>FILMES</p>
+    </div>
+    <h3><br><br>Filmes</h3>
+    <div id="films-grid" class="events-grid"></div>
+    <div class="gradient-overlay"></div>
   </div>
-  <h3><br><br>Filmes</h3>
-  <div id="films-grid" class="events-grid"></div>
-  <div class="gradient-overlay"></div>
 </div>
 
 <script src="header-script.js"></script>
@@ -401,6 +404,28 @@
 
   displayAlbums();
   displaySingles();
+</script>
+
+<script>
+  const artistInfoBox = document.querySelector('.artist-info-box');
+  const artistPhotoBox = document.querySelector('.artist-photo-box');
+
+  // Adiciona um evento de rolagem à janela
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+      artistInfoBox.classList.add('hidden');
+    } else {
+      artistInfoBox.classList.remove('hidden');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+      artistPhotoBox.classList.add('hidden');
+    } else {
+      artistPhotoBox.classList.remove('hidden');
+    }
+  });
 </script>
 
 <footer>

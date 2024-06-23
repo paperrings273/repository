@@ -12,4 +12,6 @@ var linksImagens = {
   "Purple Dream - Even Grace": "https://i.imgur.com/gssMuy8.png",
   "Gone Now - Even Grace": "https://i.imgur.com/40ePcbw.png",
   "Confessions Of A Broken Heart (Deluxe) - Fiona": "https://i.imgur.com/BbAnTz7.jpg",
+  "meaningless - Anthony": "https://i.imgur.com/YPbjHzk.png",
+  "I Really Don't Wanna Hear It Anymore - Holligan": "https://pbs.twimg.com/media/FycJA3HacAAl4w7.jpg:large",
 };

@@ -57,12 +57,12 @@ const grammyData = [
       {
         category: "Producer of the Year, Non-Classical",
         nominees: [
-          { artist: "Trevor" },
-          { artist: "Fiona" },
+          { artist: "Trevor", song: "Trevor"},
+          { artist: "Fiona", song: "Fiona" },
           { artist: "Even Grace", song: "Even Grace" },
-          { artist: "Otto" },
-          { artist: "Anthony" },
-          { artist: "Conan Woolridge" },
+          { artist: "Otto", song: "Otto" },
+          { artist: "Anthony", song: "Anthony" },
+          { artist: "Conan Woolridge", song: "Conan Woolridge" },
         ],
         winner: { artist: "Even Grace", song: "Even Grace" }
       },
@@ -127,7 +127,7 @@ const grammyData = [
         category: "Best Rock/Alternative Performance",
         nominees: [
           { artist: "Fiona", song: "My Game" },
-          { artist: "Conan Woolridge", song: "20" },
+          { artist: "Conan Woolridge", song: "Memories From Home" },
           { artist: "Even Grace", song: "Alone in Kyoto" },
           { artist: "Anthony", song: "lunatic" }
         ],

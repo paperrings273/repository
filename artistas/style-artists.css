@@ -7,6 +7,10 @@
   --image-url-artist: url("https://www.numeromag.nl/wp-content/uploads/2023/07/23AW_SP_Suede_Dua-Lipa_BTS_DL34_RGB-1.jpg");
 }
 
+.hidden {
+  opacity: 0;
+}
+
 body{
   background-image: linear-gradient(to top, #191414 50%, var(--color2at));
   width: 100%;
@@ -345,21 +349,103 @@ header2 {
   color: #ffffff;
 }
 
-.discography-container {
+.discography-container,
+.events-container,
+.grammy-container,
+.films-container {
   scroll-behavior: smooth;
-  position: relative;
-  margin-top: 50px;
-  margin-left: 400px;
   padding: 20px;
-  width: 300px;
   background-color: #212121;
   border-radius: 10px;
-  height: 300px;
   overflow: hidden;
   cursor: pointer;
-  margin-bottom: 50px;
   overflow-y: auto;
+  box-sizing: border-box;
+  margin: 20px;
 }
+
+.discography-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.events-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.grammy-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+
+.films-container {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+  justify-content: center; /* Centraliza os containers horizontalmente */
+  align-items: flex-start; /* Alinha os containers ao topo */
+  gap: 20px; /* Espaçamento entre os containers */
+  margin: 50px 0; /* Margem superior e inferior */
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 1200px) {
+  .discography-container,
+  .events-container,
+  .grammy-container,
+  .films-container {
+    width: 45%; /* Ajusta a largura para 45% em telas médias */
+  }
+
+  .menu-buttons button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .dropbtn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  .discography-container,
+  .events-container,
+  .grammy-container,
+  .films-container {
+    width: 90%; /* Ajusta a largura para 90% em telas pequenas */
+    margin: 20px auto; /* Centraliza horizontalmente com espaçamento vertical */
+    position: relative; /* Garante que a posição seja relativa para empilhamento vertical */
+  }
+
+  .menu-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-buttons button, .dropbtn {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-buttons button, .dropbtn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
+
 
 .discography-album-img{
   margin-top: 20px;
@@ -445,23 +531,6 @@ td {
   color: var(--color4at);
 }
 
-
-.events-container {
-  scroll-behavior: smooth;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 800px;
-  padding: 20px;
-  width: 400px;
-  background-color: #212121;
-  border-radius: 10px;
-  height: 300px;
-  overflow: hidden;
-  cursor: pointer;
-  margin-bottom: 250px;
-  overflow-y: auto;
-}
-
 .events-container:hover .border-top {
   border-top: 30px solid var(--color3at);
   transition-duration: 1s;
@@ -521,40 +590,6 @@ td {
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
-}
-
-.grammy-container{
-  scroll-behavior: smooth;
-  position: relative;
-  margin-top: 50px;
-  margin-left: 400px;
-  padding: 20px;
-  width: 500px;
-  background-color: #212121;
-  border-radius: 10px;
-  height: 400px;
-  overflow: hidden;
-  cursor: pointer;
-  margin-bottom: 50px;
-  z-index: 0;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
-.films-container {
-  scroll-behavior: smooth;
-  position: absolute;
-  margin-top: -450px;
-  margin-left: 950px;
-  padding: 20px;
-  width: 250px;
-  background-color: #212121;
-  border-radius: 10px;
-  height: 360px;
-  overflow: hidden;
-  cursor: pointer;
-  margin-bottom: 250px;
-  overflow-y: auto;
 }
 
 .gradient-overlay {

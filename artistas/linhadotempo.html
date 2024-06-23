@@ -11,6 +11,7 @@
       font-family: Spotify;
       src: url('../fontes/GothamBold.ttf') format('truetype');
     }
+
     @font-face {
       font-family: 'Commons Regular';
       src: url('../fontes/TT Commons Regular.otf') format('opentype');
@@ -25,7 +26,6 @@
       font-family: 'Commons DemiBold';
       src: url('../fontes/TT Commons DemiBold.otf') format('opentype');
     }
-
 
     header {
       padding: 20px;
@@ -46,12 +46,13 @@
     .header-content {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
 
     .menu-buttons {
-      margin-left: -15px;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       width: 100%;
     }
 
@@ -66,17 +67,12 @@
       cursor: pointer;
       padding: 10px 20px;
       border-radius: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin: 5px;
     }
 
-    .menu-buttons button:hover{
+    .menu-buttons button:hover {
       background-color: #7ea;
       cursor: pointer;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
       transition: all 1s;
     }
 
@@ -90,15 +86,12 @@
       text-align: center;
       padding: 20px;
       margin-top: 70px;
+      clear: both;
     }
 
-    footer:hover{
+    footer:hover {
       color: #FFC0CB;
       cursor: pointer;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
       transition: all 1s;
     }
 
@@ -127,13 +120,9 @@
       letter-spacing: 1px;
     }
 
-    h1:hover, h2:hover{
+    h1:hover, h2:hover {
       color: #FFC0CB;
       cursor: pointer;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
       transition: all 1s;
     }
 
@@ -229,8 +218,7 @@
       cursor: pointer;
       padding: 10px 20px;
       border-radius: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin: 5px;
       transition-duration: 1s;
     }
 
@@ -244,17 +232,9 @@
       text-decoration: none;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
     .info-box {
       position: absolute;
+      z-index: 5;
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -263,10 +243,10 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       transition: 1s;
+      text-align: center;
     }
 
     .info-content {
-      text-align: center;
       font-family: 'Commons Regular', sans-serif;
       text-transform: uppercase;
       font-size: 12px;
@@ -275,22 +255,21 @@
       transition: 1s;
     }
 
-    .info-content:hover{
+    .info-content:hover {
       color: #FFC0CB;
       transition: 1s;
     }
 
     .artist-grid {
+      position: relative;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
       justify-items: center;
       align-items: center;
-      margin-top: 300px;
-      margin-left: 120px;
-      margin-right: 120px;
-      padding: 10px;
-      position: relative;
+      margin-top: 21%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
 
     .artist {
@@ -333,6 +312,79 @@
 
     .artist:hover .artist-name {
       opacity: 1;
+    }
+
+    /* Responsividade */
+    @media (max-width: 1200px) {
+      .artist-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .menu-buttons button {
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .dropbtn {
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .info-box {
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+      }
+
+      .artist-grid {
+        margin-top: 90%;
+      }
+
+      header {
+        padding: 10px;
+      }
+
+      .menu-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-buttons button, .dropbtn {
+        margin: 5px 0;
+      }
+
+      .artist {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .info-box {
+        top: 55%;
+      }
+
+      .artist-grid {
+        margin-top: 95%;
+      }
+
+      .artist {
+        width: 120px;
+        height: 120px;
+      }
+
+      .artist-name {
+        bottom: 70px;
+        font-size: 8px;
+      }
+
+      .menu-buttons button, .dropbtn {
+        padding: 5px 10px;
+        font-size: 10px;
+      }
     }
 
   </style>
@@ -409,6 +461,13 @@
     </a>
   </div>
 
+  <div class="artist">
+    <a href="../artistas/conanwoolridge/historia.html">
+      <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Conan Woolridge">
+      <span class="artist-name">CONAN WOOLRIDGE</span>
+    </a>
+  </div>
+
   <!--<div class="artist">
     <a href="liz/historia.html">
       <img src="https://i.imgur.com/KJD8U5h.png" alt="Liz">
@@ -421,7 +480,7 @@
       <img src="https://i.imgur.com/snAk0OG.jpeg" alt="Anthony">
       <span class="artist-name">Anthony</span>
     </a>
-  </div> -->
+  </div>-->
 
   <!--<div class="artist">
     <a href="aroon/historia.html">
@@ -434,6 +493,13 @@
     <a href="../artistas/aria/historia.html">
       <img src="https://i.imgur.com/1cQsduv.png" alt="Aroon">
       <span class="artist-name">Aria</span>
+    </a>
+  </div>
+
+  <div class="artist">
+    <a href="../artistas/trevor/historia.html">
+      <img src="https://citizen-magazine.co/wp-content/uploads/2023/12/5-1-scaled-1-770x1024.jpg" alt="Trevor">
+      <span class="artist-name">Trevor</span>
     </a>
   </div>
 

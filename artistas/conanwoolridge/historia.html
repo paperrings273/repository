@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Even Grace</title>
+  <title>Conan Woolridge</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../style-artists.css">
-  <link rel="stylesheet" href="../evengrace/style-evengrace.css">
+  <link rel="stylesheet" href="../conanwoolridge/style-conanwoolridge.css">
 </head>
 <body>
 <header2 id="header">
@@ -33,15 +33,15 @@
 
 
 <div class="artist-info-box">
-  <h1 class="artist-title">Even Grace</h1>
+  <h1 class="artist-title">Conan</h1>
 </div>
 <div class="artist-photo-box">
   <div class="artist-photo">
   </div>
   <div class="artist-details">
-    <h1 class="artist-details-cels">28 anos</h1>
-    <h1 class="artist-details-cels">Inglaterra, Londres</h1>
-    <h1 class="artist-details-cels">℗ © Illuminati Records</h1>
+    <h1 class="artist-details-cels">20 anos</h1>
+    <h1 class="artist-details-cels">Inglaterra, Liverpool</h1>
+    <h1 class="artist-details-cels">℗ © Starlight Records</h1>
   </div>
 </div>
 
@@ -119,7 +119,7 @@
         const nominees = category.nominees;
         const winner = category.winner;
 
-        const artistName = "Even Grace";
+        const artistName = "Conan Woolridge";
 
         const isNominee = nominees.some(nominee => {
           const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
@@ -198,7 +198,7 @@
       }
     });
 
-    const artistName = "Even Grace"; // Nome do artista
+    const artistName = "Conan Woolridge";
     const totalStats = document.createElement('div');
     totalStats.classList.add('total-stats');
     totalStats.innerHTML = `
@@ -219,7 +219,7 @@
 
     if (grammyCategoriesDiv.children.length === 0) {
       const noInfoLabel = document.createElement('p');
-      songInfo.classList.add('empty-info');
+      noInfoLabel.classList.add('empty-info');
       noInfoLabel.textContent = "Nenhuma informação disponível para este artista.";
       grammyCategoriesDiv.appendChild(noInfoLabel);
     }
@@ -229,7 +229,7 @@
 
 </script>
 
-<script src="films.js"></script>
+<script src="../conanwoolridge/films.js"></script>
 <script>
   function displayFilms() {
     const filmsGrid = document.getElementById("films-grid");
@@ -282,7 +282,7 @@
 </script>
 
 
-<script src="events.js"></script>
+<script src="../conanwoolridge/events.js"></script>
 <script>
   function displayData() {
     const toursGrid = document.getElementById("tours-grid");
@@ -349,7 +349,7 @@
   displayData();
 </script>
 
-<script src="discography.js"></script>
+<script src="../conanwoolridge/discography.js"></script>
 <script>
   function displayAlbums() {
     const albumsTable = document.getElementById("albums-table");
