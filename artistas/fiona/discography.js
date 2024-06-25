@@ -12,6 +12,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "Be Alive (Original Song from the Motion Picture \"Before Sunrise\")",
+    year: "Year 02",
+    image: "https://i.imgur.com/82p0m2k.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "When The Party's Over",
     year: "Year 02",
     image: "https://i.imgur.com/wN6WNhi.jpeg",

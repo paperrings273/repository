@@ -12,6 +12,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "In Case I Don't Live Forever (Original Song from the Motion Picture \"Before Sunrise\")",
+    year: "Year 02",
+    image: "https://i.imgur.com/tqxWe2B.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "Memories From Home",
     year: "Year 01",
     image: "https://i.imgur.com/65gXFm7.png",

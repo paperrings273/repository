@@ -22,6 +22,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "The Suburbs",
+    year: "Year 02",
+    image: "https://i.imgur.com/tHIl0ot.png",
+    label: "℗ © Dawn Records"
+  },
   { title: "Alone in Kyoto",
     year: "Year 01",
     image: "https://i.imgur.com/0ZbcWX7.png",
