@@ -1,8 +1,8 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Wings",
-    artista: "4Music"
+    musica: "The Suburbs",
+    artista: "Even Grace"
   },
 
   {
@@ -13,49 +13,49 @@ var tabelaDados = [
 
   {
     posicao: 3,
-    musica: "Family Ties",
-    artista: "Miles Carson, Trevor",
+    musica: "Be Alive",
+    artista: "Fiona",
   },
 
   {
     posicao: 4,
-    musica: "Rumors",
-    artista: "Owen Graham"
+    musica: "In Case I Don't Live Forever",
+    artista: "Conan Woolridge"
   },
 
   {
    posicao: 5,
-   musica: "Boom Boom",
-   artista: "Aria, Liza, Hannah"
+   musica: "Rumors",
+   artista: "Owen Graham"
 },
 
   {
     posicao: 6,
-    musica: "Sweetheart",
-    artista: "Holligan"
+    musica: "Alone in Kyoto",
+    artista: "Even Grace"
   },
 
   {
     posicao: 7,
-    musica: "Salute",
-    artista: "4Music"
+    musica: "Soul For My Love",
+    artista: "Ava"
   },
 
   {
     posicao: 8,
-    musica: "Inner Self",
-    artista: "Trevor"
+    musica: "Beetlebum",
+    artista: "Even Grace"
   },
 
   {
     posicao: 9,
-    musica: "Eyes On Me",
-    artista: "Aria"
+    musica: "Goodbye Jimmy",
+    artista: "Even Grace"
   },
 
   {
     posicao: 10,
-    musica: "The Suburbs",
+    musica: "Hang the DJ!",
     artista: "Even Grace"
   },
 ];

@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Bloodsucker", artista: "Ava", imagem: "https://i.imgur.com/FgZ69Ya.jpg" },
-  { posicao: 2, musica: "Wings", artista: "4Music", imagem: "" },
-  { posicao: 3, musica: "Family Ties", artista: "Miles Carson ft. Trevor", imagem: "" },
-  { posicao: 4, musica: "Boom Boom", artista: "Aria ft. Liza & Hannah", imagem: "" },
-  { posicao: 5, musica: "Rumors", artista: "Owen Graham", imagem: "" },
-  { posicao: 6, musica: "Eyes On Me", artista: "Aria", imagem: "" },
-  { posicao: 7, musica: "Stronger Than Love", artista: "Aria ft. Trevor", imagem: "" },
-  { posicao: 8, musica: "Sweetheart", artista: "Holligan", imagem: "" },
-  { posicao: 9, musica: "Salute", artista: "4Music", imagem: "" },
-  { posicao: 10, musica: "Memories From Home", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 1, musica: "The Suburbs", artista: "Even Grace", imagem: "" },
+  { posicao: 2, musica: "Bloodsucker", artista: "Ava", imagem: "" },
+  { posicao: 3, musica: "Alone in Kyoto", artista: "Even Grace", imagem: "" },
+  { posicao: 4, musica: "The Very Modern Dance", artista: "Even Grace", imagem: "" },
+  { posicao: 5, musica: "Hang the DJ!", artista: "Even Grace", imagem: "" },
+  { posicao: 6, musica: "Beetlebum", artista: "Even Grace", imagem: "" },
+  { posicao: 7, musica: "Goodbye Jimmy", artista: "Even Grace", imagem: "" },
+  { posicao: 8, musica: "London, I Love You but You’re Bringing Me Down", artista: "Even Grace", imagem: "" },
+  { posicao: 9, musica: "All Good Children go to Heaven", artista: "Even Grace", imagem: "" },
+  { posicao: 10, musica: "Rumors", artista: "Owen Graham", imagem: "" },
 ];
 
 function atualizarTabela() {
