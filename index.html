@@ -8,6 +8,46 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
 
+    @media (max-width: 1200px) {
+
+      .menu-buttons button {
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .dropbtn {
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .menu-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-buttons button, .dropbtn {
+        margin: 5px 0;
+      }
+
+      .container{
+        margin-top: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-buttons button, .dropbtn {
+        padding: 5px 10px;
+        font-size: 10px;
+      }
+
+      .container{
+        margin-top: 600px;
+      }
+    }
+
     @font-face {
       font-family: Spotify;
       src: url('fontes/GothamBold.ttf') format('truetype');
@@ -128,13 +168,10 @@
     }
 
     .container {
-      margin-top: 100px;
-      display: flex;
+      position: relative;
+      margin-top: 7%;
       justify-content: center;
-      align-items: flex-start;
-      gap: 50px;
       padding: 50px;
-      opacity: 0;
       animation: fadeIn 1s forwards;
     }
 
@@ -525,78 +562,131 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  window.addEventListener('scroll', function() {
-  });
-
-  function populateAlbums(data) {
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
-
-    data.forEach((album) => {
-      const slide = document.createElement('div');
-      slide.classList.add('swiper-slide');
-
-      const albumInfo = document.createElement('div');
-      albumInfo.classList.add('section');
-
-      const albumCover = document.createElement('img');
-      albumCover.classList.add('album-cover');
-      albumCover.src = album.cover;
-
-      const artistName = document.createElement('h1');
-      artistName.textContent = album.artist;
-
-      const albumTitle = document.createElement('h2');
-      albumTitle.textContent = album.title;
-
-      const labelName = document.createElement('h3');
-      labelName.textContent = album.label;
-
-      const playlistButton = document.createElement('button');
-      playlistButton.classList.add('section-button-spot');
-      playlistButton.addEventListener('click', () => window.open(album.playlistLink));
-
-      const trackButton = document.createElement('button');
-      trackButton.classList.add('section-button-dc');
-      trackButton.addEventListener('click', () => window.open(album.trackLink));
-
-      albumInfo.appendChild(albumCover);
-      albumInfo.appendChild(artistName);
-      albumInfo.appendChild(albumTitle);
-      albumInfo.appendChild(labelName);
-      albumInfo.appendChild(playlistButton);
-      albumInfo.appendChild(trackButton);
-      /*albumInfo.appendChild(trackButton);*/
-      slide.appendChild(albumInfo);
-      swiperWrapper.appendChild(slide);
-    });
-
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200) {
-        const data = JSON.parse(xhr.responseText);
-        populateAlbums(data);
-      } else {
-        console.error('Erro ao carregar os dados do arquivo JSON');
-      }
+  window.addEventListener('load', function() {
+    // Função para inicializar o Swiper e ajustar responsivamente
+    function initSwiper() {
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          2560: {
+            slidesPerView: 7,
+            spaceBetween: 70,
+          },
+          1920: {
+            slidesPerView: 6,
+            spaceBetween: 60,
+          },
+          1520: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+          1290: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1080: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // Configurações para quando a largura da tela for 768 pixels ou menos
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // Configurações para quando a largura da tela for 480 pixels ou menos
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+      });
     }
-  };
-  xhr.open('GET', 'albums-index.json');
-  xhr.send();
+
+    // Função para popular os álbuns na swiper-wrapper
+    function populateAlbums(data) {
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+
+      data.forEach((album) => {
+        const slide = document.createElement('div');
+        slide.classList.add('swiper-slide');
+
+        const albumInfo = document.createElement('div');
+        albumInfo.classList.add('section');
+
+        const albumCover = document.createElement('img');
+        albumCover.classList.add('album-cover');
+        albumCover.src = album.cover;
+
+        const artistName = document.createElement('h1');
+        artistName.textContent = album.artist;
+
+        const albumTitle = document.createElement('h2');
+        albumTitle.textContent = album.title;
+
+        const labelName = document.createElement('h3');
+        labelName.textContent = album.label;
+
+        const playlistButton = document.createElement('button');
+        playlistButton.classList.add('section-button-spot');
+        playlistButton.textContent = ' ';
+        playlistButton.addEventListener('click', () => window.open(album.playlistLink));
+
+        const trackButton = document.createElement('button');
+        trackButton.classList.add('section-button-dc');
+        trackButton.textContent = ' ';
+        trackButton.addEventListener('click', () => window.open(album.trackLink));
+
+        albumInfo.appendChild(albumCover);
+        albumInfo.appendChild(artistName);
+        albumInfo.appendChild(albumTitle);
+        albumInfo.appendChild(labelName);
+        albumInfo.appendChild(playlistButton);
+        albumInfo.appendChild(trackButton);
+
+        slide.appendChild(albumInfo);
+        swiperWrapper.appendChild(slide);
+      });
+
+      // Inicializa o Swiper após popular os álbuns
+      initSwiper();
+    }
+
+    // Requisição AJAX para carregar dados do arquivo JSON
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          populateAlbums(data);
+        } else {
+          console.error('Erro ao carregar os dados do arquivo JSON');
+        }
+      }
+    };
+    xhr.open('GET', 'albums-index.json');
+    xhr.send();
+
+    // Função para ajustar o Swiper quando a tela for redimensionada
+    window.addEventListener('resize', function() {
+      // Destrói o Swiper existente se ele já estiver inicializado
+      if (swiper !== undefined) {
+        swiper.destroy();
+      }
+      // Recria o Swiper para ajustar responsivamente
+      initSwiper();
+    });
+
+  });
 </script>
+
 </body>
 </html>
