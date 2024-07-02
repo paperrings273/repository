@@ -1,4 +1,9 @@
 const albumsData = [
+  { title: "Before Sunrise (Original Motion Picture Soundtrack)",
+    year: "Year 02",
+    image: "https://i.imgur.com/dCHj2tL.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "Confessions Of A Broken Heart (Deluxe)",
     year: "Year 01",
     image: "https://i.imgur.com/GhEMkMK.jpeg",

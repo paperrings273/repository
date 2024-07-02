@@ -7,6 +7,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "Stolen",
+    year: "Year 02",
+    image: "https://i.imgur.com/Rh2xk4x.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "Rumors",
     year: "Year 01",
     image: "https://i.imgur.com/dhc5YTC.jpg",

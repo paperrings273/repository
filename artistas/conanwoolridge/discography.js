@@ -1,4 +1,9 @@
 const albumsData = [
+  { title: "Before Sunrise (Original Motion Picture Soundtrack)",
+    year: "Year 02",
+    image: "https://i.imgur.com/dCHj2tL.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "Forbidden Whispers",
     year: "Year 01",
     image: "https://i.imgur.com/n15i4Z3.png",

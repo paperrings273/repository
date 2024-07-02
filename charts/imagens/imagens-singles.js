@@ -1,4 +1,5 @@
 var linksImagens = {
+  "Stolen - Owen Graham": "https://i.imgur.com/Rh2xk4x.png",
   "Soul For My Love - Ava":"https://i.imgur.com/jLupsIR.png",
   "Beetlebum - Even Grace": "https://i.imgur.com/EZtINMP.png",
   "Alone in Kyoto - Even Grace": "https://i.imgur.com/gBJYB4C.png",
