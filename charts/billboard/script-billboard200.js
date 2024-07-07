@@ -1,14 +1,14 @@
 var tabelaDados = [
   { posicao: 1, album: "What Ever Happened?", artista: "Even Grace" },
-  { posicao: 2, album: "Dreamscape", artista: "Aria"},
-  { posicao: 3, album: "Forbidden Whispers", artista: "Conan Woolridge" },
-  { posicao: 4, album: "Purple Dream", artista: "Even Grace" },
-  { posicao: 5, album: "House Of The Rising Sun", artista: "Ava" },
-  { posicao: 6, album: "i owe it to myself", artista: "Owen Graham" },
-  { posicao: 7, album: "KIDS SEE GHOSTS", artista: "Trevor" },
-  { posicao: 8, album: "I Really Don't Wanna Hear It Anymore", artista: "Holligan" },
+  { posicao: 2, album: "Forbidden Whispers", artista: "Conan Woolridge"},
+  { posicao: 3, album: "Dreamscape", artista: "Aria" },
+  { posicao: 4, album: "Before Sunrise (Original Motion Picture Soundtrack)", artista: "Conan Woolridge, Fiona" },
+  { posicao: 5, album: "Purple Dream", artista: "Even Grace" },
+  { posicao: 6, album: "House Of The Rising Sun", artista: "Ava" },
+  { posicao: 7, album: "i owe it to myself", artista: "Owen Graham" },
+  { posicao: 8, album: "KIDS SEE GHOSTS", artista: "Trevor" },
   { posicao: 9, album: "Gone Now", artista: "Even Grace" },
-  { posicao: 10, album: "meaningless", artista: "Anthony" },
+  { posicao: 10, album: "I Really Don't Wanna Hear It Anymore", artista: "Holligan" },
 ];
 
 function atualizarTabela() {

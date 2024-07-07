@@ -7,48 +7,48 @@ var tabelaDados = [
   },
   {
     posicao: 2,
-    musica: "Dreamscape",
-    artista: "Aria"
-  },
-  {
-    posicao: 3,
-    musica: "House Of The Rising Sun",
-    artista: "Ava"
-  },
-  {
-    posicao: 4,
-    musica: "Purple Dream",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 5,
-    musica: "i owe it to myself",
-    artista: "Owen Graham"
-  },
-  {
-    posicao: 6,
     musica: "Forbidden Whispers",
     artista: "Conan Woolridge"
   },
   {
-    posicao: 7,
+    posicao: 3,
+    musica: "Dreamscape",
+    artista: "Aria"
+  },
+  {
+    posicao: 4,
+    musica: "i owe it to myself",
+    artista: "Owen Graham"
+  },
+  {
+    posicao: 5,
+    musica: "House Of The Rising Sun",
+    artista: "Ava"
+  },
+  {
+    posicao: 6,
     musica: "Confessions Of A Broken Heart (Deluxe)",
     artista: "Fiona"
   },
   {
-    posicao: 8,
+    posicao: 7,
     musica: "KIDS SEE GHOSTS",
     artista: "Trevor"
   },
   {
+    posicao: 8,
+    musica: "meaningless",
+    artista: "Anthony"
+  },
+  {
     posicao: 9,
-    musica: "Gone Now",
+    musica: "Purple Dream",
     artista: "Even Grace"
   },
   {
     posicao: 10,
-    musica: "I Really Don't Wanna Hear It Anymore",
-    artista: "Holligan"
+    musica: "A Brief Inquiry Into Online Relationships",
+    artista: "Even Grace"
   }
 ];
 

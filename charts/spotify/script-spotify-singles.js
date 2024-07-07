@@ -1,44 +1,44 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "The Suburbs",
-    artista: "Even Grace"
+    musica: "Stolen",
+    artista: "Owen Graham"
   },
 
   {
     posicao: 2,
+    musica: "Overthinking",
+    artista: "Harper"
+  },
+
+  {
+    posicao: 3,
+    musica: "Rumors",
+    artista: "Owen Graham",
+  },
+
+  {
+    posicao: 4,
     musica: "Bloodsucker",
     artista: "Ava"
   },
 
   {
-    posicao: 3,
-    musica: "Be Alive",
-    artista: "Fiona",
-  },
-
-  {
-    posicao: 4,
-    musica: "In Case I Don't Live Forever",
-    artista: "Conan Woolridge"
-  },
-
-  {
    posicao: 5,
-   musica: "Rumors",
-   artista: "Owen Graham"
+   musica: "The Suburbs",
+   artista: "Even Grace"
 },
 
   {
     posicao: 6,
-    musica: "Alone in Kyoto",
-    artista: "Even Grace"
+    musica: "Salute",
+    artista: "4Music"
   },
 
   {
     posicao: 7,
-    musica: "Soul For My Love",
-    artista: "Ava"
+    musica: "Goodbye Jimmy",
+    artista: "Even Grace"
   },
 
   {
@@ -49,14 +49,14 @@ var tabelaDados = [
 
   {
     posicao: 9,
-    musica: "Goodbye Jimmy",
-    artista: "Even Grace"
+    musica: "Wings",
+    artista: "4Music"
   },
 
   {
     posicao: 10,
-    musica: "Hang the DJ!",
-    artista: "Even Grace"
+    musica: "Memories From Home",
+    artista: "Conan Woolridge"
   },
 ];
 

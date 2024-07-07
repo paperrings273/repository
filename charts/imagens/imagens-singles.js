@@ -1,5 +1,4 @@
 var linksImagens = {
-  "Stolen - Owen Graham": "https://i.imgur.com/Rh2xk4x.png",
   "Soul For My Love - Ava":"https://i.imgur.com/jLupsIR.png",
   "Beetlebum - Even Grace": "https://i.imgur.com/EZtINMP.png",
   "Alone in Kyoto - Even Grace": "https://i.imgur.com/gBJYB4C.png",
@@ -22,4 +21,6 @@ var linksImagens = {
   "Boom Boom - Aria, Liza, Hannah": "https://i.imgur.com/8yrpSbT.png",
   "Wings - 4Music": "https://i.imgur.com/FFwDAJ2.png",
   "Inner Self - Trevor": "https://i.imgur.com/HaozlBp.png",
+  "Overthinking - Harper": "https://i.imgur.com/hFoBnej.jpeg",
+  "Stolen - Owen Graham": "https://i.imgur.com/GUK0p2w.png",
 };
