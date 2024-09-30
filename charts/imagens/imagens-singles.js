@@ -1,5 +1,11 @@
 var linksImagens = {
-  "Soul For My Love - Ava":"https://i.imgur.com/jLupsIR.png",
+  "Move - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "Little Me - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "DNA - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "Change Your Life - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "Dilemma - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "AFTERMATH - Alana Grace": "https://i.imgur.com/n5OTHPi.png",
+  "Soul For My Love - Ava": "https://i.imgur.com/jLupsIR.png",
   "Beetlebum - Even Grace": "https://i.imgur.com/EZtINMP.png",
   "Alone in Kyoto - Even Grace": "https://i.imgur.com/gBJYB4C.png",
   "Be Alive - Fiona": "https://i.imgur.com/82p0m2k.png",

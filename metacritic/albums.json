@@ -1,15 +1,30 @@
 [
   {
+    "cover": "https://i.imgur.com/4lwZZtP.png",
+    "title": "Salute",
+    "artist": "4Music",
+    "genre": "Pop",
+    "label": "Dawn®",
+    "rating": "68",
+    "reviews": 1,
+    "reviewScores": [
+      {"source": "Variety", "score": 68}
+    ],
+    "generallyFavorableReviews": false
+  },
+  {
     "cover": "https://i.imgur.com/n5OTHPi.png",
     "title": "MELANCHOLIA",
     "artist": "Alana Grace",
     "genre": "Pop/Folk",
     "label": "Dawn®",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": "72",
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 74},
+      {"source": "Variety", "score": 70}
     ],
-    "generallyFavorableReviews": false
+    "generallyFavorableReviews": true
   },
   {
     "cover": "https://i.imgur.com/YOeKr4e.png",

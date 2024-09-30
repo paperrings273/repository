@@ -1,5 +1,8 @@
 // imagens.js
 var linksImagens = {
+  "MELANCHOLIA - Alana Grace": "https://i.imgur.com/n5OTHPi.png",
+  "Salute - 4Music": "https://i.imgur.com/4lwZZtP.png",
+  "Before Sunrise (Original Motion Picture Soundtrack) - Conan Woolridge, Fiona": "https://i.imgur.com/dCHj2tL.png",
   "Dreamscape - Aria": "https://i.imgur.com/YOeKr4e.png",
   "Forbidden Whispers - Conan Woolridge": "https://i.imgur.com/dcXh0vd.png",
   "What Ever Happened? - Even Grace": "https://i.imgur.com/4UxqnEn.png",

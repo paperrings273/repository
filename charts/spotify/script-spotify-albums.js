@@ -2,13 +2,13 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
+    musica: "Salute",
+    artista: "4Music"
   },
   {
     posicao: 2,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
+    musica: "MELANCHOLIA",
+    artista: "Alana Grace"
   },
   {
     posicao: 3,
@@ -17,38 +17,38 @@ var tabelaDados = [
   },
   {
     posicao: 4,
-    musica: "i owe it to myself",
-    artista: "Owen Graham"
+    musica: "What Ever Happened?",
+    artista: "Even Grace"
   },
   {
     posicao: 5,
-    musica: "House Of The Rising Sun",
-    artista: "Ava"
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 6,
-    musica: "Confessions Of A Broken Heart (Deluxe)",
-    artista: "Fiona"
+    musica: "Before Sunrise (Original Motion Picture Soundtrack)",
+    artista: "Conan Woolridge, Fiona"
   },
   {
     posicao: 7,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor"
-  },
-  {
-    posicao: 8,
-    musica: "meaningless",
-    artista: "Anthony"
-  },
-  {
-    posicao: 9,
     musica: "Purple Dream",
     artista: "Even Grace"
   },
   {
+    posicao: 8,
+    musica: "House Of The Rising Sun",
+    artista: "Ava"
+  },
+  {
+    posicao: 9,
+    musica: "i owe it to myself",
+    artista: "Owen Graham"
+  },
+  {
     posicao: 10,
-    musica: "A Brief Inquiry Into Online Relationships",
-    artista: "Even Grace"
+    musica: "KIDS SEE GHOSTS",
+    artista: "Trevor"
   }
 ];
 

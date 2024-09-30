@@ -535,18 +535,18 @@
       <div class="section" style="width: 45%; margin-left: 20px;">
         <img src="https://i.imgur.com/I5Tjuqg.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 120px; transform: translateX(-50%);">
         <h1>#1 IN THIS WEEK</h1>
-        <img class="album-cover" src="https://i.imgur.com/GUK0p2w.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
-        <h1>Stolen</h1>
-        <h2>Owen Graham</h2>
+        <img class="album-cover" src="https://i.imgur.com/4lwZZtP.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
+        <h1>Move</h1>
+        <h2>4Musice</h2>
         <h1 style="font-size: 100px; font-family: 'Commons Bold', sans-serif; -webkit-text-stroke: 3px #212121; position: absolute; margin-top: -175px; margin-left: 120px;">#1</h1>
       </div>
 
       <div class="section" style="width: 45%; margin-left: 20px;">
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Logo" style=" margin-left: 110px; bottom: -50px; width: 100px; transform: translateX(-50%);">
         <h1>#1 IN THIS WEEK</h1>
-        <img class="album-cover" src="https://i.imgur.com/GUK0p2w.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
-        <h1>Stolen</h1>
-        <h2>Owen Graham</h2>
+        <img class="album-cover" src="https://i.imgur.com/4lwZZtP.png" style="margin-left: -60px; width: 45%;" alt="Capa do Álbum">
+        <h1>Move</h1>
+        <h2>4Music</h2>
         <h1 style="font-size: 100px; font-family: 'Commons Bold', sans-serif; -webkit-text-stroke: 3px #212121; position: absolute; margin-top: -175px; margin-left: 120px;">#1</h1>
       </div>
     </div>
@@ -563,7 +563,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   window.addEventListener('load', function() {
-    // Função para inicializar o Swiper e ajustar responsivamente
     function initSwiper() {
       const swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
@@ -597,12 +596,10 @@
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          // Configurações para quando a largura da tela for 768 pixels ou menos
           768: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          // Configurações para quando a largura da tela for 480 pixels ou menos
           480: {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -611,7 +608,6 @@
       });
     }
 
-    // Função para popular os álbuns na swiper-wrapper
     function populateAlbums(data) {
       const swiperWrapper = document.querySelector('.swiper-wrapper');
 
@@ -656,11 +652,9 @@
         swiperWrapper.appendChild(slide);
       });
 
-      // Inicializa o Swiper após popular os álbuns
       initSwiper();
     }
 
-    // Requisição AJAX para carregar dados do arquivo JSON
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -675,13 +669,10 @@
     xhr.open('GET', 'albums-index.json');
     xhr.send();
 
-    // Função para ajustar o Swiper quando a tela for redimensionada
     window.addEventListener('resize', function() {
-      // Destrói o Swiper existente se ele já estiver inicializado
       if (swiper !== undefined) {
         swiper.destroy();
       }
-      // Recria o Swiper para ajustar responsivamente
       initSwiper();
     });
 

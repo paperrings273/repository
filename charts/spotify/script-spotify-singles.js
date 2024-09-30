@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "Move",
+    artista: "4Music"
+  },
+
+  {
+    posicao: 2,
     musica: "Stolen",
     artista: "Owen Graham"
   },
 
   {
-    posicao: 2,
-    musica: "Overthinking",
-    artista: "Harper"
-  },
-
-  {
     posicao: 3,
-    musica: "Rumors",
-    artista: "Owen Graham",
+    musica: "AFTERMATH",
+    artista: "Alana Grace",
   },
 
   {
     posicao: 4,
-    musica: "Bloodsucker",
-    artista: "Ava"
-  },
-
-  {
-   posicao: 5,
-   musica: "The Suburbs",
-   artista: "Even Grace"
-},
-
-  {
-    posicao: 6,
     musica: "Salute",
     artista: "4Music"
   },
 
   {
+   posicao: 5,
+   musica: "Wings",
+   artista: "4Music"
+},
+
+  {
+    posicao: 6,
+    musica: "Little Me",
+    artista: "4Music"
+  },
+
+  {
     posicao: 7,
-    musica: "Goodbye Jimmy",
-    artista: "Even Grace"
+    musica: "DNA",
+    artista: "4Music"
   },
 
   {
     posicao: 8,
-    musica: "Beetlebum",
-    artista: "Even Grace"
+    musica: "Overthinking",
+    artista: "Harper"
   },
 
   {
     posicao: 9,
-    musica: "Wings",
+    musica: "Change Your Life",
     artista: "4Music"
   },
 
   {
     posicao: 10,
-    musica: "Memories From Home",
-    artista: "Conan Woolridge"
+    musica: "Dilemma",
+    artista: "4Music"
   },
 ];
 
