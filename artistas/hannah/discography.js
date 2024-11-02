@@ -17,6 +17,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "TEXAS ON FIRE",
+    year: "Year 02",
+    image: "https://i.imgur.com/sqDjXxy.png",
+    label: "℗ © Dawn Records"
+  },
   { title: "Boom Boom",
     year: "Year 01",
     image: "https://i.imgur.com/3JncPKv.png",

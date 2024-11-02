@@ -1,6 +1,45 @@
 [
   {
     "cover":
+    "https://i.imgur.com/SjmmVKv.png"
+  ,
+    "artist": "Eric",
+    "title": "Overgrown",
+    "label": "Spotlight®",
+    "playlistLink":
+    "https://open.spotify.com/playlist/3UfktIJ0FkqxQG6hhVgOp2?si=9a136281fdf644a9"
+  ,
+    "trackLink":
+    "https://discord.com/channels/1200848484518080512/1200979863188799589/1302077197342740483"
+  },
+  {
+    "cover":
+    "https://i.imgur.com/xkyQrbf.png"
+  ,
+    "artist": "Ava",
+    "title": "The Drive",
+    "label": "Dawn®",
+    "playlistLink":
+    "https://open.spotify.com/playlist/2u1ptLJPcXPnoHob9D6yLr?si=9f5d40a90b1a4815"
+  ,
+    "trackLink":
+    "https://discord.com/channels/1200848484518080512/1200979863188799589/1302074976488132729"
+  },
+  {
+    "cover":
+    "https://i.imgur.com/yhwmxiR.png"
+  ,
+    "artist": "Trevor",
+    "title": "Poets Can't Be Murdered",
+    "label": "Starlight®",
+    "playlistLink":
+    "https://open.spotify.com/playlist/52TvImIs7ES6UChHFoNyaA?si=ef5ee2d3bfcd4518"
+  ,
+    "trackLink":
+    "https://discord.com/channels/1200848484518080512/1200979863188799589/1300300835678322750"
+  },
+  {
+    "cover":
     "https://i.imgur.com/4lwZZtP.png"
   ,
     "artist": "4Music",
@@ -11,96 +50,5 @@
   ,
     "trackLink":
     "https://discord.com/channels/1200848484518080512/1200979863188799589/1241225181926522912"
-  },
-  {
-    "cover":
-    "https://i.imgur.com/YOeKr4e.png"
-  ,
-    "artist": "Dreamscape",
-    "title": "Aria",
-    "label": "Illuminati®",
-    "playlistLink":
-    "https://open.spotify.com/playlist/52TvImIs7ES6UChHFoNyaA?si=ef5ee2d3bfcd4518"
-  ,
-    "trackLink":
-    "https://discord.com/channels/1200848484518080512/1200979863188799589/1241225181926522912"
-  },
-  {
-    "cover":
-    "https://i.imgur.com/8QfuQKE.png"
-  ,
-    "artist": "What Ever Happened?",
-    "title": "Even Grace",
-    "label": "Dawn®",
-    "playlistLink":
-    "https://open.spotify.com/playlist/1PFfT1Fve5XQMke6qvi2hZ?si=6d9bdb2fee884835"
-  ,
-    "trackLink":
-    "https://discord.com/channels/1200848484518080512/1200979863188799589/1240868842494758922"
-  },
-  {
-    "cover":
-    "https://i.imgur.com/dcXh0vd.png"
-  ,
-    "artist": "Forbidden Whispers",
-    "title": "Conan Woolridge",
-    "label": "Starlight®",
-    "playlistLink":
-    "https://open.spotify.com/playlist/192S9KdEdxsPkHXjDGCPU9?si=c2cf1311d92b46ea"
-  ,
-    "trackLink":
-    "https://discord.com/channels/1200848484518080512/1200979863188799589/1232011198774644877"
-  },
-  {
-    "cover":
-      "https://i.imgur.com/H2zKlDG.png"
-  ,
-    "artist": "meaningless",
-    "title": "Anthony",
-    "label": "Illuminati®",
-    "playlistLink":
-      "https://open.spotify.com/playlist/1St1UP314FyLteA1PBI8UP?si=dc0032f8946546f7"
-  ,
-    "trackLink":
-      "https://discord.com/channels/1200848484518080512/1200979863188799589/1213952192600477727"
-  },
-  {
-    "cover":
-      "https://i.imgur.com/GSbs5fC.png"
-    ,
-    "artist": "House Of The Rising Sun",
-    "title": "Ava Thompson",
-    "label": "Dawn®",
-    "playlistLink":
-    "https://open.spotify.com/playlist/68Ui2JyzVspCtznu4WICbi?si=5df0779e2cef4205"
-    ,
-    "trackLink":
-    "https://discord.com/channels/1200848484518080512/1200979863188799589/1210045179197657088"
-  },
-  {
-    "cover":
-      "https://i.imgur.com/4HlsfSc.png"
-  ,
-    "artist": "everlasting",
-    "title": "Liz",
-    "label": "Dawn®",
-    "playlistLink":
-      "https://open.spotify.com/playlist/1kxcP6Y9O4ZI83jePMIfZt?si=3e9cdf5d91f744c3"
-  ,
-    "trackLink":
-      "https://discord.com/channels/1200848484518080512/1200979863188799589/1208845669025063004"
-  },
-  {
-    "cover":
-      "https://i.imgur.com/5kfkjb9.png"
-    ,
-    "artist": "KIDS SEE GHOSTS",
-    "title": "Trevor",
-    "label": "Starlight®",
-    "playlistLink":
-    "https://open.spotify.com/playlist/5OYFDkbKJoRbi0lc9dHGJW?si=9af9271a8301493c"
-    ,
-    "trackLink":
-      "https://discord.com/channels/1200848484518080512/1200979863188799589/1209706504454799390"
   }
 ]

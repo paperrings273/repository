@@ -1,16 +1,52 @@
 [
   {
+    "cover": "https://i.imgur.com/SjmmVKv.png",
+    "title": "Overgrown",
+    "artist": "Eric",
+    "genre": "R&B/Folk",
+    "label": "Starlight®",
+    "rating": "tbd",
+    "reviews": 0,
+    "reviewScores": [
+    ],
+    "universalAcclaim": false  },
+  {
+    "cover": "https://i.imgur.com/xkyQrbf.png",
+    "title": "The Drive",
+    "artist": "Ava Thompson",
+    "genre": "Pop/Rock",
+    "label": "Dawn®",
+    "rating": "86",
+    "reviews": 1,
+    "reviewScores": [
+      {"source": "Pitchfork", "score": 86}
+    ],
+    "universalAcclaim": true  },
+  {
+    "cover": "https://i.imgur.com/yhwmxiR.png",
+    "title": "Poets Can't Be Murdered",
+    "artist": "Trevor",
+    "genre": "Rap",
+    "label": "Starlight®",
+    "rating": "81",
+    "reviews": 1,
+    "reviewScores": [
+      {"source": "Pitchfork", "score": 81}
+    ],
+    "universalAcclaim": true  },
+  {
     "cover": "https://i.imgur.com/4lwZZtP.png",
     "title": "Salute",
     "artist": "4Music",
     "genre": "Pop",
     "label": "Dawn®",
-    "rating": "68",
-    "reviews": 1,
+    "rating": "67",
+    "reviews": 2,
     "reviewScores": [
-      {"source": "Variety", "score": 68}
+      {"source": "Variety", "score": 68},
+      {"source": "Pitchfork", "score": 67}
     ],
-    "generallyFavorableReviews": false
+    "mixedOrAverageReviews": true
   },
   {
     "cover": "https://i.imgur.com/n5OTHPi.png",
@@ -244,3 +280,4 @@
     "universalAcclaim": true
   }
 ]
+

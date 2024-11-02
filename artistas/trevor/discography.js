@@ -1,4 +1,9 @@
 const albumsData = [
+  { title: "Poets Can't Be Murdered",
+    year: "Year 02",
+    image: "https://i.imgur.com/yhwmxiR.png",
+    label: "℗ © Starlight Studios"
+  },
   { title: "KIDS SEE GHOSTS",
     year: "Year 01",
     image: "https://i.imgur.com/XCuBO7u.png",

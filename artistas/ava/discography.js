@@ -1,4 +1,9 @@
 const albumsData = [
+  { title: "The Drive",
+    year: "Year 02",
+    image: "https://i.imgur.com/xkyQrbf.png",
+    label: "℗ © Dawn Records"
+  },
   { title: "House Of The Rising Sun",
     year: "Year 01",
     image: "https://i.imgur.com/GSbs5fC.png",
@@ -7,6 +12,11 @@ const albumsData = [
 ];
 
 const singlesData = [
+  { title: "Oh, was that yours?",
+    year: "Year 02",
+    image: "https://i.imgur.com/Q94Pawr.png",
+    label: "℗ © Dawn Records"
+  },
   { title: "Bloodsucker",
     year: "Year 02",
     image: "https://i.imgur.com/n3DwAZF.png",

@@ -1,4 +1,4 @@
-// dados.js
+// artist-data.js
 var tabelaDados = [
   {
     posicao: 1,
