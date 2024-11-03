@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Move",
-    artista: "4Music"
+    musica: "Oh, Was That Yours?",
+    artista: "Ava"
   },
 
   {
     posicao: 2,
-    musica: "Stolen",
-    artista: "Owen Graham"
+    musica: "Late Night Talking",
+    artista: "Eric, Liz"
   },
 
   {
     posicao: 3,
-    musica: "AFTERMATH",
-    artista: "Alana Grace",
+    musica: "Stronger Than Love",
+    artista: "Aria, Trevor",
   },
 
   {
     posicao: 4,
-    musica: "Salute",
-    artista: "4Music"
+    musica: "AFTERMATH",
+    artista: "Alana Grace"
   },
 
   {
    posicao: 5,
-   musica: "Wings",
-   artista: "4Music"
+   musica: "TEXAS ON FIRE",
+   artista: "Hannah"
 },
 
   {
     posicao: 6,
-    musica: "Little Me",
+    musica: "Word Up!",
     artista: "4Music"
   },
 
   {
     posicao: 7,
-    musica: "DNA",
-    artista: "4Music"
+    musica: "Over Those Hills",
+    artista: "Trevor"
   },
 
   {
     posicao: 8,
-    musica: "Overthinking",
-    artista: "Harper"
+    musica: "Wings",
+    artista: "4Music"
   },
 
   {
     posicao: 9,
-    musica: "Change Your Life",
-    artista: "4Music"
+    musica: "La La La",
+    artista: "B2B"
   },
 
   {
     posicao: 10,
-    musica: "Dilemma",
-    artista: "4Music"
+    musica: "Ur So Lesbian",
+    artista: "Ava"
   },
 ];
 

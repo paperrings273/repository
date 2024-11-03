@@ -2,38 +2,38 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "The Drive",
+    artista: "Ava"
+  },
+  {
+    posicao: 2,
+    musica: "Overgrown",
+    artista: "Eric"
+  },
+  {
+    posicao: 3,
     musica: "Salute",
     artista: "4Music"
   },
   {
-    posicao: 2,
-    musica: "MELANCHOLIA",
-    artista: "Alana Grace"
+    posicao: 4,
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
-    posicao: 3,
+    posicao: 5,
     musica: "Dreamscape",
     artista: "Aria"
   },
   {
-    posicao: 4,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 5,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
-  },
-  {
     posicao: 6,
-    musica: "Before Sunrise (Original Motion Picture Soundtrack)",
-    artista: "Conan Woolridge, Fiona"
+    musica: "MELANCHOLIA",
+    artista: "Alana Grace"
   },
   {
     posicao: 7,
-    musica: "Purple Dream",
-    artista: "Even Grace"
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 8,
@@ -42,8 +42,8 @@ var tabelaDados = [
   },
   {
     posicao: 9,
-    musica: "i owe it to myself",
-    artista: "Owen Graham"
+    musica: "What Ever Happened?",
+    artista: "Even Grace"
   },
   {
     posicao: 10,

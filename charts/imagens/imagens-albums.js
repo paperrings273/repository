@@ -1,5 +1,8 @@
 // imagens.js
 var linksImagens = {
+  "Poets Can't Be Murdered - Trevor": "https://i.imgur.com/yhwmxiR.png",
+  "Overgrown - Eric": "https://i.imgur.com/SjmmVKv.png",
+  "The Drive - Ava": "https://i.imgur.com/xkyQrbf.png",
   "MELANCHOLIA - Alana Grace": "https://i.imgur.com/n5OTHPi.png",
   "Salute - 4Music": "https://i.imgur.com/4lwZZtP.png",
   "Before Sunrise (Original Motion Picture Soundtrack) - Conan Woolridge, Fiona": "https://i.imgur.com/dCHj2tL.png",
