@@ -40,9 +40,10 @@
     "artist": "4Music",
     "genre": "Pop",
     "label": "Dawn®",
-    "rating": "67",
-    "reviews": 2,
+    "rating": "68",
+    "reviews": 3,
     "reviewScores": [
+      {"source": "NME", "score": 71},
       {"source": "Variety", "score": 68},
       {"source": "Pitchfork", "score": 67}
     ],
@@ -54,9 +55,10 @@
     "artist": "Alana Grace",
     "genre": "Pop/Folk",
     "label": "Dawn®",
-    "rating": "72",
-    "reviews": 2,
+    "rating": "73",
+    "reviews": 3,
     "reviewScores": [
+      {"source": "NME", "score": 75},
       {"source": "Pitchfork", "score": 74},
       {"source": "Variety", "score": 70}
     ],
