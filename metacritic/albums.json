@@ -5,21 +5,26 @@
     "artist": "Eric",
     "genre": "R&B/Folk",
     "label": "Starlight®",
-    "rating": "tbd",
-    "reviews": 0,
+    "link": "https://i.imgur.com/SjmmVKv.png",
+    "rating": "83",
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 85},
+      {"source": "NME", "score": 82}
     ],
-    "universalAcclaim": false  },
+    "universalAcclaim": true  },
   {
     "cover": "https://i.imgur.com/xkyQrbf.png",
     "title": "The Drive",
     "artist": "Ava Thompson",
     "genre": "Pop/Rock",
     "label": "Dawn®",
-    "rating": "86",
-    "reviews": 1,
+    "link": "https://i.imgur.com/SjmmVKv.png",
+    "rating": "84",
+    "reviews": 2,
     "reviewScores": [
-      {"source": "Pitchfork", "score": 86}
+      {"source": "Pitchfork", "score": 86},
+      {"source": "NME", "score": 83}
     ],
     "universalAcclaim": true  },
   {
@@ -28,6 +33,7 @@
     "artist": "Trevor",
     "genre": "Rap",
     "label": "Starlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": "81",
     "reviews": 1,
     "reviewScores": [
@@ -40,6 +46,7 @@
     "artist": "4Music",
     "genre": "Pop",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": "68",
     "reviews": 3,
     "reviewScores": [
@@ -55,6 +62,7 @@
     "artist": "Alana Grace",
     "genre": "Pop/Folk",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": "73",
     "reviews": 3,
     "reviewScores": [
@@ -70,6 +78,7 @@
     "artist": "Aria",
     "genre": "Pop",
     "label": "Illuminati®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 76,
     "reviews": 3,
     "reviewScores": [
@@ -85,6 +94,7 @@
     "artist": "Even Grace",
     "genre": "Rock",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 84,
     "reviews": 3,
     "reviewScores": [
@@ -100,6 +110,7 @@
     "artist": "Conan Woolridge",
     "genre": "Rock",
     "label": "Starlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 86,
     "reviews": 2,
     "reviewScores": [
@@ -114,6 +125,7 @@
     "artist": "Anthony",
     "genre": "Rock",
     "label": "Illuminati®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 65,
     "reviews": 3,
     "reviewScores": [
@@ -129,6 +141,7 @@
     "artist": "Trevor",
     "genre": "Rap",
     "label": "Starlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 78,
     "reviews": 4,
     "reviewScores": [
@@ -163,6 +176,7 @@
     "artist": "Liz",
     "genre": "Pop",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 79,
     "reviews": 5,
     "reviewScores": [
@@ -181,6 +195,7 @@
     "artist": "Fiona",
     "genre": "Pop/Rock",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 76,
     "reviews": 2,
     "reviewScores": [
@@ -196,6 +211,7 @@
     "artist": "Owen Graham",
     "genre": "Country",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 80,
     "reviews": 2,
     "reviewScores": [
@@ -211,6 +227,7 @@
     "artist": "Mayleen",
     "genre": "Pop",
     "label": "Spotlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 77,
     "reviews": 2,
     "reviewScores": [
@@ -226,6 +243,7 @@
     "artist": "Zion",
     "genre": "R&B",
     "label": "Spotlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 77,
     "reviews": 2,
     "reviewScores": [
@@ -241,6 +259,7 @@
     "artist": "Trevor",
     "genre": "Rap",
     "label": "Spotlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 73,
     "reviews": 2,
     "reviewScores": [
@@ -256,6 +275,7 @@
     "artist": "Liza",
     "genre": "Pop/Country",
     "label": "Spotlight®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 84,
     "reviews": 4,
     "reviewScores": [
@@ -273,6 +293,7 @@
     "artist": "Even Grace",
     "genre": "Rock",
     "label": "Dawn®",
+    "link": "https://i.imgur.com/SjmmVKv.png",
     "rating": 81,
     "reviews": 2,
     "reviewScores": [

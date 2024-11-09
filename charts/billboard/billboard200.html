@@ -5,6 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Billboard Hot 100 Top 10</title>
   <style>
+
+    @media (max-width: 1200px) {
+      .menu-buttons button {
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .dropbtn {
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .menu-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-buttons button, .dropbtn {
+        margin: 5px 0;
+      }
+
+      .container{
+        margin-top: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-buttons button, .dropbtn {
+        padding: 5px 10px;
+        font-size: 10px;
+      }
+
+      .container{
+        margin-top: 600px;
+      }
+    }
+
+    html, body {
+      overflow-x: hidden;
+    }
+
     @font-face {
       font-family: Billboard-Bold;
       src: url('../../fontes/Walfork-Demi.otf') format('opentype'), url('../../fontes/Walfork-Demi.ttf') format('truetype');
@@ -31,7 +74,7 @@
     }
 
     html {
-      background: linear-gradient(to top, #191414 50%, #395BBF);
+      background: linear-gradient(to top, whitesmoke 10%, #395BBF);
       background-attachment: fixed;
     }
 
@@ -301,8 +344,8 @@
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
-          <a href="hot100.html">Billboard Hot 100</a>
-          <a href="billboard200.html">Billboard 200</a>
+          <a href="../billboard/hot100.html">Billboard Hot 100</a>
+          <a href="../billboard/billboard200.html">Billboard 200</a>
           <a href="../spotify/spotify-singles.html">Spotify Global Songs</a>
           <a href="../spotify/spotify-albums.html">Spotify Global Albums</a>
         </div>
