@@ -1,9 +1,9 @@
 var tabelaDados = [
   { posicao: 1, album: "Overgrown", artista: "Eric" },
   { posicao: 2, album: "The Drive", artista: "Ava"},
-  { posicao: 3, album: "Dreamscape", artista: "Aria" },
+  { posicao: 3, album: "Dreamscape (Deluxe)", artista: "Aria" },
   { posicao: 4, album: "Forbidden Whispers (Live On Lost & Found Tour)", artista: "Conan Woolridge" },
-  { posicao: 5, album: "Salute", artista: "4Music" },
+  { posicao: 5, album: "Salute (Deluxe)", artista: "4Music" },
   { posicao: 6, album: "Poets Can't Be Murdered", artista: "Trevor" },
   { posicao: 7, album: "MELANCHOLIA", artista: "Alana Grace" },
   { posicao: 8, album: "meaningless", artista: "Anthony" },
