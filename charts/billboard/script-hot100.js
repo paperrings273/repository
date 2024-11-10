@@ -30,5 +30,4 @@ function atualizarAutomaticamente() {
   setInterval(atualizarTabela, 5000);
 }
 
-// Chama a função para atualizar a tabela automaticamente
 atualizarAutomaticamente();

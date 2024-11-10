@@ -411,10 +411,11 @@
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
-          <a href="../../charts/billboard/hot100.html">Billboard Hot 100</a>
-          <a href="../../charts/billboard/billboard200.html">Billboard 200</a>
-          <a href="../../charts/spotify/spotify-singles.html">Spotify Global Songs</a>
-          <a href="../../charts/spotify/spotify-albums.html">Spotify Global Albums</a>
+          <a href="../billboard/hot100.html">Billboard Hot 100</a>
+          <a href="../billboard/billboard200.html">Billboard 200</a>
+          <a href="../billboard/artist100.html">Billboard Artist 100</a>
+          <a href="../spotify/spotify-singles.html">Spotify Global Songs</a>
+          <a href="../spotify/spotify-albums.html">Spotify Global Albums</a>
         </div>
       </div>
       <button><a href="../../metacritic/metacritic.html" class="menu-link">Metacritic</a></button>
@@ -439,7 +440,7 @@
           <h1 class="subtitle display-5 fw-bold mb-0">100</h1>
         </div>
         <div class="image-container">
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Top Artist Group" class="img-fluid">
+          <img src="https://i.imgur.com/FT0PKM7.png" id="imagem0" alt="Top Artist Group" class="img-fluid">
         </div>
       </div>
 
@@ -447,51 +448,51 @@
       <div class="chart-row bg-black text-neon-green">
         <div class="d-flex">
           <div class="rank">
-            <h2>1</h2>
+            <h2 id="pos1"></h2>
           </div>
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Ava" class="artist-image">
+          <img src="imagem1" id="imagem1" alt="artist1" class="artist-image">
         </div>
-        <div class="artist-name">Ava</div>
+        <div class="artist-name" id="artist1"></div>
       </div>
 
       <div class="chart-row bg-black">
         <div class="d-flex">
           <div class="rank">
-            <h2>2</h2>
+            <h2 id="pos2"></h2>
           </div>
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Eric" class="artist-image">
+          <img src="imagem2" id="imagem2" alt="artist2" class="artist-image">
         </div>
-        <div class="artist-name">Eric</div>
+        <div class="artist-name" id="artist2"></div>
       </div>
 
       <div class="chart-row bg-black">
         <div class="d-flex">
           <div class="rank">
-            <h2>3</h2>
+            <h2 id="pos3"></h2>
           </div>
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Tomorrow X Together" class="artist-image">
+          <img src="imagem3" id="imagem3" alt="artist3" class="artist-image">
         </div>
-        <div class="artist-name">Trevor</div>
+        <div class="artist-name" id="artist3"></div>
       </div>
 
       <div class="chart-row bg-black">
         <div class="d-flex">
           <div class="rank">
-            <h2>4</h2>
+            <h2 id="pos4"></h2>
           </div>
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Tomorrow X Together" class="artist-image">
+          <img src="imagem4" id="imagem4" alt="artist4" class="artist-image">
         </div>
-        <div class="artist-name">Alana Grace</div>
+        <div class="artist-name" id="artist4"></div>
       </div>
 
       <div class="chart-row bg-black">
         <div class="d-flex">
           <div class="rank">
-            <h2>5</h2>
+            <h2 id="pos5"></h2>
           </div>
-          <img src="https://i.imgur.com/xEcXwS9.jpeg" alt="Tomorrow X Together" class="artist-image">
+          <img src="imagem5" id="imagem5" alt="artist5" class="artist-image">
         </div>
-        <div class="artist-name">4Music</div>
+        <div class="artist-name" id="artist5"></div>
       </div>
 
       <div class="dated">
@@ -503,5 +504,8 @@
     <p>© 2024 Star World Community - Beta</p>
   </footer>
 </div>
+
+<script src="script-artist100.js"></script>
+
 </body>
 </html>
