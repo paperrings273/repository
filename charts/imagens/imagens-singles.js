@@ -1,4 +1,12 @@
 var linksImagens = {
+  "DRUNK! - Ava": "https://i.imgur.com/xkyQrbf.png",
+  "Ignorance - Ava": "https://i.imgur.com/xkyQrbf.png",
+  "Paper House - Millie": "https://i.imgur.com/KbTwvh0.jpeg",
+  "In My Eyes - Eric": "https://i.imgur.com/SjmmVKv.png",
+  "Bambino - Eric": "https://i.imgur.com/SjmmVKv.png",
+  "Never Back Down - Blair": "https://i.imgur.com/sOjywPb.png",
+  "Let It Go - Riley": "https://i.imgur.com/fC6k0h9.png",
+  "Heartache - Phoebe": "https://i.imgur.com/CbfNpem.jpeg",
   "Ur So Lesbian - Ava": "https://i.imgur.com/xkyQrbf.png",
   "La La La - B2B": "https://i.imgur.com/G9CoHEU.jpeg",
   "Over Those Hills - Trevor": "https://i.imgur.com/yhwmxiR.png",

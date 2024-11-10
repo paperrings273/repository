@@ -1,9 +1,9 @@
 var tabelaDados = [
-  { posicao: 1, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
-  { posicao: 2, artista: "Eric", imagem: "https://i.imgur.com/QUXN00i.png" },
-  { posicao: 3, artista: "4Music", imagem: "https://i.imgur.com/yat3cqm.png" },
-  { posicao: 4, artista: "Trevor", imagem: "https://citizen-magazine.co/wp-content/uploads/2023/12/5-1-scaled-1-770x1024.jpg" },
-  { posicao: 5, artista: "Alana Grace", imagem: "https://i.imgur.com/BYJKBJX.jpeg" },
+  { posicao: 1, artista: "Eric", imagem: "https://i.imgur.com/jzDTON7.jpeg" },
+  { posicao: 2, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
+  { posicao: 3, artista: "Phoebe", imagem: "https://i.imgur.com/cmZsmCG.jpeg" },
+  { posicao: 4, artista: "Riley", imagem: "https://i.imgur.com/AwvL6eh.jpeg" },
+  { posicao: 5, artista: "Liz", imagem: "https://i.imgur.com/sjt5v6S.png" },
 ];
 
 function atualizarTabela() {

@@ -2,28 +2,28 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "The Drive",
-    artista: "Ava"
-  },
-  {
-    posicao: 2,
     musica: "Overgrown",
     artista: "Eric"
   },
   {
+    posicao: 2,
+    musica: "The Drive",
+    artista: "Ava"
+  },
+  {
     posicao: 3,
-    musica: "Salute",
-    artista: "4Music"
+    musica: "Dreamscape (Deluxe)",
+    artista: "Aria"
   },
   {
     posicao: 4,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
+    musica: "Forbidden Whispers (Live On Lost & Found Tour)",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 5,
-    musica: "Dreamscape",
-    artista: "Aria"
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 6,
@@ -32,13 +32,13 @@ var tabelaDados = [
   },
   {
     posicao: 7,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
+    musica: "Salute",
+    artista: "4Music"
   },
   {
     posicao: 8,
-    musica: "House Of The Rising Sun",
-    artista: "Ava"
+    musica: "everlasting",
+    artista: "Liz"
   },
   {
     posicao: 9,
@@ -47,8 +47,8 @@ var tabelaDados = [
   },
   {
     posicao: 10,
-    musica: "KIDS SEE GHOSTS",
-    artista: "Trevor"
+    musica: "House Of The Rising Sun",
+    artista: "Ava"
   }
 ];
 

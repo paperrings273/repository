@@ -1,5 +1,7 @@
 // imagens.js
 var linksImagens = {
+  "Forbidden Whispers (Live On Lost & Found Tour) - Conan Woolridge": "https://i.imgur.com/fndjU94.png",
+  "Dreamscape (Deluxe) - Aria": "https://i.imgur.com/tEUHtTy.png",
   "Poets Can't Be Murdered - Trevor": "https://i.imgur.com/yhwmxiR.png",
   "Overgrown - Eric": "https://i.imgur.com/SjmmVKv.png",
   "The Drive - Ava": "https://i.imgur.com/xkyQrbf.png",

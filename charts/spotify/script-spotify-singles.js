@@ -1,61 +1,61 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Oh, Was That Yours?",
-    artista: "Ava"
-  },
-
-  {
-    posicao: 2,
     musica: "Late Night Talking",
     artista: "Eric, Liz"
   },
 
   {
+    posicao: 2,
+    musica: "Oh, Was That Yours?",
+    artista: "Ava"
+  },
+
+  {
     posicao: 3,
-    musica: "Stronger Than Love",
-    artista: "Aria, Trevor",
+    musica: "Heartache",
+    artista: "Phoebe",
   },
 
   {
     posicao: 4,
-    musica: "AFTERMATH",
-    artista: "Alana Grace"
+    musica: "Let It Go",
+    artista: "Riley"
   },
 
   {
    posicao: 5,
-   musica: "TEXAS ON FIRE",
-   artista: "Hannah"
+   musica: "Never Back Down",
+   artista: "Blair"
 },
 
   {
     posicao: 6,
-    musica: "Word Up!",
-    artista: "4Music"
+    musica: "Bambino",
+    artista: "Eric"
   },
 
   {
     posicao: 7,
-    musica: "Over Those Hills",
-    artista: "Trevor"
+    musica: "Paper House",
+    artista: "Millie"
   },
 
   {
     posicao: 8,
-    musica: "Wings",
-    artista: "4Music"
+    musica: "In My Eyes",
+    artista: "Eric"
   },
 
   {
     posicao: 9,
-    musica: "La La La",
-    artista: "B2B"
+    musica: "Ignorance",
+    artista: "Ava"
   },
 
   {
     posicao: 10,
-    musica: "Ur So Lesbian",
+    musica: "DRUNK!",
     artista: "Ava"
   },
 ];

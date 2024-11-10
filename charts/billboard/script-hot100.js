@@ -1,13 +1,13 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
-  { posicao: 2, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
-  { posicao: 3, musica: "Stronger Than Love", artista: "Aria & Trevor", imagem: "" },
-  { posicao: 4, musica: "AFTERMATH", artista: "Alana Grace", imagem: "" },
-  { posicao: 5, musica: "TEXAS ON FIRE", artista: "Hannah", imagem: "" },
-  { posicao: 6, musica: "Over Those Hills", artista: "Trevor", imagem: "" },
-  { posicao: 7, musica: "La La La", artista: "B2B", imagem: "" },
-  { posicao: 8, musica: "Word Up!", artista: "4Music", imagem: "" },
-  { posicao: 9, musica: "Wings", artista: "4Music", imagem: "" },
+  { posicao: 1, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
+  { posicao: 2, musica: "Heartache", artista: "Phoebe", imagem: "" },
+  { posicao: 3, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
+  { posicao: 4, musica: "Let It Go", artista: "Riley", imagem: "" },
+  { posicao: 5, musica: "Never Back Down", artista: "Blair", imagem: "" },
+  { posicao: 6, musica: "Bambino", artista: "Eric", imagem: "" },
+  { posicao: 7, musica: "Unfiltered", artista: "Ava", imagem: "" },
+  { posicao: 8, musica: "Paper House", artista: "Millie", imagem: "" },
+  { posicao: 9, musica: "In My Eyes", artista: "Eric", imagem: "" },
   { posicao: 10, musica: "Bloodsucker", artista: "Ava", imagem: "" },
 ];
 
