@@ -12,14 +12,17 @@
 <header2 id="header">
   <div class="header-content">
     <div class="menu-buttons">
-      <button><a href="../../index.html" class="menu-link">Home</a></button>
+      <button class="home-btn">
+        <a href="../../index.html" class="menu-link"><i class="fas fa-home"></i></a>
+      </button>
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
           <a href="../../charts/billboard/hot100.html">Billboard Hot 100</a>
           <a href="../../charts/billboard/billboard200.html">Billboard 200</a>
-          <a href="../../charts/spotify/spotify-singles-antigo.html">Spotify Global Songs</a>
-          <a href="../../charts/spotify/spotify-albums-antigo.html">Spotify Global Albums</a>
+          <a href="../../charts/billboard/artist100.html">Billboard Artist 100</a>
+          <a href="../../charts/spotify/spotify-singles.html">Spotify Global Songs</a>
+          <a href="../../charts/spotify/spotify-albums.html">Spotify Global Albums</a>
         </div>
       </div>
       <button><a href="../../metacritic/metacritic.html" class="menu-link">Metacritic</a></button>
@@ -39,8 +42,6 @@
   <div class="artist-photo">
   </div>
   <div class="artist-details">
-    <h1 class="artist-details-cels">-</h1>
-    <h1 class="artist-details-cels">-</h1>
     <h1 class="artist-details-cels">℗ © Dawn Records</h1>
   </div>
 </div>
@@ -228,22 +229,23 @@
   displayGrammyAwards();
 
 </script>
-
-<script src="../fiona/films.js"></script>
+<script src="../films.js"></script>
 <script>
-  function displayFilms() {
+  function displayFilms(artistName) {
     const filmsGrid = document.getElementById("films-grid");
     filmsGrid.innerHTML = '';
 
-    if (filmsData.length === 0) {
+    const artistFilms = filmsData.filter(film => film.artists.includes(artistName));
+
+    if (artistFilms.length === 0) {
       const noDataMessage = document.createElement('p');
       noDataMessage.classList.add('empty-info');
-      noDataMessage.textContent = "Nenhuma informação disponível para este artista.";
+      noDataMessage.textContent = `Nenhum filme encontrado para ${artistName}.`;
       filmsGrid.appendChild(noDataMessage);
       return;
     }
 
-    filmsData.forEach(film => {
+    artistFilms.forEach(film => {
       const filmCard = createConcertosCard(film.title, film.year, film.image, film.label);
       filmsGrid.appendChild(filmCard);
     });
@@ -278,39 +280,39 @@
     return filmCard;
   }
 
-  displayFilms();
+  displayFilms("Fiona");
 </script>
 
-
-<script src="../fiona/events.js"></script>
+<script src="../events.js"></script>
 <script>
-  function displayData() {
+  function displayData(artistName) {
     const toursGrid = document.getElementById("tours-grid");
     const eventsGrid = document.getElementById("events-grid");
 
     toursGrid.innerHTML = '';
     eventsGrid.innerHTML = '';
 
-    if (toursData.length === 0) {
+    const artistTours = toursData.filter(tour => tour.artists.includes(artistName));
+    if (artistTours.length === 0) {
       const noToursMessage = document.createElement('p');
       noToursMessage.classList.add('empty-info');
-      noToursMessage.textContent = "Nenhuma informação disponível para este artista.";
+      noToursMessage.textContent = `Nenhuma turnê encontrada para ${artistName}.`;
       toursGrid.appendChild(noToursMessage);
     } else {
-      toursData.forEach(tour => {
+      artistTours.forEach(tour => {
         const tourCard = createConcertosCard(tour.title, tour.year, tour.image, tour.label);
         toursGrid.appendChild(tourCard);
       });
     }
 
-    if (eventsData.length === 0) {
+    const artistEvents = eventsData.filter(event => event.artists.includes(artistName));
+    if (artistEvents.length === 0) {
       const noEventsMessage = document.createElement('p');
       noEventsMessage.classList.add('empty-info');
-      noEventsMessage.textContent = "Nenhuma informação disponível para este artista.";
+      noEventsMessage.textContent = `Nenhum evento encontrado para ${artistName}.`;
       eventsGrid.appendChild(noEventsMessage);
     } else {
-      // Itera sobre os dados de events e cria os cartões
-      eventsData.forEach(event => {
+      artistEvents.forEach(event => {
         const eventCard = createConcertosCard(event.title, event.year, event.image, event.label);
         eventsGrid.appendChild(eventCard);
       });
@@ -321,11 +323,11 @@
     const card = document.createElement("div");
 
     if (image) {
-      const albumImage = document.createElement("img");
-      albumImage.src = image;
-      albumImage.alt = "Capa do Álbum";
-      albumImage.classList.add("events-img");
-      card.appendChild(albumImage);
+      const eventImage = document.createElement("img");
+      eventImage.src = image;
+      eventImage.alt = "Imagem do Evento";
+      eventImage.classList.add("events-img");
+      card.appendChild(eventImage);
     }
 
     const titleHeading = document.createElement("h1");
@@ -346,34 +348,43 @@
     return card;
   }
 
-  displayData();
+  displayData("Fiona");
 </script>
 
-<script src="../fiona/discography.js"></script>
+<script src="../albums.js"></script>
+<script src="../singles.js"></script>
 <script>
-  function displayAlbums() {
+  function displayAlbums(artistName) {
     const albumsTable = document.getElementById("albums-table");
-    albumsData.forEach(album => {
-      const albumRow = createDiscographyRow(album.title, album.year, album.image, album.label);
+    const artistAlbums = albumsData.filter(album =>
+      album.artist === artistName || album.featuring.includes(artistName)
+    );
+
+    artistAlbums.forEach(album => {
+      const albumRow = createDiscographyRow(album.title, album.year, album.image, album.label, album.featuring);
       albumsTable.appendChild(albumRow);
     });
   }
 
-  function displaySingles() {
+  function displaySingles(artistName) {
     const singlesTable = document.getElementById("singles-table");
-    singlesData.forEach(single => {
-      const singleRow = createDiscographyRow(single.title, single.year, single.image, single.label);
+    const artistSingles = singlesData.filter(single =>
+      single.artist === artistName || single.featuring.includes(artistName)
+    );
+
+    artistSingles.forEach(single => {
+      const singleRow = createDiscographyRow(single.title, single.year, single.image, single.label, single.featuring);
       singlesTable.appendChild(singleRow);
     });
   }
 
-  function createDiscographyRow(title, year, image, label) {
+  function createDiscographyRow(title, year, image, label, featuring) {
     const row = document.createElement("tr");
 
     const albumImageCell = document.createElement("td");
     const albumImage = document.createElement("img");
     albumImage.src = image;
-    albumImage.alt = "Capa do Álbum";
+    albumImage.alt = "Capa do Álbum ou Single";
     albumImage.classList.add("discography-album-img");
     albumImageCell.appendChild(albumImage);
     row.appendChild(albumImageCell);
@@ -402,15 +413,16 @@
     return row;
   }
 
-  displayAlbums();
-  displaySingles();
+  const artistName = "Fiona";
+
+  displayAlbums(artistName);
+  displaySingles(artistName);
 </script>
 
 <script>
   const artistInfoBox = document.querySelector('.artist-info-box');
   const artistPhotoBox = document.querySelector('.artist-photo-box');
 
-  // Adiciona um evento de rolagem à janela
   window.addEventListener('scroll', function() {
     if (window.scrollY > 100) {
       artistInfoBox.classList.add('hidden');

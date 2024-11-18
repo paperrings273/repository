@@ -23,11 +23,11 @@ const grammyData = [
           { artist: "Fiona", song: "My Game" },
           { artist: "Liz", song: "here's to the nights" },
           { artist: "Owen Graham", song: "Rumors" },
-          { artist: "Aroon", song: "Forbidden" },
+          { artist: "Matteo", song: "Forbidden" },
           { artist: "Conan Woolridge", song: "Memories From Home" },
           { artist: "Trevor", song: "Inner Self" },
         ],
-        winner: { artist: "Aroon", song: "Forbidden" }
+        winner: { artist: "Matteo", song: "Forbidden" }
       },
       {
         category: "Song of the Year",
@@ -49,7 +49,7 @@ const grammyData = [
           { artist: "Zara", song: "Zara"},
           { artist: "Ivy Sinclair", song: "Ivy Sinclair" },
           { artist: "Anthony", song: "Anthony"},
-          { artist: "Aroon", song: "Aroon" },
+          { artist: "Matteo", song: "Matteo" },
           { artist: "Aria", song: "Aria" },
         ],
         winner: { artist: "Ava", song: "Ava" }
@@ -82,7 +82,7 @@ const grammyData = [
         category: "Best Pop Vocal Album",
         nominees: [
           { artist: "Liz", song: "everlasting" },
-          { artist: "Aroon", song: "Flourish" },
+          { artist: "Matteo", song: "Flourish" },
           { artist: "Aria", song: "Dreamscape" },
           { artist: "Ava", song: "House Of The Rising Sun" },
           { artist: "Hannah", song: "Little Mermaid (Original Soundtrack)" },
@@ -95,7 +95,7 @@ const grammyData = [
           { artist: "Aria", song: "Eyes On Me" },
           { artist: "Ava", song: "Soul For My Love" },
           { artist: "Liz", song: "here's to the nights" },
-          { artist: "Aroon", song: "Forbidden" },
+          { artist: "Matteo", song: "Forbidden" },
           { artist: "Ivy Sinclair", song: "feel like sheet" },
           { artist: "Owen Graham", song: "Rumors" },
           { artist: "Hannah", song: "Part Of The World (From Little Mermaid)" }
@@ -189,7 +189,7 @@ const grammyData = [
       {
         category: "Best Music Video",
         nominees: [
-          { artist: "Aroon", song: "Forbidden" },
+          { artist: "Matteo", song: "Forbidden" },
           { artist: "Trevor", song: "Genuine Tales" },
           { artist: "Ava", song: "Soul For My Love" },
           { artist: "Even Grace", song: "Alone in Kyoto" },
@@ -223,7 +223,7 @@ const grammyData = [
           { artist: "Fiona", song: "My Game (Remix)" },
           { artist: "Ava", song: "My Game (Remix)" },
           { artist: "Conan Woolridge", song: "20" },
-          { artist: "Aroon", song: "What if my thoughts could speak?"},
+          { artist: "Matteo", song: "What if my thoughts could speak?"},
           { artist: "Liz", song: "here's to the nights"}
         ],
         winner: { artist: "Even Grace", song: "Beetlebum" }
@@ -233,7 +233,7 @@ const grammyData = [
         nominees: [
           { artist: "Aria", song: "Dreamscape" },
           { artist: "Liz", song: "everlasting" },
-          { artist: "Aroon", song: "Flourish" },
+          { artist: "Matteo", song: "Flourish" },
           { artist: "Anthony", song: "meaningless" },
           { artist: "Even Grace", song: "What Ever Happened?" },
           { artist: "Conan Woolridge", song: "Forbidden Whispers" }
