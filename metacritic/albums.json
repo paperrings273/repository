@@ -91,9 +91,10 @@
     "genre": "Pop",
     "label": "Illuminati®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1241225181926522912",
-    "rating": 76,
-    "reviews": 3,
+    "rating": 77,
+    "reviews": 4,
     "reviewScores": [
+      {"source": "The Guardian", "score": 80},
       {"source": "Pitchfork", "score": 79},
       {"source": "Variety", "score": 75},
       {"source": "NME", "score": 76}

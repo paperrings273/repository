@@ -9,13 +9,6 @@ const filmsData = [
     title: "Little Mermaid",
     year: "(Year 01)",
     image: "https://i.imgur.com/BwOG5Fv.png",
-    artists: ["Trevor", "Hannah", "Ava", "Anthony"]
+    artists: ["Trevor", "Hannah", "Ava", "Anthony", "Conan Woolridge", "Bianca", "Liz"]
   },
-  {
-    title: "Filme 3",
-    year: 2021,
-    image: "images/film-3.jpg",
-    label: "Estúdio C",
-    artists: ["Artista Z"]
-  }
 ];
