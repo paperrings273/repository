@@ -1,64 +1,89 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Late Night Talking",
-    artista: "Eric, Liz"
-  },
-
-  {
-    posicao: 2,
     musica: "Oh, Was That Yours?",
     artista: "Ava"
   },
 
   {
+    posicao: 2,
+    musica: "Late Night Talking",
+    artista: "Eric, Liz"
+  },
+
+  {
     posicao: 3,
-    musica: "Heartache",
-    artista: "Phoebe",
+    musica: "Bloodsucker",
+    artista: "Ava",
   },
 
   {
     posicao: 4,
+    musica: "Never Back Down",
+    artista: "Blair"
+  },
+
+  {
+   posicao: 5,
+   musica: "King Cry-Baby",
+   artista: "Kadu"
+},
+
+  {
+    posicao: 6,
+    musica: "Overthinking",
+    artista: "Harper"
+  },
+
+  {
+    posicao: 7,
     musica: "Let It Go",
     artista: "Riley"
   },
 
   {
-   posicao: 5,
-   musica: "Never Back Down",
-   artista: "Blair"
-},
-
-  {
-    posicao: 6,
-    musica: "Bambino",
-    artista: "Eric"
-  },
-
-  {
-    posicao: 7,
-    musica: "Paper House",
-    artista: "Millie"
-  },
-
-  {
     posicao: 8,
-    musica: "In My Eyes",
-    artista: "Eric"
+    musica: "Unfiltered",
+    artista: "Ava"
   },
 
   {
     posicao: 9,
-    musica: "Ignorance",
-    artista: "Ava"
+    musica: "Stolen",
+    artista: "Owen Graham"
   },
 
   {
     posicao: 10,
-    musica: "DRUNK!",
-    artista: "Ava"
+    musica: "Stronger Than Love",
+    artista: "Aria, Trevor"
   },
 ];
+
+function obterImagemPorTituloEArtista(titulo, artistaCompleto) {
+  var artistasArray = artistaCompleto.split(",").map(a => a.trim());
+
+  var tituloSemFeat = titulo.replace(/\(feat\. [^\)]+\)/i, "").trim();
+
+  for (var i = 0; i < singlesData.length; i++) {
+    var single = singlesData[i];
+
+    var singleTituloSemFeat = single.title.replace(/\(feat\. [^\)]+\)/i, "").trim();
+
+    if (singleTituloSemFeat === tituloSemFeat) {
+      if (artistasArray.includes(single.artist)) {
+        return single.image;
+      }
+
+      for (var feat of single.featuring) {
+        if (artistasArray.includes(feat)) {
+          return single.image;
+        }
+      }
+    }
+  }
+  return "";
+}
 
 function atualizarTabela() {
   tabelaDados.forEach(function(dado) {
@@ -68,7 +93,7 @@ function atualizarTabela() {
     var artistaCell = document.getElementById("artist" + dado.posicao);
 
     posicaoCell.textContent = dado.posicao;
-    imagemCell.src = linksImagens[dado.musica + " - " + dado.artista];
+    imagemCell.src = obterImagemPorTituloEArtista(dado.musica, dado.artista);
     musicaCell.textContent = dado.musica;
     artistaCell.textContent = dado.artista;
   });
@@ -76,8 +101,6 @@ function atualizarTabela() {
 
 function atualizarTop1() {
   var top1 = tabelaDados[0];
-  var chaveImagem = top1.musica + " - " + top1.artista;
-
   var sections = document.querySelectorAll(".section");
 
   sections.forEach(function(section) {
@@ -87,7 +110,7 @@ function atualizarTop1() {
     var artistName = section.querySelector(".artist-name");
     var position = section.querySelector(".top1-number");
 
-    albumCover.src = linksImagens[chaveImagem];
+    albumCover.src = obterImagemPorTituloEArtista(top1.musica, top1.artista);
     musicTitle.textContent = top1.musica;
     artistName.textContent = top1.artista;
     position.textContent = "#" + top1.posicao;
@@ -96,3 +119,4 @@ function atualizarTop1() {
 
 atualizarTabela();
 atualizarTop1();
+

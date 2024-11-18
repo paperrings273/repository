@@ -1,14 +1,14 @@
 var tabelaDados = [
   { posicao: 1, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
-  { posicao: 2, musica: "Heartache", artista: "Phoebe", imagem: "" },
-  { posicao: 3, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
-  { posicao: 4, musica: "Let It Go", artista: "Riley", imagem: "" },
-  { posicao: 5, musica: "Never Back Down", artista: "Blair", imagem: "" },
-  { posicao: 6, musica: "Bambino", artista: "Eric", imagem: "" },
-  { posicao: 7, musica: "Unfiltered", artista: "Ava", imagem: "" },
-  { posicao: 8, musica: "Paper House", artista: "Millie", imagem: "" },
-  { posicao: 9, musica: "In My Eyes", artista: "Eric", imagem: "" },
-  { posicao: 10, musica: "Bloodsucker", artista: "Ava", imagem: "" },
+  { posicao: 2, musica: "Bloodsucker", artista: "Ava", imagem: "" },
+  { posicao: 3, musica: "King Cry-Baby", artista: "Kadu", imagem: "" },
+  { posicao: 4, musica: "Never Back Down", artista: "Blair", imagem: "" },
+  { posicao: 5, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
+  { posicao: 6, musica: "Let It Go", artista: "Riley", imagem: "" },
+  { posicao: 7, musica: "Overthinking", artista: "Harper", imagem: "" },
+  { posicao: 8, musica: "DRUNK!", artista: "Ava", imagem: "" },
+  { posicao: 9, musica: "Unfiltered", artista: "Ava", imagem: "" },
+  { posicao: 10, musica: "Stronger Than Love", artista: "Aria & Trevor", imagem: "" },
 ];
 
 function atualizarTabela() {

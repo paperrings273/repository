@@ -176,7 +176,7 @@ const albumsData = [
     featuring: []
   },
   {
-    title: "Poet's Can't Be Murdered",
+    title: "Poets Can't Be Murdered",
     year: "Year 02",
     image: "https://i.imgur.com/yhwmxiR.png",
     label: "℗ © Starlight Studios",

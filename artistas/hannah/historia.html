@@ -369,8 +369,9 @@
 
   function displaySingles(artistName) {
     const singlesTable = document.getElementById("singles-table");
+
     const artistSingles = singlesData.filter(single =>
-      single.artist === artistName || single.featuring.includes(artistName)
+      (single.artist === artistName || single.featuring.includes(artistName)) && single.single === "sim"
     );
 
     artistSingles.forEach(single => {

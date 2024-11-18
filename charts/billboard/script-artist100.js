@@ -1,8 +1,8 @@
 var tabelaDados = [
-  { posicao: 1, artista: "Eric", imagem: "https://i.imgur.com/jzDTON7.jpeg" },
-  { posicao: 2, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
-  { posicao: 3, artista: "Phoebe", imagem: "https://i.imgur.com/cmZsmCG.jpeg" },
-  { posicao: 4, artista: "Riley", imagem: "https://i.imgur.com/AwvL6eh.jpeg" },
+  { posicao: 1, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
+  { posicao: 2, artista: "Eric", imagem: "https://i.imgur.com/jzDTON7.jpeg" },
+  { posicao: 3, artista: "Blair", imagem: "https://i.imgur.com/e17YCXa.jpeg" },
+  { posicao: 4, artista: "Kadu", imagem: "https://i.imgur.com/yzxP9S3.png" },
   { posicao: 5, artista: "Liz", imagem: "https://i.imgur.com/sjt5v6S.png" },
 ];
 
