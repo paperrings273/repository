@@ -257,7 +257,7 @@ const albumsData = [
   },
   {
     title: "everlasting",
-    year: "-",
+    year: "Year 01",
     image: "https://i.imgur.com/5psYO2t.png",
     label: "℗ © YG Entertainment",
     artist: "Liz",

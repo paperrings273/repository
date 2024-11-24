@@ -1,9 +1,54 @@
 const singlesData = [
   {
+    title: "I Got The Power",
+    year: "Year 02",
+    image: "https://i.imgur.com/B4KdAG1.png",
+    label: "℗ © Dawn Records",
+    artist: "4Music",
+    single: "sim",
+    featuring: ["Miles Carson"]
+  },
+  {
+    title: "DRUNK!",
+    year: "Year 02",
+    image: "https://i.imgur.com/xkyQrbf.png",
+    label: "℗ © Dawn Records",
+    artist: "Ava",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Farewell",
+    year: "Year 02",
+    image: "https://i.imgur.com/tEUHtTy.png",
+    label: "℗ © Illuminati Records",
+    artist: "Aria",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "LEGACY",
+    year: "Year 02",
+    image: "https://i.imgur.com/mzd5oqC.png",
+    label: "℗ © Dawn Records",
+    artist: "Hannah",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Verlaten",
+    year: "Year 02",
+    image: "https://i.imgur.com/yhwmxiR.png",
+    label: "℗ © Starlight Studios",
+    artist: "Trevor",
+    single: "nao",
+    featuring: []
+  },
+  {
     title: "King Cry-Baby",
     year: "Year 02",
     image: "https://i.imgur.com/HrLKQD9.png",
-    label: "℗ © Spotlight Studios",
+    label: "℗ © Spotlight Records",
     artist: "Kadu",
     single: "sim",
     featuring: []
@@ -59,6 +104,7 @@ const singlesData = [
     image: "https://i.imgur.com/XvaycfD.png",
     label: "℗ © Dawn Records",
     artist: "4Music",
+    single: "sim",
     featuring: []
   },
   {

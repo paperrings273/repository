@@ -2,8 +2,8 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "The Drive",
-    artista: "Ava"
+    musica: "THE COUNTRY CLUB",
+    artista: "Hannah"
   },
   {
     posicao: 2,
@@ -12,28 +12,28 @@ var tabelaDados = [
   },
   {
     posicao: 3,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
-  },
-  {
-    posicao: 4,
     musica: "Poets Can't Be Murdered",
     artista: "Trevor"
   },
   {
+    posicao: 4,
+    musica: "Dreamscape (Deluxe)",
+    artista: "Aria"
+  },
+  {
     posicao: 5,
+    musica: "The Drive",
+    artista: "Ava"
+  },
+  {
+    posicao: 6,
     musica: "Salute (Deluxe)",
     artista: "4Music"
   },
   {
-    posicao: 6,
+    posicao: 7,
     musica: "MELANCHOLIA",
     artista: "Alana Grace"
-  },
-  {
-    posicao: 7,
-    musica: "Forbidden Whispers (Live On Lost & Found Tour)",
-    artista: "Conan Woolridge"
   },
   {
     posicao: 8,
@@ -42,13 +42,13 @@ var tabelaDados = [
   },
   {
     posicao: 9,
-    musica: "everlasting",
-    artista: "Liz"
+    musica: "KIDS SEE GHOSTS",
+    artista: "Trevor"
   },
   {
     posicao: 10,
-    musica: "House Of The Rising Sun",
-    artista: "Ava"
+    musica: "everlasting",
+    artista: "Liz"
   }
 ];
 

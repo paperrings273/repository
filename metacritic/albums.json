@@ -6,11 +6,12 @@
     "genre": "Country/R&B/Pop",
     "label": "Dawn®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1307779024621142208",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": "87",
+    "reviews": 1,
     "reviewScores": [
+      {"source": "NME", "score": 87}
     ],
-    "universalAcclaim": false  },
+    "universalAcclaim": true  },
   {
     "cover": "https://i.imgur.com/SjmmVKv.png",
     "title": "Overgrown",
@@ -28,13 +29,14 @@
   {
     "cover": "https://i.imgur.com/xkyQrbf.png",
     "title": "The Drive",
-    "artist": "Ava Thompson",
-    "genre": "Pop/Rock",
+    "artist": "Ava",
+    "genre": "Pop/Rock/Punk",
     "label": "Dawn®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1302074976488132729",
-    "rating": "84",
-    "reviews": 2,
+    "rating": "85",
+    "reviews": 3,
     "reviewScores": [
+      {"source": "Variety", "score": 86},
       {"source": "Pitchfork", "score": 86},
       {"source": "NME", "score": 83}
     ],
@@ -46,9 +48,10 @@
     "genre": "Rap",
     "label": "Starlight®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1300300835678322750",
-    "rating": "81",
-    "reviews": 1,
+    "rating": "86",
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Variety", "score": 92},
       {"source": "Pitchfork", "score": 81}
     ],
     "universalAcclaim": true  },
@@ -108,9 +111,10 @@
     "genre": "Rock",
     "label": "Dawn®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1240868842494758922",
-    "rating": 84,
-    "reviews": 3,
+    "rating": 85,
+    "reviews": 4,
     "reviewScores": [
+      {"source": "The Guardian", "score": 89},
       {"source": "Variety", "score": 88},
       {"source": "NME", "score": 83},
       {"source": "Pitchfork", "score": 82}
@@ -125,9 +129,10 @@
     "label": "Starlight®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1232011198774644877",
     "rating": 86,
-    "reviews": 2,
+    "reviews": 3,
     "reviewScores": [
       {"source": "Variety", "score": 90},
+      {"source": "The Guardian", "score": 85},
       {"source": "Pitchfork", "score": 83}
     ],
     "universalAcclaim": true

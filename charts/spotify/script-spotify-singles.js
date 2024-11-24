@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Oh, Was That Yours?",
-    artista: "Ava"
+    musica: "I Got The Power",
+    artista: "4Music, Miles Carson"
   },
 
   {
     posicao: 2,
-    musica: "Late Night Talking",
-    artista: "Eric, Liz"
+    musica: "TEXAS ON FIRE",
+    artista: "Hannah"
   },
 
   {
     posicao: 3,
-    musica: "Bloodsucker",
-    artista: "Ava",
+    musica: "Late Night Talking",
+    artista: "Eric, Liz",
   },
 
   {
     posicao: 4,
+    musica: "LEGACY",
+    artista: "Hannah"
+  },
+
+  {
+   posicao: 5,
+   musica: "Verlaten",
+   artista: "Trevor"
+},
+
+  {
+    posicao: 6,
     musica: "Never Back Down",
     artista: "Blair"
   },
 
   {
-   posicao: 5,
-   musica: "King Cry-Baby",
-   artista: "Kadu"
-},
-
-  {
-    posicao: 6,
-    musica: "Overthinking",
-    artista: "Harper"
-  },
-
-  {
     posicao: 7,
-    musica: "Let It Go",
-    artista: "Riley"
+    musica: "Stronger Than Love",
+    artista: "Aria, Trevor"
   },
 
   {
     posicao: 8,
-    musica: "Unfiltered",
-    artista: "Ava"
+    musica: "Farewell",
+    artista: "Aria"
   },
 
   {
     posicao: 9,
-    musica: "Stolen",
-    artista: "Owen Graham"
+    musica: "DRUNK!",
+    artista: "Ava"
   },
 
   {
     posicao: 10,
-    musica: "Stronger Than Love",
-    artista: "Aria, Trevor"
+    musica: "Let It Go",
+    artista: "Riley"
   },
 ];
 

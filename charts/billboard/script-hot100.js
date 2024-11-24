@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
-  { posicao: 2, musica: "Bloodsucker", artista: "Ava", imagem: "" },
-  { posicao: 3, musica: "King Cry-Baby", artista: "Kadu", imagem: "" },
-  { posicao: 4, musica: "Never Back Down", artista: "Blair", imagem: "" },
-  { posicao: 5, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
-  { posicao: 6, musica: "Let It Go", artista: "Riley", imagem: "" },
-  { posicao: 7, musica: "Overthinking", artista: "Harper", imagem: "" },
-  { posicao: 8, musica: "DRUNK!", artista: "Ava", imagem: "" },
-  { posicao: 9, musica: "Unfiltered", artista: "Ava", imagem: "" },
-  { posicao: 10, musica: "Stronger Than Love", artista: "Aria & Trevor", imagem: "" },
+  { posicao: 1, musica: "I Got The Power", artista: "4Music & Miles Carson", imagem: "" },
+  { posicao: 2, musica: "TEXAS ON FIRE", artista: "Hannah", imagem: "" },
+  { posicao: 3, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
+  { posicao: 4, musica: "DRUNK!", artista: "Ava", imagem: "" },
+  { posicao: 5, musica: "Farewell", artista: "Aria", imagem: "" },
+  { posicao: 6, musica: "LEGACY", artista: "Hannah", imagem: "" },
+  { posicao: 7, musica: "Never Back Down", artista: "Blair", imagem: "" },
+  { posicao: 8, musica: "Stronger Than Love", artista: "Aria & Trevor", imagem: "" },
+  { posicao: 9, musica: "Verlaten", artista: "Trevor", imagem: "" },
+  { posicao: 10, musica: "Let It Go", artista: "Riley", imagem: "" },
 ];
 
 function atualizarTabela() {
