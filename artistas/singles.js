@@ -30,7 +30,7 @@ const singlesData = [
     title: "Young Night (feat. Riley)",
     year: "Year 02",
     image: "https://i.imgur.com/tyNmNHt.png",
-    label: "℗ © Dawn Records",
+    label: "℗ © Pacific Records",
     artist: "Zuri",
     single: "sim",
     featuring: ["Riley"]

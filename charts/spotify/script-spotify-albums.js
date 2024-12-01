@@ -43,7 +43,7 @@ var tabelaDados = [
   {
     posicao: 9,
     musica: "Dreamscape (Deluxe)",
-    artista: "Ava"
+    artista: "Aria"
   },
   {
     posicao: 10,
