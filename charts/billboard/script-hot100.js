@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "I Got The Power", artista: "4Music & Miles Carson", imagem: "" },
-  { posicao: 2, musica: "TEXAS ON FIRE", artista: "Hannah", imagem: "" },
+  { posicao: 1, musica: "Remain For Us", artista: "Riley", imagem: "" },
+  { posicao: 2, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
   { posicao: 3, musica: "Late Night Talking", artista: "Eric & Liz", imagem: "" },
   { posicao: 4, musica: "DRUNK!", artista: "Ava", imagem: "" },
-  { posicao: 5, musica: "Farewell", artista: "Aria", imagem: "" },
-  { posicao: 6, musica: "LEGACY", artista: "Hannah", imagem: "" },
-  { posicao: 7, musica: "Never Back Down", artista: "Blair", imagem: "" },
-  { posicao: 8, musica: "Stronger Than Love", artista: "Aria & Trevor", imagem: "" },
-  { posicao: 9, musica: "Verlaten", artista: "Trevor", imagem: "" },
-  { posicao: 10, musica: "Let It Go", artista: "Riley", imagem: "" },
+  { posicao: 5, musica: "I Got The Power", artista: "4Music & Miles Carson", imagem: "" },
+  { posicao: 6, musica: "SHOTGUN", artista: "Hannah", imagem: "" },
+  { posicao: 7, musica: "Let It Go", artista: "Riley", imagem: "" },
+  { posicao: 8, musica: "Young Night", artista: "Zuri & Riley", imagem: "" },
+  { posicao: 9, musica: "Bambino", artista: "Eric", imagem: "" },
+  { posicao: 10, musica: "Crimson", artista: "Riley", imagem: "" },
 ];
 
 function atualizarTabela() {

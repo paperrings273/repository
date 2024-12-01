@@ -457,6 +457,7 @@ header2 {
   width: 150px;
   height: 150px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .discography-album-title{

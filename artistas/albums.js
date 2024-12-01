@@ -1,5 +1,13 @@
 const albumsData = [
   {
+    title: "Dandelions",
+    year: "Year 02",
+    image: "https://i.imgur.com/Fp8M9ZI.png",
+    label: "℗ © Starlight Studios",
+    artist: "Riley",
+    featuring: []
+  },
+  {
     title: "Flourish",
     year: "Year 02",
     image: "https://i.imgur.com/DwbD3KP.png",

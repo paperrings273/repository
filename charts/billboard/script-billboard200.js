@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, album: "THE COUNTRY CLUB", artista: "Hannah" },
+  { posicao: 1, album: "Dandelions", artista: "Riley" },
   { posicao: 2, album: "Overgrown", artista: "Eric"},
-  { posicao: 3, album: "Dreamscape (Deluxe)", artista: "Aria" },
-  { posicao: 4, album: "The Drive", artista: "Ava" },
-  { posicao: 5, album: "Poets Can't Be Murdered", artista: "Trevor" },
-  { posicao: 6, album: "Forbidden Whispers (Live On Lost & Found Tour)", artista: "Conan Woolridge" },
-  { posicao: 7, album: "Salute (Deluxe)", artista: "4Music" },
-  { posicao: 8, album: "MELANCHOLIA", artista: "Alana Grace" },
-  { posicao: 9, album: "What Ever Happened?", artista: "Even Grace" },
-  { posicao: 10, album: "KIDS SEE GHOSTS", artista: "Trevor" },
+  { posicao: 3, album: "The Drive", artista: "Ava" },
+  { posicao: 4, album: "THE COUNTRY CLUB", artista: "Hannah" },
+  { posicao: 5, album: "VANGUARD", artista: "Hannah" },
+  { posicao: 6, album: "Salute (Deluxe)", artista: "4Music" },
+  { posicao: 7, album: "Dreamscape (Deluxe)", artista: "Aria" },
+  { posicao: 8, album: "Poets Can't Be Murdered", artista: "Trevor" },
+  { posicao: 9, album: "Forbidden Whispers (Live On Lost & Found Tour)", artista: "Conan Woolridge" },
+  { posicao: 10, album: "MELANCHOLIA", artista: "Alana Grace" },
 ];
 
 function atualizarTabela() {

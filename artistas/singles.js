@@ -1,6 +1,69 @@
 const singlesData = [
   {
-    title: "I Got The Power",
+    title: "Sweetheart",
+    year: "Year 01",
+    image: "https://i.imgur.com/o82pNnr.png",
+    label: "℗ © Pacific Records",
+    artist: "Holligan",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Hello, N.Y.",
+    year: "Year 02",
+    image: "https://i.imgur.com/Fp8M9ZI.png",
+    label: "℗ © Starlight Studios",
+    artist: "Riley",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Crimson",
+    year: "Year 02",
+    image: "https://i.imgur.com/Fp8M9ZI.png",
+    label: "℗ © Starlight Studios",
+    artist: "Riley",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Young Night (feat. Riley)",
+    year: "Year 02",
+    image: "https://i.imgur.com/tyNmNHt.png",
+    label: "℗ © Dawn Records",
+    artist: "Zuri",
+    single: "sim",
+    featuring: ["Riley"]
+  },
+  {
+    title: "SHOTGUN",
+    year: "Year 02",
+    image: "https://i.imgur.com/pBfM0md.png",
+    label: "℗ © Dawn Records",
+    artist: "Hannah",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Remain For Us",
+    year: "Year 02",
+    image: "https://i.imgur.com/ot91Q4q.png",
+    label: "℗ © Starlight Studios",
+    artist: "Riley",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "HIGHWAY BOYS",
+    year: "Year 02",
+    image: "https://i.imgur.com/zfilIku.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "I Got The Power (feat. Miles Carson)",
     year: "Year 02",
     image: "https://i.imgur.com/B4KdAG1.png",
     label: "℗ © Dawn Records",
@@ -11,10 +74,10 @@ const singlesData = [
   {
     title: "DRUNK!",
     year: "Year 02",
-    image: "https://i.imgur.com/xkyQrbf.png",
+    image: "https://i.imgur.com/jQZfMAw.png",
     label: "℗ © Dawn Records",
     artist: "Ava",
-    single: "nao",
+    single: "sim",
     featuring: []
   },
   {

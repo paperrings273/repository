@@ -1,5 +1,11 @@
 const toursData = [
   {
+    title: "THE CROSSOVER EUROPE TOUR",
+    year: "(Year 02)",
+    image: "https://i.imgur.com/HbvpY7h.png",
+    artists: ["Hannah"]
+  },
+  {
     title: "The House Club Tour",
     year: "(Year 01)",
     image: "https://i.imgur.com/Hvzn499.png",

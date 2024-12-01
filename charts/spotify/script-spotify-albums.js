@@ -2,8 +2,8 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "THE COUNTRY CLUB",
-    artista: "Hannah"
+    musica: "Dandelions",
+    artista: "Riley"
   },
   {
     posicao: 2,
@@ -12,18 +12,18 @@ var tabelaDados = [
   },
   {
     posicao: 3,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
+    musica: "THE COUNTRY CLUB",
+    artista: "Hannah"
   },
   {
     posicao: 4,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
+    musica: "The Drive",
+    artista: "Ava"
   },
   {
     posicao: 5,
-    musica: "The Drive",
-    artista: "Ava"
+    musica: "VANGUARD",
+    artista: "Hannah"
   },
   {
     posicao: 6,
@@ -37,18 +37,18 @@ var tabelaDados = [
   },
   {
     posicao: 8,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 9,
-    musica: "KIDS SEE GHOSTS",
+    musica: "Poets Can't Be Murdered",
     artista: "Trevor"
   },
   {
+    posicao: 9,
+    musica: "MELANCHOLIA",
+    artista: "Alana Grace"
+  },
+  {
     posicao: 10,
-    musica: "everlasting",
-    artista: "Liz"
+    musica: "What Ever Happened?",
+    artista: "Even Grace"
   }
 ];
 

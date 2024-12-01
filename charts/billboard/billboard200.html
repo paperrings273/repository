@@ -51,14 +51,13 @@
 
     @font-face {
       font-family: Billboard-Bold;
-      src: url('../../fontes/Walfork-Demi.otf') format('opentype'), url('../../fontes/Walfork-Demi.ttf') format('truetype');
+      src: url('../../fontes/Neuwelt-ExtraBold.otf') format('opentype'), url('../../fontes/Neuwelt-ExtraBold.ttf') format('truetype');
       font-weight: bold;
       font-style: normal;
     }
     @font-face {
       font-family: Billboard-Regular;
-      src: url('../../fontes/Walfork-Regular.otf') format('opentype'), url('../../fontes/Walfork-Regular.ttf') format('truetype');
-      font-weight: bold;
+      src: url('../../fontes/NimbusSanL-Reg.otf') format('opentype');
       font-style: normal;
     }
     @font-face {
@@ -67,11 +66,14 @@
     }
     .texto-sobreposto {
       position: absolute;
-      bottom: -57px;
+      bottom: -45px;
       right: calc(6% - 30px);
-      font-family: Billboard-Regular;
+      font-family: Billboard-Regular, sans-serif;
       text-align: right;
       color: #F2EDEB;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
     }
 
     html {
@@ -227,7 +229,7 @@
     }
 
     body {
-      font-family: Billboard-Regular;
+      font-family: Billboard-Regular, sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
@@ -291,28 +293,35 @@
 
 
     td:hover {
-      background-color: #f5f5f5;
+      background-color: #D8D8D8;
       color: #333;
+      cursor: pointer;
+      transition-duration: 1s;
     }
 
     td.position {
       width: 20px;
-      padding: 8px;
       text-align: right;
       font-size: 20px;
+      font-family: Billboard-Bold, sans-serif;
+      color: black;
+      padding-left: 15px;
     }
 
     th:not(:first-child),
     td:not(:first-child) {
-      border-left: 2px dashed #666666;
+      border-left: 1px dashed #666666;
     }
 
     td.song-title{
-      font-family: Billboard-Bold;
+      font-family: Billboard-Bold, sans-serif;
     }
 
 
     th.song-title-column {
+      font-size: 20px;
+      margin-bottom: -5px;
+      font-family: Billboard-Bold, sans-serif;
       color: #fff;
     }
 
@@ -343,7 +352,8 @@
     <div class="menu-buttons">
       <button class="home-btn">
         <a href="../../index.html" class="menu-link"><i class="fas fa-home"></i></a>
-      </button>      <div class="dropdown">
+      </button>
+      <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
           <a href="../billboard/hot100.html">Billboard Hot 100</a>
@@ -362,7 +372,7 @@
 
 <body>
 <div class="container">
-  <p class="texto-sobreposto">chart dated November 23, 2024</p>
+  <p class="texto-sobreposto">chart dated November 30, 2024</p>
   <div class="table-header">
     <img src="https://i.imgur.com/qAGSQ3B.png" alt="Billboard Hot 100 Logo" class="logo">
   </div>
