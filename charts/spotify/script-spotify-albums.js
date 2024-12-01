@@ -32,18 +32,18 @@ var tabelaDados = [
   },
   {
     posicao: 7,
-    musica: "MELANCHOLIA",
-    artista: "Alana Grace"
-  },
-  {
-    posicao: 8,
     musica: "Poets Can't Be Murdered",
     artista: "Trevor"
   },
   {
-    posicao: 9,
+    posicao: 8,
     musica: "MELANCHOLIA",
     artista: "Alana Grace"
+  },
+  {
+    posicao: 9,
+    musica: "Dreamscape (Deluxe)",
+    artista: "Ava"
   },
   {
     posicao: 10,
