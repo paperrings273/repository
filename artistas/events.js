@@ -1,5 +1,11 @@
 const toursData = [
   {
+    title: "Dandelions Tour",
+    year: "(Year 02)",
+    image: "https://i.imgur.com/BbWtjCw.png",
+    artists: ["Riley"]
+  },
+  {
     title: "The Drive Tour",
     year: "(Year 02)",
     image: "https://i.imgur.com/LYcRTYJ.jpeg",

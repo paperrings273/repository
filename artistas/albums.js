@@ -144,17 +144,17 @@ const albumsData = [
     featuring: []
   },
   {
-    title: "A Brief Inquiry Into Online Relationships",
+    title: "Purple Dream",
     year: "-",
-    image: "https://i.imgur.com/ZyaFSC1.png",
+    image: "https://i.imgur.com/gssMuy8.png",
     label: "℗ © Dawn Records",
     artist: "Even Grace",
     featuring: []
   },
   {
-    title: "Purple Dream",
+    title: "A Brief Inquiry Into Online Relationships",
     year: "-",
-    image: "https://i.imgur.com/gssMuy8.png",
+    image: "https://i.imgur.com/ZyaFSC1.png",
     label: "℗ © Dawn Records",
     artist: "Even Grace",
     featuring: []

@@ -21,7 +21,7 @@ const singlesData = [
     title: "Don't Play Me (feat. Even Grace)",
     year: "Year 02",
     image: "https://i.imgur.com/SQWX8YB.png",
-    label: "℗ © Starlight Studios",
+    label: "℗ © Illuminati Records",
     artist: "Aria",
     single: "sim",
     featuring: ["Even Grace"]
@@ -264,7 +264,7 @@ const singlesData = [
     title: "Stronger Than Love (feat. Trevor)",
     year: "Year 02",
     image: "https://i.imgur.com/aWhaA8L.png",
-    label: "℗ © Starlight Studios",
+    label: "℗ © Illuminati Records",
     artist: "Aria",
     single: "sim",
     featuring: ["Trevor"]
