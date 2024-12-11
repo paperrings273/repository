@@ -25,7 +25,7 @@ var tabelaDados = [
 
   {
    posicao: 5,
-   musica: "Remain For Us",
+   musica: "Remains For Us",
    artista: "Riley"
 },
 

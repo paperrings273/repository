@@ -72,7 +72,7 @@ const singlesData = [
     featuring: []
   },
   {
-    title: "Remain For Us",
+    title: "Remains For Us",
     year: "Year 02",
     image: "https://i.imgur.com/ot91Q4q.png",
     label: "℗ © Starlight Studios",

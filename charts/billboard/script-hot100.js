@@ -3,7 +3,7 @@ var tabelaDados = [
   { posicao: 2, musica: "Don't Play Me", artista: "Aria & Even Grace", imagem: "" },
   { posicao: 3, musica: "Young Night", artista: "Zuri & Riley", imagem: "" },
   { posicao: 4, musica: "DRUNK!", artista: "Ava", imagem: "" },
-  { posicao: 5, musica: "Remain For Us", artista: "Riley", imagem: "" },
+  { posicao: 5, musica: "Remains For Us", artista: "Riley", imagem: "" },
   { posicao: 6, musica: "Crimson", artista: "Riley", imagem: "" },
   { posicao: 7, musica: "Let It Go", artista: "Riley", imagem: "" },
   { posicao: 8, musica: "Farewell", artista: "Aria", imagem: "" },
