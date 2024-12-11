@@ -1,9 +1,9 @@
 var tabelaDados = [
   { posicao: 1, artista: "Riley", imagem: "https://i.imgur.com/hGPOW5T.jpeg" },
-  { posicao: 2, artista: "Eric", imagem: "https://i.imgur.com/jzDTON7.jpeg" },
-  { posicao: 3, artista: "Nate", imagem: "https://i.imgur.com/L0IgCOc.jpeg" },
+  { posicao: 2, artista: "Aria", imagem: "https://i.imgur.com/qdDa1Fj.jpeg" },
+  { posicao: 3, artista: "Conan Woolridge", imagem: "https://i.imgur.com/M6Psaik.png" },
   { posicao: 4, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
-  { posicao: 5, artista: "Hannah", imagem: "https://i.imgur.com/pUyXLfx.jpeg" },
+  { posicao: 5, artista: "Zuri", imagem: "https://i.imgur.com/tipsGyO.png" },
 ];
 
 function atualizarTabela() {

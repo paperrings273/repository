@@ -1,5 +1,32 @@
 const singlesData = [
   {
+    title: "ALL AMERICAN",
+    year: "Year 02",
+    image: "https://i.imgur.com/mzd5oqC.png",
+    label: "℗ © Dawn Records",
+    artist: "Hannah",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Heart-to-Heart",
+    year: "Year 02",
+    image: "https://i.imgur.com/PPPODxr.png",
+    label: "℗ © Starlight Studios",
+    artist: "Conan Woolridge",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Don't Play Me (feat. Even Grace)",
+    year: "Year 02",
+    image: "https://i.imgur.com/SQWX8YB.png",
+    label: "℗ © Starlight Studios",
+    artist: "Aria",
+    single: "sim",
+    featuring: ["Even Grace"]
+  },
+  {
     title: "Sweetheart",
     year: "Year 01",
     image: "https://i.imgur.com/o82pNnr.png",

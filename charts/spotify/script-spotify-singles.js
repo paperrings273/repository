@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "HIGHWAY BOYS",
-    artista: "Nate"
+    musica: "Don't Play Me",
+    artista: "Aria, Even Grace"
   },
 
   {
     posicao: 2,
-    musica: "Late Night Talking",
-    artista: "Eric, Liz"
-  },
-
-  {
-    posicao: 3,
-    musica: "I Got The Power",
-    artista: "4Music, Miles Carson",
-  },
-
-  {
-    posicao: 4,
-    musica: "Remain For Us",
-    artista: "Riley"
-  },
-
-  {
-   posicao: 5,
-   musica: "SHOTGUN",
-   artista: "Hannah"
-},
-
-  {
-    posicao: 6,
-    musica: "DRUNK!",
-    artista: "Ava"
-  },
-
-  {
-    posicao: 7,
-    musica: "Let It Go",
-    artista: "Riley"
-  },
-
-  {
-    posicao: 8,
     musica: "Young Night",
     artista: "Zuri, Riley"
   },
 
   {
-    posicao: 9,
+    posicao: 3,
+    musica: "DRUNK!",
+    artista: "Ava",
+  },
+
+  {
+    posicao: 4,
+    musica: "Heart-to-Heart",
+    artista: "Conan Woolridge"
+  },
+
+  {
+   posicao: 5,
+   musica: "Remain For Us",
+   artista: "Riley"
+},
+
+  {
+    posicao: 6,
+    musica: "Let It Go",
+    artista: "Riley"
+  },
+
+  {
+    posicao: 7,
     musica: "Crimson",
     artista: "Riley"
   },
 
   {
+    posicao: 8,
+    musica: "Never Back Down",
+    artista: "Blair"
+  },
+
+  {
+    posicao: 9,
+    musica: "I Got The Power",
+    artista: "4Music, Miles Carson"
+  },
+
+  {
     posicao: 10,
-    musica: "Hello, N.Y.",
-    artista: "Riley"
+    musica: "ALL AMERICAN",
+    artista: "Hannah"
   },
 ];
 

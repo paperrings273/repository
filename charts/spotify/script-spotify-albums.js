@@ -7,33 +7,33 @@ var tabelaDados = [
   },
   {
     posicao: 2,
-    musica: "Overgrown",
-    artista: "Eric"
+    musica: "Dreamscape (Deluxe)",
+    artista: "Aria"
   },
   {
     posicao: 3,
-    musica: "THE COUNTRY CLUB",
-    artista: "Hannah"
-  },
-  {
-    posicao: 4,
     musica: "The Drive",
     artista: "Ava"
   },
   {
+    posicao: 4,
+    musica: "THE COUNTRY CLUB",
+    artista: "Hannah"
+  },
+  {
     posicao: 5,
+    musica: "Overgrown",
+    artista: "Eric"
+  },
+  {
+    posicao: 6,
     musica: "VANGUARD",
     artista: "Hannah"
   },
   {
-    posicao: 6,
+    posicao: 7,
     musica: "Salute (Deluxe)",
     artista: "4Music"
-  },
-  {
-    posicao: 7,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
   },
   {
     posicao: 8,
@@ -42,13 +42,13 @@ var tabelaDados = [
   },
   {
     posicao: 9,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 10,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge"
   }
 ];
 
