@@ -224,7 +224,7 @@ const grammyData = [
         category: "Best Single Art",
         nominees: [
           { artist: "Nate", song: "HIGHWAY BOYS" },
-          { artist: "Eric, Liz", song: "Late Night Talking" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
           { artist: "Riley", song: "Let It Go" },
           { artist: "Ava", song: "Oh, Was That Yours?" },
           { artist: "Hannah", song: "SHOTGUN" },
