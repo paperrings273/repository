@@ -118,9 +118,9 @@ const grammyData = [
       {
         category: "Best Rock/Alternative Performance",
         nominees: [
-          { artist: "AFTERMATH", song: "Alana Grace" },
-          { artist: "DRUNK!", song: "Ava" },
-          { artist: "HIGHWAY BOYS", song: "Nate" },
+          { artist: "Alana Grace", song: "AFTERMATH" },
+          { artist: "Ava", song: "DRUNK!" },
+          { artist: "Nate", song: "HIGHWAY BOYS" },
           { artist: "Owen Graham", song: "Stolen" }
         ],
         winner: { artist: "-", song: "-" }
@@ -128,9 +128,9 @@ const grammyData = [
       {
         category: "Best Rock/Alternative Song",
         nominees: [
-          { artist: "AFTERMATH", song: "Alana Grace" },
-          { artist: "Oh, Was That Yours?", song: "Ava" },
-          { artist: "HIGHWAY BOYS", song: "Nate" },
+          { artist: "Alana Grace", song: "AFTERMATH" },
+          { artist: "Ava", song: "Oh, Was That Yours?" },
+          { artist: "Nate", song: "HIGHWAY BOYS" },
           { artist: "Owen Graham", song: "Stolen" }
         ],
         winner: { artist: "-", song: "-" }
