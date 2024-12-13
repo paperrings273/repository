@@ -1,5 +1,239 @@
 const grammyData = [
   {
+    edition: "2nd Annual GRAMMY Awards",
+    categories: [
+      {
+        category: "Album of the Year",
+        nominees: [
+          { artist: "Riley", song: "Dandelions" },
+          { artist: "Eric", song: "Overgrown" },
+          { artist: "Trevor", song: "Poets Can't Be Murdered" },
+          { artist: "4Music", song: "Salute" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Record of the Year",
+        nominees: [
+          { artist: "Ava", song: "Bloodsucker" },
+          { artist: "Nate", song: "HIGHWAY BOYS" },
+          { artist: "4Music & Miles Carson", song: "I Got The Power" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "Riley", song: "Remains For Us" },
+          { artist: "Hannah", song: "TEXAS ON FIRE" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Song of the Year",
+        nominees: [
+          { artist: "Alana Grace", song: "AFTERMATH" },
+          { artist: "Ava", song: "Bloodsucker" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "Trevor", song: "Over Those Hills" },
+          { artist: "Riley", song: "Remains For Us" },
+          { artist: "Hannah", song: "TEXAS ON FIRE" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best New Artist",
+        nominees: [
+          { artist: "4Music", song: "4Music" },
+          { artist: "Alana Grace", song: "Alana Grace"},
+          { artist: "Blair", song: "Blair" },
+          { artist: "Eric", song: "Eric"},
+          { artist: "Riley", song: "Riley" },
+          { artist: "Zuri", song: "Zuri" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Producer of the Year, Non-Classical",
+        nominees: [
+          { artist: "Aria", song: "Aria"},
+          { artist: "Eric", song: "Eric" },
+          { artist: "Even Grace", song: "Even Grace" },
+          { artist: "Hannah", song: "Hannah" },
+          { artist: "Trevor", song: "Trevor" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Songwriter of the Year, Non-Classical",
+        nominees: [
+          { artist: "Ava", song: "Ava" },
+          { artist: "Eric", song: "Eric" },
+          { artist: "Hannah", song: "Hannah" },
+          { artist: "Riley", song: "Riley" },
+          { artist: "Trevor", song: "Trevor" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Pop Vocal Album",
+        nominees: [
+          { artist: "Riley", song: "Dandelions" },
+          { artist: "Aria", song: "Dreamscape (Deluxe)" },
+          { artist: "4Music", song: "Salute" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Pop Solo Performance",
+        nominees: [
+          { artist: "Ava", song: "Bloodsucker" },
+          { artist: "Nate", song: "HIGHWAY BOYS" },
+          { artist: "Riley", song: "Let It Go" },
+          { artist: "Hannah", song: "SHOTGUN" },
+          { artist: "Owen Graham", song: "Stolen" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Pop Duo/Group Performance",
+        nominees: [
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "4Music", song: "Salute" },
+          { artist: "Hannah & Megan", song: "THE DAY I DIE" },
+          { artist: "Trevor & Hannah", song: "Verlaten" },
+          { artist: "Zuri & Riley", song: "Young Night" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Dance Pop Recording",
+        nominees: [
+          { artist: "Aria & Miles Carson", song: "Body Language" },
+          { artist: "Riley", song: "Hearthous" },
+          { artist: "4Music & Miles Carson", song: "I Got The Power" },
+          { artist: "Zuri & Riley", song: "Young Night" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Rock/Alternative Performance",
+        nominees: [
+          { artist: "AFTERMATH", song: "Alana Grace" },
+          { artist: "DRUNK!", song: "Ava" },
+          { artist: "HIGHWAY BOYS", song: "Nate" },
+          { artist: "Owen Graham", song: "Stolen" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Rock/Alternative Song",
+        nominees: [
+          { artist: "AFTERMATH", song: "Alana Grace" },
+          { artist: "Oh, Was That Yours?", song: "Ava" },
+          { artist: "HIGHWAY BOYS", song: "Nate" },
+          { artist: "Owen Graham", song: "Stolen" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Rap/R&B Album",
+        nominees: [
+          { artist: "Aria", song: "Dreamscape (Deluxe)" },
+          { artist: "Eric", song: "Overgrown" },
+          { artist: "Trevor", song: "Poets Can't Be Murdered" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Rap/R&B Performance",
+        nominees: [
+          { artist: "Aria & Miles Carson", song: "By My Side" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "Trevor", song: "Over Those Hills" },
+          { artist: "Hannah", song: "TEXAS ON FIRE" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Rap/R&B Song",
+        nominees: [
+          { artist: "Aria", song: "Permanent" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "Trevor", song: "Over Those Hills" },
+          { artist: "Hannah", song: "TEXAS ON FIRE" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Music Video",
+        nominees: [
+          { artist: "Ava", song: "Bloodsucker" },
+          { artist: "Nate", song: "HIGHWAY BOYS" },
+          { artist: "Eric & Liz", song: "Late Night Talking" },
+          { artist: "Trevor", song: "Over Those Hills" },
+          { artist: "Riley", song: "Remains For Us" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Enginereed Album, Non-Classical",
+        nominees: [
+          { artist: "Riley", song: "Dandelions" },
+          { artist: "Alana Grace", song: "MELANCHOLIA" },
+          { artist: "Eric", song: "Overgrown" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" }
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Boxed Or Special Limited Edition Package",
+        nominees: [
+          { artist: "Riley", song: "Dandelions" },
+          { artist: "Aria", song: "Dreamscape (Deluxe)" },
+          { artist: "Alana Grace", song: "MELANCHOLIA" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Recording Package",
+        nominees: [
+          { artist: "Riley", song: "Dandelions" },
+          { artist: "Eric", song: "Overgrown" },
+          { artist: "Alana Grace", song: "MELANCHOLIA" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Album Art",
+        nominees: [
+          { artist: "Riely", song: "Dandelions" },
+          { artist: "Aria", song: "Dreamscape (Deluxe)" },
+          { artist: "Trevor", song: "Poets Can't Be Murdered" },
+          { artist: "Hannah", song: "THE COUNTRY CLUB" },
+          { artist: "Ava", song: "The Drive" },
+        ],
+        winner: { artist: "-", song: "-" }
+      },
+      {
+        category: "Best Single Art",
+        nominees: [
+          { artist: "Nate", song: "HIGHWAY BOYS" },
+          { artist: "Eric, Liz", song: "Late Night Talking" },
+          { artist: "Riley", song: "Let It Go" },
+          { artist: "Ava", song: "Oh, Was That Yours?" },
+          { artist: "Hannah", song: "SHOTGUN" },
+        ],
+        winner: { artist: "-", song: "-" }
+      }
+    ]
+  },
+  {
     edition: "1st Annual GRAMMY Awards",
     categories: [
       {
@@ -176,17 +410,6 @@ const grammyData = [
         winner: { artist: "Ava & Fiona", song: "My Game (Remix)" }
       },
       {
-        category: "Best Enginereed Album, Non-Classical",
-        nominees: [
-          { artist: "Liz", song: "everlasting" },
-          { artist: "Ava", song: "House Of The Rising Sun" },
-          { artist: "Trevor", song: "KIDS SEE GHOSTS" },
-          { artist: "Even Grace", song: "What Ever Happened?" },
-          { artist: "Conan Woolridge", song: "Forbidden Whispers" }
-        ],
-        winner: { artist: "Even Grace", song: "What Ever Happened?" }
-      },
-      {
         category: "Best Music Video",
         nominees: [
           { artist: "Matteo", song: "Forbidden" },
@@ -200,6 +423,17 @@ const grammyData = [
         winner: { artist: "Trevor", song: "Genuine Tales" }
       },
       {
+        category: "Best Enginereed Album, Non-Classical",
+        nominees: [
+          { artist: "Liz", song: "everlasting" },
+          { artist: "Ava", song: "House Of The Rising Sun" },
+          { artist: "Trevor", song: "KIDS SEE GHOSTS" },
+          { artist: "Even Grace", song: "What Ever Happened?" },
+          { artist: "Conan Woolridge", song: "Forbidden Whispers" }
+        ],
+        winner: { artist: "Even Grace", song: "What Ever Happened?" }
+      },
+      {
         category: "Best Recording Package",
         nominees: [
           { artist: "Aria", song: "Dreamscape" },
@@ -211,6 +445,18 @@ const grammyData = [
           { artist: "Conan Woolridge", song: "Forbidden Whispers" }
         ],
         winner: { artist: "Even Grace", song: "What Ever Happened?" }
+      },
+      {
+        category: "Best Album Art",
+        nominees: [
+          { artist: "Aria", song: "Dreamscape" },
+          { artist: "Liz", song: "everlasting" },
+          { artist: "Matteo", song: "Flourish" },
+          { artist: "Anthony", song: "meaningless" },
+          { artist: "Even Grace", song: "What Ever Happened?" },
+          { artist: "Conan Woolridge", song: "Forbidden Whispers" }
+        ],
+        winner: { artist: "Liz", song: "everlasting" }
       },
       {
         category: "Best Single Art",
@@ -227,19 +473,7 @@ const grammyData = [
           { artist: "Liz", song: "here's to the nights"}
         ],
         winner: { artist: "Even Grace", song: "Beetlebum" }
-      },
-      {
-        category: "Best Album Art",
-        nominees: [
-          { artist: "Aria", song: "Dreamscape" },
-          { artist: "Liz", song: "everlasting" },
-          { artist: "Matteo", song: "Flourish" },
-          { artist: "Anthony", song: "meaningless" },
-          { artist: "Even Grace", song: "What Ever Happened?" },
-          { artist: "Conan Woolridge", song: "Forbidden Whispers" }
-        ],
-        winner: { artist: "Liz", song: "everlasting" }
       }
     ]
-  }
+  },
 ];
