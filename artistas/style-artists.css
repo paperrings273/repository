@@ -784,6 +784,48 @@ td {
   border-radius: 10px;
 }
 
+.edition-select-container {
+  margin-top: 60px;
+  margin-bottom: -30px;
+  text-align: left;
+  background-color: #333333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.edition-select-container label {
+  font-size: 12px;
+  font-family: 'Commons Bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555555;
+}
+
+.edition-select:focus {
+  outline: none;
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+.edition-select {
+  font-family: 'Commons Bold', sans-serif;
+  color: #666666;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #444444;
+  cursor: pointer;
+  border: none;
+}
+
+#grammy-categories {
+  margin-top: 20px;
+}
+
 .name-grammy{
   font-family: "Grammy Light";
   font-weight: normal;

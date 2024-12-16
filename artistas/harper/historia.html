@@ -73,6 +73,14 @@
     <div class="border-top">
       <p>GRAMMY AWARDS</p>
     </div>
+
+    <div class="edition-select-container">
+      <label for="edition-select">Selecione a edição:</label>
+      <select id="edition-select" class="edition-select">
+        <option value="all">Todas as Edições</option>
+      </select>
+    </div>
+
     <div id="grammy-categories"></div>
     <div class="gradient-overlay"></div>
   </div>
@@ -91,7 +99,35 @@
 
 <script src="../grammy-data.js"></script>
 <script>
-  function displayGrammyAwards() {
+  function populateEditionSelect() {
+    const editionSelect = document.getElementById('edition-select');
+    const artistName = "Harper";
+
+    editionSelect.innerHTML = '';
+
+    const allOption = document.createElement('option');
+    allOption.value = 'all';
+    allOption.textContent = 'Todas as Edições';
+    editionSelect.appendChild(allOption);
+
+    const relevantEditions = grammyData.filter(edition =>
+      edition.categories.some(category =>
+        category.nominees.some(nominee => {
+          const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
+          return artists.some(name => name.trim() === artistName);
+        })
+      )
+    );
+
+    relevantEditions.forEach(edition => {
+      const option = document.createElement('option');
+      option.value = edition.edition;
+      option.textContent = edition.edition;
+      editionSelect.appendChild(option);
+    });
+  }
+
+  function displayGrammyAwards(selectedEdition = 'all') {
     const grammyCategoriesDiv = document.getElementById('grammy-categories');
     grammyCategoriesDiv.innerHTML = '';
 
@@ -99,10 +135,8 @@
     let totalWins = 0;
 
     grammyData.forEach((edition, index) => {
-      if (index > 0) {
-        const divider = document.createElement('hr');
-        divider.classList.add('edition-divider');
-        grammyCategoriesDiv.appendChild(divider);
+      if (selectedEdition !== 'all' && edition.edition !== selectedEdition) {
+        return;
       }
 
       const editionDiv = document.createElement('div');
@@ -196,6 +230,12 @@
 
       if (editionNominees > 0 || editionWins > 0) {
         grammyCategoriesDiv.appendChild(editionDiv);
+
+        if (selectedEdition === 'all' && index < grammyData.length - 1) {
+          const divider = document.createElement('hr');
+          divider.classList.add('edition-divider');
+          grammyCategoriesDiv.appendChild(divider);
+        }
       }
     });
 
@@ -203,18 +243,18 @@
     const totalStats = document.createElement('div');
     totalStats.classList.add('total-stats');
     totalStats.innerHTML = `
-        <h3 class="name-grammy">${artistName}</br></h3>
-        <div class="stats-container">
-            <div class="stats-item">
-                <p1>WINS*</p1>
-                <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
-            </div>
-            <div class="stats-item">
-                <p2>NOMINEES*</p2>
-                <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
-            </div>
-        </div>
-    `;
+      <h3 class="name-grammy">${artistName}</br></h3>
+      <div class="stats-container">
+          <div class="stats-item">
+              <p1>WINS*</p1>
+              <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
+          </div>
+          <div class="stats-item">
+              <p2>NOMINEES*</p2>
+              <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
+          </div>
+      </div>
+  `;
 
     grammyCategoriesDiv.insertBefore(totalStats, grammyCategoriesDiv.firstChild);
 
@@ -226,8 +266,12 @@
     }
   }
 
-  displayGrammyAwards();
+  document.getElementById('edition-select').addEventListener('change', (event) => {
+    displayGrammyAwards(event.target.value);
+  });
 
+  populateEditionSelect();
+  displayGrammyAwards();
 </script>
 <script src="../films.js"></script>
 <script>

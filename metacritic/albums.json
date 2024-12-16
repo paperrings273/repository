@@ -18,11 +18,13 @@
     "genre": "Pop/Synth-Pop",
     "label": "Starlight Studios®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1310405514718351381",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": 75,
+    "reviews": 1,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 75}
     ],
-    "universalAcclaim": false  },
+    "generallyFavorableReviews": true
+  },
   {
     "cover": "https://i.imgur.com/mzd5oqC.png",
     "title": "THE COUNTRY CLUB",
@@ -30,10 +32,12 @@
     "genre": "Country/R&B/Pop",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1307779024621142208",
-    "rating": "87",
-    "reviews": 1,
+    "rating": "81",
+    "reviews": 3,
     "reviewScores": [
-      {"source": "NME", "score": 87}
+      {"source": "NME", "score": 87},
+      {"source": "Pitchfork", "score": 79},
+      {"source": "RollingStone", "score": 79}
     ],
     "universalAcclaim": true  },
   {
@@ -43,11 +47,12 @@
     "genre": "R&B/Folk",
     "label": "YG Entertainment®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1302077197342740483",
-    "rating": "83",
-    "reviews": 2,
+    "rating": "81",
+    "reviews": 3,
     "reviewScores": [
       {"source": "Pitchfork", "score": 85},
-      {"source": "NME", "score": 82}
+      {"source": "NME", "score": 82},
+      {"source": "RollingStone", "score": 78}
     ],
     "universalAcclaim": true  },
   {
@@ -57,12 +62,13 @@
     "genre": "Pop/Rock",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1302074976488132729",
-    "rating": "85",
-    "reviews": 3,
+    "rating": "83",
+    "reviews": 4,
     "reviewScores": [
       {"source": "Variety", "score": 86},
       {"source": "Pitchfork", "score": 86},
-      {"source": "NME", "score": 83}
+      {"source": "NME", "score": 83},
+      {"source": "RollingStone", "score": 78}
     ],
     "universalAcclaim": true  },
   {

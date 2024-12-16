@@ -3,6 +3,13 @@ const grammyData = [
     edition: "2nd Annual GRAMMY Awards",
     categories: [
       {
+        category: "Grammy Legend Award",
+        nominees: [
+          { artist: "Trevor", song: "Trevor" },
+        ],
+        winner: { artist: "Trevor", song: "Trevor" }
+      },
+      {
         category: "Album of the Year",
         nominees: [
           { artist: "Riley", song: "Dandelions" },
@@ -12,7 +19,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Ava", song: "The Drive" }
       },
       {
         category: "Record of the Year",
@@ -24,7 +31,7 @@ const grammyData = [
           { artist: "Riley", song: "Remains For Us" },
           { artist: "Hannah", song: "TEXAS ON FIRE" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Eric & Liz", song: "Late Night Talking" }
       },
       {
         category: "Song of the Year",
@@ -36,7 +43,7 @@ const grammyData = [
           { artist: "Riley", song: "Remains For Us" },
           { artist: "Hannah", song: "TEXAS ON FIRE" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Trevor", song: "Over Those Hills" }
       },
       {
         category: "Best New Artist",
@@ -48,7 +55,7 @@ const grammyData = [
           { artist: "Riley", song: "Riley" },
           { artist: "Zuri", song: "Zuri" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Eric", song: "Eric" }
       },
       {
         category: "Producer of the Year, Non-Classical",
@@ -59,7 +66,7 @@ const grammyData = [
           { artist: "Hannah", song: "Hannah" },
           { artist: "Trevor", song: "Trevor" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Even Grace", song: "Even Grace" }
       },
       {
         category: "Songwriter of the Year, Non-Classical",
@@ -70,7 +77,7 @@ const grammyData = [
           { artist: "Riley", song: "Riley" },
           { artist: "Trevor", song: "Trevor" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Trevor", song: "Trevor" }
       },
       {
         category: "Best Pop Vocal Album",
@@ -81,7 +88,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Riley", song: "Dandelions" }
       },
       {
         category: "Best Pop Solo Performance",
@@ -92,7 +99,7 @@ const grammyData = [
           { artist: "Hannah", song: "SHOTGUN" },
           { artist: "Owen Graham", song: "Stolen" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Riley", song: "Let It Go" }
       },
       {
         category: "Best Pop Duo/Group Performance",
@@ -103,7 +110,7 @@ const grammyData = [
           { artist: "Trevor & Hannah", song: "Verlaten" },
           { artist: "Zuri & Riley", song: "Young Night" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Eric & Liz", song: "Late Night Talking" }
       },
       {
         category: "Best Dance Pop Recording",
@@ -113,7 +120,7 @@ const grammyData = [
           { artist: "4Music & Miles Carson", song: "I Got The Power" },
           { artist: "Zuri & Riley", song: "Young Night" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "4Music & Miles Carson", song: "I Got The Power" }
       },
       {
         category: "Best Rock/Alternative Performance",
@@ -123,7 +130,7 @@ const grammyData = [
           { artist: "Nate", song: "HIGHWAY BOYS" },
           { artist: "Owen Graham", song: "Stolen" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Nate", song: "HIGHWAY BOYS" }
       },
       {
         category: "Best Rock/Alternative Song",
@@ -133,7 +140,7 @@ const grammyData = [
           { artist: "Nate", song: "HIGHWAY BOYS" },
           { artist: "Owen Graham", song: "Stolen" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Ava", song: "Oh, Was That Yours?" }
       },
       {
         category: "Best Rap/R&B Album",
@@ -143,7 +150,7 @@ const grammyData = [
           { artist: "Trevor", song: "Poets Can't Be Murdered" },
           { artist: "Hannah", song: "THE COUNTRY CLUB" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Trevor", song: "Poets Can't Be Murdered" }
       },
       {
         category: "Best Rap/R&B Performance",
@@ -153,7 +160,7 @@ const grammyData = [
           { artist: "Trevor", song: "Over Those Hills" },
           { artist: "Hannah", song: "TEXAS ON FIRE" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Hannah", song: "TEXAS ON FIRE" }
       },
       {
         category: "Best Rap/R&B Song",
@@ -163,7 +170,7 @@ const grammyData = [
           { artist: "Trevor", song: "Over Those Hills" },
           { artist: "Hannah", song: "TEXAS ON FIRE" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Eric & Liz", song: "Late Night Talking" }
       },
       {
         category: "Best Music Video",
@@ -174,7 +181,7 @@ const grammyData = [
           { artist: "Trevor", song: "Over Those Hills" },
           { artist: "Riley", song: "Remains For Us" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Trevor", song: "Over Those Hills" }
       },
       {
         category: "Best Enginereed Album, Non-Classical",
@@ -185,7 +192,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" }
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Alana Grace", song: "MELANCHOLIA" }
       },
       {
         category: "Best Boxed Or Special Limited Edition Package",
@@ -196,7 +203,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Ava", song: "The Drive" }
       },
       {
         category: "Best Recording Package",
@@ -207,7 +214,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Eric", song: "Overgrown" }
       },
       {
         category: "Best Album Art",
@@ -218,7 +225,7 @@ const grammyData = [
           { artist: "Hannah", song: "THE COUNTRY CLUB" },
           { artist: "Ava", song: "The Drive" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Hannah", song: "THE COUNTRY CLUB" }
       },
       {
         category: "Best Single Art",
@@ -229,7 +236,7 @@ const grammyData = [
           { artist: "Ava", song: "Oh, Was That Yours?" },
           { artist: "Hannah", song: "SHOTGUN" },
         ],
-        winner: { artist: "-", song: "-" }
+        winner: { artist: "Hannah", song: "SHOTGUN" }
       }
     ]
   },
