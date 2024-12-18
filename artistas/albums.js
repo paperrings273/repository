@@ -1,5 +1,13 @@
 const albumsData = [
   {
+    title: "HONEY",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    featuring: []
+  },
+  {
     title: "Dandelions",
     year: "Year 02",
     image: "https://i.imgur.com/Fp8M9ZI.png",

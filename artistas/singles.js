@@ -1,5 +1,41 @@
 const singlesData = [
   {
+    title: "LANDSCAPE DUET WITH EVEN GRACE",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "ORANGE TREES",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "HONEY",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "SOFTLY, FOREVER",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "nao",
+    featuring: []
+  },
+  {
     title: "ALL AMERICAN",
     year: "Year 02",
     image: "https://i.imgur.com/mzd5oqC.png",
@@ -33,6 +69,15 @@ const singlesData = [
     label: "℗ © Pacific Records",
     artist: "Holligan",
     single: "sim",
+    featuring: []
+  },
+  {
+    title: "Hearthous",
+    year: "Year 02",
+    image: "https://i.imgur.com/Fp8M9ZI.png",
+    label: "℗ © Starlight Studios",
+    artist: "Riley",
+    single: "nao",
     featuring: []
   },
   {

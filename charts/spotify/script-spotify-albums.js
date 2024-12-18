@@ -2,38 +2,38 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Dandelions",
-    artista: "Riley"
+    musica: "HONEY",
+    artista: "Bianca"
   },
   {
     posicao: 2,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
-  },
-  {
-    posicao: 3,
     musica: "The Drive",
     artista: "Ava"
   },
   {
-    posicao: 4,
-    musica: "THE COUNTRY CLUB",
-    artista: "Hannah"
+    posicao: 3,
+    musica: "Dandelions",
+    artista: "Riley"
   },
   {
-    posicao: 5,
+    posicao: 4,
     musica: "Overgrown",
     artista: "Eric"
   },
   {
-    posicao: 6,
-    musica: "VANGUARD",
+    posicao: 5,
+    musica: "THE COUNTRY CLUB",
     artista: "Hannah"
   },
   {
-    posicao: 7,
+    posicao: 6,
     musica: "Salute (Deluxe)",
     artista: "4Music"
+  },
+  {
+    posicao: 7,
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 8,
@@ -42,13 +42,13 @@ var tabelaDados = [
   },
   {
     posicao: 9,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
+    musica: "Dreamscape (Deluxe)",
+    artista: "Aria"
   },
   {
     posicao: 10,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
+    musica: "VANGUARD",
+    artista: "Hannah"
   }
 ];
 

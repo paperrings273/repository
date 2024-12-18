@@ -1,14 +1,14 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Don't Play Me",
-    artista: "Aria, Even Grace"
+    musica: "Remains For Us",
+    artista: "Riley"
   },
 
   {
     posicao: 2,
-    musica: "Young Night",
-    artista: "Zuri, Riley"
+    musica: "SOFTLY, FOREVER",
+    artista: "Bianca"
   },
 
   {
@@ -19,44 +19,44 @@ var tabelaDados = [
 
   {
     posicao: 4,
-    musica: "Heart-to-Heart",
-    artista: "Conan Woolridge"
+    musica: "HONEY",
+    artista: "Bianca"
   },
 
   {
    posicao: 5,
-   musica: "Remains For Us",
-   artista: "Riley"
+   musica: "Heart-to-Heart",
+   artista: "Conan Woolridge"
 },
 
   {
     posicao: 6,
+    musica: "ORANGE TREES",
+    artista: "Bianca"
+  },
+
+  {
+    posicao: 7,
     musica: "Let It Go",
     artista: "Riley"
   },
 
   {
-    posicao: 7,
-    musica: "Crimson",
-    artista: "Riley"
-  },
-
-  {
     posicao: 8,
-    musica: "Never Back Down",
-    artista: "Blair"
+    musica: "LANDSCAPE DUET WITH EVEN GRACE",
+    artista: "Bianca, Even Grace"
   },
 
   {
     posicao: 9,
-    musica: "I Got The Power",
-    artista: "4Music, Miles Carson"
+    musica: "Hello, N.Y.",
+    artista: "Riley"
   },
 
   {
     posicao: 10,
-    musica: "ALL AMERICAN",
-    artista: "Hannah"
+    musica: "Hearthous",
+    artista: "Riley"
   },
 ];
 
