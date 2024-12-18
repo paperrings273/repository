@@ -1,5 +1,17 @@
 const toursData = [
   {
+    title: "Lost & Found Tour",
+    year: "(Year 02)",
+    image: "https://i.imgur.com/LNbSTLI.jpeg",
+    artists: ["Conan Woolridge"]
+  },
+  {
+    title: "Liberation Tour",
+    year: "(Year 01)",
+    image: "https://i.imgur.com/87m7AyR.png",
+    artists: ["Trevor"]
+  },
+  {
     title: "Dandelions Tour",
     year: "(Year 02)",
     image: "https://i.imgur.com/BbWtjCw.png",
