@@ -6,7 +6,7 @@ var tabelaDados = [
   { posicao: 5, musica: "Heart-to-Heart", artista: "Conan Woolridge", imagem: "" },
   { posicao: 6, musica: "Bloodsucker", artista: "Ava", imagem: "" },
   { posicao: 7, musica: "Let It Go", artista: "Riley", imagem: "" },
-  { posicao: 8, musica: "SOTLY, FOREVER", artista: "Bianca", imagem: "" },
+  { posicao: 8, musica: "SOFTLY, FOREVER", artista: "Bianca", imagem: "" },
   { posicao: 9, musica: "Crimson", artista: "Riley", imagem: "" },
   { posicao: 10, musica: "Irunafternothing", artista: "Riley", imagem: "" },
 ];
