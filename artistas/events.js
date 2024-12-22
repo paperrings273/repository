@@ -58,7 +58,13 @@ const toursData = [
     year: "-",
     image: "https://i.imgur.com/TrjOUiN.png",
     artists: ["Liz"]
-  }
+  },
+  {
+    title: "Sister Sister Sister Tour",
+    year: "-",
+    image: "https://i.imgur.com/NiTNlWr.png",
+    artists: ["Starlights"]
+  },
 ];
 
 const eventsData = [

@@ -1,5 +1,21 @@
 const albumsData = [
   {
+    title: "Once Upon a Time...",
+    year: "Year 03",
+    image: "https://i.imgur.com/dudcjbk.png",
+    label: "℗ © Starlight Studios",
+    artist: "Conan Woolridge",
+    featuring: []
+  },
+  {
+    title: "SUMMER REMAINS",
+    year: "Year 03",
+    image: "https://i.imgur.com/CX87G23.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    featuring: []
+  },
+  {
     title: "HONEY",
     year: "Year 03",
     image: "https://i.imgur.com/Rld7gSG.png",
@@ -301,6 +317,30 @@ const albumsData = [
     image: "https://i.imgur.com/QVil8Ah.png",
     label: "℗ © YG Entertainment",
     artist: "Liz",
+    featuring: []
+  },
+  {
+    title: "Becoming",
+    year: "-",
+    image: "https://i.imgur.com/eqUXWow.png",
+    label: "℗ © YG Entertainment",
+    artist: "Starlights",
+    featuring: []
+  },
+  {
+    title: "A Trip Down Memory Lane",
+    year: "-",
+    image: "https://i.imgur.com/UvEtZtx.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    featuring: []
+  },
+  {
+    title: "Metamorphosis",
+    year: "-",
+    image: "https://i.imgur.com/CoXXuXd.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
     featuring: []
   },
 ];

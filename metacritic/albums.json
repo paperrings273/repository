@@ -1,5 +1,29 @@
 [
   {
+    "cover": "https://i.imgur.com/dudcjbk.png",
+    "title": "Once Upon a Time...",
+    "artist": "Conan Woolridge",
+    "genre": "Pop/Country",
+    "label": "Starlight Studios®",
+    "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1320274314427109387",
+    "rating": "tbd",
+    "reviews": 0,
+    "reviewScores": [
+    ],
+    "generallyFavorableReviews": false  },
+  {
+    "cover": "https://i.imgur.com/CX87G23.png",
+    "title": "SUMMER REMAINS",
+    "artist": "Nate",
+    "genre": "Pop/Country",
+    "label": "Dawn Records®",
+    "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1320224976699260948",
+    "rating": "80",
+    "reviews": 1,
+    "reviewScores": [{"source":"RollingStone", "score": 80}
+    ],
+    "generallyFavorableReviews": true  },
+  {
     "cover": "https://i.imgur.com/5513RiP.png",
     "title": "Honey",
     "artist": "Bianca",

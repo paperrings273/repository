@@ -567,6 +567,24 @@ const singlesData = [
     featuring: []
   },
   {
+    title: "Back To You (Even Grace Remix)",
+    year: "-",
+    image: "https://i.imgur.com/8LdVvx7.png",
+    label: "℗ © YG Entertainment",
+    artist: "Starlights",
+    single: "sim",
+    featuring: ["Even Grace"]
+  },
+  {
+    title: "Back To You",
+    year: "-",
+    image: "https://i.imgur.com/gscGZOi.png",
+    label: "℗ © YG Entertainment",
+    artist: "Starlights",
+    single: "sim",
+    featuring: []
+  },
+  {
     title: "Stolen Brave Life",
     year: "-",
     image: "https://i.imgur.com/Vw8YK0s.png",
@@ -662,6 +680,69 @@ const singlesData = [
     image: "https://i.imgur.com/9fKs4HG.png",
     label: "℗ © Illuminati Records",
     artist: "Matteo",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Evergreen",
+    year: "-",
+    image: "https://i.imgur.com/sGOv5NX.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Out Of Sight, Out Of Mind",
+    year: "-",
+    image: "https://i.imgur.com/de5bbuF.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Side Effects",
+    year: "-",
+    image: "https://i.imgur.com/aaQMxFC.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Daylight",
+    year: "-",
+    image: "https://i.imgur.com/FUuure5.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Pillowtalk (feat. Bianca)",
+    year: "-",
+    image: "https://i.imgur.com/W8ra8K5.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: ["Bianca"]
+  },
+  {
+    title: "Hypnosis",
+    year: "-",
+    image: "https://i.imgur.com/lje1Fta.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Two Ghosts",
+    year: "-",
+    image: "https://i.imgur.com/0he0tXf.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
     single: "sim",
     featuring: []
   },
