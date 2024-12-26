@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Remains For Us",
-    artista: "Riley"
+    musica: "King Cry-Baby (A-Remix)",
+    artista: "Kadu, Liza, Nate"
   },
 
   {
     posicao: 2,
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair"
+  },
+
+  {
+    posicao: 3,
+    musica: "Late Night Talking",
+    artista: "Eric, Liz",
+  },
+
+  {
+    posicao: 4,
     musica: "SOFTLY, FOREVER",
     artista: "Bianca"
   },
 
   {
-    posicao: 3,
-    musica: "DRUNK!",
-    artista: "Ava",
+   posicao: 5,
+   musica: "hit-and-run",
+   artista: "Suzy"
+},
+
+  {
+    posicao: 6,
+    musica: "HIGHWAY BOYS",
+    artista: "Nate"
   },
 
   {
-    posicao: 4,
+    posicao: 7,
     musica: "HONEY",
     artista: "Bianca"
   },
 
   {
-   posicao: 5,
-   musica: "Heart-to-Heart",
-   artista: "Conan Woolridge"
-},
-
-  {
-    posicao: 6,
-    musica: "ORANGE TREES",
-    artista: "Bianca"
-  },
-
-  {
-    posicao: 7,
-    musica: "Let It Go",
-    artista: "Riley"
-  },
-
-  {
     posicao: 8,
-    musica: "LANDSCAPE DUET WITH EVEN GRACE",
-    artista: "Bianca, Even Grace"
+    musica: "Oh, Was That Yours?",
+    artista: "Ava"
   },
 
   {
     posicao: 9,
-    musica: "Hello, N.Y.",
-    artista: "Riley"
+    musica: "Heart-to-Heart",
+    artista: "Conan Woolridge"
   },
 
   {
     posicao: 10,
-    musica: "Hearthous",
-    artista: "Riley"
+    musica: "DRUNK!",
+    artista: "Ava"
   },
 ];
 

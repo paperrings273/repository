@@ -1,5 +1,32 @@
 const singlesData = [
   {
+    title: "King Cry-Baby (A-Remix) (feat. Liza & Nate)",
+    year: "Year 03",
+    image: "https://i.imgur.com/RM6TK6q.png",
+    label: "℗ © YG Entertainment",
+    artist: "Suzy",
+    single: "sim",
+    featuring: ["Liza", "Nate"]
+  },
+  {
+    title: "hit-and-run",
+    year: "Year 03",
+    image: "https://i.imgur.com/wVxKqgv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Suzy",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Chasing Freedom",
+    year: "Year 03",
+    image: "https://i.imgur.com/x5OuhY4.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Ivy Sinclair",
+    single: "sim",
+    featuring: []
+  },
+  {
     title: "LANDSCAPE DUET WITH EVEN GRACE",
     year: "Year 03",
     image: "https://i.imgur.com/Rld7gSG.png",

@@ -1,14 +1,14 @@
 var tabelaDados = [
   { posicao: 1, album: "HONEY", artista: "Bianca" },
-  { posicao: 2, album: "The Drive", artista: "Ava"},
-  { posicao: 3, album: "Dandelions", artista: "Riley" },
-  { posicao: 4, album: "THE COUNTRY CLUB", artista: "Hannah" },
-  { posicao: 5, album: "Overgrown", artista: "Eric" },
-  { posicao: 6, album: "Liquor Store In Mars", artista: "Madeline" },
-  { posicao: 7, album: "LA To The Moon", artista: "Madeline" },
-  { posicao: 8, album: "Dreamscape (Deluxe)", artista: "Aria" },
-  { posicao: 9, album: "Poets Can't Be Murdered", artista: "Trevor" },
-  { posicao: 10, album: "VANGUARD", artista: "Hannah" },
+  { posicao: 2, album: "Overgrown", artista: "Eric"},
+  { posicao: 3, album: "The Drive", artista: "Ava" },
+  { posicao: 4, album: "Poets Can't Be Murdered", artista: "Trevor" },
+  { posicao: 5, album: "Dandelions", artista: "Riley" },
+  { posicao: 6, album: "THE COUNTRY CLUB", artista: "Hannah" },
+  { posicao: 7, album: "Dreamscape (Deluxe)", artista: "Aria" },
+  { posicao: 8, album: "Salute", artista: "4Music" },
+  { posicao: 9, album: "Blackout", artista: "Kadu" },
+  { posicao: 10, album: "Metamorphosis", artista: "Nate" },
 ];
 
 function atualizarTabela() {

@@ -7,18 +7,18 @@ var tabelaDados = [
   },
   {
     posicao: 2,
+    musica: "Overgrown",
+    artista: "Eric"
+  },
+  {
+    posicao: 3,
     musica: "The Drive",
     artista: "Ava"
   },
   {
-    posicao: 3,
-    musica: "Dandelions",
-    artista: "Riley"
-  },
-  {
     posicao: 4,
-    musica: "Overgrown",
-    artista: "Eric"
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 5,
@@ -27,28 +27,28 @@ var tabelaDados = [
   },
   {
     posicao: 6,
-    musica: "Salute (Deluxe)",
-    artista: "4Music"
+    musica: "Dandelions",
+    artista: "Riley"
   },
   {
     posicao: 7,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
+    musica: "Salute",
+    artista: "4Music"
   },
   {
     posicao: 8,
-    musica: "MELANCHOLIA",
-    artista: "Alana Grace"
-  },
-  {
-    posicao: 9,
     musica: "Dreamscape (Deluxe)",
     artista: "Aria"
   },
   {
+    posicao: 9,
+    musica: "Metamorphosis",
+    artista: "Nate"
+  },
+  {
     posicao: 10,
-    musica: "VANGUARD",
-    artista: "Hannah"
+    musica: "Forbidden Whispers",
+    artista: "Conan Woolridge"
   }
 ];
 
