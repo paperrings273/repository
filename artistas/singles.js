@@ -1,10 +1,37 @@
 const singlesData = [
   {
+    title: "NaNaNa",
+    year: "Year 03",
+    image: "https://i.imgur.com/GsA4sfs.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "WHISKEY FEVER",
+    year: "Year 03",
+    image: "https://i.imgur.com/CX87G23.png",
+    label: "℗ © Dawn Records",
+    artist: "Nate",
+    single: "nao",
+    featuring: ["Even Grace"]
+  },
+  {
+    title: "RADICAL EXXXTASY",
+    year: "Year 03",
+    image: "https://i.imgur.com/q2Pih6j.png",
+    label: "℗ © Dawn Records",
+    artist: "Even Grace",
+    single: "sim",
+    featuring: []
+  },
+  {
     title: "King Cry-Baby (A-Remix) (feat. Liza & Nate)",
     year: "Year 03",
     image: "https://i.imgur.com/RM6TK6q.png",
     label: "℗ © YG Entertainment",
-    artist: "Suzy",
+    artist: "Kadu",
     single: "sim",
     featuring: ["Liza", "Nate"]
   },

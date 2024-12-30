@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "King Cry-Baby (A-Remix)", artista: "Kadu ft. Liza & Nate", imagem: "" },
-  { posicao: 2, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 3, musica: "Late Night Talking", artista: "Eric ft. Liz", imagem: "" },
-  { posicao: 4, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
-  { posicao: 5, musica: "HONEY", artista: "Bianca", imagem: "" },
-  { posicao: 6, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
-  { posicao: 7, musica: "hit-and-run", artista: "Suzy", imagem: "" },
-  { posicao: 8, musica: "DRUNK!", artista: "Ava", imagem: "" },
+  { posicao: 1, musica: "NaNaNa", artista: "Blair", imagem: "" },
+  { posicao: 2, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
+  { posicao: 3, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 4, musica: "hit-and-run", artista: "Suzy", imagem: "" },
+  { posicao: 5, musica: "WHISKEY FEVER", artista: "Nate ft. Even Grace", imagem: "" },
+  { posicao: 6, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
+  { posicao: 7, musica: "King Cry Baby (A-Remix)", artista: "Kadu ft. Liza & Nate", imagem: "" },
+  { posicao: 8, musica: "Late Night Talking", artista: "Eric ft. Liz", imagem: "" },
   { posicao: 9, musica: "SOFTLY, FOREVER", artista: "Bianca", imagem: "" },
-  { posicao: 10, musica: "Bloodsucker", artista: "Ava", imagem: "" },
+  { posicao: 10, musica: "Oh, Was That Yours?", artista: "Ava", imagem: "" },
 ];
 
 function atualizarTabela() {

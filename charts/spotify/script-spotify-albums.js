@@ -2,53 +2,53 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "SUMMER REMAINS",
+    artista: "Nate"
+  },
+  {
+    posicao: 2,
+    musica: "Once Upon a Time...",
+    artista: "Conan Woolridge"
+  },
+  {
+    posicao: 3,
     musica: "HONEY",
     artista: "Bianca"
   },
   {
-    posicao: 2,
-    musica: "Overgrown",
-    artista: "Eric"
-  },
-  {
-    posicao: 3,
+    posicao: 4,
     musica: "The Drive",
     artista: "Ava"
   },
   {
-    posicao: 4,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
+    posicao: 5,
+    musica: "Overgrown",
+    artista: "Eric"
   },
   {
-    posicao: 5,
+    posicao: 6,
     musica: "THE COUNTRY CLUB",
     artista: "Hannah"
   },
   {
-    posicao: 6,
+    posicao: 7,
     musica: "Dandelions",
     artista: "Riley"
   },
   {
-    posicao: 7,
+    posicao: 8,
     musica: "Salute",
     artista: "4Music"
   },
   {
-    posicao: 8,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
-  },
-  {
     posicao: 9,
-    musica: "Metamorphosis",
-    artista: "Nate"
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 10,
-    musica: "Forbidden Whispers",
-    artista: "Conan Woolridge"
+    musica: "Metamorphosis",
+    artista: "Nate"
   }
 ];
 

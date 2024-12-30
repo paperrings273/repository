@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "King Cry-Baby (A-Remix)",
-    artista: "Kadu, Liza, Nate"
+    musica: "NaNaNa",
+    artista: "Blair"
   },
 
   {
     posicao: 2,
-    musica: "Chasing Freedom",
-    artista: "Ivy Sinclair"
-  },
-
-  {
-    posicao: 3,
-    musica: "Late Night Talking",
-    artista: "Eric, Liz",
-  },
-
-  {
-    posicao: 4,
-    musica: "SOFTLY, FOREVER",
-    artista: "Bianca"
-  },
-
-  {
-   posicao: 5,
-   musica: "hit-and-run",
-   artista: "Suzy"
-},
-
-  {
-    posicao: 6,
     musica: "HIGHWAY BOYS",
     artista: "Nate"
   },
 
   {
+    posicao: 3,
+    musica: "RADICAL EXXXTASY",
+    artista: "Even Grace",
+  },
+
+  {
+    posicao: 4,
+    musica: "hit-and-run",
+    artista: "Suzy"
+  },
+
+  {
+   posicao: 5,
+   musica: "WHISKEY FEVER",
+   artista: "Nate, Even Grace"
+},
+
+  {
+    posicao: 6,
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair"
+  },
+
+  {
     posicao: 7,
-    musica: "HONEY",
-    artista: "Bianca"
+    musica: "Never Back Down",
+    artista: "Blair"
   },
 
   {
     posicao: 8,
-    musica: "Oh, Was That Yours?",
-    artista: "Ava"
+    musica: "King Cry-Baby (A-Remix)",
+    artista: "Kadu, Liza, Nate"
   },
 
   {
     posicao: 9,
-    musica: "Heart-to-Heart",
-    artista: "Conan Woolridge"
+    musica: "Late Night Talking",
+    artista: "Eric, Liz"
   },
 
   {
     posicao: 10,
-    musica: "DRUNK!",
-    artista: "Ava"
+    musica: "SOFTLY, FOREVER",
+    artista: "Bianca"
   },
 ];
 

@@ -25,16 +25,17 @@
     "generallyFavorableReviews": true  },
   {
     "cover": "https://i.imgur.com/5513RiP.png",
-    "title": "Honey",
+    "title": "HONEY",
     "artist": "Bianca",
     "genre": "Pop",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1315880115535745056",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": "83",
+    "reviews": 1,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 83}
     ],
-    "universalAcclaim": false  },
+    "universalAcclaim": true  },
   {
     "cover": "https://i.imgur.com/Fp8M9ZI.png",
     "title": "Dandelions",
