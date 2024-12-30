@@ -1,7 +1,7 @@
 var tabelaDados = [
   { posicao: 1, musica: "NaNaNa", artista: "Blair", imagem: "" },
-  { posicao: 2, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
-  { posicao: 3, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 2, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 3, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
   { posicao: 4, musica: "hit-and-run", artista: "Suzy", imagem: "" },
   { posicao: 5, musica: "WHISKEY FEVER", artista: "Nate ft. Even Grace", imagem: "" },
   { posicao: 6, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
