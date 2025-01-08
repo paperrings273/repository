@@ -1,5 +1,17 @@
 const toursData = [
   {
+    title: "Bianca's Jazz & Piano Las Vegas Residency",
+    year: "-",
+    image: "https://i.imgur.com/5VQZ5pw.png",
+    artists: ["Bianca"]
+  },
+  {
+    title: "Eyes Wide Open Tour",
+    year: "-",
+    image: "https://i.imgur.com/xAdWsVV.png",
+    artists: ["Bianca"]
+  },
+  {
     title: "Liza's Love-a-Palooza",
     year: "-",
     image: "https://i.imgur.com/gxKQ8Z2.png",
