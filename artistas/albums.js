@@ -1,5 +1,21 @@
 const albumsData = [
   {
+    title: "Fantasmagoric Feelings",
+    year: "-",
+    image: "https://i.imgur.com/5Xgn5gI.jpeg",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    featuring: []
+  },
+  {
+    title: "Everloved",
+    year: "-",
+    image: "https://i.imgur.com/j7fLWHV.jpeg",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    featuring: []
+  },
+  {
     title: "Once Upon a Time...",
     year: "Year 03",
     image: "https://i.imgur.com/dudcjbk.png",

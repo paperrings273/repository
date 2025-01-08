@@ -1,5 +1,17 @@
 const toursData = [
   {
+    title: "Liza's Love-a-Palooza",
+    year: "-",
+    image: "https://i.imgur.com/gxKQ8Z2.png",
+    artists: ["Liza"]
+  },
+  {
+    title: "Everloved Tour",
+    year: "-",
+    image: "https://i.imgur.com/cYDCW6v.jpeg",
+    artists: ["Liza"]
+  },
+  {
     title: "Lost & Found Tour",
     year: "(Year 02)",
     image: "https://i.imgur.com/LNbSTLI.jpeg",

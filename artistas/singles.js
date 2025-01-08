@@ -800,4 +800,40 @@ const singlesData = [
     single: "sim",
     featuring: []
   },
+  {
+    title: "Sweethearts",
+    year: "-",
+    image: "https://i.imgur.com/sIxgav3.png",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Fantasmagoric Feelings",
+    year: "-",
+    image: "https://i.imgur.com/9oaSzSe.png",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Stroke",
+    year: "-",
+    image: "https://i.imgur.com/ImMRtsL.jpeg",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Sugar",
+    year: "-",
+    image: "https://i.imgur.com/RsPKu6x.jpeg",
+    label: "℗ © YG Entertainment",
+    artist: "Liza",
+    single: "sim",
+    featuring: []
+  },
 ];

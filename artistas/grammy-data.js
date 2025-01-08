@@ -260,7 +260,7 @@ const grammyData = [
         category: "Record of the Year",
         nominees: [
           { artist: "Ava", song: "Soul For My Love" },
-          { artist: "Aria & Hannah", song: "Boom Boom" },
+          { artist: "Aria & Hannah & Liza", song: "Boom Boom" },
           { artist: "Fiona", song: "My Game" },
           { artist: "Liz", song: "here's to the nights" },
           { artist: "Owen Graham", song: "Rumors" },
@@ -349,10 +349,10 @@ const grammyData = [
         nominees: [
           { artist: "Fiona & Ava", song: "My Game (Remix)" },
           { artist: "Even Grace & Ava", song: "April Skies" },
-          { artist: "Aria & Hannah", song: "Boom Boom" },
+          { artist: "Aria & Hannah & Liza", song: "Boom Boom" },
           { artist: "Trevor & Zion", song: "I May Destroy You" }
         ],
-        winner: { artist: "Aria & Hannah", song: "Boom Boom" }
+        winner: { artist: "Aria & Hannah & Liza", song: "Boom Boom" }
       },
       {
         category: "Best Rock/Alternative Album",
