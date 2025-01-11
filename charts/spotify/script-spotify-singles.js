@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "NaNaNa",
-    artista: "Blair"
-  },
-
-  {
-    posicao: 2,
     musica: "HIGHWAY BOYS",
     artista: "Nate"
   },
 
   {
-    posicao: 3,
-    musica: "RADICAL EXXXTASY",
-    artista: "Even Grace",
-  },
-
-  {
-    posicao: 4,
-    musica: "hit-and-run",
-    artista: "Suzy"
-  },
-
-  {
-   posicao: 5,
-   musica: "WHISKEY FEVER",
-   artista: "Nate, Even Grace"
-},
-
-  {
-    posicao: 6,
-    musica: "Chasing Freedom",
-    artista: "Ivy Sinclair"
-  },
-
-  {
-    posicao: 7,
-    musica: "Never Back Down",
+    posicao: 2,
+    musica: "NaNaNa",
     artista: "Blair"
   },
 
   {
-    posicao: 8,
+    posicao: 3,
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair",
+  },
+
+  {
+    posicao: 4,
+    musica: "RADICAL EXXXTASY",
+    artista: "Even Grace"
+  },
+
+  {
+   posicao: 5,
+   musica: "hit-and-run",
+   artista: "Suzy"
+},
+
+  {
+    posicao: 6,
+    musica: "WHISKEY FEVER",
+    artista: "Nate, Even Grace"
+  },
+
+  {
+    posicao: 7,
     musica: "King Cry-Baby (A-Remix)",
     artista: "Kadu, Liza, Nate"
   },
 
   {
-    posicao: 9,
+    posicao: 8,
     musica: "Late Night Talking",
     artista: "Eric, Liz"
   },
 
   {
-    posicao: 10,
+    posicao: 9,
     musica: "SOFTLY, FOREVER",
     artista: "Bianca"
+  },
+
+  {
+    posicao: 10,
+    musica: "Oh, Was That Yours?",
+    artista: "Ava"
   },
 ];
 

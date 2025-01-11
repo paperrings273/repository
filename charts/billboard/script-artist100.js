@@ -1,9 +1,9 @@
 var tabelaDados = [
   { posicao: 1, artista: "Nate", imagem: "https://i.imgur.com/HU0h3oo.jpeg" },
-  { posicao: 2, artista: "Even Grace", imagem: "https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2023/005/TCF-018.jpg" },
-  { posicao: 3, artista: "Blair", imagem: "https://i.imgur.com/QDVtAyL.png" },
-  { posicao: 4, artista: "Conan Woolridge", imagem: "https://i.imgur.com/xEcXwS9.jpeg" },
-  { posicao: 5, artista: "Suzy", imagem: "https://i.imgur.com/U6D2BTO.png" },
+  { posicao: 2, artista: "Blair", imagem: "https://i.imgur.com/QDVtAyL.png" },
+  { posicao: 3, artista: "Ivy Sinclair", imagem: "https://i.imgur.com/tzdo6NG.png" },
+  { posicao: 4, artista: "Even Grace", imagem: "https://timotheechalamet.net/photos/albums/uploads/Photoshoots/2023/005/TCF-018.jpg" },
+  { posicao: 5, artista: "Conan Woolridge", imagem: "https://i.imgur.com/xEcXwS9.jpeg" },
 ];
 
 function atualizarTabela() {

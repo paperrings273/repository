@@ -47,8 +47,8 @@ var tabelaDados = [
   },
   {
     posicao: 10,
-    musica: "Metamorphosis",
-    artista: "Nate"
+    musica: "Dreamscape",
+    artista: "Aria"
   }
 ];
 
