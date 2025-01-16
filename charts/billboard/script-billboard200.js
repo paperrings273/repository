@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, album: "SUMMER REMAINS", artista: "Nate" },
-  { posicao: 2, album: "Once Upon a Time...", artista: "Conan Woolridge"},
-  { posicao: 3, album: "HONEY", artista: "Bianca" },
-  { posicao: 4, album: "Overgrown", artista: "Eric" },
-  { posicao: 5, album: "The Drive", artista: "Ava" },
-  { posicao: 6, album: "Poets Can't Be Murdered", artista: "Trevor" },
-  { posicao: 7, album: "Dandelions", artista: "Riley" },
-  { posicao: 8, album: "THE COUNTRY CLUB", artista: "Hannah" },
-  { posicao: 9, album: "Dreamscape", artista: "Aria" },
-  { posicao: 10, album: "Salute", artista: "4Music" },
+  { posicao: 1, album: "HONEY", artista: "Bianca" },
+  { posicao: 2, album: "SUMMER REMAINS", artista: "Nate"},
+  { posicao: 3, album: "Dreamscape", artista: "Aria" },
+  { posicao: 4, album: "THE COUNTRY CLUB", artista: "Hannah" },
+  { posicao: 5, album: "Dandelions", artista: "Riley" },
+  { posicao: 6, album: "The Drive", artista: "Ava" },
+  { posicao: 7, album: "Salute", artista: "4Music" },
+  { posicao: 8, album: "What Ever Happened?", artista: "Even Grace" },
+  { posicao: 9, album: "Once Upon a Time...", artista: "Conan Woolridge" },
+  { posicao: 10, album: "Overgrown", artista: "Eric" },
 ];
 
 function atualizarTabela() {

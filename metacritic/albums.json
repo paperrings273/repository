@@ -19,8 +19,10 @@
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1320224976699260948",
     "rating": "80",
-    "reviews": 1,
-    "reviewScores": [{"source":"RollingStone", "score": 80}
+    "reviews": 2,
+    "reviewScores": [
+      {"source":"RollingStone", "score": 80},
+      {"source": "Pitchfork", "score": 80}
     ],
     "generallyFavorableReviews": true  },
   {
