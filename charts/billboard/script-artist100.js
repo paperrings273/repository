@@ -1,9 +1,9 @@
 var tabelaDados = [
   { posicao: 1, artista: "Bianca", imagem: "https://i.imgur.com/zL5EcUA.jpeg" },
-  { posicao: 2, artista: "Nate", imagem: "https://i.imgur.com/HU0h3oo.jpeg" },
-  { posicao: 3, artista: "Aria", imagem: "https://i.imgur.com/1cQsduv.png" },
-  { posicao: 4, artista: "Hannah", imagem: "https://graziamagazine.com/us/wp-content/uploads/sites/15/2022/07/Beyonce-Renaissance-12.jpeg" },
-  { posicao: 5, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
+  { posicao: 2, artista: "Even Grace", imagem: "https://i.imgur.com/lhOrAtx.jpeg" },
+  { posicao: 3, artista: "Nate", imagem: "https://i.imgur.com/HU0h3oo.jpeg" },
+  { posicao: 4, artista: "Eric", imagem: "https://i.imgur.com/Mpbg0kw.jpeg" },
+  { posicao: 5, artista: "Conan Woolridge", imagem: "https://i.imgur.com/xEcXwS9.jpeg" },
 ];
 
 function atualizarTabela() {

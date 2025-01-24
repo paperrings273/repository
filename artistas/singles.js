@@ -780,7 +780,7 @@ const singlesData = [
     label: "℗ © Dawn Records",
     artist: "Nate",
     single: "sim",
-    featuring: ["Bianca"]
+    featuring: []
   },
   {
     title: "Hypnosis",

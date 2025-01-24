@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "SOFTLY, FOREVER", artista: "Bianca", imagem: "" },
-  { posicao: 2, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
-  { posicao: 3, musica: "All Over Again... Again", artista: "Ava", imagem: "" },
-  { posicao: 4, musica: "By My Side", artista: "Aria ft. Miles Carson", imagem: "" },
-  { posicao: 5, musica: "Crimson", artista: "Riley", imagem: "" },
-  { posicao: 6, musica: "Dilemma", artista: "Aria ft. Zara", imagem: "" },
-  { posicao: 7, musica: "Don't Plat Me", artista: "Aria ft. Even Grace", imagem: "" },
-  { posicao: 8, musica: "DRUNK!", artista: "Ava", imagem: "" },
-  { posicao: 9, musica: "Farewell", artista: "Aria", imagem: "" },
-  { posicao: 10, musica: "Hearthous", artista: "Riley", imagem: "" },
+  { posicao: 1, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 2, musica: "SOFTLY, FOREVER", artista: "Bianca", imagem: "" },
+  { posicao: 3, musica: "Heart-to-Heart", artista: "Conan Woolridge", imagem: "" },
+  { posicao: 4, musica: "HIGHWAY BOYS", artista: "Nate", imagem: "" },
+  { posicao: 5, musica: "King Cry-Baby (A-Remix)", artista: "Kadu ft. Liza & Nate", imagem: "" },
+  { posicao: 6, musica: "All Over Again... Again", artista: "Ava", imagem: "" },
+  { posicao: 7, musica: "By My Side", artista: "Aria ft. Miles Carson", imagem: "" },
+  { posicao: 8, musica: "Crimson", artista: "Riley", imagem: "" },
+  { posicao: 9, musica: "Dilemma", artista: "Aria ft. Zara", imagem: "" },
+  { posicao: 10, musica: "Don't Play Me", artista: "Aria ft. Even Grace", imagem: "" },
 ];
 
 function atualizarTabela() {

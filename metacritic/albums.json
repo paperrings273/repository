@@ -1,5 +1,17 @@
 [
   {
+    "cover": "https://i.imgur.com/uZemeHK.png",
+    "title": "Even After All",
+    "artist": "Even Grace",
+    "genre": "Pop/Rock",
+    "label": "Dawn Records®",
+    "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1330376377249173544",
+    "rating": "tbd",
+    "reviews": 0,
+    "reviewScores": [
+    ],
+    "generallyFavorableReviews": false  },
+  {
     "cover": "https://i.imgur.com/dudcjbk.png",
     "title": "Once Upon a Time...",
     "artist": "Conan Woolridge",
@@ -32,10 +44,11 @@
     "genre": "Pop",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1315880115535745056",
-    "rating": "83",
-    "reviews": 1,
+    "rating": "81",
+    "reviews": 2,
     "reviewScores": [
-      {"source": "Pitchfork", "score": 83}
+      {"source": "Pitchfork", "score": 83},
+      {"source": "Rolling Stone", "score": 80}
     ],
     "universalAcclaim": true  },
   {
@@ -45,12 +58,11 @@
     "genre": "Pop/Synth-Pop",
     "label": "Starlight Studios®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1310405514718351381",
-    "rating": 75,
-    "reviews": 1,
+    "rating": "tbd",
+    "reviews": 0,
     "reviewScores": [
-      {"source": "Pitchfork", "score": 75}
     ],
-    "generallyFavorableReviews": true
+    "generallyFavorableReviews": false
   },
   {
     "cover": "https://i.imgur.com/mzd5oqC.png",

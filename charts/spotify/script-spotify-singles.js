@@ -1,38 +1,38 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "RADICAL EXXXTASY",
+    artista: "Even Grace"
+  },
+
+  {
+    posicao: 2,
     musica: "SOFTLY, FOREVER",
     artista: "Bianca"
   },
 
   {
-    posicao: 2,
+    posicao: 3,
+    musica: "Heart-to-Heart",
+    artista: "Conan Woolridge",
+  },
+
+  {
+    posicao: 4,
     musica: "HIGHWAY BOYS",
     artista: "Nate"
   },
 
   {
-    posicao: 3,
-    musica: "Dilemma",
-    artista: "Aria, Zara",
-  },
-
-  {
-    posicao: 4,
-    musica: "hit-and-run",
-    artista: "Suzy"
-  },
-
-  {
    posicao: 5,
-   musica: "SHOTGUN",
-   artista: "Hannah"
+   musica: "Late Night Talking",
+   artista: "Eric, Liz"
 },
 
   {
     posicao: 6,
-    musica: "DRUNK!",
-    artista: "Ava"
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair"
   },
 
   {
@@ -43,20 +43,20 @@ var tabelaDados = [
 
   {
     posicao: 8,
-    musica: "Remains For Us",
-    artista: "Riley"
+    musica: "hit-and-run",
+    artista: "Suzy"
   },
 
   {
     posicao: 9,
-    musica: "RADICAL EXXXTASY",
-    artista: "Even Grace"
+    musica: "DRUNK!",
+    artista: "Ava"
   },
 
   {
     posicao: 10,
-    musica: "WHISKEY FEVER",
-    artista: "Nate, Even Grace"
+    musica: "Dilemma",
+    artista: "Aria, Zara"
   },
 ];
 

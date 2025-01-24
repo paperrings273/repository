@@ -12,18 +12,18 @@ var tabelaDados = [
   },
   {
     posicao: 3,
-    musica: "The Drive",
-    artista: "Ava"
+    musica: "Overgrown",
+    artista: "Eric"
   },
   {
     posicao: 4,
-    musica: "Dandelions",
-    artista: "Riley"
+    musica: "Once Upon a Time...",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 5,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
+    musica: "The Drive",
+    artista: "Ava"
   },
   {
     posicao: 6,
@@ -32,23 +32,23 @@ var tabelaDados = [
   },
   {
     posicao: 7,
+    musica: "Dandelions",
+    artista: "Riley"
+  },
+  {
+    posicao: 8,
     musica: "Salute",
     artista: "4Music"
   },
   {
-    posicao: 8,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
-  },
-  {
     posicao: 9,
-    musica: "Once Upon a Time...",
-    artista: "Conan Woolridge"
+    musica: "Poets Can't Be Murdered",
+    artista: "Trevor"
   },
   {
     posicao: 10,
-    musica: "Overgrown",
-    artista: "Eric"
+    musica: "Dreamscape (Deluxe)",
+    artista: "Aria"
   }
 ];
 

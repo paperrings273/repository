@@ -1,5 +1,13 @@
 const albumsData = [
   {
+    title: "Even After All",
+    year: "Year 03",
+    image: "https://i.imgur.com/uZemeHK.png",
+    label: "℗ © Dawn Records",
+    artist: "Even Grace",
+    featuring: []
+  },
+  {
     title: "Fantasmagoric Feelings",
     year: "-",
     image: "https://i.imgur.com/5Xgn5gI.jpeg",
