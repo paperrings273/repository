@@ -2,28 +2,28 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "HONEY",
-    artista: "Bianca"
-  },
-  {
-    posicao: 2,
-    musica: "SUMMER REMAINS",
-    artista: "Nate"
-  },
-  {
-    posicao: 3,
     musica: "Overgrown",
     artista: "Eric"
   },
   {
+    posicao: 2,
+    musica: "Even After All",
+    artista: "Even Grace"
+  },
+  {
+    posicao: 3,
+    musica: "HONEY",
+    artista: "Bianca"
+  },
+  {
     posicao: 4,
-    musica: "Once Upon a Time...",
-    artista: "Conan Woolridge"
+    musica: "SUMMER REMAINS",
+    artista: "Nate"
   },
   {
     posicao: 5,
-    musica: "The Drive",
-    artista: "Ava"
+    musica: "Once Upon a Time...",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 6,
@@ -32,24 +32,24 @@ var tabelaDados = [
   },
   {
     posicao: 7,
+    musica: "The Drive",
+    artista: "Ava"
+  },
+  {
+    posicao: 8,
     musica: "Dandelions",
     artista: "Riley"
   },
   {
-    posicao: 8,
+    posicao: 9,
     musica: "Salute",
     artista: "4Music"
   },
   {
-    posicao: 9,
+    posicao: 10,
     musica: "Poets Can't Be Murdered",
     artista: "Trevor"
   },
-  {
-    posicao: 10,
-    musica: "Dreamscape (Deluxe)",
-    artista: "Aria"
-  }
 ];
 
 // main.js

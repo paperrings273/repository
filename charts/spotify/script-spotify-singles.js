@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "Late Night Talking",
+    artista: "Eric, Liz"
+  },
+
+  {
+    posicao: 2,
     musica: "RADICAL EXXXTASY",
     artista: "Even Grace"
   },
 
   {
-    posicao: 2,
-    musica: "SOFTLY, FOREVER",
-    artista: "Bianca"
-  },
-
-  {
     posicao: 3,
-    musica: "Heart-to-Heart",
-    artista: "Conan Woolridge",
+    musica: "Die For You",
+    artista: "Eric",
   },
 
   {
     posicao: 4,
-    musica: "HIGHWAY BOYS",
-    artista: "Nate"
+    musica: "Bambino",
+    artista: "Eric"
   },
 
   {
-   posicao: 5,
-   musica: "Late Night Talking",
-   artista: "Eric, Liz"
-},
+    posicao: 5,
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair",
+  },
 
   {
     posicao: 6,
-    musica: "Chasing Freedom",
-    artista: "Ivy Sinclair"
+    musica: "Midnight Drive",
+    artista: "Eric"
   },
 
   {
-    posicao: 7,
-    musica: "NaNaNa",
-    artista: "Blair"
-  },
+   posicao: 7,
+   musica: "In The End, Just Party",
+   artista: "Even Grace, Ava, Owen Graham"
+},
 
   {
     posicao: 8,
-    musica: "hit-and-run",
-    artista: "Suzy"
+    musica: "Too Late",
+    artista: "Eric"
   },
 
   {
     posicao: 9,
-    musica: "DRUNK!",
-    artista: "Ava"
+    musica: "Nothing 2 Lose",
+    artista: "Even Grace, Mayleen"
   },
 
   {
     posicao: 10,
-    musica: "Dilemma",
-    artista: "Aria, Zara"
+    musica: "In My Eyes",
+    artista: "Eric"
   },
 ];
 

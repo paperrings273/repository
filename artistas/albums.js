@@ -1,5 +1,13 @@
 const albumsData = [
   {
+    title: "Reflections",
+    year: "Year 03",
+    image: "https://i.imgur.com/Kcb4ESk.png",
+    label: "℗ © Dawn Records",
+    artist: "Ivy Sinclair",
+    featuring: []
+  },
+  {
     title: "Even After All",
     year: "Year 03",
     image: "https://i.imgur.com/uZemeHK.png",
@@ -43,6 +51,30 @@ const albumsData = [
     title: "HONEY",
     year: "Year 03",
     image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    featuring: []
+  },
+  {
+    title: "Alone In Days Like This",
+    year: "-",
+    image: "https://i.imgur.com/EIKnQDt.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    featuring: []
+  },
+  {
+    title: "When I Open My Eyes",
+    year: "-",
+    image: "https://i.imgur.com/9u0GTOY.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    featuring: []
+  },
+  {
+    title: "Don't Tell Your Friends",
+    year: "-",
+    image: "https://i.imgur.com/0J7ikHf.png",
     label: "℗ © Dawn Records",
     artist: "Bianca",
     featuring: []

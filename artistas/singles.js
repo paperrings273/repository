@@ -1,5 +1,77 @@
 const singlesData = [
   {
+    title: "SOFTLY, FOREVER",
+    year: "Year 03",
+    image: "https://i.imgur.com/Rld7gSG.png",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "In My Eyes",
+    year: "Year 02",
+    image: "https://i.imgur.com/SjmmVKv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Eric",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Too Late",
+    year: "Year 02",
+    image: "https://i.imgur.com/SjmmVKv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Eric",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Midnight Drive",
+    year: "Year 02",
+    image: "https://i.imgur.com/SjmmVKv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Eric",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Bambino",
+    year: "Year 02",
+    image: "https://i.imgur.com/SjmmVKv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Eric",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Die For You",
+    year: "Year 02",
+    image: "https://i.imgur.com/SjmmVKv.png",
+    label: "℗ © YG Entertainment",
+    artist: "Eric",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Nothing 2 Lose",
+    year: "Year 03",
+    image: "https://i.imgur.com/uZemeHK.png",
+    label: "℗ © Dawn Records",
+    artist: "Even Grace",
+    single: "nao",
+    featuring: ["Mayleen"]
+  },
+  {
+    title: "In The End, Just Party",
+    year: "Year 03",
+    image: "https://i.imgur.com/uZemeHK.png",
+    label: "℗ © Dawn Records",
+    artist: "Even Grace",
+    single: "nao",
+    featuring: ["Ava", "Owen Graham"]
+  },
+  {
     title: "NaNaNa",
     year: "Year 03",
     image: "https://i.imgur.com/GsA4sfs.png",
