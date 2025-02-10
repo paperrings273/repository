@@ -1,13 +1,13 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Late Night Talking", artista: "Eric ft. Liz", imagem: "" },
-  { posicao: 2, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
-  { posicao: 3, musica: "Die For You", artista: "Eric", imagem: "" },
-  { posicao: 4, musica: "Bambino", artista: "Eric", imagem: "" },
-  { posicao: 5, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 6, musica: "Midnight Drive", artista: "Eric", imagem: "" },
-  { posicao: 7, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
-  { posicao: 8, musica: "Too Late", artista: "Eric", imagem: "" },
-  { posicao: 9, musica: "Nothing 2 Lose", artista: "Even Grace with Mayleen", imagem: "" },
+  { posicao: 1, musica: "Unanswered Questions", artista: "Ivy Sinclair", imagem: "" },
+  { posicao: 2, musica: "Late Night Talking", artista: "Eric ft. Liz", imagem: "" },
+  { posicao: 3, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
+  { posicao: 4, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
+  { posicao: 5, musica: "Bambino", artista: "Eric", imagem: "" },
+  { posicao: 6, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 7, musica: "Die For You", artista: "Eric", imagem: "" },
+  { posicao: 8, musica: "Nothing 2 Lose", artista: "Even Grace with Mayleen", imagem: "" },
+  { posicao: 9, musica: "Midnight Drive", artista: "Eric", imagem: "" },
   { posicao: 10, musica: "In My Eyes", artista: "Eric", imagem: "" },
 ];
 

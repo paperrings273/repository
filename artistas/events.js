@@ -1,5 +1,17 @@
 const toursData = [
   {
+    title: "Late Night Tour",
+    year: "(Year 03)",
+    image: "https://i.imgur.com/P7i9y6T.jpeg",
+    artists: ["Eric"]
+  },
+  {
+    title: "THE HONEY TOUR",
+    year: "(Year 03)",
+    image: "https://i.imgur.com/jecNXeA.png",
+    artists: ["Bianca"]
+  },
+  {
     title: "Bianca's Jazz & Piano Las Vegas Residency",
     year: "-",
     image: "https://i.imgur.com/5VQZ5pw.png",

@@ -2,13 +2,13 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Overgrown",
-    artista: "Eric"
+    musica: "Reflections",
+    artista: "Ivy Sinclair"
   },
   {
     posicao: 2,
-    musica: "Even After All",
-    artista: "Even Grace"
+    musica: "Overgrown",
+    artista: "Eric"
   },
   {
     posicao: 3,
@@ -17,38 +17,38 @@ var tabelaDados = [
   },
   {
     posicao: 4,
+    musica: "Even After All",
+    artista: "Even Grace"
+  },
+  {
+    posicao: 5,
+    musica: "Alone In Days Like This",
+    artista: "Bianca"
+  },
+  {
+    posicao: 6,
+    musica: "When I Open My Eyes",
+    artista: "Bianca"
+  },
+  {
+    posicao: 7,
+    musica: "Don't Tell Your Friends",
+    artista: "Bianca"
+  },
+  {
+    posicao: 8,
     musica: "SUMMER REMAINS",
     artista: "Nate"
   },
   {
-    posicao: 5,
+    posicao: 9,
     musica: "Once Upon a Time...",
     artista: "Conan Woolridge"
   },
   {
-    posicao: 6,
-    musica: "THE COUNTRY CLUB",
-    artista: "Hannah"
-  },
-  {
-    posicao: 7,
+    posicao: 10,
     musica: "The Drive",
     artista: "Ava"
-  },
-  {
-    posicao: 8,
-    musica: "Dandelions",
-    artista: "Riley"
-  },
-  {
-    posicao: 9,
-    musica: "Salute",
-    artista: "4Music"
-  },
-  {
-    posicao: 10,
-    musica: "Poets Can't Be Murdered",
-    artista: "Trevor"
   },
 ];
 

@@ -10,3 +10,7 @@
 .artist-header{
   background-position: top left;
 }
+
+.events-img{
+  object-fit: cover;
+}

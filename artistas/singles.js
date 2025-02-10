@@ -1,5 +1,23 @@
 const singlesData = [
   {
+    title: "In The End, Just Party (with Ava & Owen Graham)",
+    year: "Year 03",
+    image: "https://i.imgur.com/7nRvI5B.png",
+    label: "℗ © Dawn Records",
+    artist: "Even Grace",
+    single: "sim",
+    featuring: ["Ava", "Owen Graham"]
+  },
+  {
+    title: "Unanswered Questions",
+    year: "Year 03",
+    image: "https://i.imgur.com/Kcb4ESk.png",
+    label: "℗ © Dawn Records",
+    artist: "Ivy Sinclair",
+    single: "sim",
+    featuring: []
+  },
+  {
     title: "SOFTLY, FOREVER",
     year: "Year 03",
     image: "https://i.imgur.com/Rld7gSG.png",
@@ -729,7 +747,7 @@ const singlesData = [
     featuring: []
   },
   {
-    title: "Jesus Christ 2005 God Bless America",
+    title: "Jesus Christ 2005 God Bless America (with Bianca)",
     year: "-",
     image: "https://i.imgur.com/vaOJSMP.png",
     label: "℗ © Dawn Records",
