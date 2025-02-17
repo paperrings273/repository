@@ -52,10 +52,19 @@
     <div class="border-top">
       <p>DISCOGRAFIA</p>
     </div>
-    <h3><br><br>Álbuns</h3>
+
+    <div class="filter-buttons">
+      <button onclick="filterDiscography('all')">Todos</button>
+      <button onclick="filterDiscography('albums')">Álbuns</button>
+      <button onclick="filterDiscography('singles')">Singles e EPs</button>
+    </div>
+
+    <h3 id="albums-title"><br>Álbuns</h3>
     <table id="albums-table"></table>
-    <h3><br>Singles e EPs</h3>
+
+    <h3 id="singles-title"><br>Singles e EPs</h3>
     <table id="singles-table"></table>
+
     <div class="gradient-overlay"></div>
   </div>
 
@@ -274,6 +283,59 @@
   populateEditionSelect();
   displayGrammyAwards();
 </script>
+<script src="../films.js"></script>
+<script>
+  function displayFilms(artistName) {
+    const filmsGrid = document.getElementById("films-grid");
+    filmsGrid.innerHTML = '';
+
+    const artistFilms = filmsData.filter(film => film.artists.includes(artistName));
+
+    if (artistFilms.length === 0) {
+      const noDataMessage = document.createElement('p');
+      noDataMessage.classList.add('empty-info');
+      noDataMessage.textContent = `Nenhum filme encontrado para ${artistName}.`;
+      filmsGrid.appendChild(noDataMessage);
+      return;
+    }
+
+    artistFilms.forEach(film => {
+      const filmCard = createConcertosCard(film.title, film.year, film.image, film.label);
+      filmsGrid.appendChild(filmCard);
+    });
+  }
+
+  function createConcertosCard(title, year, image, label) {
+    const filmCard = document.createElement("div");
+
+    if (image) {
+      const filmImage = document.createElement("img");
+      filmImage.src = image;
+      filmImage.alt = "Poster do Filme";
+      filmImage.classList.add("events-img");
+      filmCard.appendChild(filmImage);
+    }
+
+    const titleHeading = document.createElement("h1");
+    titleHeading.textContent = title;
+    titleHeading.classList.add("events-title");
+    filmCard.appendChild(titleHeading);
+
+    const yearInfo = document.createElement("h1");
+    yearInfo.textContent = year;
+    yearInfo.classList.add("events-info");
+    filmCard.appendChild(yearInfo);
+
+    const labelInfo = document.createElement("h1");
+    labelInfo.textContent = label;
+    labelInfo.classList.add("events-info");
+    filmCard.appendChild(labelInfo);
+
+    return filmCard;
+  }
+
+  displayFilms("Owen Graham");
+</script>
 
 <script src="../events.js"></script>
 <script>
@@ -348,6 +410,8 @@
 <script>
   function displayAlbums(artistName) {
     const albumsTable = document.getElementById("albums-table");
+    albumsTable.innerHTML = ""; // Limpa a tabela antes de adicionar novos elementos
+
     const artistAlbums = albumsData.filter(album =>
       album.artist === artistName || album.featuring.includes(artistName)
     );
@@ -360,6 +424,7 @@
 
   function displaySingles(artistName) {
     const singlesTable = document.getElementById("singles-table");
+    singlesTable.innerHTML = ""; // Limpa a tabela antes de adicionar novos elementos
 
     const artistSingles = singlesData.filter(single =>
       (single.artist === artistName || single.featuring.includes(artistName)) && single.single === "sim"
@@ -406,10 +471,35 @@
     return row;
   }
 
-  const artistName = "Owen Graham";
+  // Função para filtrar a exibição
+  function filterDiscography(filter) {
+    const albumsTable = document.getElementById("albums-table");
+    const singlesTable = document.getElementById("singles-table");
+    const albumsTitle = document.getElementById("albums-title");
+    const singlesTitle = document.getElementById("singles-title");
 
+    if (filter === "all") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "block";
+    } else if (filter === "albums") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "none";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "none";
+    } else if (filter === "singles") {
+      albumsTable.style.display = "none";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "none";
+      singlesTitle.style.display = "block";
+    }
+  }
+
+  const artistName = "Owen Graham";
   displayAlbums(artistName);
   displaySingles(artistName);
+
 </script>
 
 <script>
@@ -433,6 +523,33 @@
   });
 
 </script>
+
+<script>
+  function filterDiscography(filter) {
+    const albumsTable = document.getElementById("albums-table");
+    const singlesTable = document.getElementById("singles-table");
+    const albumsTitle = document.getElementById("albums-title");
+    const singlesTitle = document.getElementById("singles-title");
+
+    if (filter === "all") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "block";
+    } else if (filter === "albums") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "none";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "none";
+    } else if (filter === "singles") {
+      albumsTable.style.display = "none";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "none";
+      singlesTitle.style.display = "block";
+    }
+  }
+</script>
+
 
 <footer>
   <p>© 2024 Star World Community - Beta</p>

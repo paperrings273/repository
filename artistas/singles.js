@@ -1,5 +1,41 @@
 const singlesData = [
   {
+    title: "Crazy Mind",
+    year: "Year 03",
+    image: "https://i.imgur.com/43L8OKY.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "I'm Free",
+    year: "Year 03",
+    image: "https://i.imgur.com/43L8OKY.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Gentleman",
+    year: "Year 03",
+    image: "https://i.imgur.com/43L8OKY.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Be Careful",
+    year: "Year 03",
+    image: "https://imgur.com/WLvyscH.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "sim",
+    featuring: ["Owen Graham"]
+  },
+  {
     title: "In The End, Just Party (with Ava & Owen Graham)",
     year: "Year 03",
     image: "https://i.imgur.com/7nRvI5B.png",

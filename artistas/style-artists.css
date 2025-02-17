@@ -465,7 +465,6 @@ header2 {
   font-size: 17px;
   color: white;
   letter-spacing: 1px;
-  margin-top: 0px;
 }
 
 h3{
@@ -838,4 +837,30 @@ td {
   font-size: 30px;
   color: #555555;
   line-height: 30px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.filter-buttons button {
+  font-family: 'Commons Bold', sans-serif;;
+  padding: 10px 15px;
+  border: none;
+  background-color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
+  cursor: pointer;
+  border-radius: 50px 50px 50px 50px;
+  transition-duration: 1s;
+}
+
+.filter-buttons button:hover {
+  background-color: #444;
+  color: #666;
+  transition-duration: 1s;
 }

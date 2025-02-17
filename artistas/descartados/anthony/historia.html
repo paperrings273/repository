@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Even Grace</title>
+  <title>Anthony</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../style-artists.css">
-  <link rel="stylesheet" href="../evengrace/style-evengrace.css">
+  <link rel="stylesheet" href="../../style-artists.css">
+  <link rel="stylesheet" href="ony.css">
 </head>
 <body>
 <header2 id="header">
   <div class="header-content">
     <div class="menu-buttons">
       <button class="home-btn">
-        <a href="../../index.html" class="menu-link"><i class="fas fa-home"></i></a>
+        <a href="../../../index.html" class="menu-link"><i class="fas fa-home"></i></a>
       </button>
       <div class="dropdown">
         <button class="dropbtn">Charts <i class="fas fa-caret-down"></i></button>
         <div class="dropdown-content">
-          <a href="../../charts/billboard/hot100.html">Billboard Hot 100</a>
-          <a href="../../charts/billboard/billboard200.html">Billboard 200</a>
-          <a href="../../charts/billboard/artist100.html">Billboard Artist 100</a>
-          <a href="../../charts/spotify/spotify-singles.html">Spotify Global Songs</a>
-          <a href="../../charts/spotify/spotify-albums.html">Spotify Global Albums</a>
+          <a href="../../../charts/billboard/hot100.html">Billboard Hot 100</a>
+          <a href="../../../charts/billboard/billboard200.html">Billboard 200</a>
+          <a href="../../../charts/billboard/artist100.html">Billboard Artist 100</a>
+          <a href="../../../charts/spotify/spotify-singles.html">Spotify Global Songs</a>
+          <a href="../../../charts/spotify/spotify-albums.html">Spotify Global Albums</a>
         </div>
       </div>
-      <button><a href="../../metacritic/metacritic.html" class="menu-link">Metacritic</a></button>
+      <button><a href="../../../metacritic/metacritic.html" class="menu-link">Metacritic</a></button>
       <button><a href="https://discord.gg/PxNUBCHF4Q" class="menu-link">Discord</a></button>
-      <button><a href="../linhadotempo.html" class="menu-link">Artistas</a></button>
+      <button><a href="../../linhadotempo.html" class="menu-link">Artistas</a></button>
     </div>
   </div>
 </header2>
@@ -36,14 +36,14 @@
 
 
 <div class="artist-info-box">
-  <h1 class="artist-title">Even Grace</h1>
+  <h1 class="artist-title">Anthony</h1>
 </div>
 <div class="artist-photo-box">
   <div class="artist-photo">
   </div>
   <div class="artist-details">
-    <h1 class="artist-details-cels">Inglaterra, Londres</h1>
-    <h1 class="artist-details-cels">℗ © Dawn Records</h1>
+    <h1 class="artist-details-cels">Estados Unidos, Colorado Springs</h1>
+    <h1 class="artist-details-cels">℗ © Illuminati Records</h1>
   </div>
 </div>
 
@@ -74,6 +74,14 @@
     <div class="border-top">
       <p>GRAMMY AWARDS</p>
     </div>
+
+    <div class="edition-select-container">
+      <label for="edition-select">Selecione a edição:</label>
+      <select id="edition-select" class="edition-select">
+        <option value="all">Todas as Edições</option>
+      </select>
+    </div>
+
     <div id="grammy-categories"></div>
     <div class="gradient-overlay"></div>
   </div>
@@ -90,9 +98,37 @@
 
 <script src="header-script.js"></script>
 
-<script src="../grammy-data.js"></script>
+<script src="../../grammy-data.js"></script>
 <script>
-  function displayGrammyAwards() {
+  function populateEditionSelect() {
+    const editionSelect = document.getElementById('edition-select');
+    const artistName = "Anthony";
+
+    editionSelect.innerHTML = '';
+
+    const allOption = document.createElement('option');
+    allOption.value = 'all';
+    allOption.textContent = 'Todas as Edições';
+    editionSelect.appendChild(allOption);
+
+    const relevantEditions = grammyData.filter(edition =>
+      edition.categories.some(category =>
+        category.nominees.some(nominee => {
+          const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
+          return artists.some(name => name.trim() === artistName);
+        })
+      )
+    );
+
+    relevantEditions.forEach(edition => {
+      const option = document.createElement('option');
+      option.value = edition.edition;
+      option.textContent = edition.edition;
+      editionSelect.appendChild(option);
+    });
+  }
+
+  function displayGrammyAwards(selectedEdition = 'all') {
     const grammyCategoriesDiv = document.getElementById('grammy-categories');
     grammyCategoriesDiv.innerHTML = '';
 
@@ -100,10 +136,8 @@
     let totalWins = 0;
 
     grammyData.forEach((edition, index) => {
-      if (index > 0) {
-        const divider = document.createElement('hr');
-        divider.classList.add('edition-divider');
-        grammyCategoriesDiv.appendChild(divider);
+      if (selectedEdition !== 'all' && edition.edition !== selectedEdition) {
+        return;
       }
 
       const editionDiv = document.createElement('div');
@@ -121,7 +155,7 @@
         const nominees = category.nominees;
         const winner = category.winner;
 
-        const artistName = "Even Grace";
+        const artistName = "Anthony";
 
         const isNominee = nominees.some(nominee => {
           const artists = nominee.artist.split(/\s+&\s+|\s+feat\s+/i);
@@ -197,25 +231,31 @@
 
       if (editionNominees > 0 || editionWins > 0) {
         grammyCategoriesDiv.appendChild(editionDiv);
+
+        if (selectedEdition === 'all' && index < grammyData.length - 1) {
+          const divider = document.createElement('hr');
+          divider.classList.add('edition-divider');
+          grammyCategoriesDiv.appendChild(divider);
+        }
       }
     });
 
-    const artistName = "Even Grace";
+    const artistName = "Anthony";
     const totalStats = document.createElement('div');
     totalStats.classList.add('total-stats');
     totalStats.innerHTML = `
-        <h3 class="name-grammy">${artistName}</br></h3>
-        <div class="stats-container">
-            <div class="stats-item">
-                <p1>WINS*</p1>
-                <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
-            </div>
-            <div class="stats-item">
-                <p2>NOMINEES*</p2>
-                <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
-            </div>
-        </div>
-    `;
+      <h3 class="name-grammy">${artistName}</br></h3>
+      <div class="stats-container">
+          <div class="stats-item">
+              <p1>WINS*</p1>
+              <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
+          </div>
+          <div class="stats-item">
+              <p2>NOMINEES*</p2>
+              <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
+          </div>
+      </div>
+  `;
 
     grammyCategoriesDiv.insertBefore(totalStats, grammyCategoriesDiv.firstChild);
 
@@ -227,10 +267,14 @@
     }
   }
 
-  displayGrammyAwards();
+  document.getElementById('edition-select').addEventListener('change', (event) => {
+    displayGrammyAwards(event.target.value);
+  });
 
+  populateEditionSelect();
+  displayGrammyAwards();
 </script>
-<script src="../films.js"></script>
+<script src="../../films.js"></script>
 <script>
   function displayFilms(artistName) {
     const filmsGrid = document.getElementById("films-grid");
@@ -281,10 +325,10 @@
     return filmCard;
   }
 
-  displayFilms("Even Grace");
+  displayFilms("Anthony");
 </script>
 
-<script src="../events.js"></script>
+<script src="../../events.js"></script>
 <script>
   function displayData(artistName) {
     const toursGrid = document.getElementById("tours-grid");
@@ -349,11 +393,11 @@
     return card;
   }
 
-  displayData("Even Grace");
+  displayData("Anthony");
 </script>
 
-<script src="../albums.js"></script>
-<script src="../singles.js"></script>
+<script src="../../albums.js"></script>
+<script src="../../singles.js"></script>
 <script>
   function displayAlbums(artistName) {
     const albumsTable = document.getElementById("albums-table");
@@ -415,7 +459,7 @@
     return row;
   }
 
-  const artistName = "Even Grace";
+  const artistName = "Anthony";
 
   displayAlbums(artistName);
   displaySingles(artistName);

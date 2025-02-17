@@ -1,9 +1,9 @@
 var tabelaDados = [
-  { posicao: 1, artista: "Eric", imagem: "https://i.imgur.com/5tMDqG7.png" },
-  { posicao: 2, artista: "Ivy Sinclair", imagem: "https://i.imgur.com/tzdo6NG.png" },
-  { posicao: 3, artista: "Even Grace", imagem: "https://i.imgur.com/lhOrAtx.jpeg" },
-  { posicao: 4, artista: "Bianca", imagem: "https://i.imgur.com/zL5EcUA.jpeg" },
-  { posicao: 5, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
+  { posicao: 1, artista: "Even Grace", imagem: "https://i.imgur.com/lhOrAtx.jpeg" },
+  { posicao: 2, artista: "Blair", imagem: "https://i.imgur.com/kBajrdX.jpeg" },
+  { posicao: 3, artista: "Ava", imagem: "https://i.imgur.com/egopiOi.jpeg" },
+  { posicao: 4, artista: "Owen Graham", imagem: "https://64.media.tumblr.com/a3d3123256590e196b8fea78bf800f65/80248a6da0af5e42-97/s1280x1920/355950a055aee05bfa09d0fe2cf9455c7192a4e4.jpg" },
+  { posicao: 5, artista: "Ivy Sinclair", imagem: "https://i.imgur.com/tzdo6NG.png" },
 ];
 
 function atualizarTabela() {

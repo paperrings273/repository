@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Chasing Freedom",
-    artista: "Ivy Sinclair"
-  },
-
-  {
-    posicao: 2,
-    musica: "Unanswered Questions",
-    artista: "Ivy Sinclair"
-  },
-
-  {
-    posicao: 3,
-    musica: "Late Night Talking",
-    artista: "Eric, Liz",
-  },
-
-  {
-    posicao: 4,
     musica: "In The End, Just Party",
     artista: "Even Grace, Ava, Owen Graham"
   },
 
   {
+    posicao: 2,
+    musica: "Be Careful",
+    artista: "Blair, Owen Graham"
+  },
+
+  {
+    posicao: 3,
+    musica: "RADICAL EXXXTASY",
+    artista: "Even Grace",
+  },
+
+  {
+    posicao: 4,
+    musica: "Gentleman",
+    artista: "Blair"
+  },
+
+  {
     posicao: 5,
-    musica: "Bambino",
-    artista: "Eric",
+    musica: "NaNaNa",
+    artista: "Blair",
   },
 
   {
     posicao: 6,
-    musica: "RADICAL EXXXTASY",
-    artista: "Even Grace"
+    musica: "Chasing Freedom",
+    artista: "Ivy Sinclair"
   },
 
   {
    posicao: 7,
-   musica: "Nothing 2 Lose",
-   artista: "Even Grace, Mayleen"
+   musica: "Unanswered Questions",
+   artista: "Ivy Sinclair"
 },
 
   {
     posicao: 8,
-    musica: "Die For You",
-    artista: "Eric"
+    musica: "Never Back Down",
+    artista: "Blair"
   },
 
   {
     posicao: 9,
-    musica: "Midnight Drive",
-    artista: "Eric"
+    musica: "I'm Free",
+    artista: "Blair"
   },
 
   {
     posicao: 10,
-    musica: "Too Late",
-    artista: "Eric"
+    musica: "Crazy Mind",
+    artista: "Blair"
   },
 ];
 

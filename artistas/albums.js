@@ -1,5 +1,13 @@
 const albumsData = [
   {
+    title: "Red Flags",
+    year: "Year 03",
+    image: "https://i.imgur.com/43L8OKY.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    featuring: []
+  },
+  {
     title: "Reflections",
     year: "Year 03",
     image: "https://i.imgur.com/Kcb4ESk.png",

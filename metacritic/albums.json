@@ -30,9 +30,11 @@
     "genre": "Pop/Rock",
     "label": "Starlight Studios®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1320274314427109387",
-    "rating": "tbd",
-    "reviews": 0,
+    "rating": 75,
+    "reviews": 2,
     "reviewScores": [
+      {"source": "Pitchfork", "score": 77},
+      {"source": "Variety", "score": 74}
     ],
     "generallyFavorableReviews": false  },
   {
@@ -42,13 +44,14 @@
     "genre": "Pop/Country",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1320224976699260948",
-    "rating": "80",
-    "reviews": 2,
+    "rating": "82",
+    "reviews": 3,
     "reviewScores": [
+      {"source": "Variety", "score": 86},
       {"source":"RollingStone", "score": 80},
       {"source": "Pitchfork", "score": 80}
     ],
-    "generallyFavorableReviews": true  },
+    "universalAcclaim": true  },
   {
     "cover": "https://i.imgur.com/5513RiP.png",
     "title": "HONEY",
@@ -57,9 +60,10 @@
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1315880115535745056",
     "rating": "81",
-    "reviews": 2,
+    "reviews": 3,
     "reviewScores": [
       {"source": "Pitchfork", "score": 83},
+      {"source": "Variety", "score": 81},
       {"source": "Rolling Stone", "score": 80}
     ],
     "universalAcclaim": true  },
@@ -83,9 +87,10 @@
     "genre": "Country/R&B/Pop",
     "label": "Dawn Records®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1307779024621142208",
-    "rating": "81",
-    "reviews": 3,
+    "rating": "85",
+    "reviews": 4,
     "reviewScores": [
+      {"source": "Variety", "score": 96},
       {"source": "NME", "score": 87},
       {"source": "Pitchfork", "score": 79},
       {"source": "RollingStone", "score": 79}
@@ -98,9 +103,10 @@
     "genre": "R&B/Folk",
     "label": "YG Entertainment®",
     "link": "https://discord.com/channels/1200848484518080512/1200979863188799589/1302077197342740483",
-    "rating": "81",
-    "reviews": 3,
+    "rating": "83",
+    "reviews": 4,
     "reviewScores": [
+      {"source": "Variety", "score": 88},
       {"source": "Pitchfork", "score": 85},
       {"source": "NME", "score": 82},
       {"source": "RollingStone", "score": 78}

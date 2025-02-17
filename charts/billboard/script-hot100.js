@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "Unanswered Questions", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 2, musica: "Late Night Talking", artista: "Eric ft. Liz", imagem: "" },
-  { posicao: 3, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
-  { posicao: 4, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 5, musica: "Bambino", artista: "Eric", imagem: "" },
-  { posicao: 6, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
-  { posicao: 7, musica: "Die For You", artista: "Eric", imagem: "" },
-  { posicao: 8, musica: "Nothing 2 Lose", artista: "Even Grace with Mayleen", imagem: "" },
-  { posicao: 9, musica: "Midnight Drive", artista: "Eric", imagem: "" },
-  { posicao: 10, musica: "In My Eyes", artista: "Eric", imagem: "" },
+  { posicao: 1, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
+  { posicao: 2, musica: "Be Careful", artista: "Blair ft. Owen Graham", imagem: "" },
+  { posicao: 3, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
+  { posicao: 4, musica: "Heart Break", artista: "Blair", imagem: "" },
+  { posicao: 5, musica: "Gentleman", artista: "Blair", imagem: "" },
+  { posicao: 6, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
+  { posicao: 7, musica: "Crazy Mind", artista: "Blair", imagem: "" },
+  { posicao: 8, musica: "Drinking About You", artista: "Blair", imagem: "" },
+  { posicao: 9, musica: "Goodbye", artista: "Blair ft. Tommy Tommy", imagem: "" },
+  { posicao: 10, musica: "I Can't Drive 55", artista: "Even Grace", imagem: "" },
 ];
 
 function atualizarTabela() {

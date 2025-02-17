@@ -52,10 +52,19 @@
     <div class="border-top">
       <p>DISCOGRAFIA</p>
     </div>
-    <h3><br><br>Álbuns</h3>
+
+    <div class="filter-buttons">
+      <button onclick="filterDiscography('all')">Todos</button>
+      <button onclick="filterDiscography('albums')">Álbuns</button>
+      <button onclick="filterDiscography('singles')">Singles e EPs</button>
+    </div>
+
+    <h3 id="albums-title"><br>Álbuns</h3>
     <table id="albums-table"></table>
-    <h3><br>Singles e EPs</h3>
+
+    <h3 id="singles-title"><br>Singles e EPs</h3>
     <table id="singles-table"></table>
+
     <div class="gradient-overlay"></div>
   </div>
 
@@ -138,12 +147,6 @@
     grammyData.forEach((edition, index) => {
       if (selectedEdition !== 'all' && edition.edition !== selectedEdition) {
         return;
-      }
-
-      if (index > 0 && selectedEdition === 'all') {
-        const divider = document.createElement('hr');
-        divider.classList.add('edition-divider');
-        grammyCategoriesDiv.appendChild(divider);
       }
 
       const editionDiv = document.createElement('div');
@@ -237,6 +240,12 @@
 
       if (editionNominees > 0 || editionWins > 0) {
         grammyCategoriesDiv.appendChild(editionDiv);
+
+        if (selectedEdition === 'all' && index < grammyData.length - 1) {
+          const divider = document.createElement('hr');
+          divider.classList.add('edition-divider');
+          grammyCategoriesDiv.appendChild(divider);
+        }
       }
     });
 
@@ -244,18 +253,18 @@
     const totalStats = document.createElement('div');
     totalStats.classList.add('total-stats');
     totalStats.innerHTML = `
-        <h3 class="name-grammy">${artistName}</br></h3>
-        <div class="stats-container">
-            <div class="stats-item">
-                <p1>WINS*</p1>
-                <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
-            </div>
-            <div class="stats-item">
-                <p2>NOMINEES*</p2>
-                <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
-            </div>
-        </div>
-    `;
+      <h3 class="name-grammy">${artistName}</br></h3>
+      <div class="stats-container">
+          <div class="stats-item">
+              <p1>WINS*</p1>
+              <p1-1 class="stats-number"><br>${totalWins}</br></p1-1>
+          </div>
+          <div class="stats-item">
+              <p2>NOMINEES*</p2>
+              <p2-2 class="stats-number"><br>${totalNominees}</br></p2-2>
+          </div>
+      </div>
+  `;
 
     grammyCategoriesDiv.insertBefore(totalStats, grammyCategoriesDiv.firstChild);
 
@@ -274,7 +283,6 @@
   populateEditionSelect();
   displayGrammyAwards();
 </script>
-
 <script src="../films.js"></script>
 <script>
   function displayFilms(artistName) {
@@ -402,6 +410,8 @@
 <script>
   function displayAlbums(artistName) {
     const albumsTable = document.getElementById("albums-table");
+    albumsTable.innerHTML = ""; // Limpa a tabela antes de adicionar novos elementos
+
     const artistAlbums = albumsData.filter(album =>
       album.artist === artistName || album.featuring.includes(artistName)
     );
@@ -414,6 +424,7 @@
 
   function displaySingles(artistName) {
     const singlesTable = document.getElementById("singles-table");
+    singlesTable.innerHTML = ""; // Limpa a tabela antes de adicionar novos elementos
 
     const artistSingles = singlesData.filter(single =>
       (single.artist === artistName || single.featuring.includes(artistName)) && single.single === "sim"
@@ -460,10 +471,35 @@
     return row;
   }
 
-  const artistName = "Starlights";
+  // Função para filtrar a exibição
+  function filterDiscography(filter) {
+    const albumsTable = document.getElementById("albums-table");
+    const singlesTable = document.getElementById("singles-table");
+    const albumsTitle = document.getElementById("albums-title");
+    const singlesTitle = document.getElementById("singles-title");
 
+    if (filter === "all") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "block";
+    } else if (filter === "albums") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "none";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "none";
+    } else if (filter === "singles") {
+      albumsTable.style.display = "none";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "none";
+      singlesTitle.style.display = "block";
+    }
+  }
+
+  const artistName = "Starlights";
   displayAlbums(artistName);
   displaySingles(artistName);
+
 </script>
 
 <script>
@@ -487,6 +523,33 @@
   });
 
 </script>
+
+<script>
+  function filterDiscography(filter) {
+    const albumsTable = document.getElementById("albums-table");
+    const singlesTable = document.getElementById("singles-table");
+    const albumsTitle = document.getElementById("albums-title");
+    const singlesTitle = document.getElementById("singles-title");
+
+    if (filter === "all") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "block";
+    } else if (filter === "albums") {
+      albumsTable.style.display = "table";
+      singlesTable.style.display = "none";
+      albumsTitle.style.display = "block";
+      singlesTitle.style.display = "none";
+    } else if (filter === "singles") {
+      albumsTable.style.display = "none";
+      singlesTable.style.display = "table";
+      albumsTitle.style.display = "none";
+      singlesTitle.style.display = "block";
+    }
+  }
+</script>
+
 
 <footer>
   <p>© 2024 Star World Community - Beta</p>
