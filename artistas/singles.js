@@ -1,5 +1,50 @@
 const singlesData = [
   {
+    title: "False Idols",
+    year: "Year 03",
+    image: "https://i.imgur.com/2jYc07o.jpeg",
+    label: "℗ © ",
+    artist: "Mia",
+    single: "sim",
+    featuring: []
+  },
+  {
+    title: "Alone In Days Like This",
+    year: "-",
+    image: "https://i.imgur.com/EIKnQDt.jpeg",
+    label: "℗ © Dawn Records",
+    artist: "Bianca",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Finish Line",
+    year: "Year 02",
+    image: "https://i.imgur.com/xkyQrbf.png",
+    label: "℗ © Dawn Records",
+    artist: "Ava",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "The Drive",
+    year: "Year 02",
+    image: "https://i.imgur.com/xkyQrbf.png",
+    label: "℗ © Dawn Records",
+    artist: "Ava",
+    single: "nao",
+    featuring: []
+  },
+  {
+    title: "Drinking About You",
+    year: "Year 03",
+    image: "https://i.imgur.com/43L8OKY.png",
+    label: "℗ © Starlight Studios",
+    artist: "Blair",
+    single: "nao",
+    featuring: []
+  },
+  {
     title: "Crazy Mind",
     year: "Year 03",
     image: "https://i.imgur.com/43L8OKY.png",

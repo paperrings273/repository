@@ -1,14 +1,14 @@
 var tabelaDados = [
-  { posicao: 1, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
-  { posicao: 2, musica: "Be Careful", artista: "Blair ft. Owen Graham", imagem: "" },
-  { posicao: 3, musica: "RADICAL EXXXTASY", artista: "Even Grace", imagem: "" },
-  { posicao: 4, musica: "Heart Break", artista: "Blair", imagem: "" },
-  { posicao: 5, musica: "Gentleman", artista: "Blair", imagem: "" },
-  { posicao: 6, musica: "Chasing Freedom", artista: "Ivy Sinclair", imagem: "" },
-  { posicao: 7, musica: "Crazy Mind", artista: "Blair", imagem: "" },
-  { posicao: 8, musica: "Drinking About You", artista: "Blair", imagem: "" },
-  { posicao: 9, musica: "Goodbye", artista: "Blair ft. Tommy Tommy", imagem: "" },
-  { posicao: 10, musica: "I Can't Drive 55", artista: "Even Grace", imagem: "" },
+  { posicao: 1, musica: "False Idols", artista: "Mia", imagem: "" },
+  { posicao: 2, musica: "In The End, Just Party", artista: "Even Grace with Ava & Owen Graham", imagem: "" },
+  { posicao: 3, musica: "Be Careful", artista: "Blair ft. Owen Graham", imagem: "" },
+  { posicao: 4, musica: "Drinking About You", artista: "Blair", imagem: "" },
+  { posicao: 5, musica: "All Over Again... Again", artista: "Ava", imagem: "" },
+  { posicao: 6, musica: "Alone In Days Like This", artista: "Bianca", imagem: "" },
+  { posicao: 7, musica: "DRUNK!", artista: "Ava", imagem: "" },
+  { posicao: 8, musica: "Finish Line", artista: "Ava", imagem: "" },
+  { posicao: 9, musica: "Feeling", artista: "Ava", imagem: "" },
+  { posicao: 10, musica: "Goodbye", artista: "Blair ft. Tommy Tommy", imagem: "" },
 ];
 
 function atualizarTabela() {

@@ -208,7 +208,7 @@ const albumsData = [
     featuring: []
   },
   {
-    title: "House Of The Rising Sun",
+    title: "House of the Rising Sun",
     year: "Year 01",
     image: "https://i.imgur.com/sifpteD.png",
     label: "℗ © Dawn Records",

@@ -2,53 +2,53 @@
 var tabelaDados = [
   {
     posicao: 1,
-    musica: "Even After All",
-    artista: "Even Grace"
-  },
-  {
-    posicao: 2,
-    musica: "Red Flags",
-    artista: "Blair"
-  },
-  {
-    posicao: 3,
-    musica: "HONEY",
-    artista: "Bianca"
-  },
-  {
-    posicao: 4,
-    musica: "Reflections",
-    artista: "Ivy Sinclair"
-  },
-  {
-    posicao: 5,
-    musica: "Overgrown",
-    artista: "Eric"
-  },
-  {
-    posicao: 6,
-    musica: "SUMMER REMAINS",
-    artista: "Nate"
-  },
-  {
-    posicao: 7,
-    musica: "Once Upon a Time...",
-    artista: "Conan Woolridge"
-  },
-  {
-    posicao: 8,
     musica: "The Drive",
     artista: "Ava"
   },
   {
+    posicao: 2,
+    musica: "HONEY",
+    artista: "Bianca"
+  },
+  {
+    posicao: 3,
+    musica: "Red Flags",
+    artista: "Blair"
+  },
+  {
+    posicao: 4,
+    musica: "Even After All",
+    artista: "Even Grace"
+  },
+  {
+    posicao: 5,
+    musica: "House of the Rising Sun",
+    artista: "Ava"
+  },
+  {
+    posicao: 6,
+    musica: "Reflections",
+    artista: "Ivy Sinclair"
+  },
+  {
+    posicao: 7,
+    musica: "Overgrown",
+    artista: "Eric"
+  },
+  {
+    posicao: 8,
+    musica: "SUMMER REMAINS",
+    artista: "Nate"
+  },
+  {
     posicao: 9,
-    musica: "THE COUNTRY CLUB",
-    artista: "Hannah"
+    musica: "Once Upon a Time...",
+    artista: "Conan Woolridge"
   },
   {
     posicao: 10,
-    musica: "What Ever Happened?",
-    artista: "Even Grace"
+    musica: "THE COUNTRY CLUB",
+    artista: "Hannah"
   },
 ];
 

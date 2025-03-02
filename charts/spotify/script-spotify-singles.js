@@ -1,62 +1,62 @@
 var tabelaDados = [
   {
     posicao: 1,
+    musica: "False Idols",
+    artista: "Mia"
+  },
+
+  {
+    posicao: 2,
     musica: "In The End, Just Party",
     artista: "Even Grace, Ava, Owen Graham"
   },
 
   {
-    posicao: 2,
+    posicao: 3,
+    musica: "Drinking About You",
+    artista: "Blair"
+  },
+
+  {
+    posicao: 4,
     musica: "Be Careful",
     artista: "Blair, Owen Graham"
   },
 
   {
-    posicao: 3,
-    musica: "RADICAL EXXXTASY",
-    artista: "Even Grace",
-  },
-
-  {
-    posicao: 4,
-    musica: "Gentleman",
-    artista: "Blair"
-  },
-
-  {
     posicao: 5,
-    musica: "NaNaNa",
-    artista: "Blair",
+    musica: "Feeling",
+    artista: "Ava",
   },
 
   {
     posicao: 6,
-    musica: "Chasing Freedom",
-    artista: "Ivy Sinclair"
+    musica: "ORANGE TREES",
+    artista: "Bianca"
   },
 
   {
    posicao: 7,
-   musica: "Unanswered Questions",
-   artista: "Ivy Sinclair"
+   musica: "DRUNK!",
+   artista: "Ava"
 },
 
   {
     posicao: 8,
-    musica: "Never Back Down",
-    artista: "Blair"
+    musica: "Alone In Days Like This",
+    artista: "Bianca"
   },
 
   {
     posicao: 9,
-    musica: "I'm Free",
-    artista: "Blair"
+    musica: "The Drive",
+    artista: "Ava"
   },
 
   {
     posicao: 10,
-    musica: "Crazy Mind",
-    artista: "Blair"
+    musica: "Finish Line",
+    artista: "Ava"
   },
 ];
 
