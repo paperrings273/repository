@@ -1,5 +1,201 @@
 const grammyData = [
   {
+    edition: "3rd Annual GRAMMY Awards",
+    categories: [
+      {
+        category: "Album of the Year",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Blair", song: "Red Flags" },
+          { artist: "Ivy Sinclair", song: "Reflections" },
+          { artist: "Nate", song: "SUMMER REMAINS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Record of the Year",
+        nominees: [
+          { artist: "Mia", song: "False Idols" },
+          { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" },
+          { artist: "Blair", song: "NaNaNa" },
+          { artist: "Bianca", song: "SOFTLY, FOREVER" },
+          { artist: "Ivy Sinclair", song: "Unanswered Questions" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Song of the Year",
+        nominees: [
+          { artist: "Ava", song: "All Over Again... Again" },
+          { artist: "Ivy Sinclair", song: "Chasing Freedom" },
+          { artist: "Even Grace", song: "RADICAL EXXXTASY" },
+          { artist: "Bianca", song: "SOFTLY, FOREVER" },
+          { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best New Artist",
+        nominees: [
+          { artist: "Blair", song: "Blair" },
+          { artist: "Ivy Sinclair", song: "Ivy Sinclair"},
+          { artist: "Mia", song: "Mia" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Producer of the Year, Non-Classical",
+        nominees: [
+          { artist: "Bianca", song: "Bianca"},
+          { artist: "Even Grace", song: "Even Grace" },
+          { artist: "Ivy Sinclair", song: "Ivy Sinclair" },
+          { artist: "Nate", song: "Nate" },
+          { artist: "Owen Graham", song: "Owen Graham" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Songwriter of the Year, Non-Classical",
+        nominees: [
+          { artist: "Bianca", song: "Bianca"},
+          { artist: "Even Grace", song: "Even Grace" },
+          { artist: "Ivy Sinclair", song: "Ivy Sinclair" },
+          { artist: "Nate", song: "Nate" },
+          { artist: "Blair", song: "Blair" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Pop Vocal Album",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Blair", song: "Red Flags" },
+          { artist: "Ivy Sinclair", song: "Reflections" },
+          { artist: "Nate", song: "SUMMER REMAINS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Pop Solo Performance",
+        nominees: [
+          { artist: "Ivy Sinclair", song: "Chasing Freedom" },
+          { artist: "Mia", song: "False Idols" },
+          { artist: "Blair", song: "NaNaNa" },
+          { artist: "Even Grace", song: "RADICAL EXXXTASY" },
+          { artist: "Bianca", song: "SOFTLY, FOREVER" },
+        ],
+        winner: { artist: "Riley", song: "Let It Go" }
+      },
+      {
+        category: "Best Pop Duo/Group Performance",
+        nominees: [
+          { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" },
+          { artist: "Blair & Owen Graham", song: "Be Careful" },
+          { artist: "Nate & Even Grace", song: "WHISKEY FEVER" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Dance Pop Recording",
+        nominees: [
+          { artist: "Mia", song: "False Idols" },
+          { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" },
+          { artist: "Blair", song: "NaNaNa" },
+          { artist: "Ivy Sinclair", song: "Unanswered Questions" }
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Rock/Alternative Album",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Nate", song: "SUMMER REMAINS" }
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Rock/Alternative Performance",
+        nominees: [
+          { artist: "Ava", song: "All Over Again... Again" },
+          { artist: "Ivy Sinclair", song: "Chasing Freedom" },
+          { artist: "Even Grace", song: "RADICAL EXXXTASY" },
+          { artist: "Bianca", song: "SOFTLY, FOREVER" },
+          { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" }
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Rock/Alternative Song",
+        nominees: [
+          { artist: "Ava", song: "All Over Again... Again" },
+          { artist: "Ivy Sinclair", song: "Chasing Freedom" },
+          { artist: "Even Grace", song: "RADICAL EXXXTASY" },
+          { artist: "Bianca", song: "SOFTLY, FOREVER" },
+          { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" }
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Music Video",
+        nominees: [
+          { artist: "Ava", song: "All Over Again... Again" },
+          { artist: "Mia", song: "False Idols" },
+          { artist: "Blair", song: "NaNaNa" },
+          { artist: "Even Grace", song: "RADICAL EXXXTASY" },
+          { artist: "Ivy Sinclair", song: "Unanswered Questions" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Engineered Album, Non-Classical",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Blair", song: "Red Flags" },
+          { artist: "Ivy Sinclair", song: "Reflections" },
+          { artist: "Nate", song: "SUMMER REMAINS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Recording Package",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Blair", song: "Red Flags" },
+          { artist: "Ivy Sinclair", song: "Reflections" },
+          { artist: "Nate", song: "SUMMER REMAINS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Album Art",
+        nominees: [
+          { artist: "Even Grace", song: "Even After All" },
+          { artist: "Bianca", song: "HONEY" },
+          { artist: "Blair", song: "Red Flags" },
+          { artist: "Ivy Sinclair", song: "Reflections" },
+          { artist: "Nate", song: "SUMMER REMAINS" },
+        ],
+        winner: { artist: "", song: "" }
+      },
+      {
+        category: "Best Single Art",
+        nominees: [
+          { artist: "Ava", song: "All Over Again... Again" },
+          { artist: "Blair & Owen Graham", song: "Be Careful" },
+          { artist: "Ivy Sinclair", song: "Chasing Freedom" },
+          { artist: "Mia", song: "False Idols" },
+          { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" },
+        ],
+        winner: { artist: "", song: "" }
+      }
+    ]
+  },
+  {
     edition: "2nd Annual GRAMMY Awards",
     categories: [
       {
@@ -184,7 +380,7 @@ const grammyData = [
         winner: { artist: "Trevor", song: "Over Those Hills" }
       },
       {
-        category: "Best Enginereed Album, Non-Classical",
+        category: "Best Engineered Album, Non-Classical",
         nominees: [
           { artist: "Riley", song: "Dandelions" },
           { artist: "Alana Grace", song: "MELANCHOLIA" },
@@ -430,7 +626,7 @@ const grammyData = [
         winner: { artist: "Trevor", song: "Genuine Tales" }
       },
       {
-        category: "Best Enginereed Album, Non-Classical",
+        category: "Best Engineered Album, Non-Classical",
         nominees: [
           { artist: "Liz", song: "everlasting" },
           { artist: "Ava", song: "House Of The Rising Sun" },
