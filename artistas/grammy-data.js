@@ -11,7 +11,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Reflections" },
           { artist: "Nate", song: "SUMMER REMAINS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace", song: "Even After All" }
       },
       {
         category: "Record of the Year",
@@ -22,7 +22,7 @@ const grammyData = [
           { artist: "Bianca", song: "SOFTLY, FOREVER" },
           { artist: "Ivy Sinclair", song: "Unanswered Questions" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" }
       },
       {
         category: "Song of the Year",
@@ -33,7 +33,7 @@ const grammyData = [
           { artist: "Bianca", song: "SOFTLY, FOREVER" },
           { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Bianca", song: "SOFTLY, FOREVER" }
       },
       {
         category: "Best New Artist",
@@ -42,7 +42,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Ivy Sinclair"},
           { artist: "Mia", song: "Mia" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Blair", song: "Blair" }
       },
       {
         category: "Producer of the Year, Non-Classical",
@@ -53,7 +53,7 @@ const grammyData = [
           { artist: "Nate", song: "Nate" },
           { artist: "Owen Graham", song: "Owen Graham" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace", song: "Even Grace" }
       },
       {
         category: "Songwriter of the Year, Non-Classical",
@@ -64,7 +64,7 @@ const grammyData = [
           { artist: "Nate", song: "Nate" },
           { artist: "Blair", song: "Blair" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Bianca", song: "Bianca" }
       },
       {
         category: "Best Pop Vocal Album",
@@ -75,7 +75,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Reflections" },
           { artist: "Nate", song: "SUMMER REMAINS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Ivy Sinclair", song: "Reflections" }
       },
       {
         category: "Best Pop Solo Performance",
@@ -86,7 +86,7 @@ const grammyData = [
           { artist: "Even Grace", song: "RADICAL EXXXTASY" },
           { artist: "Bianca", song: "SOFTLY, FOREVER" },
         ],
-        winner: { artist: "Riley", song: "Let It Go" }
+        winner: { artist: "Blair", song: "NaNaNa" }
       },
       {
         category: "Best Pop Duo/Group Performance",
@@ -95,7 +95,7 @@ const grammyData = [
           { artist: "Blair & Owen Graham", song: "Be Careful" },
           { artist: "Nate & Even Grace", song: "WHISKEY FEVER" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" }
       },
       {
         category: "Best Dance Pop Recording",
@@ -105,7 +105,7 @@ const grammyData = [
           { artist: "Blair", song: "NaNaNa" },
           { artist: "Ivy Sinclair", song: "Unanswered Questions" }
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Mia", song: "False Idols" }
       },
       {
         category: "Best Rock/Alternative Album",
@@ -114,7 +114,7 @@ const grammyData = [
           { artist: "Bianca", song: "HONEY" },
           { artist: "Nate", song: "SUMMER REMAINS" }
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Nate", song: "SUMMER REMAINS" }
       },
       {
         category: "Best Rock/Alternative Performance",
@@ -125,7 +125,7 @@ const grammyData = [
           { artist: "Bianca", song: "SOFTLY, FOREVER" },
           { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" }
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Ava", song: "All Over Again... Again" }
       },
       {
         category: "Best Rock/Alternative Song",
@@ -136,7 +136,7 @@ const grammyData = [
           { artist: "Bianca", song: "SOFTLY, FOREVER" },
           { artist: "Nate", song: "WHERE THE CORNFIELD ENDS" }
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace", song: "RADICAL EXXXTASY" }
       },
       {
         category: "Best Music Video",
@@ -147,7 +147,7 @@ const grammyData = [
           { artist: "Even Grace", song: "RADICAL EXXXTASY" },
           { artist: "Ivy Sinclair", song: "Unanswered Questions" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Mia", song: "False Idols" }
       },
       {
         category: "Best Engineered Album, Non-Classical",
@@ -158,7 +158,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Reflections" },
           { artist: "Nate", song: "SUMMER REMAINS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Bianca", song: "HONEY" }
       },
       {
         category: "Best Recording Package",
@@ -169,7 +169,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Reflections" },
           { artist: "Nate", song: "SUMMER REMAINS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Even Grace", song: "Even After All" }
       },
       {
         category: "Best Album Art",
@@ -180,7 +180,7 @@ const grammyData = [
           { artist: "Ivy Sinclair", song: "Reflections" },
           { artist: "Nate", song: "SUMMER REMAINS" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Ivy Sinclair", song: "Reflections" }
       },
       {
         category: "Best Single Art",
@@ -191,7 +191,7 @@ const grammyData = [
           { artist: "Mia", song: "False Idols" },
           { artist: "Even Grace & Ava & Owen Graham", song: "In The End, Just Party" },
         ],
-        winner: { artist: "", song: "" }
+        winner: { artist: "Ava", song: "All Over Again... Again" }
       }
     ]
   },
